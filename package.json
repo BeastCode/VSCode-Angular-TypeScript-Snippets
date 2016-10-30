@@ -1,0 +1,27 @@
+{
+    "name": "Angular TypeScript Snippets and Examples",
+    "publisher": "Mikael Morlund",
+    "displayName": "Angular TypeScript Snippets and Examples",
+    "description": "Angular TypeScript Snippets and Examples for Angular 2+",
+    "icon": "images/angular2.png",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets"
+    },
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "typescript",
+                "path": "./snippets/typescript.json"
+            }
+        ]
+    }
+}
