@@ -7,8 +7,8 @@
       "",
       "@Component({",
       "\tselector: '${selector}',",
-      "\ttemplateUrl: './${name}.component.html'",
-      "\tstyleUrls: ['./${name}.component.css']"
+      "\ttemplateUrl: './${name}.component.html',",
+      "\tstyleUrls: ['./${name}.component.css']",
       "})",
       "export class ${Name}Component implements OnInit {",
       "\tconstructor() { }",
@@ -26,8 +26,8 @@
       "@Component({",
       "\tselector: '${selector}',",
       "\ttemplate: `",
-      "\t\t$0`",
-      "\tstyles: ['$1']"
+      "\t\t$1`",
+      "\tstyles: ['$2']",
       "})",
       "export class ${Name}Component implements OnInit {",
       "\tconstructor() { }",
@@ -35,5 +35,51 @@
       "\tngOnInit() { }",
       "}"
     ]
+  },
+  "Angular Service": {
+    "prefix": "ng-service",
+    "description": "Angular 2+ Service",
+    "body": [
+      "import { Injectable } from '@angular/core';",
+
+      "@Injectable()",
+      "export class ${Name}Service {",
+      "$0}"
+    ]
+  },
+ 
+
+
+  "Angular 2+ If Directive": {
+    "prefix": "ng-if",
+    "description": "If Directive Angular 2+",
+    "body": [
+      "*ngIf=\"${statement}\""]
+  },
+  "Angular 2+ For-loop Directive": {
+    "prefix": "ng-for",
+    "description": "For-loop Directive Angular 2+",
+    "body": [
+      "*ngFor=\"let ${item} of ${item}s\""]
+  },
+  "Angular 2+ For-loop Directive": {
+    "prefix": "ng-for-index",
+    "description": "For-loop Directive with index",
+    "body": [
+      "<li *ngFor=\"let ${item} of ${item}s\"></li>"]
+  },
+  "Angular 2+ For-loop Directive with index": {
+    "prefix": "ng-for",
+    "description": "For-loop Directive Angular 2+",
+    "body": [
+      "*ngFor=\"let ${item} of ${item}s; let i=index\""]
+  },
+  "Angular 2+ For-loop Directive with trackBy": {
+    "prefix": "ng-for",
+    "description": "For-loop Directive Angular 2+",
+    "body": [
+      "*ngFor=\"let ${item} of ${item}s; trackBy:${item}.id\""]
   }
+
+  
 }

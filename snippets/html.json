@@ -1,0 +1,14 @@
+{
+  "Angular 2 If Directive": {
+    "prefix": "ng-if",
+    "description": "If Directive Angular 2+",
+    "body": [
+      "*ngIf=\"${statement}\""]
+  },
+  "Angular 2 For-loop Directive": {
+    "prefix": "ng-for",
+    "description": "For-loop Directive Angular 2+",
+    "body": [
+      "*ngFor=\"let ${name} of ${name}s\""]
+  }
+}
