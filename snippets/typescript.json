@@ -125,6 +125,90 @@
       "}"
     ]
   },
+  "Angular 2+ UpperCase Pipe": {
+    "prefix": "ng-pipe-uppercase",
+    "description": "",
+    "body": [
+      "{{ ${variable} | uppercase }}$0"
+    ]
+  },
+   "Angular 2+ lowerCase Pipe": {
+    "prefix": "ng-pipe-lowercase",
+    "description": "",
+    "body": [
+      "{{ ${variable} | lowercase }$0"
+    ]
+  },
+  "Angular 2+ Date Pipe": {
+    "prefix": "ng-pipe-date",
+    "description": "Format: 09/15/1971",
+    "body": [
+      "{{ ${variable} | date }}$0"
+    ]
+  },
+  "Angular 2+ Custom Date Pipe": {
+    "prefix": "ng-pipe-date-custom",
+    "description": "Format: \"MM/dd/yy\" = 09/15/71",
+    "body": [
+      "{{ ${variable} | date:\"MM/dd/yy\" }}$0"
+    ]
+  },
+  "Angular 2+ Short Date Pipe": {
+    "prefix": "ng-pipe-date-short",
+    "description": "Format:  09/15/1971",
+    "body": [
+      "{{ ${variable} | date:shortDate }}$0"
+    ]
+  },
+  "Angular 2+ Full Date Pipe": {
+    "prefix": "ng-pipe-date-full",
+    "description": "Format: Wednesday, September 15, 1971",
+    "body": [
+      "{{ ${variable} | date:fullDate }}$0"
+    ]
+  },
+  "Angular 2+ Percent Pipe": {
+    "prefix": "ng-pipe-percent",
+    "description": "Usage: number_expression | percent[:digitInfo]",
+    "body": [
+      "{{ ${variable} | percent:${digitInfo} }}$0"
+    ]
+  },
+  "Angular 2+ Decimal Pipe": {
+    "prefix": "ng-pipe-percent",
+    "description": "Usage: number_expression | decimal[:digitInfo]",
+    "body": [
+      "{{ ${variable} | decimal:${digitInfo} }}$0"
+    ]
+  },
+  "Angular 2+ Slice Pipe": {
+    "prefix": "ng-pipe-slice",
+    "description": "Usage: array_or_string_expression | slice:start[:end]",
+    "body": [
+      "{{ ${variable} | slice:${start}:${end} }}$0"
+    ]
+  },
+  "Angular 2+ Currency Pipe": {
+    "prefix": "ng-pipe-currency",
+    "description": "Usage: money | currency:'EUR'",
+    "body": [
+      "{{ ${variable} | currency:'${CURRENCY}' }}$0"
+    ]
+  },
+  "Angular 2+ Json Pipe": {
+    "prefix": "ng-pipe-json",
+    "description": "Usage: object | json",
+    "body": [
+      "{{ ${object} | json }}$0"
+    ]
+  },
+  "Angular 2+ Async Pipe": {
+    "prefix": "ng-pipe-async",
+    "description": "Usage: observable_or_promise_expression | async",
+    "body": [
+      "{{ ${observable} | async }}$0"
+    ]
+  },
   "Angular 2+ Directive": {
     "prefix": "ng-directive",
     "description": "",
