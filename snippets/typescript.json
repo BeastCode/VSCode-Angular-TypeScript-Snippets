@@ -1,5 +1,5 @@
 // Angular for TypeScript v2.1.1
-// ngRx v
+// 
 
 {
   // TypeScript Snippets
@@ -175,7 +175,7 @@
     ]
   },
   "Angular 2+ Decimal Pipe": {
-    "prefix": "ng-pipe-percent",
+    "prefix": "ng-pipe-decimal",
     "description": "Usage: number_expression | decimal[:digitInfo]",
     "body": [
       "{{ ${variable} | decimal:${digitInfo} }}$0"
@@ -219,7 +219,7 @@
   },
   
   // Lifecycle Hooks
-  "Angular 2+ Lifecycle Hooks": {
+  "Angular 2+ Lifecycle OnChanges Hook": {
     "prefix": "ng-ngOnChanges",
     "description": "",
     "body": [
@@ -229,7 +229,7 @@
       "}"
     ]
   },
-  "Angular 2+ Lifecycle Hooks": {
+  "Angular 2+ Lifecycle OnInit Hook": {
     "prefix": "ng-onInit",
     "description": "",
     "body": [
@@ -239,7 +239,7 @@
       "}"
     ]
   },
-  "Angular 2+ Lifecycle Hooks": {
+  "Angular 2+ Lifecycle DoCheck Hook": {
     "prefix": "ng-doCheck",
     "description": "",
     "body": [
@@ -249,7 +249,7 @@
       "}"
     ]
   },
-  "Angular 2+ Lifecycle Hooks": {
+  "Angular 2+ Lifecycle AfterContentInit Hook": {
     "prefix": "ng-afterContentInit",
     "description": "",
     "body": [
@@ -259,8 +259,8 @@
       "}"
     ]
   },
-  "Angular 2+ Lifecycle Hooks": {
-    "prefix": "ng-ngAfterContentChecked",
+  "Angular 2+ Lifecycle AfterContentChecked Hook": {
+    "prefix": "ng-AfterContentChecked",
     "description": "",
     "body": [
       "ngAfterContentChecked() {",
@@ -269,7 +269,7 @@
       "}"
     ]
   },
-  "Angular 2+ Lifecycle Hooks": {
+  "Angular 2+ Lifecycle AfterViewInit Hook": {
     "prefix": "ng-afterViewInit",
     "description": "",
     "body": [
@@ -279,7 +279,7 @@
       "}"
     ]
   },
-  "Angular 2+ Lifecycle Hooks": {
+  "Angular 2+ Lifecycle AfterViewChecked Hook": {
     "prefix": "ng-afterViewChecked",
     "description": "",
     "body": [
@@ -289,7 +289,7 @@
       "}"
     ]
   },
-  "Angular 2+ Lifecycle Hooks": {
+  "Angular 2+ Lifecycle OnDestroy Hook": {
     "prefix": "ng-onDestroy",
     "description": "",
     "body": [
@@ -318,37 +318,37 @@
       "const routing = RouterModule.forRoot(routes);"
     ]
   },
-  "Angular 2+ ": {
+  "Angular 2+ Routes": {
     "prefix": "ng-router-routes",
-    "description": "",
+    "description": "TODO",
     "body": [
       "import { Routes, RouterModule, ... } from '@angular/router';",
       "",
       ""
     ]
   },
-  "Angular 2+ ": {
+  "Angular 2+ Router Link": {
     "prefix": "ng-router-link",
     "description": "",
     "body": [
       "<a [routerLink]=\"[ '/${path}', ${routeParam} ]\">"
     ]
   },
-  "Angular 2+ ": {
+  "Angular 2+ Router Active Link": {
     "prefix": "ng-router-linkActive",
     "description": "",
     "body": [
       "<a [routerLink]=\"[ '/path' ]\" routerLinkActive=\"active\">"
     ]
   },
-  "Angular 2+ ": {
+  "Angular 2+ Router Link with href ": {
     "prefix": "ng-router-linkWithHref",
-    "description": "",
+    "description": "TODO",
     "body": [
       ""
     ]
   },
-  "Angular 2+ ": {
+  "Angular 2+ Router Outlet": {
     "prefix": "ng-router-outlet",
     "description": "",
     "body": [
@@ -358,39 +358,39 @@
   },
 
   // ngRx Snippets
-  "Angular 2+ ": {
+  "Angular 2+ ngRx": {
     "prefix": "ng-rx",
-    "description": "",
+    "description": "TODO",
     "body": [
       ""
     ]
   },
-  "Angular 2+ ": {
+  "Angular 2+ ngRx...": {
     "prefix": "ng-rx",
-    "description": "",
+    "description": "TODO",
     "body": [
       ""
     ]
   },
 
   // Test Snippets
-  "Angular 2+ ": {
+  "Angular 2+ Test Component": {
     "prefix": "ng-test-component",
-    "description": "",
+    "description": "TODO",
     "body": [
       ""
     ]
   },
-  "Angular 2+ ": {
+  "Angular 2+ Test Directive": {
     "prefix": "ng-test-directive",
-    "description": "",
+    "description": "TODO",
     "body": [
       ""
     ]
   },
-  "Angular 2+ ": {
+  "Angular 2+ Test Service": {
     "prefix": "ng-test-service",
-    "description": "",
+    "description": "TODO",
     "body": [
       ""
     ]
@@ -447,11 +447,21 @@
       ""
     ]
   },
-  "Angular 2+ ": {
+  "Angular 2+ Switch": {
     "prefix": "ng-switch",
     "description": "",
     "body": [
-      ""
+      "<span [ngSwitch]=\"\">",
+        "<p *ngSwitchCase=\"true\">",
+        "",
+        "</p>",
+        "<p *ngSwitchCase=\"false\">",
+        "",
+        "</p>",
+        "<p *ngSwitchDefault>",
+        "",
+        "</p>",
+      "</span>"
     ]
   },
   "Angular 2+ Proprty": {
@@ -488,7 +498,81 @@
     "body": [
       "{{ ${interpolation} }}"
     ]
-  }
+  },
 
-  
+  //Angular 1
+  "Angular 1 Loop Directive": {
+    "prefix": "ng-repeat",
+    "description": "Use ngFor instead.",
+    "body": [
+      "*ngFor=\"let ${item} of ${item}s\""
+    ]
+  },
+  "Angular 2+ Click Event": {
+    "prefix": "ng-click",
+    "description": "Click event",
+    "body": [
+      "(click)=\"${expression}\"$0"
+    ]
+  },
+  "Angular 1 Controller": {
+    "prefix": "ng-controller",
+    "description": "Use component instead.",
+    "body": [
+      "import { Component, OnInit } from '@angular/core';",
+      "",
+      "@Component({",
+      "\tselector: '${selector}',",
+      "\ttemplateUrl: './${name}.component.html',",
+      "\tstyleUrls: ['./${name}.component.css']",
+      "})",
+      "export class ${Name}Component implements OnInit {",
+      "\tconstructor() { }",
+      "",
+      "\tngOnInit() { }",
+      "}"
+    ]
+  },
+  "Angular 1 Show Directive": {
+    "prefix": "ng-show",
+    "description": "Usage: Bind to the hidden property.",
+    "body": [
+      "[hidden]=\"!${expression}\""
+    ]
+  },
+  "Angular 1 Hide Directive": {
+    "prefix": "ng-hide",
+    "description": "Usage: Bind to the hidden property.",
+    "body": [
+      "[hidden]=\"${expression}\""
+    ]
+  },
+  "Angular 1 Href Directive": {
+    "prefix": "ng-href",
+    "description": "Usage: Bind to the href property.",
+    "body": [
+      "[href]=\"${url}\"$0"
+    ]
+  },
+  "Angular 1 Src Directive": {
+    "prefix": "ng-src",
+    "description": "Usage: Bind to the src property.",
+    "body": [
+      "[src]=\"${url}\"$0"
+    ]
+  },
+  "Angular 1 OrderBy": {
+    "prefix": "ng-orderBy",
+    "description": "For performance reasons, no comparable pipe exists in Angular 2. Instead, use component code to order or sort results. If you need the same ordering or sorting code in several templates, consider building a custom pipe.",
+    "body": [
+      "$0"
+    ]
+  },
+  "Angular 1 Filter": {
+    "prefix": "ng-filter",
+    "description": "For performance reasons, no comparable pipe exists in Angular 2. Do all your filtering in the component. If you need the same filtering code in several templates, consider building a custom pipe.",
+    "body": [
+      "$0"
+    ]
+  }
 }

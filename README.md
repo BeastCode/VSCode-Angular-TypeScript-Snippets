@@ -2,6 +2,7 @@
 Visual Studio Code TypeScript, HTML and ngRx snippets and examples for Angular 2+
 
 This extension is optimized for devlopers that use Angular 2+ and are no longer using Angular 1.
+If you type in Angular 1 keywords, it will suggest an Angular 2 solutions.
 
 All code snippets are based on the angular style guide https://angular.io/docs/ts/latest/guide/style-guide.html
 
