@@ -1,8 +1,6 @@
-// Angular Snippets v2.1.1
-// Author: Mikael Morlund
+
 
 {
-  // TypeScript Snippets
   "Angular Component": {
     "prefix": "ng-component",
     "description": "Angular 2+ Component Snippet",
@@ -238,7 +236,6 @@
     ]
   },
   
-  // Lifecycle Hooks
   "Angular 2+ Lifecycle OnChanges Hook": {
     "prefix": "ng-ngOnChanges",
     "description": "",
@@ -329,7 +326,7 @@
   },
 
 
-  // Router
+ 
   "Angular 2+ Routing": {
     "prefix": "ng-router",
     "description": "",
@@ -391,7 +388,7 @@
     ]
   },
 
-  // ngRx Snippets
+
   "Angular 2+ ngRx": {
     "prefix": "ng-rx",
     "description": "TODO",
@@ -409,7 +406,7 @@
     ]
   },
 
-  // Test Snippets
+
   "Angular 2+ Test Component": {
     "prefix": "ng-test-component",
     "description": "TODO",
@@ -435,7 +432,7 @@
     ]
   },
 
-  // HTML Directives
+
   "Angular 2+ If Directive": {
     "prefix": "ng-if",
     "description": "If Directive: *ngIf=\"statement\"",
@@ -552,7 +549,7 @@
     ]
   },
 
-  //Angular 1
+
   "Angular 1 Loop Directive": {
     "prefix": "ng-repeat",
     "description": "Use ngFor instead.",
