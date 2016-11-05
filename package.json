@@ -9,6 +9,10 @@
         "type": "git",
         "url": "https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets.git"
     },
+    "bugs": {
+    "url": "https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets/issues"
+    },
+    "homepage": "https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets#readme",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.0.0"
