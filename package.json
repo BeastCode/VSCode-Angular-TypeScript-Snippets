@@ -1,5 +1,5 @@
 {
-    "name": "Angular 2+ Snippets",
+    "name": "Angular-BeastCode",
     "publisher": "Mikael Morlund",
     "displayName": "Angular 2+ TypeScript, Html and ngRx Snippets",
     "description": "Angular 2+ TypeScript, Html and ngRx Snippets (updated for v2.1.1)",
@@ -33,6 +33,15 @@
         ]
     },
     "scripts": {
-        "publish": "vsce publish"
+        "publish": "vsce publish",
+        "build_html": "cat src/snippets.json | jq -c 'map(select(.types | contains(\"html\")))' > snippets/html.json",
+        "build_typescript": "cat src/snippets.json | jq -c 'map(select(.types | contains(\"typescript\")))' > snippets/typescript.json",
+        "build_readme": "cat src/README_top.md > README.md; npm run generate >> README.md; cat src/README_bottom.md >> README.md;",
+        "generate": "cat src/snippets.json | grep 'prefix\\|description' | sed -e \"s/description//\" | sed -e \"s/prefix//\" | sed -e 's/    \"\": \"//' | sed -e 's/\",//' | sed -e 'N;s/\\n/ | /' | sort ",
+        "generate2": "cat src/snippets.json | grep 'prefix\\|description' | sed -e \"s/description//\" | sed -e \"s/prefix//\" | sed -e 's/    \"\": \"//' | sed -e 's/\",//' ",
+        
+        "build": "npm run build_html; npm run build_typescript",
+        "build3": "cat src/snippets.json"
+
     }
 }
