@@ -33,15 +33,16 @@
         ]
     },
     "scripts": {
+        "build": "npm run build_snippets; npm run build_readme; npm run dups; npm run count",
         "publish": "vsce publish",
+        "build_snippets": "npm run build_html; npm run build_typescript",
+        "build_readme": "cat src/README_top.md > README.md; npm run generate_readme_table; cat src/README_bottom.md >> README.md;",
         "build_html": "cat src/snippets.json | jq -c 'map(select(.types | contains(\"html\")))' > snippets/html.json",
         "build_typescript": "cat src/snippets.json | jq -c 'map(select(.types | contains(\"typescript\")))' > snippets/typescript.json",
-        "build_readme": "cat src/README_top.md > README.md; npm run generate; cat src/README_bottom.md >> README.md;",
-        "generate": "cat src/snippets.json | grep 'prefix\\|description' | sed -e \"s/description//\" | sed -e \"s/prefix//\" | sed -e 's/    \"\": \"//' | sed -e 's/\",//' | sed -e 'N;s/\\n/ | /' | sort  >> README.md",
-        "generate2": "cat src/snippets.json | grep 'prefix\\|description' | sed -e \"s/description//\" | sed -e \"s/prefix//\" | sed -e 's/    \"\": \"//' | sed -e 's/\",//' ",
-        
-        "build": "npm run build_html; npm run build_typescript",
-        "build3": "cat src/snippets.json"
-
+        "generate_readme_table": "cat src/snippets.json | grep 'prefix\\|description' | sed -e \"s/description//\" | sed -e \"s/prefix//\" | sed -e 's/    \"\": \"//' | sed -e 's/\",//' | sed -e 'N;s/\\n/ | /' | sort  >> README.md",
+        "dup_snippet": "cat src/snippets.json | grep '\": {' | sort | uniq -d",
+        "dup_name": "cat src/snippets.json | grep 'prefix' | sort | uniq -d",
+        "dups": "npm run dup_snippet; npm run dup_name",
+        "count": "cat src/snippets.json | grep 'prefix' | wc -l"
     }
 }

@@ -1,5 +1,3 @@
-
-
 {
   "Angular Component": {
     "prefix": "ng-component",
@@ -14,10 +12,10 @@
       "\tstyleUrls: ['./${name}.component.css']",
       "})",
       "export class ${Name}Component implements OnInit {",
-      "\tconstructor() { }",
+      "\tconstructor($0) { $1}",
       "",
       "\tngOnInit() { }",
-      "}"
+      "}$2"
     ]
   },
   "Angular Component Inline": {
@@ -53,7 +51,7 @@
     ]
   },
  
-  "Angular 2+ ": {
+  "Angular 2+ Bootstrapping": {
     "prefix": "ng-bootstraping",
     "description": "",
     "types": "typescript",
@@ -397,8 +395,8 @@
       ""
     ]
   },
-  "Angular 2+ ngRx...": {
-    "prefix": "ng-rx",
+  "Angular 2+ ngRx2": {
+    "prefix": "ng-rx2",
     "description": "TODO",
     "types": "typescript",
     "body": [
@@ -431,6 +429,21 @@
       ""
     ]
   },
+  "Angular 2+ Test Pipe": {
+    "prefix": "ng-test-pipe",
+    "description": "TODO",
+    "types": "typescript",
+    "body": [
+      "describe('TitleCasePipe', () => {",
+      "\tlet pipe = new TitleCasePipe();",
+      "",
+      "\tit('transforms \"abc\" to \"Abc\"', () => {",
+      "\t\texpect(pipe.transform('abc')).toBe('Abc');",
+      "\t});",
+      "});"
+    ]
+  },
+  
 
 
   "Angular 2+ If Directive": {
@@ -474,7 +487,7 @@
     ]
   },
 
-  "Angular 2+ ": {
+  "Angular 2+ Class": {
     "prefix": "ng-class",
     "description": "",
     "types": "typescript, html",
@@ -482,7 +495,7 @@
       ""
     ]
   },
-  "Angular 2+ ": {
+  "Angular 2+ Style": {
     "prefix": "ng-style",
     "description": "",
     "types": "typescript, html",
@@ -524,7 +537,7 @@
       "(${event}) = \"on${Event}()\""
     ]
   },
-  "Angular 2+ ": {
+  "Angular 2+ Oneway Binding": {
     "prefix": "ng-binding-oneway",
     "types": "typescript, html",
     "description": "",
@@ -532,7 +545,7 @@
       ""
     ]
   },
-  "Angular 2+ ": {
+  "Angular 2+ Twoway Binding": {
     "prefix": "ng-binding-twoway",
     "description": "Property and Event: [(ngModel)]=\"heroName\"",
     "types": "typescript, html",

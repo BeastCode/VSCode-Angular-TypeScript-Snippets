@@ -6,7 +6,7 @@ If you type in Angular 1 keywords, it will suggest an Angular 2 solutions.
 
 All code snippets are based on and follow the Angular style guide https://angular.io/docs/ts/latest/guide/style-guide.html
 
-## TypeScript & Html Snippets
+### TypeScript & Html Snippets
 
 | Snippet | Description |
 | ------| -----------|
@@ -62,7 +62,7 @@ ng-router-linkWithHref | TODO
 ng-router-outlet | 
 ng-router-routes | TODO
 ng-rx | TODO
-ng-rx | TODO
+ng-rx2 | TODO
 ng-service | Angular 2+ Service
 ng-show | Usage: Bind to the hidden property.
 ng-src | Usage: Bind to the src property.
@@ -70,6 +70,7 @@ ng-style |
 ng-switch | 
 ng-test-component | TODO
 ng-test-directive | TODO
+ng-test-pipe | TODO
 ng-test-service | TODO
 
 
