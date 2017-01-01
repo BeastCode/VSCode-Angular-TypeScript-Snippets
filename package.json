@@ -1,49 +1,49 @@
 {
-    "name": "Angular-BeastCode",
-    "publisher": "Mikael",
-    "displayName": "Angular 2+ Snippets - TypeScript, Html, ngRx & Testing",
-    "description": "62 Angular 2+ Snippets (TypeScript, Html, ngRx & Testing) Updated for v2.4.0 & v4.0.0",
-    "icon": "images/angular2.png",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets.git"
-    },
-    "bugs": {
+  "name": "Angular-BeastCode",
+  "publisher": "Mikael",
+  "displayName": "Angular 2+ Snippets - TypeScript, Html, ngRx & Testing",
+  "description": "62 Angular 2+ Snippets (TypeScript, Html, ngRx & Testing) Updated for v2.4.0 & v4.0.0",
+  "icon": "images/angular2.png",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets.git"
+  },
+  "bugs": {
     "url": "https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets/issues"
-    },
-    "homepage": "https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets#readme",
-    "version": "0.1.3",
-    "engines": {
-        "vscode": "^1.0.0"
-    },
-    "categories": [
-        "Snippets"
-    ],
-    "contributes": {
-        "snippets": [
-            {
-                "language": "html",
-                "path": "./snippets/html.json"
-            },
-            {
-                "language": "typescript",
-                "path": "./snippets/typescript.json"
-            }
-        ]
-    },
-    "scripts": {
-        "build": "npm run build_snippets; npm run build_readme; npm run dups; npm run count",
-        "publish": "vsce publish",
-        "build_snippets": "npm run build_html; npm run build_typescript",
-        "build_readme": "cat src/README_top.md > README.md; npm run generate_readme_table; cat src/README_bottom.md >> README.md;",
-        "build_html": "cat src/snippets.json | jq -c 'map(select(.types | contains(\"html\")))' > snippets/html.json",
-        "build_typescript": "cat src/snippets.json | jq -c 'map(select(.types | contains(\"typescript\")))' > snippets/typescript.json",
-        "generate_readme_table": "cat src/snippets.json | grep 'prefix\\|description' | sed -e \"s/description//\" | sed -e \"s/prefix//\" | sed -e 's/    \"\": \"//' | sed -e 's/\",//' | sed -e 'N;s/\\n/ | /' | sed -e 's/$/ |/g' | sed -e 's/^/| /' | sort  >> README.md",
-        "dup_snippet": "cat src/snippets.json | grep '\": {' | sort | uniq -d",
-        "dup_name": "cat src/snippets.json | grep 'prefix' | sort | uniq -d",
-        "dups": "npm run dup_snippet; npm run dup_name",
-        "count": "cat src/snippets.json | grep 'prefix' | wc -l",
-        "patch": "npm version patch"
-    }
+  },
+  "homepage": "https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets#readme",
+  "version": "0.1.4",
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "html",
+        "path": "./snippets/html.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/typescript.json"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "npm run build_snippets; npm run build_readme; npm run dups; npm run count",
+    "publish": "vsce publish",
+    "build_snippets": "npm run build_html; npm run build_typescript",
+    "build_readme": "cat src/README_top.md > README.md; npm run generate_readme_table; cat src/README_bottom.md >> README.md;",
+    "build_html": "cat src/snippets.json | jq -c 'map(select(.types | contains(\"html\")))' > snippets/html.json",
+    "build_typescript": "cat src/snippets.json | jq -c 'map(select(.types | contains(\"typescript\")))' > snippets/typescript.json",
+    "generate_readme_table": "cat src/snippets.json | grep 'prefix\\|description' | sed -e \"s/description//\" | sed -e \"s/prefix//\" | sed -e 's/    \"\": \"//' | sed -e 's/\",//' | sed -e 'N;s/\\n/ | /' | sed -e 's/$/ |/g' | sed -e 's/^/| /' | sort  >> README.md",
+    "dup_snippet": "cat src/snippets.json | grep '\": {' | sort | uniq -d",
+    "dup_name": "cat src/snippets.json | grep 'prefix' | sort | uniq -d",
+    "dups": "npm run dup_snippet; npm run dup_name",
+    "count": "cat src/snippets.json | grep 'prefix' | wc -l",
+    "patch": "npm version patch"
+  }
 }
