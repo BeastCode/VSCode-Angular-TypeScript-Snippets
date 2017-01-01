@@ -9,7 +9,8 @@ All code snippets are based on and follow the Angular style guide https://angula
 ### TypeScript & Html Snippets
 
 | Snippet | Description |
-| ------| -----------|| ng-AfterContentChecked |  |
+| ------| -----------|
+| ng-AfterContentChecked |  |
 | ng-afterContentInit |  |
 | ng-afterViewChecked |  |
 | ng-afterViewInit |  |

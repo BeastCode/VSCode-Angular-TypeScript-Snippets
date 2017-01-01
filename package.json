@@ -2,7 +2,7 @@
     "name": "Angular-BeastCode",
     "publisher": "Mikael",
     "displayName": "Angular 2+ TypeScript, Html and ngRx Snippets",
-    "description": "Angular 2+ TypeScript, Html and ngRx Snippets (updated for v2.4.0)",
+    "description": "62 Angular 2+ TypeScript, Html and ngRx Snippets (updated for v2.4.0)",
     "icon": "images/angular2.png",
     "license": "MIT",
     "repository": {
@@ -13,7 +13,7 @@
     "url": "https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets/issues"
     },
     "homepage": "https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets#readme",
-    "version": "0.0.5",
+    "version": "0.1.0",
     "engines": {
         "vscode": "^1.0.0"
     },
