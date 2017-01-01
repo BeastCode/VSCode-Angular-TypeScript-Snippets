@@ -10,8 +10,8 @@ All code snippets are based on and follow the Angular style guide https://angula
 
 | Snippet | Description |
 | ------| -----------|
-ng-AfterContentChecked | 
-ng-afterContentInit | 
+| ng-AfterContentChecked | |
+| ng-afterContentInit | |
 ng-afterViewChecked | 
 ng-afterViewInit | 
 ng-binding-oneway | 
