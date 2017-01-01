@@ -13,7 +13,7 @@
     "url": "https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets/issues"
     },
     "homepage": "https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets#readme",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "engines": {
         "vscode": "^1.0.0"
     },
@@ -39,7 +39,7 @@
         "build_readme": "cat src/README_top.md > README.md; npm run generate_readme_table; cat src/README_bottom.md >> README.md;",
         "build_html": "cat src/snippets.json | jq -c 'map(select(.types | contains(\"html\")))' > snippets/html.json",
         "build_typescript": "cat src/snippets.json | jq -c 'map(select(.types | contains(\"typescript\")))' > snippets/typescript.json",
-        "generate_readme_table": "cat src/snippets.json | grep 'prefix\\|description' | sed -e \"s/description//\" | sed -e \"s/prefix//\" | sed -e 's/    \"\": \"//' | sed -e 's/\",//' | sed -e 'N;s/\\n/ | /' | sort  >> README.md",
+        "generate_readme_table": "cat src/snippets.json | grep 'prefix\\|description' | sed -e \"s/description//\" | sed -e \"s/prefix//\" | sed -e 's/    \"\": \"//' | sed -e 's/\",//' | sed -e 'N;s/\\n/ | /' | sed -e 's/$/ |/g' | sed -e 's/^/| /' | sort  >> README.md",
         "dup_snippet": "cat src/snippets.json | grep '\": {' | sort | uniq -d",
         "dup_name": "cat src/snippets.json | grep 'prefix' | sort | uniq -d",
         "dups": "npm run dup_snippet; npm run dup_name",
