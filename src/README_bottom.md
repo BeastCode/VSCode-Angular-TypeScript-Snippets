@@ -4,7 +4,7 @@
 
 1. Launch Visual Studio Code
 2. From the command palette Ctrl-Shift-P (Windows, Linux) or Cmd-Shift-P (OSX)
-3. Select Install Extension
+3. Enter the following command: 'ext install Angular-BeastCode'
 4. Choose extension
 5. Reload Visual Studio Code
 
