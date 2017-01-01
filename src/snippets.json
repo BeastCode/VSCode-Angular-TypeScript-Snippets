@@ -83,7 +83,7 @@
       "@NgModule({ declarations: [],",
       "\timports: [],",
       "\texports: [],",
-      "\tproviders: []],",
+      "\tproviders: [],",
       "\tbootstrap: []",
       "})",
       "class ${Name}Module {}"
