@@ -70,18 +70,18 @@ ng-for currently has even more variations, so make sure you pick the one you wan
 | ng-onInit | Called after the constructor |
 | ng-orderBy | For performance reasons, no comparable pipe exists in Angular 2. Instead, use component code to order or sort results. If you need the same ordering or sorting code in several templates, consider building a custom pipe. |
 | ng-pipe |  |
-| ng-pipe-async | Usage: observable_or_promise_expression &#01C0; async |
-| ng-pipe-currency | Usage: money &#01C0; currency:'EUR' |
+| ng-pipe-async | Usage: observable_or_promise_expression &#x7c; async |
+| ng-pipe-currency | Usage: money &#x7c; currency:'EUR' |
 | ng-pipe-date | Format: 09/15/1971 |
 | ng-pipe-date-custom | Format: \"MM/dd/yy\" = 09/15/71 |
 | ng-pipe-date-full | Format: Wednesday, September 15, 1971 |
-| ng-pipe-date-short | Format:  09/15/1971 |
-| ng-pipe-decimal | Usage: number_expression &#124; decimal[:digitInfo] |
+| ng-pipe-date-short | Format: 09/15/1971 |
+| ng-pipe-decimal | Usage: number_expression &#x7c; decimal[:digitInfo] |
 | ng-pipe-example | Angular  Pipe Example |
 | ng-pipe-json | Usage: object &#x7c; json |
 | ng-pipe-lowercase |  |
-| ng-pipe-percent | Usage: number_expression &#007c; percent[:digitInfo] |
-| ng-pipe-slice | Usage: array_or_string_expression &#01C0; slice:start[:end] |
+| ng-pipe-percent | Usage: number_expression &#x7c; percent[:digitInfo] |
+| ng-pipe-slice | Usage: array_or_string_expression &#x7c; slice:start[:end] |
 | ng-pipe-uppercase |  |
 | ng-property | Property: [property]=\"statement\" |
 | ng-repeat | Use ngFor instead. |
