@@ -459,7 +459,7 @@
     "description": "For-loop Directive Angular 2+",
     "types": "typescript, html",
     "body": [
-      "*ngFor=\"let ${item} of ${item}s\""
+      "*ngFor=\"let ${item} of ${item}s\"$0"
     ]
   },
   "Angular 2+ For-loop Directive with li element": {
@@ -467,7 +467,7 @@
     "description": "For-loop Directive with li element",
     "types": "typescript, html",
     "body": [
-      "<li *ngFor=\"let ${item} of ${item}s\"></li>"
+      "<li *ngFor=\"let ${item} of ${item}s\">$0</li>"
     ]
   },
   "Angular 2+ For-loop Directive with index": {
@@ -475,7 +475,7 @@
     "description": "For-loop Directive Angular 2+",
     "types": "typescript, html",
     "body": [
-      "*ngFor=\"let ${item} of ${item}s; let i=index\""
+      "*ngFor=\"let ${item} of ${item}s; let i=index\"$0"
     ]
   },
   "Angular 2+ For-loop Directive with trackBy": {
@@ -568,7 +568,7 @@
     "description": "Use ngFor instead.",
     "types": "typescript, html",
     "body": [
-      "*ngFor=\"let ${item} of ${item}s\""
+      "*ngFor=\"let ${item} of ${item}s\"$0"
     ]
   },
   "Angular 2+ Click Event": {
