@@ -20,11 +20,15 @@ Multiple snippets come in multiple variations. For instance when you want to cre
 * ng-component
 * ng-component-inline
 
+
 ### ng-component
 
 ![ngComponentSnippet](https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets/raw/master/images/ngComponentSnippet.gif)
 
 ### ng-for
+
+ng-for currently has even more variations, so make sure you pick the one you want before you press enter:
+
 ![ngForSnippet](https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets/raw/master/images/ngForSnippet.gif)
 
 
