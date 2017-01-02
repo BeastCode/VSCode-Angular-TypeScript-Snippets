@@ -1,12 +1,21 @@
 
 
-##Installation
+##Installation (Mac)
 
-1. Launch Visual Studio Code
-2. From the command palette Ctrl-Shift-P (Windows, Linux) or Cmd-Shift-P (OSX)
-3. Enter the following command: 'ext install Angular-BeastCode'
-4. Choose extension
-5. Reload Visual Studio Code
+1. Launch VS Code 
+2. Quick Open (⌘+P)
+3. Enter the following command and press enter: 'ext install Angular-BeastCode'
+4. Choose extension (Author: Mikael Morlund)
+5. Reload VS Code 
+
+
+##Installation (Windows, Linux)
+
+1. Launch VS Code 
+2. Quick Open (Ctrl-Shift-P)
+3. Enter the following command and press enter: 'ext install Angular-BeastCode'
+4. Choose extension (Author: Mikael Morlund)
+5. Reload VS Code 
 
 
 ##Disclaimer
