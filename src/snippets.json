@@ -178,7 +178,7 @@
   },
   "Angular 2+ Percent Pipe": {
     "prefix": "ng-pipe-percent",
-    "description": "Usage: number_expression | percent[:digitInfo]",
+    "description": "Usage: number_expression &#007c; percent[:digitInfo]",
     "types": "typescript, html",
     "body": [
       "{{ ${variable} | percent:${digitInfo} }}$0"
@@ -186,7 +186,7 @@
   },
   "Angular 2+ Decimal Pipe": {
     "prefix": "ng-pipe-decimal",
-    "description": "Usage: number_expression | decimal[:digitInfo]",
+    "description": "Usage: number_expression &#007c; decimal[:digitInfo]",
     "types": "typescript, html",
     "body": [
       "{{ ${variable} | decimal:${digitInfo} }}$0"
@@ -194,7 +194,7 @@
   },
   "Angular 2+ Slice Pipe": {
     "prefix": "ng-pipe-slice",
-    "description": "Usage: array_or_string_expression | slice:start[:end]",
+    "description": "Usage: array_or_string_expression &#007c; slice:start[:end]",
     "types": "typescript, html",
     "body": [
       "{{ ${variable} | slice:${start}:${end} }}$0"
@@ -202,7 +202,7 @@
   },
   "Angular 2+ Currency Pipe": {
     "prefix": "ng-pipe-currency",
-    "description": "Usage: money | currency:'EUR'",
+    "description": "Usage: money &#007c; currency:'EUR'",
     "types": "typescript, html",
     "body": [
       "{{ ${variable} | currency:'${CURRENCY}' }}$0"
@@ -210,7 +210,7 @@
   },
   "Angular 2+ Json Pipe": {
     "prefix": "ng-pipe-json",
-    "description": "Usage: object | json",
+    "description": "Usage: object &#007c; json",
     "types": "typescript, html",
     "body": [
       "{{ ${object} | json }}$0"
@@ -218,7 +218,7 @@
   },
   "Angular 2+ Async Pipe": {
     "prefix": "ng-pipe-async",
-    "description": "Usage: observable_or_promise_expression | async",
+    "description": "Usage: observable_or_promise_expression &#007c; async",
     "types": "typescript, html",
     "body": [
       "{{ ${observable} | async }}$0"
