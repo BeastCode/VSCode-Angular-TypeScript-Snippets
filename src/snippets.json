@@ -236,88 +236,96 @@
   
   "Angular 2+ Lifecycle OnChanges Hook": {
     "prefix": "ng-ngOnChanges",
-    "description": "",
+    "description": "Called before any other lifecycle hook",
     "types": "typescript",
     "body": [
       "ngOnChanges(changeRecord)() {",
       "\t//Called before any other lifecycle hook. Use it to inject dependencies, but avoid any serious work here.",
+      "\t//Add 'implements OnChanges' to the class.",
       "\t$0",
       "}"
     ]
   },
   "Angular 2+ Lifecycle OnInit Hook": {
     "prefix": "ng-onInit",
-    "description": "",
+    "description": "Called after the constructor",
     "types": "typescript",
     "body": [
       "ngOnInit() {",
       "\t//Called after the constructor, initializing input properties, and the first call to ngOnChanges.",
+      "\t//Add 'implements OnInit' to the class.",
       "\t$0",
       "}"
     ]
   },
   "Angular 2+ Lifecycle DoCheck Hook": {
     "prefix": "ng-doCheck",
-    "description": "",
+    "description": "Called every time that the input properties of a component or a directive are checked",
     "types": "typescript",
     "body": [
       "ngDoCheck() {",
       "\t//Called every time that the input properties of a component or a directive are checked. Use it to extend change detection by performing a custom check.",
+      "\t//Add 'implements DoCheck' to the class.",
       "\t$0",
       "}"
     ]
   },
   "Angular 2+ Lifecycle AfterContentInit Hook": {
     "prefix": "ng-afterContentInit",
-    "description": "",
+    "description": "Called after ngOnInit when the component's or directive's content has been initialized",
     "types": "typescript",
     "body": [
       "ngAfterContentInit() {",
       "\t//Called after ngOnInit when the component's or directive's content has been initialized.",
+      "\t//Add 'implements AfterContentInit' to the class.",
       "\t$0",
       "}"
     ]
   },
   "Angular 2+ Lifecycle AfterContentChecked Hook": {
-    "prefix": "ng-AfterContentChecked",
-    "description": "",
+    "prefix": "ng-afterContentChecked",
+    "description": "Called after every check of the component's or directive's content",
     "types": "typescript",
     "body": [
       "ngAfterContentChecked() {",
       "\t//Called after every check of the component's or directive's content.",
+      "\t//Add 'implements AfterContentChecked' to the class.",
       "\t$0",
       "}"
     ]
   },
   "Angular 2+ Lifecycle AfterViewInit Hook": {
     "prefix": "ng-afterViewInit",
-    "description": "",
+    "description": "Called after ngAfterContentInit when the component's view has been initialized",
     "types": "typescript",
     "body": [
       "ngAfterViewInit() {",
       "\t//Called after ngAfterContentInit when the component's view has been initialized. Applies to components only.",
+      "\t//Add 'implements AfterViewInit' to the class.",
       "\t$0",
       "}"
     ]
   },
   "Angular 2+ Lifecycle AfterViewChecked Hook": {
     "prefix": "ng-afterViewChecked",
-    "description": "",
+    "description": "Called after every check of the component's view. Applies to components only",
     "types": "typescript",
     "body": [
       "ngAfterViewChecked() {",
       "\t//Called after every check of the component's view. Applies to components only.",
+      "\t//Add 'implements AfterViewChecked' to the class.",
       "\t$0",
       "}"
     ]
   },
   "Angular 2+ Lifecycle OnDestroy Hook": {
     "prefix": "ng-onDestroy",
-    "description": "",
+    "description": "Called before the instance is destroyed",
     "types": "typescript",
     "body": [
       "ngOnDestroy() {",
       "\t//Called once, before the instance is destroyed.",
+      "\t//Add 'implements OnDestroy' to the class.",
       "\t$0",
       "}"
     ]
