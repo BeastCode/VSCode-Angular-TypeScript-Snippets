@@ -3,12 +3,30 @@ Visual Studio Code TypeScript and Html snippets and code examples for Angular 2+
 
 # Important
 This extension is optimized for devlopers that use Angular 2+ and are no longer using Angular 1.
-If you type in Angular 1 keywords, it will suggest an Angular 2 solutions.
+If you type in Angular 1 keywords, it will suggest an Angular 2 solutions. 
+This is by design and ment to help developers learn how Angular 1 concepts and techniques map to Angular 2+
+
+See example below for ng-repeat and ng-click:
 
 ![ngRepeatSnippet](https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets/raw/master/images/ngRepeatSnippet.gif)
 
 
-All code snippets are based on and follow the Angular style guide https://angular.io/docs/ts/latest/guide/style-guide.html
+All code snippets are based on and follow the Angular style guide https://angular.io/docs/ts/latest/guide/style-guide.html and can be 
+
+# Usage
+
+All snippets starts with "ng-".
+Multiple snippets come in multiple variations. For instance when you want to create a new component you can choose between having the template and css inline or not:
+* ng-component
+* ng-component-inline
+
+### ng-component
+
+![ngComponentSnippet](https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets/raw/master/images/ngComponentSnippet.gif)
+
+### ng-for
+![ngForSnippet](https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets/raw/master/images/ngForSnippet.gif)
+
 
 ### TypeScript & Html Snippets
 
