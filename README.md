@@ -40,10 +40,10 @@ ng-for currently has even more variations, so make sure you pick the one you wan
 
 | Snippet | Description |
 | ------| -----------|
-| ng-AfterContentChecked |  |
-| ng-afterContentInit |  |
-| ng-afterViewChecked |  |
-| ng-afterViewInit |  |
+| ng-afterContentChecked | Called after every check of the component's or directive's content |
+| ng-afterContentInit | Called after ngOnInit when the component's or directive's content has been initialized |
+| ng-afterViewChecked | Called after every check of the component's view. Applies to components only |
+| ng-afterViewInit | Called after ngAfterContentInit when the component's view has been initialized |
 | ng-binding-oneway |  |
 | ng-binding-twoway | Property and Event: [(ngModel)]=\"heroName\" |
 | ng-bootstraping |  |
@@ -53,7 +53,7 @@ ng-for currently has even more variations, so make sure you pick the one you wan
 | ng-component-inline | Angular 2+ Component Inline Snippet |
 | ng-controller | Use component instead. |
 | ng-directive |  |
-| ng-doCheck |  |
+| ng-doCheck | Called every time that the input properties of a component or a directive are checked |
 | ng-event | Event: (event) = \"onEvent()\" |
 | ng-filter | For performance reasons, no comparable pipe exists in Angular 2. Do all your filtering in the component. If you need the same filtering code in several templates, consider building a custom pipe. |
 | ng-for | For-loop Directive Angular 2+ |
@@ -65,9 +65,9 @@ ng-for currently has even more variations, so make sure you pick the one you wan
 | ng-if | If Directive: *ngIf=\"statement\" |
 | ng-interpolation | Interpolation: {{ interpolation }} |
 | ng-module |  |
-| ng-ngOnChanges |  |
-| ng-onDestroy |  |
-| ng-onInit |  |
+| ng-ngOnChanges | Called before any other lifecycle hook |
+| ng-onDestroy | Called before the instance is destroyed |
+| ng-onInit | Called after the constructor |
 | ng-orderBy | For performance reasons, no comparable pipe exists in Angular 2. Instead, use component code to order or sort results. If you need the same ordering or sorting code in several templates, consider building a custom pipe. |
 | ng-pipe |  |
 | ng-pipe-async | Usage: observable_or_promise_expression | async |
