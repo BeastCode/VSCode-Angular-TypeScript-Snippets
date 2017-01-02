@@ -1,7 +1,7 @@
 {
   "Angular Component": {
     "prefix": "ng-component",
-    "description": "Angular 2+ Component Snippet",
+    "description": "Component with Template and Style Urls",
     "types": "typescript",
     "body": [
       "import { Component, OnInit } from '@angular/core';",
@@ -20,7 +20,7 @@
   },
   "Angular Component Inline": {
     "prefix": "ng-component-inline",
-    "description": "Angular 2+ Component Inline Snippet",
+    "description": "Component with Template and Style Inline",
     "types": "typescript",
     "body": [
       "import { Component, OnInit } from '@angular/core';",
@@ -32,15 +32,60 @@
       "\tstyles: ['$2']",
       "})",
       "export class ${Name}Component implements OnInit {",
-      "\tconstructor() { }",
+      "\tconstructor() { $0}",
       "",
       "\tngOnInit() { }",
       "}"
     ]
   },
+  "Angular Directive": {
+    "prefix": "ng-directive",
+    "description": "Directive Template",
+    "types": "typescript",
+    "body": [
+      "import { Directive } from '@angular/core';",
+      "",
+      "@Directive({",
+      "\tselector: '${selector}',",
+      "})",
+      "export class ${Name}Directive() {$0}"
+    ]
+  },
+  "Angular CSS Directive": {
+    "prefix": "ng-directive-css",
+    "description": "CSS Directive",
+    "types": "typescript",
+    "body": [
+      "import { Directive, ElementRef, Input } from '@angular/core';",
+      "",
+      "@Directive({",
+      "\tselector: '[${selector}]',",
+      "})",
+      "export class ${Name}Directive() {",
+      "\tconstructor(el: ElementRef) {}",
+      "",
+      "\tprivate ${name}($(value): string) {",
+      "\tthis.el.nativeElement.style.${proptery} = $(value);",
+      "\t}",
+      "}"
+    ]
+  },
+  "Angular Attribute Directive": {
+    "prefix": "ng-directive-attribute",
+    "description": "Attribute Directive",
+    "types": "typescript",
+    "body": [
+      "import { Directive } from '@angular/core';",
+      "",
+      "@Directive({",
+      "\tselector: '[${selector}]',",
+      "})",
+      "export class ${Name}Directive() {$0}"
+    ]
+  },
   "Angular Service": {
     "prefix": "ng-service",
-    "description": "Angular 2+ Service",
+    "description": "Basic Service",
     "types": "typescript",
     "body": [
       "import { Injectable } from '@angular/core';",
@@ -50,10 +95,9 @@
       "$0}"
     ]
   },
- 
-  "Angular 2+ Bootstrapping": {
+  "Angular Bootstrapping": {
     "prefix": "ng-bootstraping",
-    "description": "",
+    "description": "Bootstraping Example",
     "types": "typescript",
     "body": [
       "import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';",
@@ -73,9 +117,9 @@
       "};"
     ]
   },
-  "Angular 2+ ngModule": {
-    "prefix": "ng-module",
-    "description": "",
+  "Angular ngModule": {
+    "prefix": "ng-module-template",
+    "description": "Module Template",
     "types": "typescript",
     "body": [
       "import { NgModule } from '@angular/core';",
@@ -89,9 +133,26 @@
       "class ${Name}Module {}"
     ]
   },
-  "Angular 2+ Pipe": {
+  "Angular ngRootModule": {
+    "prefix": "ng-module",
+    "description": "App root mudule",
+    "types": "typescript",
+    "body": [
+      "import { NgModule } from '@angular/core';",
+      "import { BrowserModule } from '@angular/platform-browser';",
+      "import { ${App}Component }  from './${app}.component';",
+      "",
+      "@NgModule({ declarations: [ ${App}Component ],",
+      "\timports: [ BrowserModule ],",
+      "\tproviders: [],",
+      "\tbootstrap: [ ${App}Component ]",
+      "})",
+      "export class ${App}Module {}"
+    ]
+  },
+  "Angular Pipe": {
     "prefix": "ng-pipe",
-    "description": "",
+    "description": "Pipe Template",
     "types": "typescript",
     "body": [
       "import { Pipe, PipeTransform } from '@angular/core';",
@@ -104,7 +165,7 @@
       "}"
     ]
   },
-  "Angular 2+ Pipe Example": {
+  "Angular Pipe Example": {
     "prefix": "ng-pipe-example",
     "description": "Angular  Pipe Example",
     "types": "typescript",
@@ -128,115 +189,105 @@
       "}"
     ]
   },
-  "Angular 2+ UpperCase Pipe": {
+  "Angular UpperCase Pipe": {
     "prefix": "ng-pipe-uppercase",
-    "description": "",
+    "description": "UpperCase Pipe",
     "types": "typescript, html",
     "body": [
       "{{ ${variable} | uppercase }}$0"
     ]
   },
-   "Angular 2+ lowerCase Pipe": {
+   "Angular LowerCase Pipe": {
     "prefix": "ng-pipe-lowercase",
-    "description": "",
+    "description": "LowerCase Pipe",
     "types": "typescript, html",
     "body": [
       "{{ ${variable} | lowercase }$0"
     ]
   },
-  "Angular 2+ Date Pipe": {
+  "Angular Date Pipe": {
     "prefix": "ng-pipe-date",
-    "description": "Format: 09/15/1971",
+    "description": "Date Pipe - Default format: 09/15/1971",
     "types": "typescript, html",
     "body": [
       "{{ ${variable} | date }}$0"
     ]
   },
-  "Angular 2+ Custom Date Pipe": {
+  "Angular Custom Date Pipe": {
     "prefix": "ng-pipe-date-custom",
-    "description": "Format: \"MM/dd/yy\" = 09/15/71",
+    "description": "Date Pipe - Format: \"MM/dd/yy\" = 09/15/71",
     "types": "typescript, html",
     "body": [
       "{{ ${variable} | date:\"MM/dd/yy\" }}$0"
     ]
   },
-  "Angular 2+ Short Date Pipe": {
+  "Angular Short Date Pipe": {
     "prefix": "ng-pipe-date-short",
-    "description": "Format: 09/15/1971",
+    "description": "Short Date Pipe - Format: 09/15/1971",
     "types": "typescript, html",
     "body": [
       "{{ ${variable} | date:shortDate }}$0"
     ]
   },
-  "Angular 2+ Full Date Pipe": {
+  "Angular Full Date Pipe": {
     "prefix": "ng-pipe-date-full",
-    "description": "Format: Wednesday, September 15, 1971",
+    "description": "Full Date Pipe - Format: Wednesday, September 15, 1971",
     "types": "typescript, html",
     "body": [
       "{{ ${variable} | date:fullDate }}$0"
     ]
   },
-  "Angular 2+ Percent Pipe": {
+  "Angular Percent Pipe": {
     "prefix": "ng-pipe-percent",
-    "description": "Usage: number_expression &#x7c; percent[:digitInfo]",
+    "description": "Percent Pipe - Usage: number_expression &#x7c; percent[:digitInfo]",
     "types": "typescript, html",
     "body": [
       "{{ ${variable} | percent:${digitInfo} }}$0"
     ]
   },
-  "Angular 2+ Decimal Pipe": {
+  "Angular Decimal Pipe": {
     "prefix": "ng-pipe-decimal",
-    "description": "Usage: number_expression &#x7c; decimal[:digitInfo]",
+    "description": "Decimal Pipe - Usage: number_expression &#x7c; decimal[:digitInfo]",
     "types": "typescript, html",
     "body": [
       "{{ ${variable} | decimal:${digitInfo} }}$0"
     ]
   },
-  "Angular 2+ Slice Pipe": {
+  "Angular Slice Pipe": {
     "prefix": "ng-pipe-slice",
-    "description": "Usage: array_or_string_expression &#x7c; slice:start[:end]",
+    "description": "Slice Pipe - Usage: array_or_string_expression &#x7c; slice:start[:end]",
     "types": "typescript, html",
     "body": [
       "{{ ${variable} | slice:${start}:${end} }}$0"
     ]
   },
-  "Angular 2+ Currency Pipe": {
+  "Angular Currency Pipe": {
     "prefix": "ng-pipe-currency",
-    "description": "Usage: money &#x7c; currency:'EUR'",
+    "description": "Currency Pipe - Usage: money &#x7c; currency:'EUR'",
     "types": "typescript, html",
     "body": [
       "{{ ${variable} | currency:'${CURRENCY}' }}$0"
     ]
   },
-  "Angular 2+ Json Pipe": {
+  "Angular Json Pipe": {
     "prefix": "ng-pipe-json",
-    "description": "Usage: object &#x7c; json",
+    "description": "Json Pipe - Usage: object &#x7c; json",
     "types": "typescript, html",
     "body": [
       "{{ ${object} | json }}$0"
     ]
   },
-  "Angular 2+ Async Pipe": {
+  "Angular Async Pipe": {
     "prefix": "ng-pipe-async",
-    "description": "Usage: observable_or_promise_expression &#x7c; async",
+    "description": "Async Pipe - Usage: observable_or_promise_expression &#x7c; async",
     "types": "typescript, html",
     "body": [
       "{{ ${observable} | async }}$0"
     ]
   },
-  "Angular 2+ Directive": {
-    "prefix": "ng-directive",
-    "description": "",
-    "types": "typescript",
-    "body": [
-      "@Directive({...})",
-      "class ${Name}Directive() {}"
-    ]
-  },
-  
-  "Angular 2+ Lifecycle OnChanges Hook": {
+  "Angular Lifecycle OnChanges Hook": {
     "prefix": "ng-ngOnChanges",
-    "description": "Called before any other lifecycle hook",
+    "description": "Lifecycle Hook: Called before any other lifecycle hook",
     "types": "typescript",
     "body": [
       "ngOnChanges(changeRecord)() {",
@@ -246,9 +297,9 @@
       "}"
     ]
   },
-  "Angular 2+ Lifecycle OnInit Hook": {
+  "Angular Lifecycle OnInit Hook": {
     "prefix": "ng-onInit",
-    "description": "Called after the constructor",
+    "description": "Lifecycle Hook: Called after the constructor",
     "types": "typescript",
     "body": [
       "ngOnInit() {",
@@ -258,9 +309,9 @@
       "}"
     ]
   },
-  "Angular 2+ Lifecycle DoCheck Hook": {
+  "Angular Lifecycle DoCheck Hook": {
     "prefix": "ng-doCheck",
-    "description": "Called every time that the input properties of a component or a directive are checked",
+    "description": "Lifecycle Hook: Called every time that the input properties of a component or a directive are checked",
     "types": "typescript",
     "body": [
       "ngDoCheck() {",
@@ -270,9 +321,9 @@
       "}"
     ]
   },
-  "Angular 2+ Lifecycle AfterContentInit Hook": {
+  "Angular Lifecycle AfterContentInit Hook": {
     "prefix": "ng-afterContentInit",
-    "description": "Called after ngOnInit when the component's or directive's content has been initialized",
+    "description": "Lifecycle Hook: Called after ngOnInit when the component's or directive's content has been initialized",
     "types": "typescript",
     "body": [
       "ngAfterContentInit() {",
@@ -282,9 +333,9 @@
       "}"
     ]
   },
-  "Angular 2+ Lifecycle AfterContentChecked Hook": {
+  "Angular Lifecycle AfterContentChecked Hook": {
     "prefix": "ng-afterContentChecked",
-    "description": "Called after every check of the component's or directive's content",
+    "description": "Lifecycle Hook: Called after every check of the component's or directive's content",
     "types": "typescript",
     "body": [
       "ngAfterContentChecked() {",
@@ -294,9 +345,9 @@
       "}"
     ]
   },
-  "Angular 2+ Lifecycle AfterViewInit Hook": {
+  "Angular Lifecycle AfterViewInit Hook": {
     "prefix": "ng-afterViewInit",
-    "description": "Called after ngAfterContentInit when the component's view has been initialized",
+    "description": "Lifecycle Hook: Called after ngAfterContentInit when the component's view has been initialized",
     "types": "typescript",
     "body": [
       "ngAfterViewInit() {",
@@ -306,9 +357,9 @@
       "}"
     ]
   },
-  "Angular 2+ Lifecycle AfterViewChecked Hook": {
+  "Angular Lifecycle AfterViewChecked Hook": {
     "prefix": "ng-afterViewChecked",
-    "description": "Called after every check of the component's view. Applies to components only",
+    "description": "Lifecycle Hook: Called after every check of the component's view. Applies to components only",
     "types": "typescript",
     "body": [
       "ngAfterViewChecked() {",
@@ -318,9 +369,9 @@
       "}"
     ]
   },
-  "Angular 2+ Lifecycle OnDestroy Hook": {
+  "Angular Lifecycle OnDestroy Hook": {
     "prefix": "ng-onDestroy",
-    "description": "Called before the instance is destroyed",
+    "description": "Lifecycle Hook: Called before the instance is destroyed",
     "types": "typescript",
     "body": [
       "ngOnDestroy() {",
@@ -333,9 +384,9 @@
 
 
  
-  "Angular 2+ Routing": {
+  "Angular Routing": {
     "prefix": "ng-router",
-    "description": "",
+    "description": "Router Template",
     "types": "typescript",
     "body": [
       "const routes: Routes = [",
@@ -350,7 +401,7 @@
       "const routing = RouterModule.forRoot(routes);"
     ]
   },
-  "Angular 2+ Routes": {
+  "Angular Routes": {
     "prefix": "ng-router-routes",
     "description": "TODO",
     "types": "typescript",
@@ -360,23 +411,23 @@
       ""
     ]
   },
-  "Angular 2+ Router Link": {
+  "Angular Router Link": {
     "prefix": "ng-router-link",
-    "description": "",
+    "description": "Router Link",
     "types": "typescript, html",
     "body": [
       "<a [routerLink]=\"[ '/${path}', ${routeParam} ]\">"
     ]
   },
-  "Angular 2+ Router Active Link": {
+  "Angular Router Active Link": {
     "prefix": "ng-router-linkActive",
-    "description": "",
+    "description": "Router Active Link",
     "types": "typescript, html",
     "body": [
       "<a [routerLink]=\"[ '/path' ]\" routerLinkActive=\"active\">"
     ]
   },
-  "Angular 2+ Router Link with href ": {
+  "Angular Router Link with href ": {
     "prefix": "ng-router-linkWithHref",
     "description": "TODO",
     "types": "typescript",
@@ -384,9 +435,9 @@
       ""
     ]
   },
-  "Angular 2+ Router Outlet": {
+  "Angular Router Outlet": {
     "prefix": "ng-router-outlet",
-    "description": "",
+    "description": "Router Outlet Element",
     "types": "typescript, html",
     "body": [
       "<router-outlet></router-outlet>",
@@ -395,7 +446,7 @@
   },
 
 
-  "Angular 2+ ngRx": {
+  "Angular ngRx": {
     "prefix": "ng-rx",
     "description": "TODO",
     "types": "typescript",
@@ -403,7 +454,7 @@
       ""
     ]
   },
-  "Angular 2+ ngRx2": {
+  "Angular ngRx2": {
     "prefix": "ng-rx2",
     "description": "TODO",
     "types": "typescript",
@@ -413,7 +464,7 @@
   },
 
 
-  "Angular 2+ Test Component": {
+  "Angular Test Component": {
     "prefix": "ng-test-component",
     "description": "TODO",
     "types": "typescript",
@@ -421,7 +472,7 @@
       ""
     ]
   },
-  "Angular 2+ Test Directive": {
+  "Angular Test Directive": {
     "prefix": "ng-test-directive",
     "description": "TODO",
     "types": "typescript",
@@ -429,7 +480,7 @@
       ""
     ]
   },
-  "Angular 2+ Test Service": {
+  "Angular Test Service": {
     "prefix": "ng-test-service",
     "description": "TODO",
     "types": "typescript",
@@ -437,7 +488,7 @@
       ""
     ]
   },
-  "Angular 2+ Test Pipe": {
+  "Angular Test Pipe": {
     "prefix": "ng-test-pipe",
     "description": "TODO",
     "types": "typescript",
@@ -454,7 +505,7 @@
   
 
 
-  "Angular 2+ If Directive": {
+  "Angular If Directive": {
     "prefix": "ng-if",
     "description": "If Directive: *ngIf=\"statement\"",
     "types": "typescript, html",
@@ -462,15 +513,15 @@
       "*ngIf=\"${statement}\""
     ]
   },
-  "Angular 2+ For-loop Directive": {
+  "Angular For-loop Directive": {
     "prefix": "ng-for",
-    "description": "For-loop Directive Angular 2+",
+    "description": "For-loop Directive",
     "types": "typescript, html",
     "body": [
       "*ngFor=\"let ${item} of ${item}s\"$0"
     ]
   },
-  "Angular 2+ For-loop Directive with li element": {
+  "Angular For-loop Directive with li element": {
     "prefix": "ng-for-li",
     "description": "For-loop Directive with li element",
     "types": "typescript, html",
@@ -478,42 +529,42 @@
       "<li *ngFor=\"let ${item} of ${item}s\">$0</li>"
     ]
   },
-  "Angular 2+ For-loop Directive with index": {
+  "Angular For-loop Directive with index": {
     "prefix": "ng-for-index",
-    "description": "For-loop Directive Angular 2+",
+    "description": "For-loop Directive",
     "types": "typescript, html",
     "body": [
       "*ngFor=\"let ${item} of ${item}s; let i=index\"$0"
     ]
   },
-  "Angular 2+ For-loop Directive with trackBy": {
+  "Angular For-loop Directive with trackBy": {
     "prefix": "ng-for-trackBy",
-    "description": "For-loop Directive Angular 2+",
+    "description": "For-loop Directive",
     "types": "typescript, html",
     "body": [
       "*ngFor=\"let ${item} of ${item}s; trackBy:${item}.id\""
     ]
   },
 
-  "Angular 2+ Class": {
+  "Angular Class": {
     "prefix": "ng-class",
-    "description": "",
+    "description": "TODO",
     "types": "typescript, html",
     "body": [
       ""
     ]
   },
-  "Angular 2+ Style": {
+  "Angular Style": {
     "prefix": "ng-style",
-    "description": "",
+    "description": "TOFO",
     "types": "typescript, html",
     "body": [
       ""
     ]
   },
-  "Angular 2+ Switch": {
+  "Angular Switch": {
     "prefix": "ng-switch",
-    "description": "",
+    "description": "Switch Template",
     "types": "typescript",
     "body": [
       "<span [ngSwitch]=\"\">",
@@ -529,7 +580,7 @@
       "</span>"
     ]
   },
-  "Angular 2+ Proprty": {
+  "Angular Property": {
     "prefix": "ng-property",
     "description": "Property: [property]=\"statement\"",
     "types": "typescript, html",
@@ -537,7 +588,7 @@
       "[property]=\"statment\""
     ]
   },
-  "Angular 2+ Event": {
+  "Angular Event": {
     "prefix": "ng-event",
     "description": "Event: (event) = \"onEvent()\"",
     "types": "typescript, html",
@@ -545,23 +596,23 @@
       "(${event}) = \"on${Event}()\""
     ]
   },
-  "Angular 2+ Oneway Binding": {
+  "Angular Oneway Binding": {
     "prefix": "ng-binding-oneway",
     "types": "typescript, html",
-    "description": "",
+    "description": "TODO",
     "body": [
       ""
     ]
   },
-  "Angular 2+ Twoway Binding": {
+  "Angular Twoway Binding": {
     "prefix": "ng-binding-twoway",
     "description": "Property and Event: [(ngModel)]=\"heroName\"",
     "types": "typescript, html",
     "body": [
-      "[(ngModel)]=\"heroName\""
+      "[(ngModel)]=\"$(Name)\""
     ]
   },
-  "Angular 2+ Interpolation": {
+  "Angular Interpolation": {
     "prefix": "ng-interpolation",
     "description": "Interpolation: {{ interpolation }}",
     "types": "typescript, html",
@@ -579,7 +630,7 @@
       "*ngFor=\"let ${item} of ${item}s\"$0"
     ]
   },
-  "Angular 2+ Click Event": {
+  "Angular Click Event": {
     "prefix": "ng-click",
     "description": "Click event",
     "types": "typescript, html",
