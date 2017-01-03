@@ -389,26 +389,35 @@
     "description": "Router Template",
     "types": "typescript",
     "body": [
-      "const routes: Routes = [",
-      "\t{ path: '', component: HomeComponent },",
-      "\t{ path: 'path/:routeParam', component: MyComponent },",
-      "\t{ path: 'staticPath', component: ... },",
-      "\t{ path: '**', component: ... },",
-      "\t{ path: 'oldPath', redirectTo: '/staticPath' },",
-      "\t{ path: ..., component: ..., data: { message: 'Custom' } }",
-      "]);",
+      "import { Routes } from '@angular/router';",
       "",
-      "const routing = RouterModule.forRoot(routes);"
+      "import { $(Home)Component } from './';",
+      "import { $(Name2)Component } from './';",
+      "import { $(Name3)Component } from './';",
+      "import { $(Name4)Component } from './';",
+      "import { PageNotFoundComponent } from './';",
+      "",
+      "const routes: Routes = [",
+      "\t{ path: '', component: $(Home)Component },",
+      "\t{ path: '$(path2)', component: $(Name2)Component },",
+      "\t{ path: '$(path3)', component: $(Name3)Component },",
+      "\t{ path: '$(path4)', component: $(Name4)Component },",
+      "\t{ path: '**', component: PageNotFoundComponent },",
+      "\t//{ path: '/oldPath', redirectTo: '/newPath' },",
+      "\t//{ path: 'path', component: NameComponent, data: { value: 'data' } }",
+      "]);"
     ]
   },
   "Angular Routes": {
     "prefix": "ng-router-routes",
-    "description": "TODO",
+    "description": "Routes to include in Module",
     "types": "typescript",
     "body": [
-      "import { Routes, RouterModule, ... } from '@angular/router';",
+      "import { RouterModule } from '@angular/router';",
       "",
-      ""
+      "import { routes } from './$(routes)';",
+      "//",
+      "imports: [ RouterModule.forRoot(routes)]"
     ]
   },
   "Angular Router Link": {
@@ -424,7 +433,7 @@
     "description": "Router Active Link",
     "types": "typescript, html",
     "body": [
-      "<a [routerLink]=\"[ '/path' ]\" routerLinkActive=\"active\">"
+      "<a [routerLink]=\"[ '/$(path)' ]\" routerLinkActive=\"active\">"
     ]
   },
   "Angular Router Link with href ": {
@@ -444,22 +453,110 @@
       "$0"
     ]
   },
-
-
-  "Angular ngRx": {
-    "prefix": "ng-rx",
-    "description": "TODO",
+  "Angular ngRx Util": {
+    "prefix": "ng-rx-util",
+    "description": "ngRx Util",
     "types": "typescript",
     "body": [
-      ""
+      "/**",
+      "\t* This function coerces a string into a string literal type.",
+      " * Using tagged union types in TypeScript 2.0, this enables",
+      " * powerful typechecking of our reducers.",
+      " * ",
+      " * Since every action label passes through this function it",
+      " * is a good place to ensure all of our action labels",
+      " * are unique.",
+      " */",
+      "",
+      "let typeCache: { [label: string]: boolean } = {};",
+      "export function type<T>(label: T | ''): T {",
+      "\tif (typeCache[<string>label]) {",
+      "\t\tthrow new Error(`Action type \"${label}\" is not unique\"`);",
+      "\t}",
+      "",
+      "\ttypeCache[<string>label] = true;",
+      "",
+      "\treturn <T>label;",
+      "}"
     ]
   },
-  "Angular ngRx2": {
-    "prefix": "ng-rx2",
-    "description": "TODO",
+  "Angular ngRx Reducer": {
+    "prefix": "ng-rx-reducer",
+    "description": "ngRx Reducer",
     "types": "typescript",
     "body": [
-      ""
+      "import * as $(class) from '../actions/$(class)';",
+      "",
+      "export interface State {",
+      " \t\t$1",
+      "};",
+      "",
+      "const initialState: State = {",
+      "\t\t$2",
+      "};",
+      "",
+      "export function reducer(state = initialState, action: $(class).Actions ): State {",
+      "\tswitch (action.type) {",
+      "\t\tcase $(class).ActionTypes.$(TYPE): {",
+      "\t\t\treturn {",
+      "\t\t\t\t// return new $(class) state",
+      "\t\t\t};",
+      "\t\t}",
+      "",
+      "\t\tdefault: {",
+      "\t\t\treturn state;",
+      "\t\t}",
+      "\t}",
+      "}"
+    ]
+  },
+  "Angular ngRx Actions": {
+    "prefix": "ng-rx-actions",
+    "description": "ngRx Actions",
+    "types": "typescript",
+    "body": [
+      "import { Action } from '@ngrx/store';",
+"import { $(Class) } from '../models/$(class)';",
+"import { type } from '../util';",
+"",
+"/**",
+" * For each action type in an action group, make a simple",
+" * enum object for all of this group's action types.",
+" * ",
+" * The 'type' utility function coerces strings into string",
+" * literal types and runs a simple check to guarantee all",
+" * action types in the application are unique. ",
+" */",
+"export const ActionTypes = {",
+"  $(VERB):           type('[$(Class) $(Verb)')",
+"};",
+"",
+"/**",
+" * Every action is comprised of at least a type and an optional",
+" * payload. Expressing actions as classes enables powerful ",
+" * type checking in reducer functions.",
+" */",
+"export class $(Verb)Action implements Action {",
+"  type = ActionTypes.$(VERB);",
+"",
+"  constructor(public payload: $(payloadType)) { }",
+"}",
+"",
+"/**",
+" * Export a type alias of all actions in this action group",
+" * so that reducers can easily compose action types",
+" */",
+"export type Actions",
+"  = $(Verb)Action;",
+"  //| AnotherAction"
+    ]
+  },
+  "Angular ngRx Action": {
+    "prefix": "ng-rx-action",
+    "description": "Single ngRx Action",
+    "types": "typescript",
+    "body": [
+      "export const $(ACTION) = '$(ACTION)';"
     ]
   },
 
@@ -531,7 +628,7 @@
   },
   "Angular For-loop Directive with index": {
     "prefix": "ng-for-index",
-    "description": "For-loop Directive",
+    "description": "For-loop Directive with index",
     "types": "typescript, html",
     "body": [
       "*ngFor=\"let ${item} of ${item}s; let i=index\"$0"
@@ -539,7 +636,7 @@
   },
   "Angular For-loop Directive with trackBy": {
     "prefix": "ng-for-trackBy",
-    "description": "For-loop Directive",
+    "description": "For-loop Directive with trackBy",
     "types": "typescript, html",
     "body": [
       "*ngFor=\"let ${item} of ${item}s; trackBy:${item}.id\""
@@ -548,18 +645,18 @@
 
   "Angular Class": {
     "prefix": "ng-class",
-    "description": "TODO",
+    "description": "CSS Class",
     "types": "typescript, html",
     "body": [
-      ""
+      "[ngClass]=\"{$(class)}\""
     ]
   },
   "Angular Style": {
     "prefix": "ng-style",
-    "description": "TOFO",
+    "description": "CSS Style",
     "types": "typescript, html",
     "body": [
-      ""
+      "[ngStyle]=\"{$(style): $(preference)}\""
     ]
   },
   "Angular Switch": {
@@ -585,7 +682,7 @@
     "description": "Property: [property]=\"statement\"",
     "types": "typescript, html",
     "body": [
-      "[property]=\"statment\""
+      "[property]=\"$(statment)\""
     ]
   },
   "Angular Event": {
@@ -593,7 +690,7 @@
     "description": "Event: (event) = \"onEvent()\"",
     "types": "typescript, html",
     "body": [
-      "(${event}) = \"on${Event}()\""
+      "(${event}) = \"on${Event}()\"$0"
     ]
   },
   "Angular Oneway Binding": {
@@ -601,7 +698,7 @@
     "types": "typescript, html",
     "description": "TODO",
     "body": [
-      ""
+      "$0"
     ]
   },
   "Angular Twoway Binding": {
@@ -609,7 +706,7 @@
     "description": "Property and Event: [(ngModel)]=\"heroName\"",
     "types": "typescript, html",
     "body": [
-      "[(ngModel)]=\"$(Name)\""
+      "[(ngModel)]=\"$(Name)\"$0"
     ]
   },
   "Angular Interpolation": {
@@ -617,7 +714,7 @@
     "description": "Interpolation: {{ interpolation }}",
     "types": "typescript, html",
     "body": [
-      "{{ ${interpolation} }}"
+      "{{ ${interpolation} }}$0"
     ]
   },
 
@@ -651,7 +748,7 @@
       "\tstyleUrls: ['./${name}.component.css']",
       "})",
       "export class ${Name}Component implements OnInit {",
-      "\tconstructor() { }",
+      "\tconstructor() { $0}",
       "",
       "\tngOnInit() { }",
       "}"
@@ -662,7 +759,7 @@
     "description": "Usage: Bind to the hidden property.",
     "types": "typescript, html",
     "body": [
-      "[hidden]=\"!${expression}\""
+      "[hidden]=\"!${expression}\"$0"
     ]
   },
   "Angular 1 Hide Directive": {
@@ -670,7 +767,7 @@
     "description": "Usage: Bind to the hidden property.",
     "types": "typescript, html",
     "body": [
-      "[hidden]=\"${expression}\""
+      "[hidden]=\"${expression}\"$0"
     ]
   },
   "Angular 1 Href Directive": {

@@ -34,7 +34,7 @@
   },
   "scripts": {
     "build": "npm run build_snippets; npm run build_readme; npm run dups; npm run count",
-    "publish": "vsce publish",
+    "publish": "npm version patch; vsce publish",
     "build_snippets": "npm run build_html; npm run build_typescript",
     "build_readme": "cat src/README_top.md > README.md; npm run generate_readme_table; cat src/README_bottom.md >> README.md;",
     "build_html": "cat src/snippets.json | jq -c 'map(select(.types | contains(\"html\")))' > snippets/html.json",

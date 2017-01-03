@@ -47,7 +47,7 @@ ng-for currently has even more variations, so make sure you pick the one you wan
 | ng-binding-oneway | TODO |
 | ng-binding-twoway | Property and Event: [(ngModel)]=\"heroName\" |
 | ng-bootstraping | Bootstraping Example |
-| ng-class | TODO |
+| ng-class | CSS Class |
 | ng-click | Click event |
 | ng-component | Component with Template and Style Urls |
 | ng-component-inline | Component with Template and Style Inline |
@@ -59,9 +59,9 @@ ng-for currently has even more variations, so make sure you pick the one you wan
 | ng-event | Event: (event) = \"onEvent()\" |
 | ng-filter | For performance reasons, no comparable pipe exists in Angular 2. Do all your filtering in the component. If you need the same filtering code in several templates, consider building a custom pipe. |
 | ng-for | For-loop Directive |
-| ng-for-index | For-loop Directive |
+| ng-for-index | For-loop Directive with index |
 | ng-for-li | For-loop Directive with li element |
-| ng-for-trackBy | For-loop Directive |
+| ng-for-trackBy | For-loop Directive with trackBy |
 | ng-hide | Usage: Bind to the hidden property. |
 | ng-href | Usage: Bind to the href property. |
 | ng-if | If Directive: *ngIf=\"statement\" |
@@ -93,13 +93,15 @@ ng-for currently has even more variations, so make sure you pick the one you wan
 | ng-router-linkActive | Router Active Link |
 | ng-router-linkWithHref | TODO |
 | ng-router-outlet | Router Outlet Element |
-| ng-router-routes | TODO |
-| ng-rx | TODO |
-| ng-rx2 | TODO |
+| ng-router-routes | Routes to include in Module |
+| ng-rx-action | Single ngRx Action |
+| ng-rx-actions | ngRx Actions |
+| ng-rx-reducer | ngRx Reducer |
+| ng-rx-util | ngRx Util |
 | ng-service | Basic Service |
 | ng-show | Usage: Bind to the hidden property. |
 | ng-src | Usage: Bind to the src property. |
-| ng-style | TOFO |
+| ng-style | CSS Style |
 | ng-switch | Switch Template |
 | ng-test-component | TODO |
 | ng-test-directive | TODO |
