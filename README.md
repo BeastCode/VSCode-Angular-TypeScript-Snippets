@@ -44,8 +44,7 @@ ng-for currently has even more variations, so make sure you pick the one you wan
 | ng-afterContentInit | Lifecycle Hook: Called after ngOnInit when the component's or directive's content has been initialized |
 | ng-afterViewChecked | Lifecycle Hook: Called after every check of the component's view. Applies to components only |
 | ng-afterViewInit | Lifecycle Hook: Called after ngAfterContentInit when the component's view has been initialized |
-| ng-binding-oneway | TODO |
-| ng-binding-twoway | Property and Event: [(ngModel)]=\"heroName\" |
+| ng-binding-twoway | Two-way data binding with the NgModel |
 | ng-bootstraping | Bootstraping Example |
 | ng-class | CSS Class |
 | ng-click | Click event |
@@ -67,7 +66,7 @@ ng-for currently has even more variations, so make sure you pick the one you wan
 | ng-if | If Directive: *ngIf=\"statement\" |
 | ng-input | Class Input Property |
 | ng-interpolation | Interpolation: {{ interpolation }} |
-| ng-module | App root mudule |
+| ng-module | App root module |
 | ng-module-template | Module Template |
 | ng-ngOnChanges | Lifecycle Hook: Called before any other lifecycle hook |
 | ng-onDestroy | Lifecycle Hook: Called before the instance is destroyed |
@@ -93,7 +92,6 @@ ng-for currently has even more variations, so make sure you pick the one you wan
 | ng-router | Router Template |
 | ng-router-link | Router Link |
 | ng-router-linkActive | Router Active Link |
-| ng-router-linkWithHref | TODO |
 | ng-router-outlet | Router Outlet Element |
 | ng-router-routes | Routes to include in Module |
 | ng-rx-action | Single ngRx Action |
@@ -105,9 +103,10 @@ ng-for currently has even more variations, so make sure you pick the one you wan
 | ng-src | Usage: Bind to the src property. |
 | ng-style | CSS Style |
 | ng-switch | Switch Template |
-| ng-test-component | TODO |
+| ng-test-component-async | TODO |
+| ng-test-component-synchronous | TODO |
 | ng-test-directive | TODO |
-| ng-test-pipe | TODO |
+| ng-test-pipe | Test a Pipe |
 | ng-test-service | TODO |
 
 

@@ -135,7 +135,7 @@
   },
   "Angular ngRootModule": {
     "prefix": "ng-module",
-    "description": "App root mudule",
+    "description": "App root module",
     "types": "typescript",
     "body": [
       "import { NgModule } from '@angular/core';",
@@ -415,9 +415,13 @@
     "body": [
       "import { RouterModule } from '@angular/router';",
       "",
-      "import { routes } from './$(routes)';",
+      "import { routes } from './routes';",
       "//",
-      "imports: [ RouterModule.forRoot(routes)]"
+      "@NgModule({",
+      "\timports: [",
+      "\t\tRouterModule.forRoot(routes)",
+      "\t\t// other imports here",
+      "\t],"
     ]
   },
   "Angular Router Link": {
@@ -434,14 +438,6 @@
     "types": "typescript, html",
     "body": [
       "<a [routerLink]=\"[ '/$(path)' ]\" routerLinkActive=\"active\">"
-    ]
-  },
-  "Angular Router Link with href ": {
-    "prefix": "ng-router-linkWithHref",
-    "description": "TODO",
-    "types": "typescript",
-    "body": [
-      ""
     ]
   },
   "Angular Router Outlet": {
@@ -561,14 +557,44 @@
   },
 
 
-  "Angular Test Component": {
-    "prefix": "ng-test-component",
+  "Angular Test Synchronous Component": {
+    "prefix": "ng-test-component-synchronous",
     "description": "TODO",
     "types": "typescript",
     "body": [
-      ""
+      "// synchronous beforeEach",
+      "beforeEach(() => {",
+      "\tfixture = TestBed.createComponent($(Name)Component);",
+      "\tcomp    = fixture.componentInstance;",
+      "\t$(className)El  = fixture.debugElement.query(By.css('.$(className)')); // find the element",
+      "",
+      "\t// pretend that it was wired to something that supplied a $(className)",
+      "\texpected$(ClassName) = new $(ClassName)($1);",
+      "\tcomp.$(className) = expected$(ClassName);",
+      "\tfixture.detectChanges(); // trigger initial data binding",
+      "});$0"
     ]
   },
+  "Angular Test Async Component": {
+    "prefix": "ng-test-component-async",
+    "description": "TODO",
+    "types": "typescript",
+    "body": [
+      "// async beforeEach",
+      "beforeEach( async(() => {",
+      "\tTestBed.configureTestingModule({",
+      "\t\tdeclarations: [ $(Name)Component ],",
+      "\t})",
+      "\t.compileComponents(); // compile template and css",
+      "}));$0"
+    ]
+  },
+
+
+
+ 
+
+
   "Angular Test Directive": {
     "prefix": "ng-test-directive",
     "description": "TODO",
@@ -587,14 +613,14 @@
   },
   "Angular Test Pipe": {
     "prefix": "ng-test-pipe",
-    "description": "TODO",
+    "description": "Test a Pipe",
     "types": "typescript",
     "body": [
-      "describe('TitleCasePipe', () => {",
-      "\tlet pipe = new TitleCasePipe();",
+      "describe('$(Name)Pipe', () => {",
+      "\tlet pipe = new $(Name)Pipe();",
       "",
-      "\tit('transforms \"abc\" to \"Abc\"', () => {",
-      "\t\texpect(pipe.transform('abc')).toBe('Abc');",
+      "\tit('transforms \"$(input)\" to \"$(output)\"', () => {",
+      "\t\texpect(pipe.transform('$(input)')).toBe('$(output)');",
       "\t});",
       "});"
     ]
@@ -709,17 +735,9 @@
       "@Output() $(methodName) = new EventEmitter<$(Class)>();$0"
     ]
   },
-  "Angular Oneway Binding": {
-    "prefix": "ng-binding-oneway",
-    "types": "typescript, html",
-    "description": "TODO",
-    "body": [
-      "$0"
-    ]
-  },
   "Angular Twoway Binding": {
     "prefix": "ng-binding-twoway",
-    "description": "Property and Event: [(ngModel)]=\"heroName\"",
+    "description": "Two-way data binding with the NgModel",
     "types": "typescript, html",
     "body": [
       "[(ngModel)]=\"$(Name)\"$0"
