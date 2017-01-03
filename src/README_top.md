@@ -39,4 +39,4 @@ ng-for currently has even more variations, so make sure you pick the one you wan
 ### TypeScript & Html Snippets
 
 | Snippet | Description |
-| ------| -----------|
+| ------- | ----------|

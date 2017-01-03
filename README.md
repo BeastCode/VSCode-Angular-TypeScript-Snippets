@@ -39,7 +39,7 @@ ng-for currently has even more variations, so make sure you pick the one you wan
 ### TypeScript & Html Snippets
 
 | Snippet | Description |
-| ------| -----------|
+| ------- | ----------|
 | ng-afterContentChecked | Lifecycle Hook: Called after every check of the component's or directive's content |
 | ng-afterContentInit | Lifecycle Hook: Called after ngOnInit when the component's or directive's content has been initialized |
 | ng-afterViewChecked | Lifecycle Hook: Called after every check of the component's view. Applies to components only |
