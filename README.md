@@ -65,6 +65,7 @@ ng-for currently has even more variations, so make sure you pick the one you wan
 | ng-hide | Usage: Bind to the hidden property. |
 | ng-href | Usage: Bind to the href property. |
 | ng-if | If Directive: *ngIf=\"statement\" |
+| ng-input | Class Input Property |
 | ng-interpolation | Interpolation: {{ interpolation }} |
 | ng-module | App root mudule |
 | ng-module-template | Module Template |
@@ -72,6 +73,7 @@ ng-for currently has even more variations, so make sure you pick the one you wan
 | ng-onDestroy | Lifecycle Hook: Called before the instance is destroyed |
 | ng-onInit | Lifecycle Hook: Called after the constructor |
 | ng-orderBy | For performance reasons, no comparable pipe exists in Angular 2. Instead, use component code to order or sort results. If you need the same ordering or sorting code in several templates, consider building a custom pipe. |
+| ng-output | Class Output Event |
 | ng-pipe | Pipe Template |
 | ng-pipe-async | Async Pipe - Usage: observable_or_promise_expression &#x7c; async |
 | ng-pipe-currency | Currency Pipe - Usage: money &#x7c; currency:'EUR' |

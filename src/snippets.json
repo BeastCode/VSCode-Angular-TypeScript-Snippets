@@ -693,6 +693,22 @@
       "(${event}) = \"on${Event}()\"$0"
     ]
   },
+  "Angular Input Property": {
+    "prefix": "ng-input",
+    "description": "Class Input Property",
+    "types": "typescript",
+    "body": [
+      "@Input() $(class): $(Class);$0"
+    ]
+  },
+  "Angular Output Event": {
+    "prefix": "ng-output",
+    "description": "Class Output Event",
+    "types": "typescript",
+    "body": [
+      "@Output() $(methodName) = new EventEmitter<$(Class)>();$0"
+    ]
+  },
   "Angular Oneway Binding": {
     "prefix": "ng-binding-oneway",
     "types": "typescript, html",
