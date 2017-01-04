@@ -40,7 +40,6 @@ ng-for currently has even more variations, so make sure you pick the one you wan
 
 | Snippet | Description |
 | ------- | ----------|
-|   ng-rx-module |   ngRx root module |
 | ng-afterContentChecked | Lifecycle hook: Called after every check of the component's or directive's content |
 | ng-afterContentInit | Lifecycle hook: Called after ngOnInit when the component's or directive's content has been initialized |
 | ng-afterViewChecked | Lifecycle hook: Called after every check of the component's view. Applies to components only |
@@ -99,6 +98,7 @@ ng-for currently has even more variations, so make sure you pick the one you wan
 | ng-router-routes | Routes to include in ngModule |
 | ng-rx-action | ngRx Single action |
 | ng-rx-actions | ngRx Actions class |
+| ng-rx-module | ngRx Root Module |
 | ng-rx-reducer | ngRx Reducer |
 | ng-rx-util | ngRx Util |
 | ng-service | Basic service |
