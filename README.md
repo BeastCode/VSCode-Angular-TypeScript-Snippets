@@ -40,73 +40,76 @@ ng-for currently has even more variations, so make sure you pick the one you wan
 
 | Snippet | Description |
 | ------- | ----------|
-| ng-afterContentChecked | Lifecycle Hook: Called after every check of the component's or directive's content |
-| ng-afterContentInit | Lifecycle Hook: Called after ngOnInit when the component's or directive's content has been initialized |
-| ng-afterViewChecked | Lifecycle Hook: Called after every check of the component's view. Applies to components only |
-| ng-afterViewInit | Lifecycle Hook: Called after ngAfterContentInit when the component's view has been initialized |
+|   ng-module |   ngRx root module |
+| ng-afterContentChecked | Lifecycle hook: Called after every check of the component's or directive's content |
+| ng-afterContentInit | Lifecycle hook: Called after ngOnInit when the component's or directive's content has been initialized |
+| ng-afterViewChecked | Lifecycle hook: Called after every check of the component's view. Applies to components only |
+| ng-afterViewInit | Lifecycle hook: Called after ngAfterContentInit when the component's view has been initialized |
+| ng-binding-oneway | Property: [property]=\"statement\" |
 | ng-binding-twoway | Two-way data binding with the NgModel |
-| ng-bootstraping | Bootstraping Example |
-| ng-class | CSS Class |
+| ng-bootstraping | Bootstraping example |
+| ng-class | CSS class |
 | ng-click | Click event |
-| ng-component | Component with Template and Style Urls |
-| ng-component-inline | Component with Template and Style Inline |
+| ng-component | Component with template and style urls |
+| ng-component-inline | Component with inline Template and Styles |
 | ng-controller | Use component instead. |
-| ng-directive | Directive Template |
-| ng-directive-attribute | Attribute Directive |
-| ng-directive-css | CSS Directive |
-| ng-doCheck | Lifecycle Hook: Called every time that the input properties of a component or a directive are checked |
+| ng-directive | Directive template |
+| ng-directive-attribute | Attribute directive |
+| ng-directive-css | CSS directive |
+| ng-doCheck | Lifecycle hook: Called every time that the input properties of a component or a directive are checked |
 | ng-event | Event: (event) = \"onEvent()\" |
 | ng-filter | For performance reasons, no comparable pipe exists in Angular 2. Do all your filtering in the component. If you need the same filtering code in several templates, consider building a custom pipe. |
-| ng-for | For-loop Directive |
-| ng-for-index | For-loop Directive with index |
-| ng-for-li | For-loop Directive with li element |
-| ng-for-trackBy | For-loop Directive with trackBy |
+| ng-for | For-loop directive |
+| ng-for-index | For-loop directive with index |
+| ng-for-li | For-loop directive with li element |
+| ng-for-trackBy | For-loop directive with trackBy |
 | ng-hide | Usage: Bind to the hidden property. |
 | ng-href | Usage: Bind to the href property. |
-| ng-if | If Directive: *ngIf=\"statement\" |
+| ng-if | If directive: *ngIf=\"statement\" |
 | ng-input | Class Input Property |
 | ng-interpolation | Interpolation: {{ interpolation }} |
 | ng-module | App root module |
-| ng-module-template | Module Template |
-| ng-ngOnChanges | Lifecycle Hook: Called before any other lifecycle hook |
-| ng-onDestroy | Lifecycle Hook: Called before the instance is destroyed |
-| ng-onInit | Lifecycle Hook: Called after the constructor |
+| ng-module-template | Module template |
+| ng-ngOnChanges | Lifecycle hook: Called before any other lifecycle hook |
+| ng-onDestroy | Lifecycle hook: Called before the instance is destroyed |
+| ng-onInit | Lifecycle hook: Called after the constructor |
 | ng-orderBy | For performance reasons, no comparable pipe exists in Angular 2. Instead, use component code to order or sort results. If you need the same ordering or sorting code in several templates, consider building a custom pipe. |
 | ng-output | Class Output Event |
-| ng-pipe | Pipe Template |
-| ng-pipe-async | Async Pipe - Usage: observable_or_promise_expression &#x7c; async |
-| ng-pipe-currency | Currency Pipe - Usage: money &#x7c; currency:'EUR' |
-| ng-pipe-date | Date Pipe - Default format: 09/15/1971 |
-| ng-pipe-date-custom | Date Pipe - Format: \"MM/dd/yy\" = 09/15/71 |
-| ng-pipe-date-full | Full Date Pipe - Format: Wednesday, September 15, 1971 |
-| ng-pipe-date-short | Short Date Pipe - Format: 09/15/1971 |
-| ng-pipe-decimal | Decimal Pipe - Usage: number_expression &#x7c; decimal[:digitInfo] |
-| ng-pipe-example | Angular  Pipe Example |
-| ng-pipe-json | Json Pipe - Usage: object &#x7c; json |
-| ng-pipe-lowercase | LowerCase Pipe |
-| ng-pipe-percent | Percent Pipe - Usage: number_expression &#x7c; percent[:digitInfo] |
-| ng-pipe-slice | Slice Pipe - Usage: array_or_string_expression &#x7c; slice:start[:end] |
-| ng-pipe-uppercase | UpperCase Pipe |
+| ng-pipe | Pipe template |
+| ng-pipe-async | Async pipe - Usage: observable_or_promise_expression &#x7c; async |
+| ng-pipe-currency | Currency pipe - Usage: money &#x7c; currency:'EUR' |
+| ng-pipe-date | Date pipe - Default format: 09/15/1971 |
+| ng-pipe-date-custom | Date pipe - Format: \"MM/dd/yy\" = 09/15/71 |
+| ng-pipe-date-full | Full date pipe - Format: Wednesday, September 15, 1971 |
+| ng-pipe-date-short | Short date pipe - Format: 09/15/1971 |
+| ng-pipe-decimal | Decimal pipe - Usage: number_expression &#x7c; decimal[:digitInfo] |
+| ng-pipe-example | Angular pipe example |
+| ng-pipe-json | Json pipe - Usage: object &#x7c; json |
+| ng-pipe-lowercase | Lowercase pipe |
+| ng-pipe-percent | Percent pipe - Usage: number_expression &#x7c; percent[:digitInfo] |
+| ng-pipe-slice | Slice pipe - Usage: array_or_string_expression &#x7c; slice:start[:end] |
+| ng-pipe-uppercase | Uppercase pipe |
 | ng-property | Property: [property]=\"statement\" |
 | ng-repeat | Use ngFor instead. |
-| ng-router | Router Template |
-| ng-router-link | Router Link |
-| ng-router-linkActive | Router Active Link |
-| ng-router-outlet | Router Outlet Element |
-| ng-router-routes | Routes to include in Module |
-| ng-rx-action | Single ngRx Action |
-| ng-rx-actions | ngRx Actions |
+| ng-router | Router template |
+| ng-router-link | Router link |
+| ng-router-linkActive | Router active link |
+| ng-router-outlet | Router outlet element |
+| ng-router-outlet-name | Router outlet element with name |
+| ng-router-routes | Routes to include in ngModule |
+| ng-rx-action | ngRx Single action |
+| ng-rx-actions | ngRx Actions class |
 | ng-rx-reducer | ngRx Reducer |
 | ng-rx-util | ngRx Util |
-| ng-service | Basic Service |
+| ng-service | Basic service |
 | ng-show | Usage: Bind to the hidden property. |
 | ng-src | Usage: Bind to the src property. |
-| ng-style | CSS Style |
-| ng-switch | Switch Template |
+| ng-style | CSS style |
+| ng-switch | Switch template |
 | ng-test-component-async | TODO |
 | ng-test-component-synchronous | TODO |
 | ng-test-directive | TODO |
-| ng-test-pipe | Test a Pipe |
+| ng-test-pipe | Test a pipe |
 | ng-test-service | TODO |
 
 
