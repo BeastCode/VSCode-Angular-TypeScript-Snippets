@@ -64,8 +64,8 @@
       "export class ${Name}Directive() {",
       "\tconstructor(el: ElementRef) {}",
       "",
-      "\tprivate ${name}($(value): string) {",
-      "\tthis.el.nativeElement.style.${proptery} = $(value);",
+      "\tprivate ${name}(${value}: string) {",
+      "\tthis.el.nativeElement.style.${proptery} = ${value};",
       "\t}",
       "}"
     ]
@@ -391,17 +391,17 @@
     "body": [
       "import { Routes } from '@angular/router';",
       "",
-      "import { $(Home)Component } from './';",
-      "import { $(Name2)Component } from './';",
-      "import { $(Name3)Component } from './';",
-      "import { $(Name4)Component } from './';",
+      "import { ${Home}Component } from './';",
+      "import { ${Name2}Component } from './';",
+      "import { ${Name3}Component } from './';",
+      "import { ${Name4}Component } from './';",
       "import { PageNotFoundComponent } from './';",
       "",
       "const routes: Routes = [",
-      "\t{ path: '', component: $(Home)Component },",
-      "\t{ path: '$(path2)', component: $(Name2)Component },",
-      "\t{ path: '$(path3)', component: $(Name3)Component },",
-      "\t{ path: '$(path4)', component: $(Name4)Component },",
+      "\t{ path: '', component: ${Home}Component },",
+      "\t{ path: '${path2}', component: ${Name2}Component },",
+      "\t{ path: '${path3}', component: ${Name3}Component },",
+      "\t{ path: '${path4}', component: ${Name4}Component },",
       "\t{ path: '**', component: PageNotFoundComponent },",
       "",
       "\t//{ path: 'path/:routeParam', component: MyComponent },",
@@ -441,7 +441,7 @@
     "description": "Router active link",
     "types": "typescript, html",
     "body": [
-      "<a [routerLink]=\"[ '/$(path)' ]\" routerLinkActive=\"active\">"
+      "<a [routerLink]=\"[ '/${path}' ]\" routerLinkActive=\"active\">"
     ]
   },
   "Angular Router Outlet": {
@@ -458,7 +458,7 @@
     "description": "Router outlet element with name",
     "types": "typescript, html",
     "body": [
-      "<router-outlet name=\"$(name)\"></router-outlet>",
+      "<router-outlet name=\"${name}\"></router-outlet>",
       "$0"
     ]
   },
@@ -494,7 +494,7 @@
     "description": "ngRx Reducer",
     "types": "typescript",
     "body": [
-      "import * as $(class) from '../actions/$(class)';",
+      "import * as ${class} from '../actions/${class}';",
       "",
       "export interface State {",
       " \t\t$1",
@@ -504,11 +504,11 @@
       "\t\t$2",
       "};",
       "",
-      "export function reducer(state = initialState, action: $(class).Actions ): State {",
+      "export function reducer(state = initialState, action: ${class}.Actions ): State {",
       "\tswitch (action.type) {",
-      "\t\tcase $(class).ActionTypes.$(TYPE): {",
+      "\t\tcase ${class}.ActionTypes.${TYPE}: {",
       "\t\t\treturn {",
-      "\t\t\t\t// return new $(class) state",
+      "\t\t\t\t// return new ${class} state",
       "\t\t\t};",
       "\t\t}",
       "",
@@ -525,7 +525,7 @@
     "types": "typescript",
     "body": [
       "import { Action } from '@ngrx/store';",
-      "import { $(Class) } from '../models/$(class)';",
+      "import { ${Class} } from '../models/${class}';",
       "import { type } from '../util';",
       "",
       "/**",
@@ -537,7 +537,7 @@
       " * action types in the application are unique. ",
       " */",
       "export const ActionTypes = {",
-      "  $(VERB):           type('[$(Class) $(Verb)')",
+      "  ${VERB}:           type('[${Class} ${Verb}')",
       "};",
       "",
       "/**",
@@ -545,10 +545,10 @@
       " * payload. Expressing actions as classes enables powerful ",
       " * type checking in reducer functions.",
       " */",
-      "export class $(Verb)Action implements Action {",
-      "  type = ActionTypes.$(VERB);",
+      "export class ${Verb}Action implements Action {",
+      "  type = ActionTypes.${VERB};",
       "",
-      "  constructor(public payload: $(payloadType)) { }",
+      "  constructor(public payload: ${payloadType}) { }",
       "}",
       "",
       "/**",
@@ -556,7 +556,7 @@
       " * so that reducers can easily compose action types",
       " */",
       "export type Actions",
-      "  = $(Verb)Action;",
+      "  = ${Verb}Action;",
       "  //| AnotherAction"
     ]
   },
@@ -595,7 +595,7 @@
     "description": "ngRx Single action",
     "types": "typescript",
     "body": [
-      "export const $(ACTION) = '$(ACTION)';"
+      "export const ${ACTION} = '${ACTION}';"
     ]
   },
 
@@ -606,13 +606,13 @@
     "body": [
       "// synchronous beforeEach",
       "beforeEach(() => {",
-      "\tfixture = TestBed.createComponent($(Name)Component);",
+      "\tfixture = TestBed.createComponent(${Name}Component);",
       "\tcomp    = fixture.componentInstance;",
-      "\t$(className)El  = fixture.debugElement.query(By.css('.$(className)')); // find the element",
+      "\t${className}El  = fixture.debugElement.query(By.css('.${className}')); // find the element",
       "",
-      "\t// pretend that it was wired to something that supplied a $(className)",
-      "\texpected$(ClassName) = new $(ClassName)($1);",
-      "\tcomp.$(className) = expected$(ClassName);",
+      "\t// pretend that it was wired to something that supplied a ${className}",
+      "\texpected${ClassName} = new ${ClassName}($1);",
+      "\tcomp.${className} = expected${ClassName};",
       "\tfixture.detectChanges(); // trigger initial data binding",
       "});$0"
     ]
@@ -625,7 +625,7 @@
       "// async beforeEach",
       "beforeEach( async(() => {",
       "\tTestBed.configureTestingModule({",
-      "\t\tdeclarations: [ $(Name)Component ],",
+      "\t\tdeclarations: [ ${Name}Component ],",
       "\t})",
       "\t.compileComponents(); // compile template and css",
       "}));$0"
@@ -658,11 +658,11 @@
     "description": "Test a pipe",
     "types": "typescript",
     "body": [
-      "describe('$(Name)Pipe', () => {",
-      "\tlet pipe = new $(Name)Pipe();",
+      "describe('${Name}Pipe', () => {",
+      "\tlet pipe = new ${Name}Pipe();",
       "",
-      "\tit('transforms \"$(input)\" to \"$(output)\"', () => {",
-      "\t\texpect(pipe.transform('$(input)')).toBe('$(output)');",
+      "\tit('transforms \"${input}\" to \"${output}\"', () => {",
+      "\t\texpect(pipe.transform('${input}')).toBe('${output}');",
       "\t});",
       "});"
     ]
@@ -716,7 +716,7 @@
     "description": "CSS class",
     "types": "typescript, html",
     "body": [
-      "[ngClass]=\"{$(class)}\""
+      "[ngClass]=\"{${class}}\""
     ]
   },
   "Angular Style": {
@@ -724,7 +724,7 @@
     "description": "CSS style",
     "types": "typescript, html",
     "body": [
-      "[ngStyle]=\"{$(style): $(preference)}\""
+      "[ngStyle]=\"{${style}: ${preference}\""
     ]
   },
   "Angular Switch": {
@@ -750,7 +750,7 @@
     "description": "Property: [property]=\"statement\"",
     "types": "typescript, html",
     "body": [
-      "[property]=\"$(statment)\""
+      "[property]=\"${statment}\""
     ]
   },
   "Angular Event": {
@@ -766,7 +766,7 @@
     "description": "Class Input Property",
     "types": "typescript",
     "body": [
-      "@Input() $(class): $(Class);$0"
+      "@Input() ${class}: ${Class};$0"
     ]
   },
   "Angular Output Event": {
@@ -774,7 +774,7 @@
     "description": "Class Output Event",
     "types": "typescript",
     "body": [
-      "@Output() $(methodName) = new EventEmitter<$(Class)>();$0"
+      "@Output() ${methodName} = new EventEmitter<${Class}>();$0"
     ]
   },
   "Angular Oneway Binding": {
@@ -782,7 +782,7 @@
     "description": "Property: [property]=\"statement\"",
     "types": "typescript, html",
     "body": [
-      "[property]=\"$(statment)\""
+      "[property]=\"${statment}\""
     ]
   },
   "Angular Twoway Binding": {
@@ -790,7 +790,7 @@
     "description": "Two-way data binding with the NgModel",
     "types": "typescript, html",
     "body": [
-      "[(ngModel)]=\"$(Name)\"$0"
+      "[(ngModel)]=\"${Name}\"$0"
     ]
   },
   "Angular Interpolation": {
