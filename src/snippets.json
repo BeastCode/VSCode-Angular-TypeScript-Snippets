@@ -569,7 +569,7 @@
     ]
   },
   "Angular ngRx Module": {
-      "prefix": "ng-module",
+      "prefix": "ng-rx-module",
       "description": "ngRx root module",
       "types": "typescript",
       "body": [

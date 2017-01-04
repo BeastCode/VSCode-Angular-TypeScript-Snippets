@@ -18,6 +18,11 @@
 5. Reload VS Code 
 
 
+##Feedback
+
+Please send any feedback or suggestions to @Mike_BeastCode (Twitter) or create an issue on GitHub.
+
+
 ##Disclaimer
 
 Important: This extension due to the nature of it's purpose will create

@@ -40,7 +40,7 @@ ng-for currently has even more variations, so make sure you pick the one you wan
 
 | Snippet | Description |
 | ------- | ----------|
-|   ng-module |   ngRx root module |
+|   ng-rx-module |   ngRx root module |
 | ng-afterContentChecked | Lifecycle hook: Called after every check of the component's or directive's content |
 | ng-afterContentInit | Lifecycle hook: Called after ngOnInit when the component's or directive's content has been initialized |
 | ng-afterViewChecked | Lifecycle hook: Called after every check of the component's view. Applies to components only |
@@ -129,6 +129,11 @@ ng-for currently has even more variations, so make sure you pick the one you wan
 3. Enter the following command and press enter: 'ext install Angular-BeastCode'
 4. Choose extension (Author: Mikael Morlund)
 5. Reload VS Code 
+
+
+##Feedback
+
+Please send any feedback or suggestions to @Mike_BeastCode (Twitter) or create an issue on GitHub.
 
 
 ##Disclaimer
