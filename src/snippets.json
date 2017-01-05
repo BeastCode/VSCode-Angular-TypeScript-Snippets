@@ -433,7 +433,7 @@
     "description": "Router link",
     "types": "typescript, html",
     "body": [
-      "<a [routerLink]=\"[ '/${path}', ${routeParam} ]\">"
+      "<a [routerLink]=\"[ '/${path}', ${routeParam} ]\">$0"
     ]
   },
   "Angular Router Active Link": {
@@ -441,7 +441,7 @@
     "description": "Router active link",
     "types": "typescript, html",
     "body": [
-      "<a [routerLink]=\"[ '/${path}' ]\" routerLinkActive=\"active\">"
+      "<a [routerLink]=\"[ '/${path}' ]\" routerLinkActive=\"active\">$0"
     ]
   },
   "Angular Router Outlet": {
@@ -578,7 +578,7 @@
       "",
       "@NgModule({ declarations: [ ${App}Component ],",
       "\timports: [",
-      "\t\tBrowserModule",
+      "\t\tBrowserModule,",
       "\t\tRouterModule.forRoot(routes, { useHash: true }),",
       "\t\tStoreModule.provideStore(reducer),",
       "\t\tRouterStoreModule.connectRouter(),",
