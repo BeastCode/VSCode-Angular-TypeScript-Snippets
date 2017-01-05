@@ -36,6 +36,11 @@ ng-for currently has even more variations, so make sure you pick the one you wan
 ![ngForSnippet](https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets/raw/master/images/ngForSnippet.gif)
 
 
+# Pro Tip
+
+You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
+
+
 ### TypeScript & Html Snippets
 
 | Snippet | Description |
