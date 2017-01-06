@@ -885,5 +885,24 @@
     "body": [
       "$0"
     ]
+  },
+  "Submit Button": {
+    "prefix": "ng-button-submit",
+    "description": "A submit button element with a click event",
+    "types": "typescript, html",
+    "body": [
+      "<button type=\"submit\">${Submit}</button>",
+      "$0"
+    ]
+  },
+  "Click Button": {
+    "prefix": "ng-button",
+    "description": "A submit button element with a click event",
+    "types": "typescript, html",
+    "body": [
+      "<button (click)=\"${onClick()}\">${name}</button>",
+      "$0"
+    ]
   }
+
 }

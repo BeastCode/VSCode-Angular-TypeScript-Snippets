@@ -52,6 +52,8 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-binding-oneway | Property: [property]=\"statement\" |
 | ng-binding-twoway | Two-way data binding with the NgModel |
 | ng-bootstraping | Bootstraping example |
+| ng-button | A submit button element with a click event |
+| ng-button-submit | A submit button element with a click event |
 | ng-class | CSS class |
 | ng-click | Click event |
 | ng-component | Component with template and style urls |
