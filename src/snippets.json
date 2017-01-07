@@ -903,6 +903,16 @@
       "<button (click)=\"${onClick()}\">${name}</button>",
       "$0"
     ]
+  },
+  "ng import": {
+    "prefix": "ng-import",
+    "description": "import <module or component> from '<path>';",
+    "types": "typescript, html",
+    "body": [
+      "import ${module or component} from '${path}';",
+      "$0"
+    ]
   }
+  
 
 }
