@@ -71,6 +71,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-for-trackBy | For-loop directive with trackBy |
 | ng-hide | Usage: Bind to the hidden property. |
 | ng-href | Usage: Bind to the href property. |
+| ng-http | Http observable get request |
 | ng-if | If directive: *ngIf=\"statement\" |
 | ng-import | import <module or component> from '<path>'; |
 | ng-input | Class Input Property |

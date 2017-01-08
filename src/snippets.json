@@ -912,6 +912,17 @@
       "import ${module or component} from '${path}';",
       "$0"
     ]
+  },
+  "http get": {
+    "prefix": "ng-http",
+    "description": "Http observable get request",
+    "types": "typescript, html",
+    "body": [
+      "this.http.get('${url}')",
+      "\t.map((res: Response) => {",
+      "\t\tres.json();",
+      "})$0"
+    ]
   }
   
 
