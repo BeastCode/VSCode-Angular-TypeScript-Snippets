@@ -914,7 +914,7 @@
     ]
   },
   "http get": {
-    "prefix": "ng-http",
+    "prefix": "ng-http-get",
     "description": "Http observable get request",
     "types": "typescript, html",
     "body": [
@@ -922,6 +922,33 @@
       "\t.map((res: Response) => {",
       "\t\tres.json();",
       "})$0"
+    ]
+  },
+  "http post": {
+    "prefix": "ng-http",
+    "description": "Http observable get & post request",
+    "types": "typescript, html",
+    "body": [
+      "get${Type}(): Observable<I${Type}[]> {",
+      "\treturn this.http.get(${name})",
+      "\t\t.map((res: Response) => <I${Type}[]>res.json())",
+      "\t\t.catch(this.handleError);",
+      "}",
+      "",
+      "add${Type}(${name}: string): Observable<I${Type}> {",
+      "\tlet body = JSON.stringify({ ${name} });",
+      "\tlet headers = new Headers({ 'Content-Type': 'application/json'});",
+      "\tlet options = new RequestOptions({ headers: headers });",
+      "",
+      "\treturn this.http.post(this.${url}, body, options)",
+      "\t\t.map(this.handleResponse)",
+      "\t.catch(this.handleError);",
+      "}",
+      "private handleError(error: Response) {",
+      "\tconsole.error(error);",
+      "\treturn Observable.throw(error.json().error || 'Server error');",
+      "}",
+      "$0"
     ]
   }
   
