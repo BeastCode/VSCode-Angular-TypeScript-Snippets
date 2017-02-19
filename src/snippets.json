@@ -982,7 +982,7 @@
   },
   "Angular Flex Column": {
     "prefix": "ng-fx-col",
-    "description": "Flex Layout column",
+    "description": "Flex Layout Column",
     "types": "typescript, html",
     "body": [
       "<div fxLayout=\"column\" fxLayoutAlign=\"${start|center|end|space-around|space-between} ${start|center|end|stretch}\" fxLayoutGap=\"${gap}px\">",
@@ -1015,7 +1015,7 @@
     "description": "Flex Layout Item with fxFlexOffset",
     "types": "typescript, html",
     "body": [
-      "<div fxFlex=\"${value}%\" fxFlexOffset>",
+      "<div fxFlex=\"${value}%\" fxFlexOffset=\"${offset}px\">",
       "\t$0",
       "</div>"
     ]
