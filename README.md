@@ -69,6 +69,16 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-for-index | For-loop directive with index |
 | ng-for-li | For-loop directive with li element |
 | ng-for-trackBy | For-loop directive with trackBy |
+| ng-fx-col | Flex Layout column |
+| ng-fx-col-reverse | Flex Layout Reverse Column |
+| ng-fx-import | Flex Layout Import |
+| ng-fx-item | Flex Layout Item |
+| ng-fx-item-align | Flex Layout Item with fxFlexAlign |
+| ng-fx-item-fill | Flex Layout Item with fxFlexFill |
+| ng-fx-item-offset | Flex Layout Item with fxFlexOffset |
+| ng-fx-item-order | Flex Layout Item with fxFlexOrder |
+| ng-fx-row | Flex Layout Row |
+| ng-fx-row-reverse | Flex Layout Reverse Row |
 | ng-hide | Usage: Bind to the hidden property. |
 | ng-href | Usage: Bind to the href property. |
 | ng-http | Http observable get & post request |

@@ -802,7 +802,6 @@
     ]
   },
 
-
   "Angular 1 Loop Directive": {
     "prefix": "ng-repeat",
     "description": "Use ngFor instead.",
@@ -949,6 +948,106 @@
       "\treturn Observable.throw(error.json().error || 'Server error');",
       "}",
       "$0"
+    ]
+  },
+
+  "Angular Flex Layout Import": {
+    "prefix": "ng-fx-import",
+    "description": "Flex Layout Import",
+    "types": "typescript, html",
+    "body": [
+      "import { FlexLayoutModule } from '@angular/flex-layout';",
+      "// Add ${FlexLayoutModule.forRoot()} to the @NgModule imports section"
+    ]
+  },
+  "Angular Flex Row": {
+    "prefix": "ng-fx-row",
+    "description": "Flex Layout Row",
+    "types": "typescript, html",
+    "body": [
+      "<div fxLayout=\"row\" fxLayoutAlign=\"${start|center|end|space-around|space-between} ${start|center|end|stretch}\" fxLayoutGap=\"${gap}px\">",
+      "\t$0",
+      "</div>"
+    ]
+  },
+  "Angular Flex Reverse Row": {
+    "prefix": "ng-fx-row-reverse",
+    "description": "Flex Layout Reverse Row",
+    "types": "typescript, html",
+    "body": [
+      "<div fxLayout=\"row-reverse\" fxLayoutAlign=\"${start|center|end|space-around|space-between} ${start|center|end|stretch}\" fxLayoutGap=\"${gap}px\">",
+      "\t$0",
+      "</div>"
+    ]
+  },
+  "Angular Flex Column": {
+    "prefix": "ng-fx-col",
+    "description": "Flex Layout column",
+    "types": "typescript, html",
+    "body": [
+      "<div fxLayout=\"column\" fxLayoutAlign=\"${start|center|end|space-around|space-between} ${start|center|end|stretch}\" fxLayoutGap=\"${gap}px\">",
+      "\t$0",
+      "</div>"
+    ]
+  },
+  "Angular Flex Reverse Column": {
+    "prefix": "ng-fx-col-reverse",
+    "description": "Flex Layout Reverse Column",
+    "types": "typescript, html",
+    "body": [
+      "<div fxLayout=\"column-reverse\" fxLayoutAlign=\"${start|center|end|space-around|space-between} ${start|center|end|stretch}\" fxLayoutGap=\"${gap}px\">",
+      "\t$0",
+      "</div>"
+    ]
+  },
+  "Angular Flex Item": {
+    "prefix": "ng-fx-item",
+    "description": "Flex Layout Item",
+    "types": "typescript, html",
+    "body": [
+      "<div fxFlex=\"${value}%\">",
+      "\t$0",
+      "</div>"
+    ]
+  },
+  "Angular Flex Item Offset": {
+    "prefix": "ng-fx-item-offset",
+    "description": "Flex Layout Item with fxFlexOffset",
+    "types": "typescript, html",
+    "body": [
+      "<div fxFlex=\"${value}%\" fxFlexOffset>",
+      "\t$0",
+      "</div>"
+    ]
+  },
+  "Angular Flex Item Order": {
+    "prefix": "ng-fx-item-order",
+    "description": "Flex Layout Item with fxFlexOrder",
+    "types": "typescript, html",
+    "body": [
+      "<div fxFlex=\"${value}%\" fxFlexOrder=\"${order}\">",
+      "\t$0",
+      "</div>"
+    ]
+  },
+  "Angular Flex Item Align": {
+    "prefix": "ng-fx-item-align",
+    "description": "Flex Layout Item with fxFlexAlign",
+    "types": "typescript, html",
+    "body": [
+      "<div fxFlex=\"${value}%\" fxFlexAlign=\"${start|baseline|center|end}\">",
+      "\t$0",
+      "</div>"
+    ]
+  },
+  "Angular Flex Item Fill": {
+    "prefix": "ng-fx-item-fill",
+    "description": "Flex Layout Item with fxFlexFill",
+    "types": "typescript, html",
+    "body": [
+      "<div fxFlex=\"${value}%\" fxFlexFill>",
+      "\t$0",
+      "</div>"
     ]
   }
   
