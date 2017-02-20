@@ -290,9 +290,9 @@
     "description": "Lifecycle hook: Called before any other lifecycle hook",
     "types": "typescript",
     "body": [
-      "ngOnChanges(changeRecord)() {",
+      "ngOnChanges(changes: {[propKey: string]: SimpleChange}) {",
       "\t//Called before any other lifecycle hook. Use it to inject dependencies, but avoid any serious work here.",
-      "\t//Add 'implements OnChanges' to the class.",
+      "\t//Add '${implements OnChanges}' to the class.",
       "\t$0",
       "}"
     ]
