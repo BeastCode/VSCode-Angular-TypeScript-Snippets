@@ -29,7 +29,7 @@
       "\tselector: '${selector}',",
       "\ttemplate: `",
       "\t\t$1`,",
-      "\tstyles: ['$2']",
+      "\tstyles: [`$2`]",
       "})",
       "export class ${Name}Component implements OnInit {",
       "\tconstructor() { $0}",
