@@ -724,7 +724,7 @@
     "description": "CSS style",
     "types": "typescript, html",
     "body": [
-      "[ngStyle]=\"{${style}: ${preference}\""
+      "[ngStyle]=\"{'${property}': ${expression}}\""
     ]
   },
   "Angular Switch": {
