@@ -124,7 +124,8 @@
     "body": [
       "import { NgModule } from '@angular/core';",
       "",
-      "@NgModule({ declarations: [],",
+      "@NgModule({",
+      "\tdeclarations: [],",
       "\timports: [],",
       "\texports: [],",
       "\tproviders: [],",
@@ -142,7 +143,8 @@
       "import { BrowserModule } from '@angular/platform-browser';",
       "import { ${App}Component }  from './${app}.component';",
       "",
-      "@NgModule({ declarations: [ ${App}Component ],",
+      "@NgModule({",
+      "\tdeclarations: [ ${App}Component ],",
       "\timports: [ BrowserModule ],",
       "\tproviders: [],",
       "\tbootstrap: [ ${App}Component ]",
@@ -381,9 +383,17 @@
       "}"
     ]
   },
+  "Angular Conference": {
+    "prefix": "ng-conf",
+    "description": "The World's Original Angular Conference",
+    "types": "typescript",
+    "body": [
+      "The World's Original Angular Conference",
+      "           April 5th–7th 2017",
+      "          Salt Lake City, Utah"
+    ]
+  },
 
-
- 
   "Angular Routing": {
     "prefix": "ng-router",
     "description": "Router template",
@@ -576,7 +586,8 @@
       "import { routes } from './routes';",
       "import { reducer } from './reducers';",
       "",
-      "@NgModule({ declarations: [ ${App}Component ],",
+      "@NgModule({",
+      "\tdeclarations: [ ${App}Component ],",
       "\timports: [",
       "\t\tBrowserModule,",
       "\t\tRouterModule.forRoot(routes, { useHash: true }),",

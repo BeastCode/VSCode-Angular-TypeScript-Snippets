@@ -58,6 +58,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-click | Click event |
 | ng-component | Component with template and style urls |
 | ng-component-inline | Component with inline Template and Styles |
+| ng-conf | The World's Original Angular Conference |
 | ng-controller | Use component instead. |
 | ng-directive | Directive template |
 | ng-directive-attribute | Attribute directive |
