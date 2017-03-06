@@ -964,7 +964,7 @@
 
   "Angular Debug": {
     "prefix": "ng-debug",
-    "description": "<pre>{{ obj | json }}</pre>",
+    "description": "pre obj | json",
     "types": "typescript, html",
     "body": [
       "<pre>{{ ${obj} | json }}</pre>$0"
