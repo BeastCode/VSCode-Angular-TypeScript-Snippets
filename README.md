@@ -60,7 +60,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-component-inline | Component with inline Template and Styles |
 | ng-conf | The World's Original Angular Conference |
 | ng-controller | Use component instead. |
-| ng-debug | pre obj | json |
+| ng-debug | pre obj pipe json |
 | ng-directive | Directive template |
 | ng-directive-attribute | Attribute directive |
 | ng-directive-css | CSS directive |
