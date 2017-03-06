@@ -962,6 +962,14 @@
     ]
   },
 
+  "Angular Debug": {
+    "prefix": "ng-debug",
+    "description": "<pre>{{ obj | json }}</pre>",
+    "types": "typescript, html",
+    "body": [
+      "<pre>{{ ${obj} | json }}</pre>$0"
+    ]
+  },
   "Angular Flex Layout Import": {
     "prefix": "ng-fx-import",
     "description": "Flex Layout Import",
