@@ -130,7 +130,7 @@
       "\tproviders: [],",
       "\tbootstrap: []",
       "})",
-      "class ${Name}Module {}"
+      "export class ${Name}Module {}"
     ]
   },
   "Angular ngRootModule": {
