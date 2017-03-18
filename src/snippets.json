@@ -971,7 +971,7 @@
     ]
   },
   "Angular Debug Async": {
-    "prefix": "ng-debug",
+    "prefix": "ng-debug-async",
     "description": "pre obj pipe async pipe json",
     "types": "typescript, html",
     "body": [
