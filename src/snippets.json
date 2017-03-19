@@ -38,6 +38,36 @@
       "}"
     ]
   },
+  "Angular Validator": {
+    "prefix": "ng-validator",
+    "description": "Angular validator snippet",
+    "types": "typescript",
+    "body": [
+      "import { Directive } from '@angular/core';",
+      "import { Validator, NG_VALIDATORS, FormControl } from '@angular/forms';",
+      "",
+      "@Directive({",
+      "\tselector: '[${validatorName}][ngModel]',",
+      "\tproviders: [",
+      "\t\t{ provide: NG_VALIDATORS, useExisting: ${className}, multi: true }",
+      "\t]",
+      "})",
+      "",
+      "export class ${className} implements Validator {",
+      "\tvalidate(c: FormControl): { [key: string]: any } {",
+      "\t\tif (valid) {",
+      "\t\t\treturn null;",
+      "\t\t}",
+      "",
+      "\t\treturn {",
+      "\t\t\t${validatorName}: {",
+      "\t\t\t\tvalid: false",
+      "\t\t\t}",
+      "\t\t};",
+      "\t}",
+      "}"
+    ]
+  },
   "Angular Directive": {
     "prefix": "ng-directive",
     "description": "Directive template",
@@ -197,7 +227,7 @@
       "{{ ${variable} | uppercase }}$0"
     ]
   },
-   "Angular LowerCase Pipe": {
+  "Angular LowerCase Pipe": {
     "prefix": "ng-pipe-lowercase",
     "description": "Lowercase pipe",
     "types": "typescript, html",
@@ -381,9 +411,6 @@
       "}"
     ]
   },
-
-
- 
   "Angular Routing": {
     "prefix": "ng-router",
     "description": "Router template",
@@ -407,7 +434,7 @@
       "\t//{ path: 'path/:routeParam', component: MyComponent },",
       "\t//{ path: 'staticPath', component: ... },",
       "\t//{ path: '**', component: ... },",
-      "\t//{ path: 'oldPath', redirectTo: '/staticPath' },", 
+      "\t//{ path: 'oldPath', redirectTo: '/staticPath' },",
       "\t//{ path: ..., component: ..., data: { message: 'Custom' }",
       "]);"
     ]
@@ -598,7 +625,6 @@
       "export const ${ACTION} = '${ACTION}';"
     ]
   },
-
   "Angular Test Synchronous Component": {
     "prefix": "ng-test-component-synchronous",
     "description": "TODO",
@@ -631,12 +657,6 @@
       "}));$0"
     ]
   },
-
-
-
- 
-
-
   "Angular Test Directive": {
     "prefix": "ng-test-directive",
     "description": "TODO",
@@ -667,9 +687,6 @@
       "});"
     ]
   },
-  
-
-
   "Angular If Directive": {
     "prefix": "ng-if",
     "description": "If directive: *ngIf=\"statement\"",
@@ -710,7 +727,6 @@
       "*ngFor=\"let ${item} of ${item}s; trackBy:${item}.id\""
     ]
   },
-
   "Angular Class": {
     "prefix": "ng-class",
     "description": "CSS class",
@@ -733,15 +749,15 @@
     "types": "typescript",
     "body": [
       "<span [ngSwitch]=\"\">",
-        "<p *ngSwitchCase=\"true\">",
-        "",
-        "</p>",
-        "<p *ngSwitchCase=\"false\">",
-        "",
-        "</p>",
-        "<p *ngSwitchDefault>",
-        "",
-        "</p>",
+      "<p *ngSwitchCase=\"true\">",
+      "",
+      "</p>",
+      "<p *ngSwitchCase=\"false\">",
+      "",
+      "</p>",
+      "<p *ngSwitchDefault>",
+      "",
+      "</p>",
       "</span>"
     ]
   },
@@ -801,7 +817,6 @@
       "{{ ${interpolation} }}$0"
     ]
   },
-
   "Angular 1 Loop Directive": {
     "prefix": "ng-repeat",
     "description": "Use ngFor instead.",
@@ -950,7 +965,6 @@
       "$0"
     ]
   },
-
   "Angular Flex Layout Import": {
     "prefix": "ng-fx-import",
     "description": "Flex Layout Import",
@@ -1050,6 +1064,4 @@
       "</div>"
     ]
   }
-  
-
 }
