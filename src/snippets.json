@@ -713,10 +713,10 @@
     "description": "v4: If else directive: *ngIf=\"statement ; else\"",
     "types": "typescript, html",
     "body": [
-      "<div *ngIf=\"$(statement); else $(elseTemplate)\">",
+      "<div *ngIf=\"${statement}; else ${elseTemplate}\">",
       "\t$1",
       "</div>",
-      "<ng-template #$(elseTemplate)>",
+      "<ng-template #${elseTemplate}>",
       "\t$2",
       "</ng-template>",
       "$0"
