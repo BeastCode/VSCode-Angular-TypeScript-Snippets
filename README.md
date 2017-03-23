@@ -87,6 +87,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-http | Http observable get & post request |
 | ng-http-get | Http observable get request |
 | ng-if | If directive: *ngIf=\"statement\" |
+| ng-if-else | v4: If else directive: *ngIf=\"statement ; else\" |
 | ng-import | import <module or component> from '<path>'; |
 | ng-input | Class Input Property |
 | ng-interpolation | Interpolation: {{ interpolation }} |
