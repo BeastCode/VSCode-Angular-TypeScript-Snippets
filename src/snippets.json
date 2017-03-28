@@ -710,12 +710,27 @@
   },
   "Angular If Else Directive": {
     "prefix": "ng-if-else",
-    "description": "v4: If else directive: *ngIf=\"statement ; else\"",
+    "description": "v4: If else directive: *ngIf=\"statement; else\"",
     "types": "typescript, html",
     "body": [
       "<div *ngIf=\"${statement}; else ${elseTemplate}\">",
       "\t$1",
       "</div>",
+      "<ng-template #${elseTemplate}>",
+      "\t$2",
+      "</ng-template>",
+      "$0"
+    ]
+  },
+  "Angular If Then Else Directive": {
+    "prefix": "ng-if-then-else",
+    "description": "v4: If then else directive: *ngIf=\"statement; then; else\"",
+    "types": "typescript, html",
+    "body": [
+      "<div *ngIf=\"${statement}; then ${thenTemplate}; else ${elseTemplate}\"></div>",
+      "<ng-template #${thenTemplate}>",
+      "\t$1",
+      "</ng-template>",
       "<ng-template #${elseTemplate}>",
       "\t$2",
       "</ng-template>",
