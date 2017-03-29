@@ -78,7 +78,7 @@
       "@Directive({",
       "\tselector: '${selector}',",
       "})",
-      "export class ${Name}Directive() {$0}"
+      "export class ${Name}Directive {$0}"
     ]
   },
   "Angular CSS Directive": {
@@ -91,7 +91,7 @@
       "@Directive({",
       "\tselector: '[${selector}]',",
       "})",
-      "export class ${Name}Directive() {",
+      "export class ${Name}Directive {",
       "\tconstructor(el: ElementRef) {}",
       "",
       "\tprivate ${name}(${value}: string) {",
@@ -110,7 +110,7 @@
       "@Directive({",
       "\tselector: '[${selector}]',",
       "})",
-      "export class ${Name}Directive() {$0}"
+      "export class ${Name}Directive {$0}"
     ]
   },
   "Angular Service": {
@@ -190,7 +190,7 @@
       "import { Pipe, PipeTransform } from '@angular/core';",
       "",
       "@Pipe({name: '${name}'})",
-      "export class ${Name}Pipe()  implements PipeTransform {",
+      "export class ${Name}Pipe implements PipeTransform {",
       "\ttransform(value: any): any {",
       "\t\t$0",
       "\t}",
@@ -237,6 +237,7 @@
       "{{ ${variable} | lowercase }$0"
     ]
   },
+  
   "Angular Date Pipe": {
     "prefix": "ng-pipe-date",
     "description": "Date pipe - Default format: 09/15/1971",
@@ -840,7 +841,7 @@
     "description": "Property: [property]=\"statement\"",
     "types": "typescript, html",
     "body": [
-      "[property]=\"${statment}\""
+      "[property]=\"${statment}\"$0"
     ]
   },
   "Angular Twoway Binding": {
@@ -962,7 +963,7 @@
   },
   "ng import": {
     "prefix": "ng-import",
-    "description": "import <module or component> from '<path>';",
+    "description": "import module or component from path;",
     "types": "typescript, html",
     "body": [
       "import ${module or component} from '${path}';",
