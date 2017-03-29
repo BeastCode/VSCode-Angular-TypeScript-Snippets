@@ -38,6 +38,36 @@
       "}"
     ]
   },
+  "Angular Validator": {
+    "prefix": "ng-validator",
+    "description": "Angular validator snippet",
+    "types": "typescript",
+    "body": [
+      "import { Directive } from '@angular/core';",
+      "import { Validator, NG_VALIDATORS, FormControl } from '@angular/forms';",
+      "",
+      "@Directive({",
+      "\tselector: '[${validatorName}][ngModel]',",
+      "\tproviders: [",
+      "\t\t{ provide: NG_VALIDATORS, useExisting: ${className}, multi: true }",
+      "\t]",
+      "})",
+      "",
+      "export class ${className} implements Validator {",
+      "\tvalidate(c: FormControl): { [key: string]: any } {",
+      "\t\tif (valid) {",
+      "\t\t\treturn null;",
+      "\t\t}",
+      "",
+      "\t\treturn {",
+      "\t\t\t${validatorName}: {",
+      "\t\t\t\tvalid: false",
+      "\t\t\t}",
+      "\t\t};",
+      "\t}",
+      "}"
+    ]
+  },
   "Angular Directive": {
     "prefix": "ng-directive",
     "description": "Directive template",
@@ -48,7 +78,7 @@
       "@Directive({",
       "\tselector: '${selector}',",
       "})",
-      "export class ${Name}Directive() {$0}"
+      "export class ${Name}Directive {$0}"
     ]
   },
   "Angular CSS Directive": {
@@ -61,7 +91,7 @@
       "@Directive({",
       "\tselector: '[${selector}]',",
       "})",
-      "export class ${Name}Directive() {",
+      "export class ${Name}Directive {",
       "\tconstructor(el: ElementRef) {}",
       "",
       "\tprivate ${name}(${value}: string) {",
@@ -80,7 +110,7 @@
       "@Directive({",
       "\tselector: '[${selector}]',",
       "})",
-      "export class ${Name}Directive() {$0}"
+      "export class ${Name}Directive {$0}"
     ]
   },
   "Angular Service": {
@@ -124,7 +154,8 @@
     "body": [
       "import { NgModule } from '@angular/core';",
       "",
-      "@NgModule({ declarations: [],",
+      "@NgModule({",
+      "\tdeclarations: [],",
       "\timports: [],",
       "\texports: [],",
       "\tproviders: [],",
@@ -142,7 +173,8 @@
       "import { BrowserModule } from '@angular/platform-browser';",
       "import { ${App}Component }  from './${app}.component';",
       "",
-      "@NgModule({ declarations: [ ${App}Component ],",
+      "@NgModule({",
+      "\tdeclarations: [ ${App}Component ],",
       "\timports: [ BrowserModule ],",
       "\tproviders: [],",
       "\tbootstrap: [ ${App}Component ]",
@@ -158,7 +190,7 @@
       "import { Pipe, PipeTransform } from '@angular/core';",
       "",
       "@Pipe({name: '${name}'})",
-      "export class ${Name}Pipe()  implements PipeTransform {",
+      "export class ${Name}Pipe implements PipeTransform {",
       "\ttransform(value: any): any {",
       "\t\t$0",
       "\t}",
@@ -197,7 +229,7 @@
       "{{ ${variable} | uppercase }}$0"
     ]
   },
-   "Angular LowerCase Pipe": {
+  "Angular LowerCase Pipe": {
     "prefix": "ng-pipe-lowercase",
     "description": "Lowercase pipe",
     "types": "typescript, html",
@@ -205,6 +237,7 @@
       "{{ ${variable} | lowercase }$0"
     ]
   },
+  
   "Angular Date Pipe": {
     "prefix": "ng-pipe-date",
     "description": "Date pipe - Default format: 09/15/1971",
@@ -381,9 +414,16 @@
       "}"
     ]
   },
-
-
- 
+  "Angular Conference": {
+    "prefix": "ng-conf",
+    "description": "The World's Original Angular Conference",
+    "types": "typescript",
+    "body": [
+      "The World's Original Angular Conference",
+      "           April 5th–7th 2017",
+      "          Salt Lake City, Utah"
+    ]
+  },
   "Angular Routing": {
     "prefix": "ng-router",
     "description": "Router template",
@@ -407,7 +447,7 @@
       "\t//{ path: 'path/:routeParam', component: MyComponent },",
       "\t//{ path: 'staticPath', component: ... },",
       "\t//{ path: '**', component: ... },",
-      "\t//{ path: 'oldPath', redirectTo: '/staticPath' },", 
+      "\t//{ path: 'oldPath', redirectTo: '/staticPath' },",
       "\t//{ path: ..., component: ..., data: { message: 'Custom' }",
       "]);"
     ]
@@ -576,7 +616,8 @@
       "import { routes } from './routes';",
       "import { reducer } from './reducers';",
       "",
-      "@NgModule({ declarations: [ ${App}Component ],",
+      "@NgModule({",
+      "\tdeclarations: [ ${App}Component ],",
       "\timports: [",
       "\t\tBrowserModule,",
       "\t\tRouterModule.forRoot(routes, { useHash: true }),",
@@ -598,7 +639,6 @@
       "export const ${ACTION} = '${ACTION}';"
     ]
   },
-
   "Angular Test Synchronous Component": {
     "prefix": "ng-test-component-synchronous",
     "description": "TODO",
@@ -631,12 +671,6 @@
       "}));$0"
     ]
   },
-
-
-
- 
-
-
   "Angular Test Directive": {
     "prefix": "ng-test-directive",
     "description": "TODO",
@@ -667,15 +701,41 @@
       "});"
     ]
   },
-  
-
-
   "Angular If Directive": {
     "prefix": "ng-if",
     "description": "If directive: *ngIf=\"statement\"",
     "types": "typescript, html",
     "body": [
       "*ngIf=\"${statement}\""
+    ]
+  },
+  "Angular If Else Directive": {
+    "prefix": "ng-if-else",
+    "description": "v4: If else directive: *ngIf=\"statement; else\"",
+    "types": "typescript, html",
+    "body": [
+      "<div *ngIf=\"${statement}; else ${elseTemplate}\">",
+      "\t$1",
+      "</div>",
+      "<ng-template #${elseTemplate}>",
+      "\t$2",
+      "</ng-template>",
+      "$0"
+    ]
+  },
+  "Angular If Then Else Directive": {
+    "prefix": "ng-if-then-else",
+    "description": "v4: If then else directive: *ngIf=\"statement; then; else\"",
+    "types": "typescript, html",
+    "body": [
+      "<div *ngIf=\"${statement}; then ${thenTemplate}; else ${elseTemplate}\"></div>",
+      "<ng-template #${thenTemplate}>",
+      "\t$1",
+      "</ng-template>",
+      "<ng-template #${elseTemplate}>",
+      "\t$2",
+      "</ng-template>",
+      "$0"
     ]
   },
   "Angular For-loop Directive": {
@@ -710,7 +770,6 @@
       "*ngFor=\"let ${item} of ${item}s; trackBy:${item}.id\""
     ]
   },
-
   "Angular Class": {
     "prefix": "ng-class",
     "description": "CSS class",
@@ -733,15 +792,15 @@
     "types": "typescript",
     "body": [
       "<span [ngSwitch]=\"\">",
-        "<p *ngSwitchCase=\"true\">",
-        "",
-        "</p>",
-        "<p *ngSwitchCase=\"false\">",
-        "",
-        "</p>",
-        "<p *ngSwitchDefault>",
-        "",
-        "</p>",
+      "<p *ngSwitchCase=\"true\">",
+      "",
+      "</p>",
+      "<p *ngSwitchCase=\"false\">",
+      "",
+      "</p>",
+      "<p *ngSwitchDefault>",
+      "",
+      "</p>",
       "</span>"
     ]
   },
@@ -782,7 +841,7 @@
     "description": "Property: [property]=\"statement\"",
     "types": "typescript, html",
     "body": [
-      "[property]=\"${statment}\""
+      "[property]=\"${statment}\"$0"
     ]
   },
   "Angular Twoway Binding": {
@@ -801,7 +860,6 @@
       "{{ ${interpolation} }}$0"
     ]
   },
-
   "Angular 1 Loop Directive": {
     "prefix": "ng-repeat",
     "description": "Use ngFor instead.",
@@ -896,7 +954,7 @@
   },
   "Click Button": {
     "prefix": "ng-button",
-    "description": "A submit button element with a click event",
+    "description": "A button element with a click event",
     "types": "typescript, html",
     "body": [
       "<button (click)=\"${onClick()}\">${name}</button>",
@@ -905,7 +963,7 @@
   },
   "ng import": {
     "prefix": "ng-import",
-    "description": "import <module or component> from '<path>';",
+    "description": "import module or component from path;",
     "types": "typescript, html",
     "body": [
       "import ${module or component} from '${path}';",
@@ -950,7 +1008,22 @@
       "$0"
     ]
   },
-
+  "Angular Debug": {
+    "prefix": "ng-debug",
+    "description": "pre obj pipe json",
+    "types": "typescript, html",
+    "body": [
+      "<pre>{{ ${obj} | json }}</pre>$0"
+    ]
+  },
+  "Angular Debug Async": {
+    "prefix": "ng-debug-async",
+    "description": "pre obj pipe async pipe json",
+    "types": "typescript, html",
+    "body": [
+      "<pre>{{ ${obj} | async | json }}</pre>$0"
+    ]
+  },
   "Angular Flex Layout Import": {
     "prefix": "ng-fx-import",
     "description": "Flex Layout Import",
@@ -1050,6 +1123,4 @@
       "</div>"
     ]
   }
-  
-
 }

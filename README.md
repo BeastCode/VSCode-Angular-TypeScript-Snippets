@@ -52,13 +52,16 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-binding-oneway | Property: [property]=\"statement\" |
 | ng-binding-twoway | Two-way data binding with the NgModel |
 | ng-bootstraping | Bootstraping example |
-| ng-button | A submit button element with a click event |
+| ng-button | A button element with a click event |
 | ng-button-submit | A submit button element with a click event |
 | ng-class | CSS class |
 | ng-click | Click event |
 | ng-component | Component with template and style urls |
 | ng-component-inline | Component with inline Template and Styles |
+| ng-conf | The World's Original Angular Conference |
 | ng-controller | Use component instead. |
+| ng-debug | pre obj pipe json |
+| ng-debug-async | pre obj pipe async pipe json |
 | ng-directive | Directive template |
 | ng-directive-attribute | Attribute directive |
 | ng-directive-css | CSS directive |
@@ -84,7 +87,9 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-http | Http observable get & post request |
 | ng-http-get | Http observable get request |
 | ng-if | If directive: *ngIf=\"statement\" |
-| ng-import | import <module or component> from '<path>'; |
+| ng-if-else | v4: If else directive: *ngIf=\"statement; else\" |
+| ng-if-then-else | v4: If then else directive: *ngIf=\"statement; then; else\" |
+| ng-import | import module or component from path; |
 | ng-input | Class Input Property |
 | ng-interpolation | Interpolation: {{ interpolation }} |
 | ng-module | App root module |
@@ -131,6 +136,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-test-directive | TODO |
 | ng-test-pipe | Test a pipe |
 | ng-test-service | TODO |
+| ng-validator | Angular validator snippet |
 
 
 ##Installation (Mac)
