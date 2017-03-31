@@ -112,6 +112,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-pipe-lowercase | Lowercase pipe |
 | ng-pipe-percent | Percent pipe - Usage: number_expression &#x7c; percent[:digitInfo] |
 | ng-pipe-slice | Slice pipe - Usage: array_or_string_expression &#x7c; slice:start[:end] |
+| ng-pipe-titlecase | v4: Titlecase pipe |
 | ng-pipe-uppercase | Uppercase pipe |
 | ng-property | Property: [property]=\"statement\" |
 | ng-repeat | Use ngFor instead. |

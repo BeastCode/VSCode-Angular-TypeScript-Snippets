@@ -237,7 +237,14 @@
       "{{ ${variable} | lowercase }$0"
     ]
   },
-  
+  "Angular TitleCase Pipe": {
+    "prefix": "ng-pipe-titlecase",
+    "description": "v4: Titlecase pipe",
+    "types": "typescript, html",
+    "body": [
+      "{{ ${variable} | titlecase }$0"
+    ]
+  },
   "Angular Date Pipe": {
     "prefix": "ng-pipe-date",
     "description": "Date pipe - Default format: 09/15/1971",
