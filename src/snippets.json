@@ -421,14 +421,59 @@
       "}"
     ]
   },
+  "NG Wat": {
+    "prefix": "wat",
+    "description": "ng-wat",
+    "types": "typescript",
+    "body": [
+        "`M.`MMMm                 ,M' .M.    MMMMMMM MMMMMMMMM",
+        " `M.`MMMm               ,M' .MMM.   MMMMMMM MMMMMMMMM",
+        "  `M.`MMMm             ,M' :MMMMM.        M MMMM     ", 
+        "   `M.`MMMm     .m    ,M' . `MMMMM.       M MMMM     ",
+        "    `M.`MMMm    MMm  ,M' .M. `MMMMM.      M MMMM     ",
+        "     `M.`MMMm .`MMMm,M' .M`M. `MMMMM.     M MMMM     ",
+        "      `M.`MMMmM.`MMMM' .M' `M. `MMMMM.    M MMMM     ",
+        "       `M.`MMM`M.`MM' .M'   `M. `MMMMM.   M MMMM     ",
+        "        `M.`M' `M,`' .MMMMMMMMM. `MMMMM.  M MMMM     ",
+        "         `M.`   `M' .M'       `M. `MMMMM. M MMMM     "
+    ]
+  },
   "Angular Conference": {
     "prefix": "ng-conf",
     "description": "The World's Original Angular Conference",
     "types": "typescript",
     "body": [
-      "The World's Original Angular Conference",
-      "           April 5th–7th 2017",
-      "          Salt Lake City, Utah"
+      "                     ,//@@@*",           
+      "                .///////@@@@@@@&.  ",            
+      "           ,////////////@@@@@@@@@@@@@/",         
+      "      ./////////////////#@@@@@@@@@@@@@@@@@,",    
+      " ,////////////////*.         ,&@@@@@@@@@@@@@@@@#",
+      "/////////////*                     %@@@@@@@@@@@@@",
+      "////////*.                             .%@@@@@@@@",
+      "//////*                                   /@@@@@@",
+      "///////     @@%     .@@/    .@@@@@@/      %@@@@@@",
+      "*//////     @@@@(   .@@/   @@@%. ,@@@#    @@@@@@&",
+      ".//////     @@%@@@  .@@/  &@@             @@@@@@(",
+      " //////     @@# ,@@@.@@/  @@@   &@@@@@.   @@@@@@.",
+      " //////,    @@#   %@@@@/  ,@@@    *@@#   ,@@@@@@",
+      " //////*    @@#     @@@/    @@@@@@@@,    #@@@@@@",
+      " ,//////                                 @@@@@@&",
+      " .//////                                 @@@@@@/",
+      "  //////.      @@@  @@@  @@  @ @@@@     .@@@@@@.",
+      "  //////,     @    @   @ @ @ @ @===     (@@@@@@",
+      "  *//////      @@@  @@@  @  @@ @        &@@@@@@",
+      "  .///////*                           %@@@@@@@&",
+      "   ///////////                    ,@@@@@@@@@@@(",
+      "     ,///////////,             #@@@@@@@@@@@&",
+      "        *///////////*       &@@@@@@@@@@@%",   
+      "           ./////////////@@@@@@@@@@@@*",      
+      "              ./////////@@@@@@@@@@,",         
+      "                  */////@@@@@@%",            
+      "                     *//@@@#",
+      "",
+      "     The World's Original Angular Conference",
+      "                April 5th–7th 2017",
+      "               Salt Lake City, Utah"
     ]
   },
   "Angular Routing": {
