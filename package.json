@@ -20,6 +20,13 @@
   "categories": [
     "Snippets"
   ],
+  "keywords" : [
+    "Angular",
+    "TypeScript",
+    "HTML",
+    "Angular 2",
+    "Angular 4"
+    ],
   "contributes": {
     "snippets": [
       {
