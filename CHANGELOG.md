@@ -1,6 +1,6 @@
-## Angular BeastCode Changelog
+# Angular BeastCode Changelog
 
-# 4.0.x
+## 4.0.x
 
 * Added Snippets for Angular v4
     * ng-if-else	
@@ -8,7 +8,7 @@
     * ng-pipe-titlecase
 * Added BeastCode logo
 
-# 2.4.x 
+## 2.4.x 
 
 * Added Flex Layout snippets
     * ng-fx-import
@@ -24,9 +24,11 @@
 * Multiple bug fixes
 * Added ng-validator snippet
 
-# 0.2.x & 0.3.x
+## 0.2.x & 0.3.x
 
 * Adding snippets
 * Fixing bugs
 
-# 0.1 Initial Release 1/1/2017
+## 0.1  1/1/2017
+
+* Initial Release
