@@ -6,11 +6,11 @@
     * ng-if-else	
     * ng-if-then-else
     * ng-pipe-titlecase
-* Added BeastCode logo
+* Added BeastCode Logo
 
 ## 2.4.x 
 
-* Added Flex Layout snippets
+* Added Flex Layout Snippets
     * ng-fx-import
     * ng-fx-row
     * ng-fx-row-reverse
@@ -21,14 +21,14 @@
     * ng-fx-item-fill	
     * ng-fx-item-offset	
     * ng-fx-item-order
-* Multiple bug fixes
-* Added ng-validator snippet
+* Multiple Bug fixes
+* Added ng-validator Snippet
 
 ## 0.2.x & 0.3.x
 
-* Adding snippets
-* Fixing bugs
+* Adding Snippets
+* Fixing Bugs
 
-## 0.1  1/1/2017
+## 0.1  
 
-* Initial Release
+* Initial Release 1/1/2017
