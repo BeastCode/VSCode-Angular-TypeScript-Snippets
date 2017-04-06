@@ -528,6 +528,14 @@
       "<a [routerLink]=\"[ '/${path}', ${routeParam} ]\">$0"
     ]
   },
+  "Angular Router Attribute": {
+    "prefix": "ng-router-attribute",
+    "description": "Router link",
+    "types": "typescript, html",
+    "body": [
+      "[routerLink]=\"[ '/${path}', ${routeParam} ]\"$0"
+    ]
+  },
   "Angular Router Active Link": {
     "prefix": "ng-router-linkActive",
     "description": "Router active link",

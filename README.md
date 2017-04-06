@@ -117,6 +117,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-property | Property: [property]=\"statement\" |
 | ng-repeat | Use ngFor instead. |
 | ng-router | Router template |
+| ng-router-attribute | Router link |
 | ng-router-link | Router link |
 | ng-router-linkActive | Router active link |
 | ng-router-outlet | Router outlet element |

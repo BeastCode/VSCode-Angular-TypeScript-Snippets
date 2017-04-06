@@ -7,6 +7,8 @@
     * ng-if-then-else
     * ng-pipe-titlecase
 * Added BeastCode Logo
+* Added Router snippet
+    * ng-router-attribute
 
 ## 2.4.x 
 
