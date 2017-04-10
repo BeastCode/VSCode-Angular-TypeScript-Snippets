@@ -147,25 +147,26 @@
       "};"
     ]
   },
-  "Angular ngModule": {
-    "prefix": "ng-module-template",
-    "description": "Module template",
+  "Angular Feature Module": {
+    "prefix": "ng-module",
+    "description": "Feature Module",
     "types": "typescript",
     "body": [
       "import { NgModule } from '@angular/core';",
+      "import { CommonModule } from '@angular/common';",
       "",
       "@NgModule({",
       "\tdeclarations: [],",
-      "\timports: [],",
-      "\texports: [],",
+      "\timports: [ CommonModule ],",
+      "\texports: [ ${Feature}Module ],",
       "\tproviders: [],",
       "\tbootstrap: []",
       "})",
-      "export class ${Name}Module {}"
+      "export class ${Feature}Module {}"
     ]
   },
-  "Angular ngRootModule": {
-    "prefix": "ng-module",
+  "Angular Root Module": {
+    "prefix": "ng-module-root",
     "description": "App root module",
     "types": "typescript",
     "body": [

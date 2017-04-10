@@ -9,6 +9,7 @@
 * Added BeastCode Logo
 * Added Router snippet
     * ng-router-attribute
+* Improved module snippets
 
 ## 2.4.x 
 
