@@ -506,7 +506,7 @@
     ]
   },
   "Angular App Module Routes": {
-    "prefix": "ng-router-module",
+    "prefix": "ng-router-appmodule",
     "description": "Routes to include in root module",
     "types": "typescript",
     "body": [
