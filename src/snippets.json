@@ -461,7 +461,7 @@
       " ,//////                                 @@@@@@&",
       " .//////                                 @@@@@@/",
       "  //////.      @@@  @@@  @@  @ @@@@     .@@@@@@.",
-      "  //////,     @    @   @ @ @ @ @===     (@@@@@@",
+      "  //////,     @    @   @ @ @ @ @==      (@@@@@@",
       "  .//////      @@@  @@@  @  @@ @        &@@@@@@",
       "  .///////.                           %@@@@@@@&",
       "   ///////////                    ,@@@@@@@@@@@(",
@@ -473,7 +473,7 @@
       "                     .//@@@#",
       "",
       "     The World's Original Angular Conference",
-      "                April 5th–7th 2017",
+      "                 See you in 2018",
       "               Salt Lake City, Utah"
     ]
   },
@@ -505,20 +505,44 @@
       "]);"
     ]
   },
-  "Angular Routes": {
-    "prefix": "ng-router-routes",
-    "description": "Routes to include in ngModule",
+  "Angular App Module Routes": {
+    "prefix": "ng-router-module",
+    "description": "Routes to include in root module",
     "types": "typescript",
     "body": [
       "import { RouterModule } from '@angular/router';",
-      "",
       "import { routes } from './routes';",
-      "//",
+      "",
+      "const routes: Routes = [",
+      "\t{ path: '', component: ${Home}Component },",
+      "\t{ path: '${path}', component: ${Feature}Component },",
+      "\t{ path: '**', component: PageNotFoundComponent },",
+      "]);",
+      "",
       "@NgModule({",
-      "\timports: [",
-      "\t\tRouterModule.forRoot(routes)",
-      "\t\t// other imports here",
-      "\t],"
+      "\timports: [RouterModule.forRoot(routes)]",
+      "\texports: [RouterModule]",
+      "})",
+      "export class AppRoutingModule {}$0"
+    ]
+  },
+  "Angular Feature Module Routes": {
+    "prefix": "ng-router-featuremodule",
+    "description": "Routes to include in a feature module",
+    "types": "typescript",
+    "body": [
+      "import { RouterModule } from '@angular/router';",
+      "import { routes } from './routes';",
+      "",
+      "const routes: Routes = [",
+      "\t{ path: '${path}', component: ${Feature}Component }",
+      "]);",
+      "",
+      "@NgModule({",
+      "\timports: [RouterModule.forChild(routes)]",
+      "\texports: [RouterModule]",
+      "})",
+      "export class ${Feature}Module {}$0"
     ]
   },
   "Angular Router Link": {

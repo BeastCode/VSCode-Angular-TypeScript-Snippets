@@ -7,9 +7,13 @@
     * ng-if-then-else
     * ng-pipe-titlecase
 * Added BeastCode Logo
-* Added Router snippet
+* Added Router snippets
     * ng-router-attribute
+    * ng-router-appmodule
+    * ng-router-featuremodule
 * Improved module snippets
+  * Updated ng-router-appmodule
+* Eastereggs for ng-conf
 
 ## 2.4.x 
 
@@ -27,11 +31,15 @@
 * Multiple Bug fixes
 * Added ng-validator Snippet
 
-## 0.2.x & 0.3.x
+## 0.3.x
 
 * Adding Snippets
 * Fixing Bugs
 
-## 0.1  
+## 0.2.x 
 
-* Initial Release 1/1/2017
+* Initial Release to the Market 1/1/2017
+
+## 0.1 
+
+* Creating Snippets
