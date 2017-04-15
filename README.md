@@ -117,11 +117,11 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-property | Property: [property]=\"statement\" |
 | ng-repeat | Use ngFor instead. |
 | ng-router | Router template |
+| ng-router-appmodule | Routes to include in root module |
 | ng-router-attribute | Router link |
 | ng-router-featuremodule | Routes to include in a feature module |
 | ng-router-link | Router link |
 | ng-router-linkActive | Router active link |
-| ng-router-module | Routes to include in root module |
 | ng-router-outlet | Router outlet element |
 | ng-router-outlet-name | Router outlet element with name |
 | ng-rx-action | ngRx Single action |
