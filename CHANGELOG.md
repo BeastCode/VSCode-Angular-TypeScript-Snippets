@@ -1,5 +1,11 @@
 # Angular BeastCode Changelog
 
+## 4.1.x
+ * Adding snippets for Angular Material. This is just experiental for now. Send me
+   feedback if you think it belongs in the same package or not. All snippets 
+   experiental snippets starts with 'm-'. 
+
+
 ## 4.0.x
 
 * Added Snippets for Angular v4

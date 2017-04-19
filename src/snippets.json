@@ -1207,5 +1207,42 @@
       "\t$0",
       "</div>"
     ]
+  },
+
+  "Material toolbar": {
+    "prefix": "m-toolbar",
+    "description": "Material toolbar",
+    "types": "typescript, html",
+    "body": [
+      "<md-toolbar>",
+      "\t<span>${FirstRow}</span>",
+      "</md-toolbar>$0"
+    ]
+  },
+  "Material toolbar row": {
+    "prefix": "m-toolbar",
+    "description": "Material toolbar row",
+    "types": "typescript, html",
+    "body": [
+      "<md-toolbar-row>",
+      "\t<span>${FirstRow}</span>",
+      "</md-toolbar-row>$0"
+    ]
+  },
+  "Material toolbar-multiRow": {
+    "prefix": "m-toolbar-multiRow",
+    "description": "Material toolbar with multiple rows",
+    "types": "typescript, html",
+    "body": [
+      "<md-toolbar>",
+      "\t<span>${FirstRow}</span>",
+      "\t<md-toolbar-row>",
+      "\t\t<span>${SecondRow}</span>",
+      "\t</md-toolbar-row>",
+      "\t<md-toolbar-row>",
+      "\t\t<span>${ThirdRow}</span>",
+      "\t</md-toolbar-row>",
+      "</md-toolbar>$0"
+    ]
   }
 }

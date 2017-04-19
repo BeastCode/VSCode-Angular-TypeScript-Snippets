@@ -45,6 +45,9 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 
 | Snippet | Description |
 | ------- | ----------|
+| m-toolbar | Material toolbar row |
+| m-toolbar | Material toolbar |
+| m-toolbar-multiRow | Material toolbar with multiple rows |
 | ng-afterContentChecked | Lifecycle hook: Called after every check of the component's or directive's content |
 | ng-afterContentInit | Lifecycle hook: Called after ngOnInit when the component's or directive's content has been initialized |
 | ng-afterViewChecked | Lifecycle hook: Called after every check of the component's view. Applies to components only |
