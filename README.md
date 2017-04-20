@@ -45,9 +45,16 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 
 | Snippet | Description |
 | ------- | ----------|
-| m-toolbar | Material toolbar row |
+| m-button | Rectangular Material button w/ no elevation. |
+| m-button-fab | Circular button w/ elevation. |
+| m-button-fab-mini | Small circular button w/ elevation. |
+| m-button-icon | Circular Material button with a transparent background |
+| m-button-raised | Rectangular Material button w/ elevation. |
+| m-card | Material Basic Card |
+| m-icon | Material icon |
 | m-toolbar | Material toolbar |
 | m-toolbar-multiRow | Material toolbar with multiple rows |
+| m-toolbar-row | Material toolbar row |
 | ng-afterContentChecked | Lifecycle hook: Called after every check of the component's or directive's content |
 | ng-afterContentInit | Lifecycle hook: Called after ngOnInit when the component's or directive's content has been initialized |
 | ng-afterViewChecked | Lifecycle hook: Called after every check of the component's view. Applies to components only |

@@ -1220,7 +1220,7 @@
     ]
   },
   "Material toolbar row": {
-    "prefix": "m-toolbar",
+    "prefix": "m-toolbar-row",
     "description": "Material toolbar row",
     "types": "typescript, html",
     "body": [
@@ -1243,6 +1243,67 @@
       "\t\t<span>${ThirdRow}</span>",
       "\t</md-toolbar-row>",
       "</md-toolbar>$0"
+    ]
+  }, 
+  "Material icon": {
+    "prefix": "m-icon",
+    "description": "Material icon",
+    "types": "typescript, html",
+    "body": [
+      "<md-icon>${icon_name}</md-icon>$0"
+    ]
+  },
+
+    
+    
+  "Material Button": {
+    "prefix": "m-button",
+    "description": "Rectangular Material button w/ no elevation.",
+    "types": "typescript, html",
+    "body": [
+      "<button md-button>${text}</button>$0"
+    ]
+  },
+  "Material Raised Button": {
+    "prefix": "m-button-raised",
+    "description": "Rectangular Material button w/ elevation.",
+    "types": "typescript, html",
+    "body": [
+      "<button md-raised-button>${text}</button>$0"
+    ]
+  },
+  "Material Icon Button": {
+    "prefix": "m-button-icon",
+    "description": "Circular Material button with a transparent background",
+    "types": "typescript, html",
+    "body": [
+      "<button md-icon-button>%{text}</button>$0"
+    ]
+  },
+  "Material Round Button": {
+    "prefix": "m-button-fab",
+    "description": "Circular button w/ elevation.",
+    "types": "typescript, html",
+    "body": [
+      "<button md-fab><md-icon>${icon_name}</md-icon></button>$0"
+    ]
+  },
+  "Material Round Small Button": {
+    "prefix": "m-button-fab-mini",
+    "description": "Small circular button w/ elevation.",
+    "types": "typescript, html",
+    "body": [
+      "<button md-fab-mini><md-icon>${icon_name}</md-icon></button>$0"
+    ]
+  },
+  "Material Basic Card": {
+    "prefix": "m-card",
+    "description": "Material Basic Card",
+    "types": "typescript, html",
+    "body": [
+      "<md-card>",
+      "\t$1",
+      "</md-card>$0"
     ]
   }
 }

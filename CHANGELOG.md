@@ -4,7 +4,16 @@
  * Adding snippets for Angular Material. This is just experiental for now. Send me
    feedback if you think it belongs in the same package or not. All snippets 
    experiental snippets starts with 'm-'. 
-
+   * m-button
+   * m-button-fab
+   * m-button-fab-mini
+   * m-button-icon
+   * m-button-raised
+   * m-card
+   * m-icon
+   * m-toolbar
+   * m-toolbar-multiRow
+   * m-toolbar-row
 
 ## 4.0.x
 
