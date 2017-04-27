@@ -14,6 +14,8 @@
    * m-toolbar
    * m-toolbar-multiRow
    * m-toolbar-row
+   * m-radiobutton
+   * m-radiobutton-option
 
 ## 4.0.x
 
