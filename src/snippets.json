@@ -1306,6 +1306,25 @@
       "</md-card>$0"
     ]
   },
+  "Material Radio Button": {
+    "prefix": "m-radiobutton",
+    "description": "Material Radio Button",
+    "types": "typescript, html",
+    "body": [
+      "<md-radio-group>",
+      "\t<md-radio-button value=\"${value1}\">${Option1}</md-radio-button>",
+      "\t<md-radio-button value=\"${value2}\">${Option2}</md-radio-button>",
+      "</md-radio-group>$0"
+    ]
+  },
+  "Material Radio Button Option": {
+    "prefix": "m-radiobutton-option",
+    "description": "Material Radio Button Option",
+    "types": "typescript, html",
+    "body": [
+      "<md-radio-button value=\"${value}\">${Option}</md-radio-button>$0"
+    ]
+  },
   "Material Select": {
     "prefix": "m-select",
     "description": "Material Select",

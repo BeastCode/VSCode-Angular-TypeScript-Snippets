@@ -52,6 +52,8 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-button-raised | Rectangular Material button w/ elevation. |
 | m-card | Material Basic Card |
 | m-icon | Material icon |
+| m-radiobutton | Material Radio Button |
+| m-radiobutton-option | Material Radio Button Option |
 | m-select | Material Select |
 | m-toolbar | Material toolbar |
 | m-toolbar-multiRow | Material toolbar with multiple rows |
