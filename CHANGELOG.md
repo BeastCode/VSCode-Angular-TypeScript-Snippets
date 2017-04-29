@@ -16,6 +16,10 @@
    * m-toolbar-row
    * m-radiobutton
    * m-radiobutton-option
+ * Added Flex Layout Snippets
+   * ng-fx-layout
+   * ng-fx-layout-align
+   * ng-fx-layout-gap
 
 ## 4.0.x
 

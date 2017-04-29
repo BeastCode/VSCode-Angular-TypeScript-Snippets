@@ -1128,6 +1128,30 @@
       "</div>"
     ]
   },
+  "Angular Flex Layout": {
+    "prefix": "ng-fx-layout",
+    "description": "Flex Layout Property",
+    "types": "typescript, html",
+    "body": [
+      "fxLayout=\"row\"$0"
+    ]
+  },
+  "Angular Flex Layout Align": {
+    "prefix": "ng-fx-layout-align",
+    "description": "Flex Layout Align Property",
+    "types": "typescript, html",
+    "body": [
+      "fxLayoutAlign=\"${start|center|end|space-around|space-between} ${start|center|end|stretch}\"$0"
+    ]
+  },
+  "Angular Flex Layout Gap": {
+    "prefix": "ng-fx-layout-gap",
+    "description": "Flex Layout Gap Property",
+    "types": "typescript, html",
+    "body": [
+      "fxLayoutGap=\"${gap}px\"$0"
+    ]
+  },
   "Angular Flex Reverse Row": {
     "prefix": "ng-fx-row-reverse",
     "description": "Flex Layout Reverse Row",

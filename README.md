@@ -93,6 +93,9 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-fx-item-fill | Flex Layout Item with fxFlexFill |
 | ng-fx-item-offset | Flex Layout Item with fxFlexOffset |
 | ng-fx-item-order | Flex Layout Item with fxFlexOrder |
+| ng-fx-layout | Flex Layout Property |
+| ng-fx-layout-align | Flex Layout Align Property |
+| ng-fx-layout-gap | Flex Layout Gap Property |
 | ng-fx-row | Flex Layout Row |
 | ng-fx-row-reverse | Flex Layout Reverse Row |
 | ng-hide | Usage: Bind to the hidden property. |
