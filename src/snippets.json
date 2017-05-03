@@ -1354,7 +1354,7 @@
     "description": "Material Select",
     "types": "typescript, html",
     "body": [
-      "md-select placeholder=\"${Placeholder}\" [(ngModel)]=\"selectedValue\" name=\"${item}\">",
+      "<md-select placeholder=\"${Placeholder}\" [(ngModel)]=\"selectedValue\" name=\"${item}\">",
       "\t<md-option *ngFor=\"let ${item} of ${item}s\" [value]=\"${item}.value\">",
       "\t\t{{${item}.viewValue}}",
       "\t</md-option>",
