@@ -9,6 +9,7 @@
    * m-button-icon
    * m-button-raised
    * m-card
+   * m-checkbox
    * m-icon
    * m-select
    * m-toolbar

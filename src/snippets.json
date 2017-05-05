@@ -1349,6 +1349,14 @@
       "<md-radio-button value=\"${value}\">${Option}</md-radio-button>$0"
     ]
   },
+  "Material Checkbox": {
+    "prefix": "m-checkbox",
+    "description": "Material Checkbox",
+    "types": "typescript, html",
+    "body": [
+      "<md-checkbox>${text}</md-checkbox>$0"
+    ]
+  },
   "Material Select": {
     "prefix": "m-select",
     "description": "Material Select",
