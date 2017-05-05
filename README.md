@@ -53,6 +53,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-card | Material Basic Card |
 | m-checkbox | Material Checkbox |
 | m-icon | Material icon |
+| m-input | Material Input textbox |
 | m-radiobutton | Material Radio Button |
 | m-radiobutton-option | Material Radio Button Option |
 | m-select | Material Select |

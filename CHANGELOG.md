@@ -11,6 +11,7 @@
    * m-card
    * m-checkbox
    * m-icon
+   * m-input
    * m-select
    * m-toolbar
    * m-toolbar-multiRow

@@ -1357,6 +1357,17 @@
       "<md-checkbox>${text}</md-checkbox>$0"
     ]
   },
+  "Material Input Text": {
+    "prefix": "m-input",
+    "description": "Material Input textbox",
+    "types": "typescript, html",
+    "body": [
+      "<md-input-container>",
+      "\t<input mdInput placeholder=\"${label}\" value=\"${value}\">",
+      "</md-input-container>$0"
+    ]
+  },
+  
   "Material Select": {
     "prefix": "m-select",
     "description": "Material Select",
