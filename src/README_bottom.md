@@ -22,6 +22,13 @@
 
 Please send any feedback or suggestions to @Mike_BeastCode (Twitter) or create an issue on GitHub.
 
+##Open Source
+
+[![first-timers-only](http://img.shields.io/badge/first--timers--only-friendly-blue.svg)](https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets/labels/first-timers-only)
+
+[![Suggested Enhancements](https://img.shields.io/github/issues/badges/shields.svg)]
+
+
 
 ##Disclaimer
 
