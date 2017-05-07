@@ -24,9 +24,9 @@ Please send any feedback or suggestions to @Mike_BeastCode (Twitter) or create a
 
 ##Open Source
 
-[![first-timers-only](http://img.shields.io/badge/first--timers--only-friendly-blue.svg)](https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets/labels/first-timers-only)
+This is an open source project and if you want to contribute I've added issues on github that are easy to start with. [![first-timers-only](http://img.shields.io/badge/first--timers--only-friendly-blue.svg)](https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets/labels/first-timers-only)
 
-[![Suggested Enhancements](https://img.shields.io/github/issues/badges/shields.svg)]
+[![All issues and enhancements](https://img.shields.io/github/issues/badges/shields.svg)](https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets/labels/first-timers-only)
 
 
 
