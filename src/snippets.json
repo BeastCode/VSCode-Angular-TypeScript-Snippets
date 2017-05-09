@@ -1379,5 +1379,13 @@
       "\t</md-option>",
       "</md-select>$0"
     ]
+  },
+  "Material SVG Icon": {
+    "prefix": "m-icon-svg",
+    "description": "Material SVG Icon",
+    "types": "typescript, html",
+    "body": [
+      "<md-icon svgIcon=\"${src}\"></md-icon>"
+    ]
   }
 }
