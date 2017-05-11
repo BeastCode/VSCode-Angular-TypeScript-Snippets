@@ -11,6 +11,7 @@
    * m-card
    * m-checkbox
    * m-icon
+   * m-icon-svg
    * m-input
    * m-select
    * m-toolbar

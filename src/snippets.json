@@ -1385,7 +1385,7 @@
     "description": "Material SVG Icon",
     "types": "typescript, html",
     "body": [
-      "<md-icon svgIcon=\"${src}\"></md-icon>"
+      "<md-icon svgIcon=\"${src}\"></md-icon>$0"
     ]
   }
 }
