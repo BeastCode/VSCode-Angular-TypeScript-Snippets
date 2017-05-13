@@ -828,7 +828,7 @@
     "description": "For-loop directive",
     "types": "typescript, html",
     "body": [
-      "*ngFor=\"let ${item} of ${item}s\"$0"
+      "*ngFor=\"let ${item} of ${items}\"$0"
     ]
   },
   "Angular For-loop Directive with li element": {
@@ -836,7 +836,7 @@
     "description": "For-loop directive with li element",
     "types": "typescript, html",
     "body": [
-      "<li *ngFor=\"let ${item} of ${item}s\">$0</li>"
+      "<li *ngFor=\"let ${item} of ${items}\">$0</li>"
     ]
   },
   "Angular For-loop Directive with index": {
@@ -844,7 +844,7 @@
     "description": "For-loop directive with index",
     "types": "typescript, html",
     "body": [
-      "*ngFor=\"let ${item} of ${item}s; let i=index\"$0"
+      "*ngFor=\"let ${item} of ${items}; let i=index\"$0"
     ]
   },
   "Angular For-loop Directive with trackBy": {
@@ -852,7 +852,7 @@
     "description": "For-loop directive with trackBy",
     "types": "typescript, html",
     "body": [
-      "*ngFor=\"let ${item} of ${item}s; trackBy:${item}.id\""
+      "*ngFor=\"let ${item} of ${items}; trackBy:${item}.id\""
     ]
   },
   "Angular Class": {
@@ -950,7 +950,7 @@
     "description": "Use ngFor instead.",
     "types": "typescript, html",
     "body": [
-      "*ngFor=\"let ${item} of ${item}s\"$0"
+      "*ngFor=\"let ${item} of ${items}\"$0"
     ]
   },
   "Angular Click Event": {
@@ -1374,7 +1374,7 @@
     "types": "typescript, html",
     "body": [
       "<md-select placeholder=\"${Placeholder}\" [(ngModel)]=\"selectedValue\" name=\"${item}\">",
-      "\t<md-option *ngFor=\"let ${item} of ${item}s\" [value]=\"${item}.value\">",
+      "\t<md-option *ngFor=\"let ${item} of ${items}\" [value]=\"${item}.value\">",
       "\t\t{{${item}.viewValue}}",
       "\t</md-option>",
       "</md-select>$0"
