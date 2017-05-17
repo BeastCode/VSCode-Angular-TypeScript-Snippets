@@ -874,7 +874,7 @@
   "Angular Switch": {
     "prefix": "ng-switch",
     "description": "Switch template",
-    "types": "typescript",
+    "types": "typescript, html",
     "body": [
       "<span [ngSwitch]=\"\">",
       "<p *ngSwitchCase=\"true\">",
