@@ -1357,6 +1357,18 @@
       "<md-checkbox>${text}</md-checkbox>$0"
     ]
   },
+  "Material Datepicker": {
+    "prefix": "m-datepicker",
+    "description": "Material Datepicker",
+    "types": "typescript, html",
+    "body": [
+      "<md-input-container>",
+      "\t<input mdInput [mdDatepicker]=\"${picker}\" placeholder=\"${title}\">",
+      "\t\t<button mdSuffix [mdDatepickerToggle]=\"${picker}\"></button>",
+      "\t</md-input-container>",
+      "<md-datepicker #${picker}></md-datepicker>$0"
+    ]
+  },
   "Material Input Text": {
     "prefix": "m-input",
     "description": "Material Input textbox",

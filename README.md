@@ -52,6 +52,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-button-raised | Rectangular Material button w/ elevation. |
 | m-card | Material Basic Card |
 | m-checkbox | Material Checkbox |
+| m-datepicker | Material Datepicker |
 | m-icon | Material icon |
 | m-icon-svg | Material SVG Icon |
 | m-input | Material Input textbox |

@@ -10,6 +10,7 @@
    * m-button-raised
    * m-card
    * m-checkbox
+   * m-datepicker
    * m-icon
    * m-icon-svg
    * m-input
