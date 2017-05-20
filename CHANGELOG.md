@@ -1,6 +1,18 @@
 # Angular BeastCode Changelog
 
+## 4.2.x
+
+ * Router
+    * ng-route-guard-canactivate
+    * ng-route-guard-canactivatechild
+    * ng-route-guard-candeactivate
+    * ng-route-guard-canload
+    * ng-route-guard-resolve
+ * Angular Material
+    * ...
+
 ## 4.1.x
+
  * Adding snippets for Angular Material. This is just experiental for now. Send me
    feedback if you think it belongs in the same package or not. 
    * m-button

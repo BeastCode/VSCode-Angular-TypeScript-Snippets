@@ -136,6 +136,11 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-pipe-uppercase | Uppercase pipe |
 | ng-property | Property: [property]=\"statement\" |
 | ng-repeat | Use ngFor instead. |
+| ng-route-guard-canactivate | CanActivate Guard Route |
+| ng-route-guard-canactivatechild | CanActivateChild Route |
+| ng-route-guard-candeactivate | CanDeactivate Guard Route |
+| ng-route-guard-canload | CanLoad Guard Route |
+| ng-route-guard-resolve | Resolve Guard Route |
 | ng-router | Router template |
 | ng-router-appmodule | Routes to include in root module |
 | ng-router-attribute | Router link |
