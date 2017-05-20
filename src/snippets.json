@@ -656,7 +656,7 @@
     "types": "typescript, html",
     "body": [
       "import { Injectable } from '@angular/core';",
-      "import { CanLoad } from '@angular/router';",
+      "import { CanLoad, Route } from '@angular/router';",
       "import { Observable } from 'rxjs/Observable';",
       "",
       "@Injectable()",
