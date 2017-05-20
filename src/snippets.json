@@ -587,7 +587,6 @@
       "$0"
     ]
   },
-
   "Angular CanActivate Guard Route": {
     "prefix": "ng-route-guard-canactivate",
     "description": "CanActivate Guard Route",
@@ -603,13 +602,12 @@
       "\t\troute: ActivatedRouteSnapshot,",
       "\t\tstate: RouterStateSnapshot",
       "\t): Observable<boolean> | Promise<boolean> | boolean {",
-      "\t\treturn true;",
+      "\t\treturn true;$0",
       "\t}",
       "}",
-      "$0"
+      ""
     ]
   },
-
   "Angular CanActivateChild Guard Route": {
     "prefix": "ng-route-guard-canactivatechild",
     "description": "CanActivateChild Route",
@@ -625,13 +623,12 @@
       "\t\troute: ActivatedRouteSnapshot,",
       "\t\tstate: RouterStateSnapshot",
       "\t): Observable<boolean> | Promise<boolean> | boolean {",
-      "\t\treturn true;",
+      "\t\treturn true;$0",
       "\t}",
       "}",
-      "$0"
+      ""
     ]
   },
-
   "Angular Resolve Guard Route": {
     "prefix": "ng-route-guard-resolve",
     "description": "Resolve Guard Route",
@@ -642,17 +639,17 @@
       "import { Observable } from 'rxjs/Observable';",
       "",
       "@Injectable()",
-      "export ${Resolve}Guard implements Resolve<T> {",
+      "export class ${Resolve}Guard implements Resolve<${T}> {",
       "\tcanActivate(",
       "\t\troute: ActivatedRouteSnapshot,",
       "\t\tstate: RouterStateSnapshot",
       "): Observable<any> | Promise<any> | any {",
-      "\t\t$0",
+      "\t\treturn true;$0",
       "\t}",
-      "}"
+      "}",
+      ""
     ]
   },
-
   "Angular CanLoad Guard Route": {
     "prefix": "ng-route-guard-canload",
     "description": "CanLoad Guard Route",
@@ -665,15 +662,14 @@
       "@Injectable()",
       "export class ${CanLoad}Guard implements CanLoad {",
       "\tcanLoad(",
-      "\t\t$(route): Route",
+      "\t\t${route}: Route",
       "\t\t): Observable<boolean> | Promise<boolean> | boolean {",
-      "\t\treturn true;",
+      "\t\treturn true;$0",
       "\t}",
       "}",
-      "$0"
+      ""
     ]
   },
-
   "Angular CanDeactivate Guard Route": {
     "prefix": "ng-route-guard-candeactivate",
     "description": "CanDeactivate Guard Route",
@@ -684,20 +680,18 @@
       "import { Observable } from 'rxjs/Observable';",
       "",
       "@Injectable()",
-      "export class ${CanDeactivate}Guard implements implements CanDeactivate<T> {",
+      "export class ${CanDeactivate}Guard implements CanDeactivate<${T}> {",
       "\tcanDeactivate(",
-      "\t\tcomponent: T,",
+      "\t\tcomponent: ${T},",
       "\t\troute: ActivatedRouteSnapshot,",
       "\t\tstate: RouterStateSnapshot",
       "\t): Observable<boolean> | Promise<boolean> | boolean {",
-      "\t\treturn true;",
+      "\t\treturn true;$0",
       "\t}",
       "}",
-      "$0"
+      ""
     ]
   },
-
-
   "Angular ngRx Util": {
     "prefix": "ng-rx-util",
     "description": "ngRx Util",
