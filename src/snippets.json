@@ -509,7 +509,7 @@
       "\timports: [RouterModule.forChild(routes)]",
       "\texports: [RouterModule]",
       "})",
-      "export class ${Feature}Module {}$0"
+      "export class ${Feature}RoutingModule {}$0"
     ]
   },
   "Angular App Module Routes": {
@@ -549,7 +549,7 @@
       "\timports: [RouterModule.forChild(routes)]",
       "\texports: [RouterModule]",
       "})",
-      "export class ${Feature}Module {}$0"
+      "export class ${Feature}RoutingModule {}$0"
     ]
   },
   "Angular Router Link": {
