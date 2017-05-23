@@ -482,7 +482,8 @@
     "description": "Router template",
     "types": "typescript",
     "body": [
-      "import { Routes } from '@angular/router';",
+      "import { Routes, RouterModule } from '@angular/router';",
+      "import { NgModule } from '@angular/core';",
       "",
       "import { ${Home}Component } from './';",
       "import { ${Name2}Component } from './';",
@@ -502,7 +503,13 @@
       "\t//{ path: '**', component: ... },",
       "\t//{ path: 'oldPath', redirectTo: '/staticPath' },",
       "\t//{ path: ..., component: ..., data: { message: 'Custom' }",
-      "]);"
+      "];",
+      "",
+      "@NgModule({",
+      "\timports: [RouterModule.forChild(routes)]",
+      "\texports: [RouterModule]",
+      "})",
+      "export class ${Feature}Module {}$0"
     ]
   },
   "Angular App Module Routes": {
@@ -517,7 +524,7 @@
       "\t{ path: '', component: ${Home}Component },",
       "\t{ path: '${path}', component: ${Feature}Component },",
       "\t{ path: '**', component: PageNotFoundComponent },",
-      "]);",
+      "];",
       "",
       "@NgModule({",
       "\timports: [RouterModule.forRoot(routes)]",
@@ -536,7 +543,7 @@
       "",
       "const routes: Routes = [",
       "\t{ path: '${path}', component: ${Feature}Component }",
-      "]);",
+      "];",
       "",
       "@NgModule({",
       "\timports: [RouterModule.forChild(routes)]",
