@@ -506,10 +506,11 @@
       "];",
       "",
       "@NgModule({",
-      "\timports: [RouterModule.forChild(routes)]",
+      "\timports: [RouterModule.forChild(routes)],",
       "\texports: [RouterModule]",
       "})",
-      "export class ${Feature}RoutingModule {}$0"
+      "export class ${Feature}RoutingModule {}",
+      "$0"
     ]
   },
   "Angular App Module Routes": {
@@ -527,10 +528,11 @@
       "];",
       "",
       "@NgModule({",
-      "\timports: [RouterModule.forRoot(routes)]",
+      "\timports: [RouterModule.forRoot(routes)],",
       "\texports: [RouterModule]",
       "})",
-      "export class AppRoutingModule {}$0"
+      "export class AppRoutingModule {}",
+      "$0"
     ]
   },
   "Angular Feature Module Routes": {
@@ -546,10 +548,11 @@
       "];",
       "",
       "@NgModule({",
-      "\timports: [RouterModule.forChild(routes)]",
+      "\timports: [RouterModule.forChild(routes)],",
       "\texports: [RouterModule]",
       "})",
-      "export class ${Feature}RoutingModule {}$0"
+      "export class ${Feature}RoutingModule {}",
+      "$0"
     ]
   },
   "Angular Router Link": {
