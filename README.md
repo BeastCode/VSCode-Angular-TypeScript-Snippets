@@ -59,6 +59,8 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-radiobutton | Material Radio Button |
 | m-radiobutton-option | Material Radio Button Option |
 | m-select | Material Select |
+| m-slide-toggle | Material Slide toggle |
+| m-slider | Material Slider |
 | m-toolbar | Material toolbar |
 | m-toolbar-multiRow | Material toolbar with multiple rows |
 | m-toolbar-row | Material toolbar row |

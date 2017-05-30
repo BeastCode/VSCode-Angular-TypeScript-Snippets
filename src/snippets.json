@@ -1514,5 +1514,21 @@
     "body": [
       "<md-icon svgIcon=\"${src}\"></md-icon>$0"
     ]
+  },
+  "Material Slide Toggle": {
+    "prefix": "m-slide-toggle",
+    "description": "Material Slide toggle",
+    "types": "typescript, html",
+    "body": [
+      "<md-slide-toggle>${text}</md-slide-toggle>$0"
+    ]
+  },
+  "Material Slider": {
+    "prefix": "m-slider",
+    "description": "Material Slider",
+    "types": "typescript, html",
+    "body": [
+      "<md-slider min=\"${min}\" max=\"${max}\" step=\"${step}\" value=\"${value}\"></md-slider>$0"
+    ]
   }
 }

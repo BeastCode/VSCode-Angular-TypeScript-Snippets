@@ -9,7 +9,8 @@
     * ng-route-guard-canload
     * ng-route-guard-resolve
  * Angular Material
-    * ...
+    * m-slide-toggle
+    * m-slider
 
 ## 4.1.x
 
