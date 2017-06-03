@@ -11,6 +11,9 @@
  * Angular Material
     * m-slide-toggle
     * m-slider
+    * m-list
+    * m-list-item
+    * m-list-ngfor
 
 ## 4.1.x
 

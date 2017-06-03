@@ -56,6 +56,9 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-icon | Material icon |
 | m-icon-svg | Material SVG Icon |
 | m-input | Material Input textbox |
+| m-list | Material List |
+| m-list-item | Material List Item |
+| m-list-ngfor | Material List ngFor |
 | m-radiobutton | Material Radio Button |
 | m-radiobutton-option | Material Radio Button Option |
 | m-select | Material Select |

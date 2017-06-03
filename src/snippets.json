@@ -1530,5 +1530,33 @@
     "body": [
       "<md-slider min=\"${min}\" max=\"${max}\" step=\"${step}\" value=\"${value}\"></md-slider>$0"
     ]
+  },
+  "Material List": {
+    "prefix": "m-list",
+    "description": "Material List",
+    "types": "typescript, html",
+    "body": [
+      "<md-list>",
+      "\t<md-list-item>${item}</md-list-item>$1",
+      "</md-list>$0"
+    ]
+  },
+  "Material List ngFor": {
+    "prefix": "m-list-ngfor",
+    "description": "Material List ngFor",
+    "types": "typescript, html",
+    "body": [
+      "<md-list>",
+      "\t<md-list-item *ngFor=\"let ${item} of ${items}\">{{ ${item} }}</md-list-item>$1",
+      "</md-list>$0"
+    ]
+  },
+  "Material List Item": {
+    "prefix": "m-list-item",
+    "description": "Material List Item",
+    "types": "typescript, html",
+    "body": [
+      "<md-list-item>${item}</md-list-item>$0"
+    ]
   }
 }
