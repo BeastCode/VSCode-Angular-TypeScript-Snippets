@@ -903,18 +903,18 @@
   },
   "Angular If Directive": {
     "prefix": "ng-if",
-    "description": "If directive: *ngIf=\"statement\"",
+    "description": "If directive: *ngIf=\"expression\"",
     "types": "typescript, html",
     "body": [
-      "*ngIf=\"${statement}\""
+      "*ngIf=\"${expression}\""
     ]
   },
   "Angular If Else Directive": {
     "prefix": "ng-if-else",
-    "description": "v4: If else directive: *ngIf=\"statement; else\"",
+    "description": "v4: If else directive: *ngIf=\"expression; else\"",
     "types": "typescript, html",
     "body": [
-      "<div *ngIf=\"${statement}; else ${elseTemplate}\">",
+      "<div *ngIf=\"${expression}; else ${elseTemplate}\">",
       "\t$1",
       "</div>",
       "<ng-template #${elseTemplate}>",
@@ -925,10 +925,10 @@
   },
   "Angular If Then Else Directive": {
     "prefix": "ng-if-then-else",
-    "description": "v4: If then else directive: *ngIf=\"statement; then; else\"",
+    "description": "v4: If then else directive: *ngIf=\"expression; then; else\"",
     "types": "typescript, html",
     "body": [
-      "<div *ngIf=\"${statement}; then ${thenTemplate}; else ${elseTemplate}\"></div>",
+      "<div *ngIf=\"${expression}; then ${thenTemplate}; else ${elseTemplate}\"></div>",
       "<ng-template #${thenTemplate}>",
       "\t$1",
       "</ng-template>",
@@ -1006,10 +1006,10 @@
   },
   "Angular Property": {
     "prefix": "ng-property",
-    "description": "Property: [property]=\"statement\"",
+    "description": "Property: [property]=\"expression\"",
     "types": "typescript, html",
     "body": [
-      "[property]=\"${statment}\""
+      "[${property}]=\"${expression}\""
     ]
   },
   "Angular Event": {
@@ -1038,10 +1038,10 @@
   },
   "Angular Oneway Binding": {
     "prefix": "ng-binding-oneway",
-    "description": "Property: [property]=\"statement\"",
+    "description": "Property: [property]=\"expression\"",
     "types": "typescript, html",
     "body": [
-      "[property]=\"${statment}\"$0"
+      "[${property}]=\"${expression}\"$0"
     ]
   },
   "Angular Twoway Binding": {
