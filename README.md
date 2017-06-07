@@ -71,7 +71,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-afterContentInit | Lifecycle hook: Called after ngOnInit when the component's or directive's content has been initialized |
 | ng-afterViewChecked | Lifecycle hook: Called after every check of the component's view. Applies to components only |
 | ng-afterViewInit | Lifecycle hook: Called after ngAfterContentInit when the component's view has been initialized |
-| ng-binding-oneway | Property: [property]=\"statement\" |
+| ng-binding-oneway | Property: [property]=\"expression\" |
 | ng-binding-twoway | Two-way data binding with the NgModel |
 | ng-bootstraping | Bootstraping example |
 | ng-button | A button element with a click event |
@@ -111,9 +111,9 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-href | Usage: Bind to the href property. |
 | ng-http | Http observable get & post request |
 | ng-http-get | Http observable get request |
-| ng-if | If directive: *ngIf=\"statement\" |
-| ng-if-else | v4: If else directive: *ngIf=\"statement; else\" |
-| ng-if-then-else | v4: If then else directive: *ngIf=\"statement; then; else\" |
+| ng-if | If directive: *ngIf=\"expression\" |
+| ng-if-else | v4: If else directive: *ngIf=\"expression; else\" |
+| ng-if-then-else | v4: If then else directive: *ngIf=\"expression; then; else\" |
 | ng-import | import module or component from path; |
 | ng-input | Class Input Property |
 | ng-interpolation | Interpolation: {{ interpolation }} |
@@ -139,7 +139,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-pipe-slice | Slice pipe - Usage: array_or_string_expression &#x7c; slice:start[:end] |
 | ng-pipe-titlecase | v4: Titlecase pipe |
 | ng-pipe-uppercase | Uppercase pipe |
-| ng-property | Property: [property]=\"statement\" |
+| ng-property | Property: [property]=\"expression\" |
 | ng-repeat | Use ngFor instead. |
 | ng-route-guard-canactivate | CanActivate Guard Route |
 | ng-route-guard-canactivatechild | CanActivateChild Route |

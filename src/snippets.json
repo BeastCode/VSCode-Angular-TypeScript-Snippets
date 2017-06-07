@@ -967,7 +967,7 @@
     "description": "For-loop directive with trackBy",
     "types": "typescript, html",
     "body": [
-      "*ngFor=\"let ${item} of ${items}; trackBy:${item}.id\""
+      "*ngFor=\"let ${item} of ${items}; trackBy:${item}.id\"$0"
     ]
   },
   "Angular Class": {
@@ -975,7 +975,7 @@
     "description": "CSS class",
     "types": "typescript, html",
     "body": [
-      "[ngClass]=\"{${class}}\""
+      "[ngClass]=\"{'${class}': ${true}}\"$0"
     ]
   },
   "Angular Style": {
@@ -983,7 +983,7 @@
     "description": "CSS style",
     "types": "typescript, html",
     "body": [
-      "[ngStyle]=\"{'${property}': ${expression}}\""
+      "[ngStyle]=\"{'${property}': ${expression}}\"$0"
     ]
   },
   "Angular Switch": {
@@ -1009,7 +1009,7 @@
     "description": "Property: [property]=\"expression\"",
     "types": "typescript, html",
     "body": [
-      "[${property}]=\"${expression}\""
+      "[${property}]=\"${expression}\"$0"
     ]
   },
   "Angular Event": {
