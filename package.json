@@ -13,7 +13,7 @@
     "url": "https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets/issues"
   },
   "homepage": "https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets#readme",
-  "version": "4.2.9",
+  "version": "4.2.10",
   "engines": {
     "vscode": "^1.0.0"
   },
