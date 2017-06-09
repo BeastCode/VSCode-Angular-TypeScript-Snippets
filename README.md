@@ -64,6 +64,8 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-select | Material Select |
 | m-slide-toggle | Material Slide toggle |
 | m-slider | Material Slider |
+| m-tab | Material Tab |
+| m-tab-group | Material Tab Group |
 | m-toolbar | Material toolbar |
 | m-toolbar-multiRow | Material toolbar with multiple rows |
 | m-toolbar-row | Material toolbar row |

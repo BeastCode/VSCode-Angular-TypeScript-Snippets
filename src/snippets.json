@@ -1558,5 +1558,24 @@
     "body": [
       "<md-list-item>${item}</md-list-item>$0"
     ]
+  },
+  "Material Tab Group": {
+    "prefix": "m-tab-group",
+    "description": "Material Tab Group",
+    "types": "typescript, html",
+    "body": [
+      "<md-tab-group>",
+      "\t<md-tab label=\"${TabHeader1}\">$1</md-tab>",
+      "\t<md-tab label=\"${TabTabHeader2}\">$2</md-tab>",
+      "</md-tab-group>$0"
+    ]
+  },
+  "Material Tab": {
+    "prefix": "m-tab",
+    "description": "Material Tab",
+    "types": "typescript, html",
+    "body": [
+      "<md-tab label=\"${TabHeader}\">$1</md-tab>$0"
+    ]
   }
 }

@@ -14,6 +14,8 @@
     * m-list
     * m-list-item
     * m-list-ngfor
+    * m-tab
+    * m-tab-group
 
 ## 4.1.x
 
