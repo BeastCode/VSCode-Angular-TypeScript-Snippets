@@ -16,6 +16,7 @@
     * m-list-ngfor
     * m-tab
     * m-tab-group
+    * m-tooltip
 
 ## 4.1.x
 

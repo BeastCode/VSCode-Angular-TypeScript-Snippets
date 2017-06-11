@@ -1577,5 +1577,13 @@
     "body": [
       "<md-tab label=\"${TabHeader}\">$1</md-tab>$0"
     ]
+  },
+  "Material Tooltip": {
+    "prefix": "m-tooltip",
+    "description": "Material Tab",
+    "types": "typescript, html",
+    "body": [
+      "mdTooltip=\"${text}\"$0"
+    ]
   }
 }
