@@ -1585,5 +1585,13 @@
     "body": [
       "mdTooltip=\"${text}\"$0"
     ]
+  },
+  "Material Tooltip Position": {
+    "prefix": "m-tooltip-position",
+    "description": "Material Tab",
+    "types": "typescript, html",
+    "body": [
+      "mdTooltipPosition=\"${above|below|left|right|before|after}\"$0"
+    ]
   }
 }
