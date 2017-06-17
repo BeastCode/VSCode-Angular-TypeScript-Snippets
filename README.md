@@ -1,3 +1,6 @@
+[![Version](http://vsmarketplacebadge.apphb.com/version/Mikael.Angular-BeastCode.svg)]()
+[![Installs](http://vsmarketplacebadge.apphb.com/installs-short/Mikael.Angular-BeastCode.svg)]()
+
 # VSCode Angular TypeScript & Html Snippets
 Visual Studio Code TypeScript and Html snippets and code examples for Angular 2+
 
