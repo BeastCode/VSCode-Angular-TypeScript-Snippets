@@ -1,3 +1,6 @@
+[![Version](http://vsmarketplacebadge.apphb.com/version/Mikael.Angular-BeastCode.svg)](https://marketplace.visualstudio.com/items?itemName=Mikael.Angular-BeastCode)
+[![Installs](http://vsmarketplacebadge.apphb.com/installs-short/Mikael.Angular-BeastCode.svg)](https://marketplace.visualstudio.com/items?itemName=Mikael.Angular-BeastCode)
+
 # VSCode Angular TypeScript & Html Snippets
 Visual Studio Code TypeScript and Html snippets and code examples for Angular 2+
 
@@ -45,11 +48,37 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 
 | Snippet | Description |
 | ------- | ----------|
+| m-button | Rectangular Material button w/ no elevation. |
+| m-button-fab | Circular button w/ elevation. |
+| m-button-fab-mini | Small circular button w/ elevation. |
+| m-button-icon | Circular Material button with a transparent background |
+| m-button-raised | Rectangular Material button w/ elevation. |
+| m-card | Material Basic Card |
+| m-checkbox | Material Checkbox |
+| m-datepicker | Material Datepicker |
+| m-icon | Material icon |
+| m-icon-svg | Material SVG Icon |
+| m-input | Material Input textbox |
+| m-list | Material List |
+| m-list-item | Material List Item |
+| m-list-ngfor | Material List ngFor |
+| m-radiobutton | Material Radio Button |
+| m-radiobutton-option | Material Radio Button Option |
+| m-select | Material Select |
+| m-slide-toggle | Material Slide toggle |
+| m-slider | Material Slider |
+| m-tab | Material Tab |
+| m-tab-group | Material Tab Group |
+| m-toolbar | Material toolbar |
+| m-toolbar-multiRow | Material toolbar with multiple rows |
+| m-toolbar-row | Material toolbar row |
+| m-tooltip | Material Tab |
+| m-tooltip-position | Material Tab |
 | ng-afterContentChecked | Lifecycle hook: Called after every check of the component's or directive's content |
 | ng-afterContentInit | Lifecycle hook: Called after ngOnInit when the component's or directive's content has been initialized |
 | ng-afterViewChecked | Lifecycle hook: Called after every check of the component's view. Applies to components only |
 | ng-afterViewInit | Lifecycle hook: Called after ngAfterContentInit when the component's view has been initialized |
-| ng-binding-oneway | Property: [property]=\"statement\" |
+| ng-binding-oneway | Property: [property]=\"expression\" |
 | ng-binding-twoway | Two-way data binding with the NgModel |
 | ng-bootstraping | Bootstraping example |
 | ng-button | A button element with a click event |
@@ -80,20 +109,23 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-fx-item-fill | Flex Layout Item with fxFlexFill |
 | ng-fx-item-offset | Flex Layout Item with fxFlexOffset |
 | ng-fx-item-order | Flex Layout Item with fxFlexOrder |
+| ng-fx-layout | Flex Layout Property |
+| ng-fx-layout-align | Flex Layout Align Property |
+| ng-fx-layout-gap | Flex Layout Gap Property |
 | ng-fx-row | Flex Layout Row |
 | ng-fx-row-reverse | Flex Layout Reverse Row |
 | ng-hide | Usage: Bind to the hidden property. |
 | ng-href | Usage: Bind to the href property. |
 | ng-http | Http observable get & post request |
 | ng-http-get | Http observable get request |
-| ng-if | If directive: *ngIf=\"statement\" |
-| ng-if-else | v4: If else directive: *ngIf=\"statement; else\" |
-| ng-if-then-else | v4: If then else directive: *ngIf=\"statement; then; else\" |
+| ng-if | If directive: *ngIf=\"expression\" |
+| ng-if-else | v4: If else directive: *ngIf=\"expression; else\" |
+| ng-if-then-else | v4: If then else directive: *ngIf=\"expression; then; else\" |
 | ng-import | import module or component from path; |
 | ng-input | Class Input Property |
 | ng-interpolation | Interpolation: {{ interpolation }} |
-| ng-module | App root module |
-| ng-module-template | Module template |
+| ng-module | Feature Module |
+| ng-module-root | App root module |
 | ng-ngOnChanges | Lifecycle hook: Called before any other lifecycle hook |
 | ng-onDestroy | Lifecycle hook: Called before the instance is destroyed |
 | ng-onInit | Lifecycle hook: Called after the constructor |
@@ -112,15 +144,23 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-pipe-lowercase | Lowercase pipe |
 | ng-pipe-percent | Percent pipe - Usage: number_expression &#x7c; percent[:digitInfo] |
 | ng-pipe-slice | Slice pipe - Usage: array_or_string_expression &#x7c; slice:start[:end] |
+| ng-pipe-titlecase | v4: Titlecase pipe |
 | ng-pipe-uppercase | Uppercase pipe |
-| ng-property | Property: [property]=\"statement\" |
+| ng-property | Property: [property]=\"expression\" |
 | ng-repeat | Use ngFor instead. |
+| ng-route-guard-canactivate | CanActivate Guard Route |
+| ng-route-guard-canactivatechild | CanActivateChild Route |
+| ng-route-guard-candeactivate | CanDeactivate Guard Route |
+| ng-route-guard-canload | CanLoad Guard Route |
+| ng-route-guard-resolve | Resolve Guard Route |
 | ng-router | Router template |
+| ng-router-appmodule | Routes to include in root module |
+| ng-router-attribute | Router link |
+| ng-router-featuremodule | Routes to include in a feature module |
 | ng-router-link | Router link |
 | ng-router-linkActive | Router active link |
 | ng-router-outlet | Router outlet element |
 | ng-router-outlet-name | Router outlet element with name |
-| ng-router-routes | Routes to include in ngModule |
 | ng-rx-action | ngRx Single action |
 | ng-rx-actions | ngRx Actions class |
 | ng-rx-module | ngRx Root Module |
@@ -137,6 +177,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-test-pipe | Test a pipe |
 | ng-test-service | TODO |
 | ng-validator | Angular validator snippet |
+| wat | A lightning talk by Gary Bernhardt from CodeMash 2012. ng-wat talk by Shai Reznik in 2015 |
 
 
 ##Installation (Mac)
@@ -160,6 +201,10 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 ##Feedback
 
 Please send any feedback or suggestions to @Mike_BeastCode (Twitter) or create an issue on GitHub.
+
+##Open Source
+
+This is an open source project and if you want to contribute I've added issues on github that are easy to start with. [![first-timers-only](http://img.shields.io/badge/first--timers--only-friendly-blue.svg)](https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets/labels/first-timers-only)
 
 
 ##Disclaimer

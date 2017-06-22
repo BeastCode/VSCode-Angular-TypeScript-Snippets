@@ -2,7 +2,7 @@
   "name": "Angular-BeastCode",
   "publisher": "Mikael",
   "displayName": "Angular 2+ Snippets - TypeScript, Html, ngRx, Angular Flex Layout & Testing",
-  "description": "87 Angular 2+ Snippets (TypeScript, Html, ngRx, Angular Flex Layout & Testing) Updated for v2.4.10 & v4.0.0",
+  "description": "125 Angular 2+ Snippets (TypeScript, Html, ngRx, Angular Flex Layout & Testing) Updated for v2.4.11 & v4.2.0",
   "icon": "images/Angular4.png",
   "license": "MIT",
   "repository": {
@@ -13,12 +13,19 @@
     "url": "https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets/issues"
   },
   "homepage": "https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets#readme",
-  "version": "4.0.2",
+  "version": "4.2.13",
   "engines": {
     "vscode": "^1.0.0"
   },
   "categories": [
     "Snippets"
+  ],
+  "keywords": [
+    "Angular",
+    "TypeScript",
+    "HTML",
+    "Angular 2",
+    "Angular 4"
   ],
   "contributes": {
     "snippets": [
