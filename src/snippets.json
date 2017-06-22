@@ -158,9 +158,8 @@
       "@NgModule({",
       "\tdeclarations: [],",
       "\timports: [ CommonModule ],",
-      "\texports: [ ${Feature}Module ],",
+      "\texports: [],",
       "\tproviders: [],",
-      "\tbootstrap: []",
       "})",
       "export class ${Feature}Module {}"
     ]
