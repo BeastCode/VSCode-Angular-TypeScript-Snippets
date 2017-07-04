@@ -74,6 +74,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-toolbar-row | Material toolbar row |
 | m-tooltip | Material Tab |
 | m-tooltip-position | Material Tab |
+| m-tooltip-with-position | Material Tab |
 | ng-afterContentChecked | Lifecycle hook: Called after every check of the component's or directive's content |
 | ng-afterContentInit | Lifecycle hook: Called after ngOnInit when the component's or directive's content has been initialized |
 | ng-afterViewChecked | Lifecycle hook: Called after every check of the component's view. Applies to components only |

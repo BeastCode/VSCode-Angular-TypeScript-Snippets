@@ -18,6 +18,7 @@
     * m-tab-group
     * m-tooltip
     * m-tooltip-position
+    * m-tooltip-with-position
 
 ## 4.1.x
 
