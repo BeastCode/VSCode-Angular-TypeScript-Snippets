@@ -56,9 +56,9 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-card | Material Basic Card |
 | m-checkbox | Material Checkbox |
 | m-datepicker | Material Datepicker |
-| m-icon | Material icon |
+| m-icon | Material Icon |
 | m-icon-svg | Material SVG Icon |
-| m-input | Material Input textbox |
+| m-input | Material Input Textbox |
 | m-list | Material List |
 | m-list-item | Material List Item |
 | m-list-ngfor | Material List ngFor |
@@ -70,11 +70,11 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-tab | Material Tab |
 | m-tab-group | Material Tab Group |
 | m-toolbar | Material toolbar |
-| m-toolbar-multiRow | Material toolbar with multiple rows |
+| m-toolbar-multiRow | Material Toolbar with multiple rows |
 | m-toolbar-row | Material toolbar row |
-| m-tooltip | Material Tab |
-| m-tooltip-position | Material Tab |
-| m-tooltip-with-position | Material Tab |
+| m-tooltip | Material Tooltip |
+| m-tooltip-position | Material Tooltip position |
+| m-tooltip-with-position | Material Tooltip with position |
 | ng-afterContentChecked | Lifecycle hook: Called after every check of the component's or directive's content |
 | ng-afterContentInit | Lifecycle hook: Called after ngOnInit when the component's or directive's content has been initialized |
 | ng-afterViewChecked | Lifecycle hook: Called after every check of the component's view. Applies to components only |
