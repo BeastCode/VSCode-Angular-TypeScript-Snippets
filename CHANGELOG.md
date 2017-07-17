@@ -19,6 +19,7 @@
     * m-tooltip
     * m-tooltip-position
     * m-tooltip-with-position
+    * m-table
 
 ## 4.1.x
 
