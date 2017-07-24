@@ -13,13 +13,13 @@
     "url": "https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets/issues"
   },
   "homepage": "https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets#readme",
-  "version": "4.2.20",
+  "version": "4.2.21",
   "engines": {
-        "vscode": "^1.10.0"
-    },
-    "devDependencies": {
-        "vscode": "^1.11.0"
-    },
+    "vscode": "^1.10.0"
+  },
+  "devDependencies": {
+    "vscode": "^1.11.0"
+  },
   "categories": [
     "Snippets"
   ],
