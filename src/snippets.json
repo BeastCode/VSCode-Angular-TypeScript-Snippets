@@ -1612,8 +1612,9 @@
       "\t\t<md-cell *cdkCellDef=\"let row\"> {{row.${column}}} </md-cell>",
       "\t</ng-container>",
       "</md-table>$0"
-    ],
-    "Material Table": {
+    ]
+  },
+  "Material Table Column": {
     "prefix": "m-table-column",
     "description": "Material Table Column",
     "types": "typescript, html",
@@ -1624,7 +1625,5 @@
       "</ng-container>$0"
     ]
   }
-
-
-
 }
+
