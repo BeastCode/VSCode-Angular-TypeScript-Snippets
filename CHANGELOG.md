@@ -20,6 +20,7 @@
     * m-tooltip-position
     * m-tooltip-with-position
     * m-table
+    * m-grid-list
 
 ## 4.1.x
 

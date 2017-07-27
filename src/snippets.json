@@ -1624,6 +1624,23 @@
       "\t<md-cell *cdkCellDef=\"let row\"> {{row.${column}}} </md-cell>",
       "</ng-container>$0"
     ]
+  },
+  "Material Grid List": {
+    "prefix": "m-grid-list",
+    "description": "Material Grid List",
+    "types": "typescript, html",
+    "body": [
+      "<md-grid-list cols=\"${cols}\" rowHeight=\"${height}px\">",
+      "\t<md-grid-tile",
+      "\t\t*ngFor=\"let ${tile} of ${tiles}\"",
+      "\t\t[colspan]=\"${tile}.cols\"",
+      "\t\t[rowspan]=\"${tile}.rows\"",
+      "\t\t{{${tile}.text}}",
+      "\t</md-grid-tile>",
+      "</md-grid-list>$0"
+    ]
   }
+
+  
 }
 

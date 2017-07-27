@@ -56,6 +56,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-card | Material Basic Card |
 | m-checkbox | Material Checkbox |
 | m-datepicker | Material Datepicker |
+| m-grid-list | Material Grid List |
 | m-icon | Material Icon |
 | m-icon-svg | Material SVG Icon |
 | m-input | Material Input Textbox |
