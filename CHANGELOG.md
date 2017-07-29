@@ -21,6 +21,7 @@
     * m-tooltip-with-position
     * m-table
     * m-grid-list
+    * m-paginator
 
 ## 4.1.x
 
