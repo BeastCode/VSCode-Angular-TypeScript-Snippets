@@ -18,7 +18,7 @@ All code snippets are based on and follow the Angular style guide https://angula
 
 # Usage
 
-All snippets starts with "ng-".
+All Angular snippets starts with "ng-".
 Multiple snippets come in multiple variations. For instance when you want to create a new component you can choose between having the template and css inline or not:
 * ng-component
 * ng-component-inline
@@ -38,6 +38,8 @@ ng-for currently has even more variations, so make sure you pick the one you wan
 
 ![ngForSnippet](https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets/raw/master/images/ngForSnippet.gif)
 
+### Angular Material
+All Material snippets starts with "m-" and there are now over 30 Material snippets in this package.
 
 # Pro Tip
 
@@ -63,6 +65,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-list | Material List |
 | m-list-item | Material List Item |
 | m-list-ngfor | Material List ngFor |
+| m-paginator | Material Paginator |
 | m-radiobutton | Material Radio Button |
 | m-radiobutton-option | Material Radio Button Option |
 | m-select | Material Select |

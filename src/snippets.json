@@ -1639,8 +1639,19 @@
       "\t</md-grid-tile>",
       "</md-grid-list>$0"
     ]
+  },
+  "Material Paginator": {
+    "prefix": "m-paginator",
+    "description": "Material Paginator",
+    "types": "typescript, html",
+    "body": [
+      "<md-paginator [length]=\"${length}\"",
+      "\t[pageSize]=\"${pageSize}\"",
+      "\t[pageSizeOptions]=\"${pageSizeOptions}\"",
+      "\t(page)=\"pageEvent = $${event}\">",
+      "</md-paginator>$0"
+    ]
   }
-
   
 }
 
