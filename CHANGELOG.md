@@ -1,5 +1,9 @@
 # Angular BeastCode Changelog
 
+## 4.3.x
+ * 4.3
+  * ng-httpClient
+
 ## 4.2.x
 
  * Router

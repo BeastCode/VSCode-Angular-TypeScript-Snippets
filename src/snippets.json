@@ -1180,8 +1180,16 @@
       "})$0"
     ]
   },
-  "http post": {
-    "prefix": "ng-http",
+   "httpClient get": {
+    "prefix": "ng-httpClient-get",
+    "description": "HttpClient observable get request",
+    "types": "typescript, html",
+    "body": [
+      "this.http.get('${url}')$0"
+    ]
+  },
+  "http get post": {
+    "prefix": "ng-http-get-post",
     "description": "Http observable get & post request",
     "types": "typescript, html",
     "body": [

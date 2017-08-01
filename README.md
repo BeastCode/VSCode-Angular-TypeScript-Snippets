@@ -123,8 +123,9 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-fx-row-reverse | Flex Layout Reverse Row |
 | ng-hide | Usage: Bind to the hidden property. |
 | ng-href | Usage: Bind to the href property. |
-| ng-http | Http observable get & post request |
 | ng-http-get | Http observable get request |
+| ng-http-get-post | Http observable get & post request |
+| ng-httpClient-get | HttpClient observable get request |
 | ng-if | If directive: *ngIf=\"expression\" |
 | ng-if-else | v4: If else directive: *ngIf=\"expression; else\" |
 | ng-if-then-else | v4: If then else directive: *ngIf=\"expression; then; else\" |
