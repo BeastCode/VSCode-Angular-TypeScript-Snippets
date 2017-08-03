@@ -2,7 +2,9 @@
 
 ## 4.3.x
  * 4.3
-  * ng-httpClient
+  * ng-httpClient-get
+* Angular Material
+    * m-chip-list
 
 ## 4.2.x
 

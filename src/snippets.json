@@ -1501,7 +1501,16 @@
       "</md-input-container>$0"
     ]
   },
-  
+  "Material Chip List": {
+    "prefix": "m-chip-list",
+    "description": "Material Chip List",
+    "types": "typescript, html",
+    "body": [
+      "<md-chip-list>",
+      "\t<md-chip>${text}<md-chip>",
+      "</md-chip-list>$0"
+    ]
+  },
   "Material Select": {
     "prefix": "m-select",
     "description": "Material Select",
