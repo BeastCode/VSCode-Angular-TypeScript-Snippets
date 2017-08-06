@@ -1511,6 +1511,16 @@
       "</md-chip-list>$0"
     ]
   },
+  "Material Chip Stacked List": {
+    "prefix": "m-chip-list-stacked",
+    "description": "Material Chip Stacked List",
+    "types": "typescript, html",
+    "body": [
+      "<md-chip-list class=\"mat-chip-list-stacked\">",
+      "\t<md-chip>${text}<md-chip>",
+      "</md-chip-list>$0"
+    ]
+  },
   "Material Select": {
     "prefix": "m-select",
     "description": "Material Select",

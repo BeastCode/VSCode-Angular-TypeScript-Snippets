@@ -5,6 +5,7 @@
   * ng-httpClient-get
 * Angular Material
     * m-chip-list
+    * m-chip-list-stacked
 
 ## 4.2.x
 
