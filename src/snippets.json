@@ -517,8 +517,8 @@
     "description": "Routes to include in root module",
     "types": "typescript",
     "body": [
-      "import { RouterModule } from '@angular/router';",
-      "import { routes } from './routes';",
+      "import { NgModule } from '@angular/core';",
+      "import { RouterModule, Router } from '@angular/router';",
       "",
       "const routes: Routes = [",
       "\t{ path: '', component: ${Home}Component },",
@@ -539,15 +539,16 @@
     "description": "Routes to include in a feature module",
     "types": "typescript",
     "body": [
-      "import { RouterModule } from '@angular/router';",
-      "import { routes } from './routes';",
+      "import { NgModule } from '@angular/core';",
+      "import { RouterModule, Router } from '@angular/router';",
+      "import { CommonModule } from '@angular/common';",
       "",
       "const routes: Routes = [",
       "\t{ path: '${path}', component: ${Feature}Component }",
       "];",
       "",
       "@NgModule({",
-      "\timports: [RouterModule.forChild(routes)],",
+      "\timports: [CommonModule, RouterModule.forChild(routes)],",
       "\texports: [RouterModule]",
       "})",
       "export class ${Feature}RoutingModule {}",
@@ -1519,6 +1520,14 @@
       "<md-chip-list class=\"mat-chip-list-stacked\">",
       "\t<md-chip>${text}<md-chip>",
       "</md-chip-list>$0"
+    ]
+  },
+  "Material Chip": {
+    "prefix": "m-chip",
+    "description": "Material Chip",
+    "types": "typescript, html",
+    "body": [
+      "<md-chip>${text}<md-chip>$0"
     ]
   },
   "Material Select": {
