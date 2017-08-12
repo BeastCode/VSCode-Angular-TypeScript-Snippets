@@ -6,6 +6,8 @@
 * Angular Material
     * m-chip-list
     * m-chip-list-stacked
+    * m-chip
+    * m-slider-vertical
 
 ## 4.2.x
 

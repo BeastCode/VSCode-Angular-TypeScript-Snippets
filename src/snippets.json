@@ -1566,6 +1566,14 @@
       "<md-slider min=\"${min}\" max=\"${max}\" step=\"${step}\" value=\"${value}\"></md-slider>$0"
     ]
   },
+  "Material Vertical Slider": {
+    "prefix": "m-slider-vertical",
+    "description": "Material Vertical Slider",
+    "types": "typescript, html",
+    "body": [
+      "<md-slider vertical min=\"${min}\" max=\"${max}\" step=\"${step}\" value=\"${value}\"></md-slider>$0"
+    ]
+  },
   "Material List": {
     "prefix": "m-list",
     "description": "Material List",
