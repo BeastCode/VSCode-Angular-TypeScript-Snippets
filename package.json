@@ -24,9 +24,8 @@
     "Angular",
     "TypeScript",
     "HTML",
-    "Angular 2",
-    "Angular 4",
-    "Material"
+    "Angular Material",
+    "Angular 4"
   ],
   "contributes": {
     "snippets": [
