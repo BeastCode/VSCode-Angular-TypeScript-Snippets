@@ -8,6 +8,7 @@
     * m-chip-list-stacked
     * m-chip
     * m-slider-vertical
+    * m-button-toggle
 
 ## 4.2.x
 

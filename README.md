@@ -55,6 +55,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-button-fab-mini | Small circular button w/ elevation. |
 | m-button-icon | Circular Material button with a transparent background |
 | m-button-raised | Rectangular Material button w/ elevation. |
+| m-button-toggle | Material toggle button |
 | m-card | Material Basic Card |
 | m-checkbox | Material Checkbox |
 | m-chip | Material Chip |

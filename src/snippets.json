@@ -1443,6 +1443,14 @@
       "<button md-fab-mini><md-icon>${icon_name}</md-icon></button>$0"
     ]
   },
+  "Material Toggle Button": {
+    "prefix": "m-button-toggle",
+    "description": "Material toggle button",
+    "types": "typescript, html",
+    "body": [
+      "<md-button-toggle>${text}</md-button-toggle>$0"
+    ]
+  },
   "Material Basic Card": {
     "prefix": "m-card",
     "description": "Material Basic Card",
