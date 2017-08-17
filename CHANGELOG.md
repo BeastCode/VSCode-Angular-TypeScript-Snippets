@@ -9,6 +9,7 @@
     * m-chip
     * m-slider-vertical
     * m-button-toggle
+    * m-icon-fontawesome
 
 ## 4.2.x
 

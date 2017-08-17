@@ -1392,17 +1392,14 @@
       "</md-toolbar>$0"
     ]
   }, 
-  "Material icon": {
-    "prefix": "m-icon",
-    "description": "Material Icon",
+  "Material FA Icon": {
+    "prefix": "m-icon-fontawesome",
+    "description": "Material Font Awesome Icon",
     "types": "typescript, html",
     "body": [
-      "<md-icon>${icon_name}</md-icon>$0"
+      "<md-icon md-font-icon=\"fa-${icon}\" class=\"fa\"></md-icon>$0"
     ]
   },
-
-    
-    
   "Material Button": {
     "prefix": "m-button",
     "description": "Rectangular Material button w/ no elevation.",
