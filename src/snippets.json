@@ -560,7 +560,7 @@
     "description": "Router link",
     "types": "typescript, html",
     "body": [
-      "<a [routerLink]=\"[ '/${path}', ${routeParam} ]\">$0"
+      "<a [routerLink]=\"[ '/${path}', ${routeParam} ]\">${name}</a>$0"
     ]
   },
   "Angular Router Attribute": {
@@ -576,7 +576,7 @@
     "description": "Router active link",
     "types": "typescript, html",
     "body": [
-      "<a [routerLink]=\"[ '/${path}' ]\" routerLinkActive=\"active\">$0"
+      "<a [routerLink]=\"[ '/${path}' ]\" routerLinkActive=\"active\">${name}</a>$0"
     ]
   },
   "Angular Router Outlet": {
