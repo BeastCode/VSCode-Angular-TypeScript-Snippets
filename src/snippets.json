@@ -914,9 +914,9 @@
     "description": "v4: If else directive: *ngIf=\"expression; else\"",
     "types": "typescript, html",
     "body": [
-      "<div *ngIf=\"${expression}; else ${elseTemplate}\">",
+      "<ng-container *ngIf=\"${expression}; else ${elseTemplate}\">",
       "\t$1",
-      "</div>",
+      "</ng-container>",
       "<ng-template #${elseTemplate}>",
       "\t$2",
       "</ng-template>",
@@ -928,7 +928,7 @@
     "description": "v4: If then else directive: *ngIf=\"expression; then; else\"",
     "types": "typescript, html",
     "body": [
-      "<div *ngIf=\"${expression}; then ${thenTemplate}; else ${elseTemplate}\"></div>",
+      "<ng-container *ngIf=\"${expression}; then ${thenTemplate}; else ${elseTemplate}\"></ng-container>",
       "<ng-template #${thenTemplate}>",
       "\t$1",
       "</ng-template>",

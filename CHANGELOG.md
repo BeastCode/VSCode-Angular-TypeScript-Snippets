@@ -10,6 +10,7 @@
     * m-slider-vertical
     * m-button-toggle
     * m-icon-fontawesome
+    * enhanced ng-if-else
 
 ## 4.2.x
 
