@@ -518,7 +518,7 @@
     "types": "typescript",
     "body": [
       "import { NgModule } from '@angular/core';",
-      "import { RouterModule, Router } from '@angular/router';",
+      "import { RouterModule, Routes } from '@angular/router';",
       "",
       "const routes: Routes = [",
       "\t{ path: '', component: ${Home}Component },",
@@ -540,7 +540,7 @@
     "types": "typescript",
     "body": [
       "import { NgModule } from '@angular/core';",
-      "import { RouterModule, Router } from '@angular/router';",
+      "import { RouterModule, Routes } from '@angular/router';",
       "import { CommonModule } from '@angular/common';",
       "",
       "const routes: Routes = [",
