@@ -11,6 +11,7 @@
     * m-button-toggle
     * m-icon-fontawesome
     * enhanced ng-if-else
+    * m-spinner
 
 ## 4.2.x
 

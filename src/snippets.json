@@ -1700,6 +1700,14 @@
       "\t(page)=\"pageEvent = $${event}\">",
       "</md-paginator>$0"
     ]
+  },
+  "Material Spinner": {
+    "prefix": "m-spinner",
+    "description": "Material Spinner",
+    "types": "typescript, html",
+    "body": [
+      "<md-spinner></md-spinner>$0"
+    ]
   }
   
 }
