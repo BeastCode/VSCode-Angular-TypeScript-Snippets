@@ -12,6 +12,7 @@
     * m-icon-fontawesome
     * enhanced ng-if-else
     * m-spinner
+    * m-spinner-indeterminate
 
 ## 4.2.x
 

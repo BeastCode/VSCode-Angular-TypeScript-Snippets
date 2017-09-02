@@ -1701,12 +1701,24 @@
       "</md-paginator>$0"
     ]
   },
-  "Material Spinner": {
+  "Material Determinate Spinner": {
     "prefix": "m-spinner",
-    "description": "Material Spinner",
+    "description": "Material Determinate Spinner",
     "types": "typescript, html",
     "body": [
-      "<md-spinner></md-spinner>$0"
+      "<md-spinner",
+      "\t[value]=\"${value}\">",
+      "</md-spinner>$0"
+    ]
+  },
+  "Material Indeterminate Spinner": {
+    "prefix": "m-spinner-indeterminate",
+    "description": "Material Indeterminate Spinner",
+    "types": "typescript, html",
+    "body": [
+      "<md-spinner",
+      "\t[mode]=\"indeterminate\">",
+      "</md-spinner>$0"
     ]
   }
   
