@@ -1579,6 +1579,14 @@
       "<md-slider vertical min=\"${min}\" max=\"${max}\" step=\"${step}\" value=\"${value}\"></md-slider>$0"
     ]
   },
+  "Material Slider Thumblabel": {
+    "prefix": "m-slider-thumbLabel",
+    "description": "Material Slider thumbLabel",
+    "types": "typescript, html",
+    "body": [
+      "<md-slider thumbLabel tickInterval=\"${interval}\"></md-slider>$0"
+    ]
+  },
   "Material List": {
     "prefix": "m-list",
     "description": "Material List",

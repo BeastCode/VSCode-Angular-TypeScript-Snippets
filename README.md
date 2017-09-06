@@ -75,6 +75,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-select | Material Select |
 | m-slide-toggle | Material Slide toggle |
 | m-slider | Material Slider |
+| m-slider-thumbLabel | Material Slider thumbLabel |
 | m-slider-vertical | Material Vertical Slider |
 | m-spinner | Material Determinate Spinner |
 | m-spinner-indeterminate | Material Indeterminate Spinner |

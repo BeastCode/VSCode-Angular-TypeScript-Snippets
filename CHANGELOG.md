@@ -13,6 +13,7 @@
     * enhanced ng-if-else
     * m-spinner
     * m-spinner-indeterminate
+    * m-slider-thumbLabel
 
 ## 4.2.x
 
