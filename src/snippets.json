@@ -1587,6 +1587,14 @@
       "<md-slider thumbLabel tickInterval=\"${interval}\"></md-slider>$0"
     ]
   },
+  "Material Slider TickInterval": {
+    "prefix": "m-slider-tickInterval",
+    "description": "Material Slider tickInterval",
+    "types": "typescript, html",
+    "body": [
+      "<md-slider step=\"${step}\" tickInterval=\"${interval}\"></md-slider>$0"
+    ]
+  },
   "Material Slider TickInterval Auto": {
     "prefix": "m-slider-tickInterval-auto",
     "description": "Material Slider tickInterval Auto",
