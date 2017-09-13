@@ -75,9 +75,9 @@
       "import { Directive } from '@angular/core';",
       "",
       "@Directive({",
-      "\tselector: '${selector}',",
+      "\tselector: '${1:selector}',",
       "})",
-      "export class ${Name}Directive {$0}"
+      "export class ${2:Name}Directive {${3: }}$0"
     ]
   },
   "Angular CSS Directive": {
@@ -88,15 +88,15 @@
       "import { Directive, ElementRef, Input } from '@angular/core';",
       "",
       "@Directive({",
-      "\tselector: '[${selector}]',",
+      "\tselector: '[${1:selector}]',",
       "})",
-      "export class ${Name}Directive {",
-      "\tconstructor(el: ElementRef) {}",
+      "export class ${2:Name}Directive {",
+      "\tconstructor(private elementRef: ElementRef) {}",
       "",
-      "\tprivate ${name}(${value}: string) {",
-      "\tthis.el.nativeElement.style.${proptery} = ${value};",
+      "\tprivate ${3:name}(${4:value}: string) {",
+      "\t\tthis.elementRef.nativeElement.style.${5:proptery} = ${6:value};",
       "\t}",
-      "}"
+      "}$0"
     ]
   },
   "Angular Attribute Directive": {
@@ -107,9 +107,9 @@
       "import { Directive } from '@angular/core';",
       "",
       "@Directive({",
-      "\tselector: '[${selector}]',",
+      "\tselector: '[${1:prefix}${2:Name}]',",
       "})",
-      "export class ${Name}Directive {$0}"
+      "export class ${2:Name}Directive {${4: }}$0"
     ]
   },
   "Angular Service": {
