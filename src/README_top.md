@@ -1,5 +1,5 @@
-[![Version](http://vsmarketplacebadge.apphb.com/version/Mikael.Angular-BeastCode.svg)](https://marketplace.visualstudio.com/items?itemName=Mikael.Angular-BeastCode)
-[![Installs](http://vsmarketplacebadge.apphb.com/installs-short/Mikael.Angular-BeastCode.svg)](https://marketplace.visualstudio.com/items?itemName=Mikael.Angular-BeastCode)
+[![Version](https://vsmarketplacebadge.apphb.com/version/Mikael.Angular-BeastCode.svg)](https://marketplace.visualstudio.com/items?itemName=Mikael.Angular-BeastCode)
+[![Installs](https://vsmarketplacebadge.apphb.com/installs-short/Mikael.Angular-BeastCode.svg)](https://marketplace.visualstudio.com/items?itemName=Mikael.Angular-BeastCode)
 
 # VSCode Angular TypeScript & Html Snippets
 Visual Studio Code TypeScript and Html snippets and code examples for Angular 2+
@@ -18,7 +18,7 @@ All code snippets are based on and follow the Angular style guide https://angula
 
 # Usage
 
-All snippets starts with "ng-".
+All Angular snippets starts with "ng-".
 Multiple snippets come in multiple variations. For instance when you want to create a new component you can choose between having the template and css inline or not:
 * ng-component
 * ng-component-inline
@@ -38,6 +38,8 @@ ng-for currently has even more variations, so make sure you pick the one you wan
 
 ![ngForSnippet](https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets/raw/master/images/ngForSnippet.gif)
 
+### Angular Material
+All Material snippets starts with "m-" and there are now over 30 Material snippets in this package.
 
 # Pro Tip
 

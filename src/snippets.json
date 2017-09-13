@@ -517,8 +517,8 @@
     "description": "Routes to include in root module",
     "types": "typescript",
     "body": [
-      "import { RouterModule } from '@angular/router';",
-      "import { routes } from './routes';",
+      "import { NgModule } from '@angular/core';",
+      "import { RouterModule, Routes } from '@angular/router';",
       "",
       "const routes: Routes = [",
       "\t{ path: '', component: ${Home}Component },",
@@ -539,15 +539,16 @@
     "description": "Routes to include in a feature module",
     "types": "typescript",
     "body": [
-      "import { RouterModule } from '@angular/router';",
-      "import { routes } from './routes';",
+      "import { NgModule } from '@angular/core';",
+      "import { RouterModule, Routes } from '@angular/router';",
+      "import { CommonModule } from '@angular/common';",
       "",
       "const routes: Routes = [",
       "\t{ path: '${path}', component: ${Feature}Component }",
       "];",
       "",
       "@NgModule({",
-      "\timports: [RouterModule.forChild(routes)],",
+      "\timports: [CommonModule, RouterModule.forChild(routes)],",
       "\texports: [RouterModule]",
       "})",
       "export class ${Feature}RoutingModule {}",
@@ -559,7 +560,7 @@
     "description": "Router link",
     "types": "typescript, html",
     "body": [
-      "<a [routerLink]=\"[ '/${path}', ${routeParam} ]\">$0"
+      "<a [routerLink]=\"[ '/${path}', ${routeParam} ]\">${name}</a>$0"
     ]
   },
   "Angular Router Attribute": {
@@ -575,7 +576,7 @@
     "description": "Router active link",
     "types": "typescript, html",
     "body": [
-      "<a [routerLink]=\"[ '/${path}' ]\" routerLinkActive=\"active\">$0"
+      "<a [routerLink]=\"[ '/${path}' ]\" routerLinkActive=\"active\">${name}</a>$0"
     ]
   },
   "Angular Router Outlet": {
@@ -913,9 +914,9 @@
     "description": "v4: If else directive: *ngIf=\"expression; else\"",
     "types": "typescript, html",
     "body": [
-      "<div *ngIf=\"${expression}; else ${elseTemplate}\">",
+      "<ng-container *ngIf=\"${expression}; else ${elseTemplate}\">",
       "\t$1",
-      "</div>",
+      "</ng-container>",
       "<ng-template #${elseTemplate}>",
       "\t$2",
       "</ng-template>",
@@ -927,7 +928,7 @@
     "description": "v4: If then else directive: *ngIf=\"expression; then; else\"",
     "types": "typescript, html",
     "body": [
-      "<div *ngIf=\"${expression}; then ${thenTemplate}; else ${elseTemplate}\"></div>",
+      "<ng-container *ngIf=\"${expression}; then ${thenTemplate}; else ${elseTemplate}\"></ng-container>",
       "<ng-template #${thenTemplate}>",
       "\t$1",
       "</ng-template>",
@@ -1180,8 +1181,16 @@
       "})$0"
     ]
   },
-  "http post": {
-    "prefix": "ng-http",
+   "httpClient get": {
+    "prefix": "ng-httpClient-get",
+    "description": "HttpClient observable get request",
+    "types": "typescript, html",
+    "body": [
+      "this.http.get('${url}')$0"
+    ]
+  },
+  "http get post": {
+    "prefix": "ng-http-get-post",
     "description": "Http observable get & post request",
     "types": "typescript, html",
     "body": [
@@ -1369,7 +1378,7 @@
   },
   "Material toolbar-multiRow": {
     "prefix": "m-toolbar-multiRow",
-    "description": "Material toolbar with multiple rows",
+    "description": "Material Toolbar with multiple rows",
     "types": "typescript, html",
     "body": [
       "<md-toolbar>",
@@ -1383,17 +1392,14 @@
       "</md-toolbar>$0"
     ]
   }, 
-  "Material icon": {
-    "prefix": "m-icon",
-    "description": "Material icon",
+  "Material FA Icon": {
+    "prefix": "m-icon-fontawesome",
+    "description": "Material Font Awesome Icon",
     "types": "typescript, html",
     "body": [
-      "<md-icon>${icon_name}</md-icon>$0"
+      "<md-icon md-font-icon=\"fa-${icon}\" class=\"fa\"></md-icon>$0"
     ]
   },
-
-    
-    
   "Material Button": {
     "prefix": "m-button",
     "description": "Rectangular Material button w/ no elevation.",
@@ -1432,6 +1438,14 @@
     "types": "typescript, html",
     "body": [
       "<button md-fab-mini><md-icon>${icon_name}</md-icon></button>$0"
+    ]
+  },
+  "Material Toggle Button": {
+    "prefix": "m-button-toggle",
+    "description": "Material toggle button",
+    "types": "typescript, html",
+    "body": [
+      "<md-button-toggle>${text}</md-button-toggle>$0"
     ]
   },
   "Material Basic Card": {
@@ -1485,7 +1499,7 @@
   },
   "Material Input Text": {
     "prefix": "m-input",
-    "description": "Material Input textbox",
+    "description": "Material Input Textbox",
     "types": "typescript, html",
     "body": [
       "<md-input-container>",
@@ -1493,7 +1507,34 @@
       "</md-input-container>$0"
     ]
   },
-  
+  "Material Chip List": {
+    "prefix": "m-chip-list",
+    "description": "Material Chip List",
+    "types": "typescript, html",
+    "body": [
+      "<md-chip-list>",
+      "\t<md-chip>${text}<md-chip>",
+      "</md-chip-list>$0"
+    ]
+  },
+  "Material Chip Stacked List": {
+    "prefix": "m-chip-list-stacked",
+    "description": "Material Chip Stacked List",
+    "types": "typescript, html",
+    "body": [
+      "<md-chip-list class=\"mat-chip-list-stacked\">",
+      "\t<md-chip>${text}<md-chip>",
+      "</md-chip-list>$0"
+    ]
+  },
+  "Material Chip": {
+    "prefix": "m-chip",
+    "description": "Material Chip",
+    "types": "typescript, html",
+    "body": [
+      "<md-chip>${text}<md-chip>$0"
+    ]
+  },
   "Material Select": {
     "prefix": "m-select",
     "description": "Material Select",
@@ -1528,6 +1569,38 @@
     "types": "typescript, html",
     "body": [
       "<md-slider min=\"${min}\" max=\"${max}\" step=\"${step}\" value=\"${value}\"></md-slider>$0"
+    ]
+  },
+  "Material Vertical Slider": {
+    "prefix": "m-slider-vertical",
+    "description": "Material Vertical Slider",
+    "types": "typescript, html",
+    "body": [
+      "<md-slider vertical min=\"${min}\" max=\"${max}\" step=\"${step}\" value=\"${value}\"></md-slider>$0"
+    ]
+  },
+  "Material Slider Thumblabel": {
+    "prefix": "m-slider-thumbLabel",
+    "description": "Material Slider thumbLabel",
+    "types": "typescript, html",
+    "body": [
+      "<md-slider thumbLabel tickInterval=\"${interval}\"></md-slider>$0"
+    ]
+  },
+  "Material Slider TickInterval": {
+    "prefix": "m-slider-tickInterval",
+    "description": "Material Slider tickInterval",
+    "types": "typescript, html",
+    "body": [
+      "<md-slider step=\"${step}\" tickInterval=\"${interval}\"></md-slider>$0"
+    ]
+  },
+  "Material Slider TickInterval Auto": {
+    "prefix": "m-slider-tickInterval-auto",
+    "description": "Material Slider tickInterval Auto",
+    "types": "typescript, html",
+    "body": [
+      "<md-slider tickInterval=\"auto\"></md-slider>$0"
     ]
   },
   "Material List": {
@@ -1579,7 +1652,7 @@
   },
   "Material Tooltip": {
     "prefix": "m-tooltip",
-    "description": "Material Tab",
+    "description": "Material Tooltip",
     "types": "typescript, html",
     "body": [
       "mdTooltip=\"${text}\"$0"
@@ -1587,10 +1660,91 @@
   },
   "Material Tooltip Position": {
     "prefix": "m-tooltip-position",
-    "description": "Material Tab",
+    "description": "Material Tooltip position",
     "types": "typescript, html",
     "body": [
-      "mdTooltipPosition=\"${above|below|left|right|before|after}\"$0"
+      "[mdTooltipPosition]=\"${above|below|left|right|before|after}\"$0"
+    ]
+  },
+  "Material Tooltip With Position": {
+    "prefix": "m-tooltip-with-position",
+    "description": "Material Tooltip with position",
+    "types": "typescript, html",
+    "body": [
+      "mdTooltip=\"${text}\" [mdTooltipPosition]=\"${above|below|left|right|before|after}\"$0"
+    ]
+  },
+  "Material Table": {
+    "prefix": "m-table",
+    "description": "Material Table",
+    "types": "typescript, html",
+    "body": [
+      "<md-table #table [dataSource]=\"${dataSource}\">",
+      "\t<ng-container cdkColumnDef=\"${column}\">",
+      "\t\t<md-header-cell *cdkHeaderCellDef> ${header} </md-header-cell>",
+      "\t\t<md-cell *cdkCellDef=\"let row\"> {{row.${column}}} </md-cell>",
+      "\t</ng-container>",
+      "</md-table>$0"
+    ]
+  },
+  "Material Table Column": {
+    "prefix": "m-table-column",
+    "description": "Material Table Column",
+    "types": "typescript, html",
+    "body": [
+      "<ng-container cdkColumnDef=\"${column}\">",
+      "\t<md-header-cell *cdkHeaderCellDef> ${header} </md-header-cell>",
+      "\t<md-cell *cdkCellDef=\"let row\"> {{row.${column}}} </md-cell>",
+      "</ng-container>$0"
+    ]
+  },
+  "Material Grid List": {
+    "prefix": "m-grid-list",
+    "description": "Material Grid List",
+    "types": "typescript, html",
+    "body": [
+      "<md-grid-list cols=\"${cols}\" rowHeight=\"${height}px\">",
+      "\t<md-grid-tile",
+      "\t\t*ngFor=\"let ${tile} of ${tiles}\"",
+      "\t\t[colspan]=\"${tile}.cols\"",
+      "\t\t[rowspan]=\"${tile}.rows\"",
+      "\t\t{{${tile}.text}}",
+      "\t</md-grid-tile>",
+      "</md-grid-list>$0"
+    ]
+  },
+  "Material Paginator": {
+    "prefix": "m-paginator",
+    "description": "Material Paginator",
+    "types": "typescript, html",
+    "body": [
+      "<md-paginator [length]=\"${length}\"",
+      "\t[pageSize]=\"${pageSize}\"",
+      "\t[pageSizeOptions]=\"${pageSizeOptions}\"",
+      "\t(page)=\"pageEvent = $${event}\">",
+      "</md-paginator>$0"
+    ]
+  },
+  "Material Determinate Spinner": {
+    "prefix": "m-spinner",
+    "description": "Material Determinate Spinner",
+    "types": "typescript, html",
+    "body": [
+      "<md-spinner",
+      "\t[value]=\"${value}\">",
+      "</md-spinner>$0"
+    ]
+  },
+  "Material Indeterminate Spinner": {
+    "prefix": "m-spinner-indeterminate",
+    "description": "Material Indeterminate Spinner",
+    "types": "typescript, html",
+    "body": [
+      "<md-spinner",
+      "\t[mode]=\"indeterminate\">",
+      "</md-spinner>$0"
     ]
   }
+  
 }
+

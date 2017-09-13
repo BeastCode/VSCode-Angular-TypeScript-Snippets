@@ -1,5 +1,5 @@
-[![Version](http://vsmarketplacebadge.apphb.com/version/Mikael.Angular-BeastCode.svg)](https://marketplace.visualstudio.com/items?itemName=Mikael.Angular-BeastCode)
-[![Installs](http://vsmarketplacebadge.apphb.com/installs-short/Mikael.Angular-BeastCode.svg)](https://marketplace.visualstudio.com/items?itemName=Mikael.Angular-BeastCode)
+[![Version](https://vsmarketplacebadge.apphb.com/version/Mikael.Angular-BeastCode.svg)](https://marketplace.visualstudio.com/items?itemName=Mikael.Angular-BeastCode)
+[![Installs](https://vsmarketplacebadge.apphb.com/installs-short/Mikael.Angular-BeastCode.svg)](https://marketplace.visualstudio.com/items?itemName=Mikael.Angular-BeastCode)
 
 # VSCode Angular TypeScript & Html Snippets
 Visual Studio Code TypeScript and Html snippets and code examples for Angular 2+
@@ -18,7 +18,7 @@ All code snippets are based on and follow the Angular style guide https://angula
 
 # Usage
 
-All snippets starts with "ng-".
+All Angular snippets starts with "ng-".
 Multiple snippets come in multiple variations. For instance when you want to create a new component you can choose between having the template and css inline or not:
 * ng-component
 * ng-component-inline
@@ -38,6 +38,8 @@ ng-for currently has even more variations, so make sure you pick the one you wan
 
 ![ngForSnippet](https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets/raw/master/images/ngForSnippet.gif)
 
+### Angular Material
+All Material snippets starts with "m-" and there are now over 30 Material snippets in this package.
 
 # Pro Tip
 
@@ -53,27 +55,42 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-button-fab-mini | Small circular button w/ elevation. |
 | m-button-icon | Circular Material button with a transparent background |
 | m-button-raised | Rectangular Material button w/ elevation. |
+| m-button-toggle | Material toggle button |
 | m-card | Material Basic Card |
 | m-checkbox | Material Checkbox |
+| m-chip | Material Chip |
+| m-chip-list | Material Chip List |
+| m-chip-list-stacked | Material Chip Stacked List |
 | m-datepicker | Material Datepicker |
-| m-icon | Material icon |
+| m-grid-list | Material Grid List |
+| m-icon-fontawesome | Material Font Awesome Icon |
 | m-icon-svg | Material SVG Icon |
-| m-input | Material Input textbox |
+| m-input | Material Input Textbox |
 | m-list | Material List |
 | m-list-item | Material List Item |
 | m-list-ngfor | Material List ngFor |
+| m-paginator | Material Paginator |
 | m-radiobutton | Material Radio Button |
 | m-radiobutton-option | Material Radio Button Option |
 | m-select | Material Select |
 | m-slide-toggle | Material Slide toggle |
 | m-slider | Material Slider |
+| m-slider-thumbLabel | Material Slider thumbLabel |
+| m-slider-tickInterval | Material Slider tickInterval |
+| m-slider-tickInterval-auto | Material Slider tickInterval Auto |
+| m-slider-vertical | Material Vertical Slider |
+| m-spinner | Material Determinate Spinner |
+| m-spinner-indeterminate | Material Indeterminate Spinner |
 | m-tab | Material Tab |
 | m-tab-group | Material Tab Group |
+| m-table | Material Table |
+| m-table-column | Material Table Column |
 | m-toolbar | Material toolbar |
-| m-toolbar-multiRow | Material toolbar with multiple rows |
+| m-toolbar-multiRow | Material Toolbar with multiple rows |
 | m-toolbar-row | Material toolbar row |
-| m-tooltip | Material Tab |
-| m-tooltip-position | Material Tab |
+| m-tooltip | Material Tooltip |
+| m-tooltip-position | Material Tooltip position |
+| m-tooltip-with-position | Material Tooltip with position |
 | ng-afterContentChecked | Lifecycle hook: Called after every check of the component's or directive's content |
 | ng-afterContentInit | Lifecycle hook: Called after ngOnInit when the component's or directive's content has been initialized |
 | ng-afterViewChecked | Lifecycle hook: Called after every check of the component's view. Applies to components only |
@@ -116,8 +133,9 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-fx-row-reverse | Flex Layout Reverse Row |
 | ng-hide | Usage: Bind to the hidden property. |
 | ng-href | Usage: Bind to the href property. |
-| ng-http | Http observable get & post request |
 | ng-http-get | Http observable get request |
+| ng-http-get-post | Http observable get & post request |
+| ng-httpClient-get | HttpClient observable get request |
 | ng-if | If directive: *ngIf=\"expression\" |
 | ng-if-else | v4: If else directive: *ngIf=\"expression; else\" |
 | ng-if-then-else | v4: If then else directive: *ngIf=\"expression; then; else\" |
@@ -204,7 +222,7 @@ Please send any feedback or suggestions to @Mike_BeastCode (Twitter) or create a
 
 ##Open Source
 
-This is an open source project and if you want to contribute I've added issues on github that are easy to start with. [![first-timers-only](http://img.shields.io/badge/first--timers--only-friendly-blue.svg)](https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets/labels/first-timers-only)
+This is an open source project and if you want to contribute I've added issues on github that are easy to start with. [![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-blue.svg)](https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets/labels/first-timers-only)
 
 
 ##Disclaimer

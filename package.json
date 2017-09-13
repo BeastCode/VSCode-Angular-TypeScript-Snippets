@@ -1,8 +1,8 @@
 {
   "name": "Angular-BeastCode",
   "publisher": "Mikael",
-  "displayName": "Angular 2+ Snippets - TypeScript, Html, ngRx, Angular Flex Layout & Testing",
-  "description": "125 Angular 2+ Snippets (TypeScript, Html, ngRx, Angular Flex Layout & Testing) Updated for v2.4.11 & v4.2.0",
+  "displayName": "Angular 2+ Snippets - TypeScript, Html, ngRx, Angular Flex Layout, Material & Testing",
+  "description": "140 Angular 2+ Snippets (TypeScript, Html, ngRx, Angular Flex Layout, Material & Testing) Updated for v2.4.11 & v4.3.0",
   "icon": "images/Angular4.png",
   "license": "MIT",
   "repository": {
@@ -13,7 +13,7 @@
     "url": "https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets/issues"
   },
   "homepage": "https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets#readme",
-  "version": "4.2.13",
+  "version": "4.3.15",
   "engines": {
     "vscode": "^1.0.0"
   },
@@ -24,7 +24,7 @@
     "Angular",
     "TypeScript",
     "HTML",
-    "Angular 2",
+    "Angular Material",
     "Angular 4"
   ],
   "contributes": {
@@ -40,7 +40,7 @@
     ]
   },
   "scripts": {
-    "build": "npm run build_snippets; npm run build_readme; npm run dups; npm run count",
+    "build": "npm run build_snippets; npm run build_readme; npm run dups; npm run count; npm run countTS; npm run countHTML;",
     "publish": "npm version patch; vsce publish",
     "build_snippets": "npm run build_html; npm run build_typescript",
     "build_readme": "cat src/README_top.md > README.md; npm run generate_readme_table; cat src/README_bottom.md >> README.md;",
@@ -51,6 +51,8 @@
     "dup_name": "cat src/snippets.json | grep 'prefix' | sort | uniq -d",
     "dups": "npm run dup_snippet; npm run dup_name",
     "count": "cat src/snippets.json | grep 'prefix' | wc -l",
+    "countTS": "cat snippets/typescript.json | grep 'prefix' | wc",
+    "countHTML": "cat snippets/html.json | grep 'prefix' | wc",
     "patch": "npm version patch"
   }
 }

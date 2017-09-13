@@ -1,5 +1,20 @@
 # Angular BeastCode Changelog
 
+## 4.3.x
+ * 4.3
+  * ng-httpClient-get
+* Angular Material
+    * m-chip-list
+    * m-chip-list-stacked
+    * m-chip
+    * m-slider-vertical
+    * m-button-toggle
+    * m-icon-fontawesome
+    * enhanced ng-if-else
+    * m-spinner
+    * m-spinner-indeterminate
+    * m-slider-thumbLabel
+
 ## 4.2.x
 
  * Router
@@ -18,6 +33,10 @@
     * m-tab-group
     * m-tooltip
     * m-tooltip-position
+    * m-tooltip-with-position
+    * m-table
+    * m-grid-list
+    * m-paginator
 
 ## 4.1.x
 
