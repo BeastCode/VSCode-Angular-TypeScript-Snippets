@@ -4,18 +4,18 @@
     "description": "Component with template and style urls",
     "types": "typescript",
     "body": [
-      "import { Component, OnInit } from '@angular/core';",
-      "",
-      "@Component({",
-      "\tselector: '${selector}',",
-      "\ttemplateUrl: './${name}.component.html',",
-      "\tstyleUrls: ['./${name}.component.css']",
-      "})",
-      "export class ${Name}Component implements OnInit {",
-      "\tconstructor($0) { $1}",
-      "",
-      "\tngOnInit() { }",
-      "}$2"
+			"import { Component, OnInit } from '@angular/core';",
+			"",
+			"@Component({",
+			"\tselector: '${1:prefix}-${2:name}',",
+			"\ttemplateUrl: './${2:name}.component.html',",
+			"\tstyleUrls: ['./${2:name}.component.${3|scss,less,css|}']",
+			"})",
+			"export class ${4:Name}Component implements OnInit {",
+			"\tconstructor($5) { }",
+			"",
+			"\tngOnInit() {${6: }}",
+			"}${0}"
     ]
   },
   "Angular Component Inline": {
@@ -26,16 +26,15 @@
       "import { Component, OnInit } from '@angular/core';",
       "",
       "@Component({",
-      "\tselector: '${selector}',",
-      "\ttemplate: `",
-      "\t\t$1`,",
-      "\tstyles: [`$2`]",
+      "\tselector: '${1:prefix}-${2:name}',",
+      "\ttemplate: `${3}`,",
+      "\tstyles: [`${4}`]",
       "})",
-      "export class ${Name}Component implements OnInit {",
-      "\tconstructor() { $0}",
+      "export class ${5:Name}Component implements OnInit {",
+      "\tconstructor($6) { }",
       "",
-      "\tngOnInit() { }",
-      "}"
+      "\tngOnInit() {${7: }}",
+      "}${0}"
     ]
   },
   "Angular Validator": {
