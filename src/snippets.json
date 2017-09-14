@@ -4,18 +4,18 @@
     "description": "Component with template and style urls",
     "types": "typescript",
     "body": [
-			"import { Component, OnInit } from '@angular/core';",
-			"",
-			"@Component({",
-			"\tselector: '${1:prefix}-${2:name}',",
-			"\ttemplateUrl: './${2:name}.component.html',",
-			"\tstyleUrls: ['./${2:name}.component.${3|scss,less,css|}']",
-			"})",
-			"export class ${4:Name}Component implements OnInit {",
-			"\tconstructor($5) { }",
-			"",
-			"\tngOnInit() {${6: }}",
-			"}${0}"
+      "import { Component, OnInit } from '@angular/core';",
+      "",
+      "@Component({",
+      "\tselector: '${1:prefix}-${2:name}',",
+      "\ttemplateUrl: './${2:name}.component.html',",
+      "\tstyleUrls: ['./${2:name}.component.${3|scss,less,css|}']",
+      "})",
+      "export class ${4:Name}Component implements OnInit {",
+      "\tconstructor($5) { }",
+      "",
+      "\tngOnInit() {${6: }}",
+      "}${0}"
     ]
   },
   "Angular Component Inline": {
@@ -425,16 +425,16 @@
     "description": "A lightning talk by Gary Bernhardt from CodeMash 2012. ng-wat talk by Shai Reznik in 2015",
     "types": "typescript",
     "body": [
-        "`M.`MMMm                 ,M' .M.    MMMMMMM MMMMMMMMM",
-        " `M.`MMMm               ,M' .MMM.   MMMMMMM MMMMMMMMM",
-        "  `M.`MMMm             ,M' :MMMMM.        M MMMM     ", 
-        "   `M.`MMMm     .m    ,M' . `MMMMM.       M MMMM     ",
-        "    `M.`MMMm    MMm  ,M' .M. `MMMMM.      M MMMM     ",
-        "     `M.`MMMm .`MMMm,M' .M`M. `MMMMM.     M MMMM     ",
-        "      `M.`MMMmM.`MMMM' .M' `M. `MMMMM.    M MMMM     ",
-        "       `M.`MMM`M.`MM' .M'   `M. `MMMMM.   M MMMM     ",
-        "        `M.`M' `M,`' .MMMMMMMMM. `MMMMM.  M MMMM     ",
-        "         `M.`   `M' .M'       `M. `MMMMM. M MMMM     "
+      "`M.`MMMm                 ,M' .M.    MMMMMMM MMMMMMMMM",
+      " `M.`MMMm               ,M' .MMM.   MMMMMMM MMMMMMMMM",
+      "  `M.`MMMm             ,M' :MMMMM.        M MMMM     ",
+      "   `M.`MMMm     .m    ,M' . `MMMMM.       M MMMM     ",
+      "    `M.`MMMm    MMm  ,M' .M. `MMMMM.      M MMMM     ",
+      "     `M.`MMMm .`MMMm,M' .M`M. `MMMMM.     M MMMM     ",
+      "      `M.`MMMmM.`MMMM' .M' `M. `MMMMM.    M MMMM     ",
+      "       `M.`MMM`M.`MM' .M'   `M. `MMMMM.   M MMMM     ",
+      "        `M.`M' `M,`' .MMMMMMMMM. `MMMMM.  M MMMM     ",
+      "         `M.`   `M' .M'       `M. `MMMMM. M MMMM     "
     ]
   },
   "Angular Conference": {
@@ -442,10 +442,10 @@
     "description": "The World's Original Angular Conference",
     "types": "typescript",
     "body": [
-      "                     ,//@@@.",           
-      "                .///////@@@@@@@&.",            
-      "           ,////////////@@@@@@@@@@@@@/",         
-      "      ./////////////////#@@@@@@@@@@@@@@@@@,",    
+      "                     ,//@@@.",
+      "                .///////@@@@@@@&.",
+      "           ,////////////@@@@@@@@@@@@@/",
+      "      ./////////////////#@@@@@@@@@@@@@@@@@,",
       " ,/////////////////.         ,&@@@@@@@@@@@@@@@@#",
       "/////////////.                     %@@@@@@@@@@@@@",
       "/////////.                             .%@@@@@@@@",
@@ -464,10 +464,10 @@
       "  .///////.                           %@@@@@@@&",
       "   ///////////                    ,@@@@@@@@@@@(",
       "     ,///////////,             #@@@@@@@@@@@&",
-      "        .///////////.       &@@@@@@@@@@@%",   
-      "           ./////////////@@@@@@@@@@@@*",      
-      "              ./////////@@@@@@@@@@,",         
-      "                  ./////@@@@@@%",            
+      "        .///////////.       &@@@@@@@@@@@%",
+      "           ./////////////@@@@@@@@@@@@*",
+      "              ./////////@@@@@@@@@@,",
+      "                  ./////@@@@@@%",
       "                     .//@@@#",
       "",
       "     The World's Original Angular Conference",
@@ -1180,7 +1180,7 @@
       "})$0"
     ]
   },
-   "httpClient get": {
+  "httpClient get": {
     "prefix": "ng-httpClient-get",
     "description": "HttpClient observable get request",
     "types": "typescript, html",
@@ -1354,7 +1354,6 @@
       "</div>"
     ]
   },
-
   "Material toolbar": {
     "prefix": "m-toolbar",
     "description": "Material toolbar",
@@ -1390,7 +1389,7 @@
       "\t</md-toolbar-row>",
       "</md-toolbar>$0"
     ]
-  }, 
+  },
   "Material FA Icon": {
     "prefix": "m-icon-fontawesome",
     "description": "Material Font Awesome Icon",
@@ -1744,6 +1743,4 @@
       "</md-spinner>$0"
     ]
   }
-  
 }
-
