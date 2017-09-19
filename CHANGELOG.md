@@ -1,8 +1,12 @@
 # Angular BeastCode Changelog
 
+## 4.4.x
+ * Angular
+    * ng-component-value-accessor
+
 ## 4.3.x
- * 4.3
-  * ng-httpClient-get
+ * Angular 4.3
+    * ng-httpClient-get
 * Angular Material
     * m-chip-list
     * m-chip-list-stacked
@@ -14,6 +18,8 @@
     * m-spinner
     * m-spinner-indeterminate
     * m-slider-thumbLabel
+    * m-slider-tickInterval-auto
+    * m-slider-tickInterval
 
 ## 4.2.x
 

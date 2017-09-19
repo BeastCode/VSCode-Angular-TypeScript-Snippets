@@ -38,8 +38,9 @@
     ]
   },
   "Angular Component With NG_VALUE_ACCESSOR": {
-    "prefix": "ng-component-with-value-accessor",
+    "prefix": "ng-component-value-accessor",
     "description": "Angular Component With NG_VALUE_ACCESSOR",
+    "types": "typescript",
     "body": [
       "import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';",
       "import { Component, Input, OnInit, forwardRef } from '@angular/core';",
@@ -99,7 +100,7 @@
       "\tsetDisabledState(isDisabled: boolean): void {",
       "\t}",
       "}",
-      ""
+      "$0"
     ]
   },
   "Angular Validator": {
