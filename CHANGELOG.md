@@ -3,6 +3,8 @@
 ## 4.4.x
  * Angular
     * ng-component-value-accessor
+ * Material
+    * m-expansion-panel
 
 ## 4.3.x
  * Angular 4.3

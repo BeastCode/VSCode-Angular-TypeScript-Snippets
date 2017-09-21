@@ -1799,6 +1799,19 @@
       "</md-spinner>$0"
     ]
   },
+  "Material Expansion Panel ": {
+    "prefix": "m-expansion-panel",
+    "description": "Material Expansion Panel",
+    "types": "typescript, html",
+    "body": [
+      "<md-expansion-panel>",
+      "\t<md-expansion-panel-header>",
+      "\t\t${title}",
+      "\t</md-expansion-panel-header>",
+      "\t${content}",   
+      "</md-expansion-panel>$0"
+    ]
+  },
   "Material Indeterminate Spinner": {
     "prefix": "m-spinner-indeterminate",
     "description": "Material Indeterminate Spinner",

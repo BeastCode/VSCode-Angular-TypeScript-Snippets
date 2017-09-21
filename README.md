@@ -62,6 +62,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-chip-list | Material Chip List |
 | m-chip-list-stacked | Material Chip Stacked List |
 | m-datepicker | Material Datepicker |
+| m-expansion-panel | Material Expansion Panel |
 | m-grid-list | Material Grid List |
 | m-icon-fontawesome | Material Font Awesome Icon |
 | m-icon-svg | Material SVG Icon |
