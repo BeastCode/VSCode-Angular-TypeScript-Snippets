@@ -5,6 +5,7 @@
     * ng-component-value-accessor
  * Material
     * m-expansion-panel
+    * m-stepper-vertical
 
 ## 4.3.x
  * Angular 4.3

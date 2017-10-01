@@ -1812,6 +1812,21 @@
       "</md-expansion-panel>$0"
     ]
   },
+  "Material Vertical Stepper": {
+    "prefix": "m-stepper-vertical",
+    "description": "Material Vertical Stepper",
+    "types": "typescript, html",
+    "body": [
+      "<md-vertical-stepper>",
+      "\t<md-step label=\"${label1}\">",
+      "\t\t$1",
+      "\t</md-step>",
+      "\t<md-step label=\"${label2}\">",
+      "\t\t$2",
+      "\t</md-step>",
+      "</md-vertical-stepper>$0"
+    ]
+  },
   "Material Indeterminate Spinner": {
     "prefix": "m-spinner-indeterminate",
     "description": "Material Indeterminate Spinner",

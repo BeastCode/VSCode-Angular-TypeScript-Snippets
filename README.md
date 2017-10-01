@@ -82,6 +82,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-slider-vertical | Material Vertical Slider |
 | m-spinner | Material Determinate Spinner |
 | m-spinner-indeterminate | Material Indeterminate Spinner |
+| m-stepper-vertical | Material Vertical Stepper |
 | m-tab | Material Tab |
 | m-tab-group | Material Tab Group |
 | m-table | Material Table |
