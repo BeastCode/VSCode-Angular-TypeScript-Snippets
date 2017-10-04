@@ -1,5 +1,11 @@
 # Angular BeastCode Changelog
 
+## 5.0.x
+ * rx-import-all
+ * rx-import-observable
+ * rx-add-operator
+ * rx-add-observable
+
 ## 4.4.x
  * Angular
     * ng-component-value-accessor

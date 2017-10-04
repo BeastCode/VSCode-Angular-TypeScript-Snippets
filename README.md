@@ -198,6 +198,10 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-test-pipe | Test a pipe |
 | ng-test-service | TODO |
 | ng-validator | Angular validator snippet |
+| rx-import-add-observable | RxJS Import Observable |
+| rx-import-add-operator | RxJS Import Add Operator |
+| rx-import-all | RxJS import the entire core set of functionality |
+| rx-import-observable | RxJS Import Observable |
 | wat | A lightning talk by Gary Bernhardt from CodeMash 2012. ng-wat talk by Shai Reznik in 2015 |
 
 

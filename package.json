@@ -1,8 +1,8 @@
 {
   "name": "Angular-BeastCode",
   "publisher": "Mikael",
-  "displayName": "Angular 2+ Snippets - TypeScript, Html, ngRx, Angular Flex Layout, Material & Testing",
-  "description": "143 Angular 2+ Snippets (TypeScript, Html, ngRx, Angular Flex Layout, Material & Testing) Updated for v2.4.11 & v4.3.0",
+  "displayName": "Angular 5 Snippets - TypeScript, Html, ngRx, Angular Flex Layout, Material & RxJS",
+  "description": "147 Angular 2+ Snippets (TypeScript, Html, ngRx, Angular Flex Layout, Material, RxJS & Testing) Updated for v2.4.11 & v4.4.0",
   "icon": "images/Angular4.png",
   "license": "MIT",
   "repository": {
@@ -13,7 +13,7 @@
     "url": "https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets/issues"
   },
   "homepage": "https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets#readme",
-  "version": "4.4.3",
+  "version": "5.0.0",
   "engines": {
     "vscode": "^1.0.0"
   },
@@ -36,16 +36,21 @@
       {
         "language": "typescript",
         "path": "./snippets/typescript.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript.json"
       }
     ]
   },
   "scripts": {
-    "build": "npm run build_snippets; npm run build_readme; npm run dups; npm run count; npm run countTS; npm run countHTML;",
+    "build": "npm run build_snippets; npm run build_readme; npm run dups; npm run count; npm run countTS; npm run countHTML; npm run countJS;",
     "publish": "npm version patch; vsce publish",
-    "build_snippets": "npm run build_html; npm run build_typescript",
+    "build_snippets": "npm run build_html; npm run build_typescript; npm run build_javascript",
     "build_readme": "cat src/README_top.md > README.md; npm run generate_readme_table; cat src/README_bottom.md >> README.md;",
     "build_html": "cat src/snippets.json | jq -c 'map(select(.types | contains(\"html\")))' > snippets/html.json",
     "build_typescript": "cat src/snippets.json | jq -c 'map(select(.types | contains(\"typescript\")))' > snippets/typescript.json",
+    "build_javascript": "cat src/snippets.json | jq -c 'map(select(.types | contains(\"javascript\")))' > snippets/javascript.json",
     "generate_readme_table": "cat src/snippets.json | grep 'prefix\\|description' | sed -e \"s/description//\" | sed -e \"s/prefix//\" | sed -e 's/    \"\": \"//' | sed -e 's/\",//' | sed -e 'N;s/\\n/ | /' | sed -e 's/$/ |/g' | sed -e 's/^/| /' | sort  >> README.md",
     "dup_snippet": "cat src/snippets.json | grep '\": {' | sort | uniq -d",
     "dup_name": "cat src/snippets.json | grep 'prefix' | sort | uniq -d",
@@ -53,6 +58,7 @@
     "count": "cat src/snippets.json | grep 'prefix' | wc -l",
     "countTS": "cat snippets/typescript.json | grep 'prefix' | wc",
     "countHTML": "cat snippets/html.json | grep 'prefix' | wc",
+    "countJS": "cat snippets/javascript.json | grep 'prefix' | wc",
     "patch": "npm version patch"
   }
 }
