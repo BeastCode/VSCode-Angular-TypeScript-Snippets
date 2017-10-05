@@ -1420,14 +1420,16 @@
       "</div>"
     ]
   },
+
+
   "Material toolbar": {
     "prefix": "m-toolbar",
     "description": "Material toolbar",
     "types": "typescript, html",
     "body": [
-      "<md-toolbar>",
+      "<mat-toolbar>",
       "\t<span>${FirstRow}</span>",
-      "</md-toolbar>$0"
+      "</mat-toolbar>$0"
     ]
   },
   "Material toolbar row": {
@@ -1435,9 +1437,9 @@
     "description": "Material toolbar row",
     "types": "typescript, html",
     "body": [
-      "<md-toolbar-row>",
+      "<mat-toolbar-row>",
       "\t<span>${FirstRow}</span>",
-      "</md-toolbar-row>$0"
+      "</mat-toolbar-row>$0"
     ]
   },
   "Material toolbar-multiRow": {
@@ -1445,15 +1447,15 @@
     "description": "Material Toolbar with multiple rows",
     "types": "typescript, html",
     "body": [
-      "<md-toolbar>",
+      "<mat-toolbar>",
       "\t<span>${FirstRow}</span>",
-      "\t<md-toolbar-row>",
+      "\t<mat-toolbar-row>",
       "\t\t<span>${SecondRow}</span>",
-      "\t</md-toolbar-row>",
-      "\t<md-toolbar-row>",
+      "\t</mat-toolbar-row>",
+      "\t<mat-toolbar-row>",
       "\t\t<span>${ThirdRow}</span>",
-      "\t</md-toolbar-row>",
-      "</md-toolbar>$0"
+      "\t</mat-toolbar-row>",
+      "</mat-toolbar>$0"
     ]
   },
   "Material FA Icon": {
@@ -1461,7 +1463,7 @@
     "description": "Material Font Awesome Icon",
     "types": "typescript, html",
     "body": [
-      "<md-icon md-font-icon=\"fa-${icon}\" class=\"fa\"></md-icon>$0"
+      "<mat-icon mat-font-icon=\"fa-${icon}\" class=\"fa\"></mat-icon>$0"
     ]
   },
   "Material Button": {
@@ -1469,7 +1471,7 @@
     "description": "Rectangular Material button w/ no elevation.",
     "types": "typescript, html",
     "body": [
-      "<button md-button>${text}</button>$0"
+      "<button mat-button>${text}</button>$0"
     ]
   },
   "Material Raised Button": {
@@ -1477,7 +1479,7 @@
     "description": "Rectangular Material button w/ elevation.",
     "types": "typescript, html",
     "body": [
-      "<button md-raised-button>${text}</button>$0"
+      "<button mat-raised-button>${text}</button>$0"
     ]
   },
   "Material Icon Button": {
@@ -1485,7 +1487,7 @@
     "description": "Circular Material button with a transparent background",
     "types": "typescript, html",
     "body": [
-      "<button md-icon-button>%{text}</button>$0"
+      "<button mat-icon-button>%{text}</button>$0"
     ]
   },
   "Material Round Button": {
@@ -1493,7 +1495,7 @@
     "description": "Circular button w/ elevation.",
     "types": "typescript, html",
     "body": [
-      "<button md-fab><md-icon>${icon_name}</md-icon></button>$0"
+      "<button mat-fab><mat-icon>${icon_name}</mat-icon></button>$0"
     ]
   },
   "Material Round Small Button": {
@@ -1501,7 +1503,7 @@
     "description": "Small circular button w/ elevation.",
     "types": "typescript, html",
     "body": [
-      "<button md-fab-mini><md-icon>${icon_name}</md-icon></button>$0"
+      "<button mat-fab-mini><mat-icon>${icon_name}</mat-icon></button>$0"
     ]
   },
   "Material Toggle Button": {
@@ -1509,7 +1511,7 @@
     "description": "Material toggle button",
     "types": "typescript, html",
     "body": [
-      "<md-button-toggle>${text}</md-button-toggle>$0"
+      "<mat-button-toggle>${text}</mat-button-toggle>$0"
     ]
   },
   "Material Basic Card": {
@@ -1517,9 +1519,9 @@
     "description": "Material Basic Card",
     "types": "typescript, html",
     "body": [
-      "<md-card>",
+      "<mat-card>",
       "\t$1",
-      "</md-card>$0"
+      "</mat-card>$0"
     ]
   },
   "Material Radio Button": {
@@ -1527,10 +1529,10 @@
     "description": "Material Radio Button",
     "types": "typescript, html",
     "body": [
-      "<md-radio-group>",
-      "\t<md-radio-button value=\"${value1}\">${Option1}</md-radio-button>",
-      "\t<md-radio-button value=\"${value2}\">${Option2}</md-radio-button>",
-      "</md-radio-group>$0"
+      "<mat-radio-group>",
+      "\t<mat-radio-button value=\"${value1}\">${Option1}</mat-radio-button>",
+      "\t<mat-radio-button value=\"${value2}\">${Option2}</mat-radio-button>",
+      "</mat-radio-group>$0"
     ]
   },
   "Material Radio Button Option": {
@@ -1538,7 +1540,7 @@
     "description": "Material Radio Button Option",
     "types": "typescript, html",
     "body": [
-      "<md-radio-button value=\"${value}\">${Option}</md-radio-button>$0"
+      "<mat-radio-button value=\"${value}\">${Option}</mat-radio-button>$0"
     ]
   },
   "Material Checkbox": {
@@ -1546,7 +1548,7 @@
     "description": "Material Checkbox",
     "types": "typescript, html",
     "body": [
-      "<md-checkbox>${text}</md-checkbox>$0"
+      "<mat-checkbox>${text}</mat-checkbox>$0"
     ]
   },
   "Material Datepicker": {
@@ -1554,11 +1556,11 @@
     "description": "Material Datepicker",
     "types": "typescript, html",
     "body": [
-      "<md-input-container>",
+      "<mat-input-container>",
       "\t<input mdInput [mdDatepicker]=\"${picker}\" placeholder=\"${title}\">",
       "\t\t<button mdSuffix [mdDatepickerToggle]=\"${picker}\"></button>",
-      "\t</md-input-container>",
-      "<md-datepicker #${picker}></md-datepicker>$0"
+      "\t</mat-input-container>",
+      "<mat-datepicker #${picker}></mat-datepicker>$0"
     ]
   },
   "Material Input Text": {
@@ -1566,9 +1568,9 @@
     "description": "Material Input Textbox",
     "types": "typescript, html",
     "body": [
-      "<md-input-container>",
+      "<mat-input-container>",
       "\t<input mdInput placeholder=\"${label}\" value=\"${value}\">",
-      "</md-input-container>$0"
+      "</mat-input-container>$0"
     ]
   },
   "Material Chip List": {
@@ -1576,9 +1578,9 @@
     "description": "Material Chip List",
     "types": "typescript, html",
     "body": [
-      "<md-chip-list>",
-      "\t<md-chip>${text}<md-chip>",
-      "</md-chip-list>$0"
+      "<mat-chip-list>",
+      "\t<mat-chip>${text}<mat-chip>",
+      "</mat-chip-list>$0"
     ]
   },
   "Material Chip Stacked List": {
@@ -1586,9 +1588,9 @@
     "description": "Material Chip Stacked List",
     "types": "typescript, html",
     "body": [
-      "<md-chip-list class=\"mat-chip-list-stacked\">",
-      "\t<md-chip>${text}<md-chip>",
-      "</md-chip-list>$0"
+      "<mat-chip-list class=\"mat-chip-list-stacked\">",
+      "\t<mat-chip>${text}<mat-chip>",
+      "</mat-chip-list>$0"
     ]
   },
   "Material Chip": {
@@ -1596,7 +1598,7 @@
     "description": "Material Chip",
     "types": "typescript, html",
     "body": [
-      "<md-chip>${text}<md-chip>$0"
+      "<mat-chip>${text}<mat-chip>$0"
     ]
   },
   "Material Select": {
@@ -1604,11 +1606,11 @@
     "description": "Material Select",
     "types": "typescript, html",
     "body": [
-      "<md-select placeholder=\"${Placeholder}\" [(ngModel)]=\"selectedValue\" name=\"${item}\">",
-      "\t<md-option *ngFor=\"let ${item} of ${items}\" [value]=\"${item}.value\">",
+      "<mat-select placeholder=\"${Placeholder}\" [(ngModel)]=\"selectedValue\" name=\"${item}\">",
+      "\t<mat-option *ngFor=\"let ${item} of ${items}\" [value]=\"${item}.value\">",
       "\t\t{{${item}.viewValue}}",
-      "\t</md-option>",
-      "</md-select>$0"
+      "\t</mat-option>",
+      "</mat-select>$0"
     ]
   },
   "Material SVG Icon": {
@@ -1616,7 +1618,7 @@
     "description": "Material SVG Icon",
     "types": "typescript, html",
     "body": [
-      "<md-icon svgIcon=\"${src}\"></md-icon>$0"
+      "<mat-icon svgIcon=\"${src}\"></mat-icon>$0"
     ]
   },
   "Material Slide Toggle": {
@@ -1624,7 +1626,7 @@
     "description": "Material Slide toggle",
     "types": "typescript, html",
     "body": [
-      "<md-slide-toggle>${text}</md-slide-toggle>$0"
+      "<mat-slide-toggle>${text}</mat-slide-toggle>$0"
     ]
   },
   "Material Slider": {
@@ -1632,7 +1634,7 @@
     "description": "Material Slider",
     "types": "typescript, html",
     "body": [
-      "<md-slider min=\"${min}\" max=\"${max}\" step=\"${step}\" value=\"${value}\"></md-slider>$0"
+      "<mat-slider min=\"${min}\" max=\"${max}\" step=\"${step}\" value=\"${value}\"></mat-slider>$0"
     ]
   },
   "Material Vertical Slider": {
@@ -1640,7 +1642,7 @@
     "description": "Material Vertical Slider",
     "types": "typescript, html",
     "body": [
-      "<md-slider vertical min=\"${min}\" max=\"${max}\" step=\"${step}\" value=\"${value}\"></md-slider>$0"
+      "<mat-slider vertical min=\"${min}\" max=\"${max}\" step=\"${step}\" value=\"${value}\"></mat-slider>$0"
     ]
   },
   "Material Slider Thumblabel": {
@@ -1648,7 +1650,7 @@
     "description": "Material Slider thumbLabel",
     "types": "typescript, html",
     "body": [
-      "<md-slider thumbLabel tickInterval=\"${interval}\"></md-slider>$0"
+      "<mat-slider thumbLabel tickInterval=\"${interval}\"></mat-slider>$0"
     ]
   },
   "Material Slider TickInterval": {
@@ -1656,7 +1658,7 @@
     "description": "Material Slider tickInterval",
     "types": "typescript, html",
     "body": [
-      "<md-slider step=\"${step}\" tickInterval=\"${interval}\"></md-slider>$0"
+      "<mat-slider step=\"${step}\" tickInterval=\"${interval}\"></mat-slider>$0"
     ]
   },
   "Material Slider TickInterval Auto": {
@@ -1664,7 +1666,7 @@
     "description": "Material Slider tickInterval Auto",
     "types": "typescript, html",
     "body": [
-      "<md-slider tickInterval=\"auto\"></md-slider>$0"
+      "<mat-slider tickInterval=\"auto\"></mat-slider>$0"
     ]
   },
   "Material List": {
@@ -1672,9 +1674,9 @@
     "description": "Material List",
     "types": "typescript, html",
     "body": [
-      "<md-list>",
-      "\t<md-list-item>${item}</md-list-item>$1",
-      "</md-list>$0"
+      "<mat-list>",
+      "\t<mat-list-item>${item}</mat-list-item>$1",
+      "</mat-list>$0"
     ]
   },
   "Material List ngFor": {
@@ -1682,9 +1684,9 @@
     "description": "Material List ngFor",
     "types": "typescript, html",
     "body": [
-      "<md-list>",
-      "\t<md-list-item *ngFor=\"let ${item} of ${items}\">{{ ${item} }}</md-list-item>$1",
-      "</md-list>$0"
+      "<mat-list>",
+      "\t<mat-list-item *ngFor=\"let ${item} of ${items}\">{{ ${item} }}</mat-list-item>$1",
+      "</mat-list>$0"
     ]
   },
   "Material List Item": {
@@ -1692,7 +1694,7 @@
     "description": "Material List Item",
     "types": "typescript, html",
     "body": [
-      "<md-list-item>${item}</md-list-item>$0"
+      "<mat-list-item>${item}</mat-list-item>$0"
     ]
   },
   "Material Tab Group": {
@@ -1700,10 +1702,10 @@
     "description": "Material Tab Group",
     "types": "typescript, html",
     "body": [
-      "<md-tab-group>",
-      "\t<md-tab label=\"${TabHeader1}\">$1</md-tab>",
-      "\t<md-tab label=\"${TabTabHeader2}\">$2</md-tab>",
-      "</md-tab-group>$0"
+      "<mat-tab-group>",
+      "\t<mat-tab label=\"${TabHeader1}\">$1</mat-tab>",
+      "\t<mat-tab label=\"${TabTabHeader2}\">$2</mat-tab>",
+      "</mat-tab-group>$0"
     ]
   },
   "Material Tab": {
@@ -1711,7 +1713,7 @@
     "description": "Material Tab",
     "types": "typescript, html",
     "body": [
-      "<md-tab label=\"${TabHeader}\">$1</md-tab>$0"
+      "<mat-tab label=\"${TabHeader}\">$1</mat-tab>$0"
     ]
   },
   "Material Tooltip": {
@@ -1743,12 +1745,12 @@
     "description": "Material Table",
     "types": "typescript, html",
     "body": [
-      "<md-table #table [dataSource]=\"${dataSource}\">",
+      "<mat-table #table [dataSource]=\"${dataSource}\">",
       "\t<ng-container cdkColumnDef=\"${column}\">",
-      "\t\t<md-header-cell *cdkHeaderCellDef> ${header} </md-header-cell>",
-      "\t\t<md-cell *cdkCellDef=\"let row\"> {{row.${column}}} </md-cell>",
+      "\t\t<mat-header-cell *cdkHeaderCellDef> ${header} </mat-header-cell>",
+      "\t\t<mat-cell *cdkCellDef=\"let row\"> {{row.${column}}} </mat-cell>",
       "\t</ng-container>",
-      "</md-table>$0"
+      "</mat-table>$0"
     ]
   },
   "Material Table Column": {
@@ -1757,14 +1759,433 @@
     "types": "typescript, html",
     "body": [
       "<ng-container cdkColumnDef=\"${column}\">",
-      "\t<md-header-cell *cdkHeaderCellDef> ${header} </md-header-cell>",
-      "\t<md-cell *cdkCellDef=\"let row\"> {{row.${column}}} </md-cell>",
+      "\t<mat-header-cell *cdkHeaderCellDef> ${header} </mat-header-cell>",
+      "\t<mat-cell *cdkCellDef=\"let row\"> {{row.${column}}} </mat-cell>",
       "</ng-container>$0"
     ]
   },
   "Material Grid List": {
     "prefix": "m-grid-list",
     "description": "Material Grid List",
+    "types": "typescript, html",
+    "body": [
+      "<mat-grid-list cols=\"${cols}\" rowHeight=\"${height}px\">",
+      "\t<mat-grid-tile",
+      "\t\t*ngFor=\"let ${tile} of ${tiles}\"",
+      "\t\t[colspan]=\"${tile}.cols\"",
+      "\t\t[rowspan]=\"${tile}.rows\"",
+      "\t\t{{${tile}.text}}",
+      "\t</mat-grid-tile>",
+      "</mat-grid-list>$0"
+    ]
+  },
+  "Material Paginator": {
+    "prefix": "m-paginator",
+    "description": "Material Paginator",
+    "types": "typescript, html",
+    "body": [
+      "<mat-paginator [length]=\"${length}\"",
+      "\t[pageSize]=\"${pageSize}\"",
+      "\t[pageSizeOptions]=\"${pageSizeOptions}\"",
+      "\t(page)=\"pageEvent = $${event}\">",
+      "</mat-paginator>$0"
+    ]
+  },
+  "Material Determinate Spinner": {
+    "prefix": "m-spinner",
+    "description": "Material Determinate Spinner",
+    "types": "typescript, html",
+    "body": [
+      "<mat-spinner",
+      "\t[value]=\"${value}\">",
+      "</mat-spinner>$0"
+    ]
+  },
+  "Material Expansion Panel ": {
+    "prefix": "m-expansion-panel",
+    "description": "Material Expansion Panel",
+    "types": "typescript, html",
+    "body": [
+      "<mat-expansion-panel>",
+      "\t<mat-expansion-panel-header>",
+      "\t\t${title}",
+      "\t</mat-expansion-panel-header>",
+      "\t${content}",   
+      "</mat-expansion-panel>$0"
+    ]
+  },
+  "Material Vertical Stepper": {
+    "prefix": "m-stepper-vertical",
+    "description": "Material Vertical Stepper",
+    "types": "typescript, html",
+    "body": [
+      "<mat-vertical-stepper>",
+      "\t<mat-step label=\"${label1}\">",
+      "\t\t$1",
+      "\t</mat-step>",
+      "\t<mat-step label=\"${label2}\">",
+      "\t\t$2",
+      "\t</mat-step>",
+      "</mat-vertical-stepper>$0"
+    ]
+  },
+  "Material Indeterminate Spinner": {
+    "prefix": "m-spinner-indeterminate",
+    "description": "Material Indeterminate Spinner",
+    "types": "typescript, html",
+    "body": [
+      "<mat-spinner",
+      "\t[mode]=\"indeterminate\">",
+      "</mat-spinner>$0"
+    ]
+  },
+
+
+  "Depricated Material toolbar": {
+    "prefix": "md-toolbar",
+    "description": "Depricated Material toolbar",
+    "types": "typescript, html",
+    "body": [
+      "<md-toolbar>",
+      "\t<span>${FirstRow}</span>",
+      "</md-toolbar>$0"
+    ]
+  },
+  "Depricated Material toolbar row": {
+    "prefix": "md-toolbar-row",
+    "description": "Depricated Material toolbar row",
+    "types": "typescript, html",
+    "body": [
+      "<md-toolbar-row>",
+      "\t<span>${FirstRow}</span>",
+      "</md-toolbar-row>$0"
+    ]
+  },
+  "Depricated Material toolbar-multiRow": {
+    "prefix": "md-toolbar-multiRow",
+    "description": "Depricated Material Toolbar with multiple rows",
+    "types": "typescript, html",
+    "body": [
+      "<md-toolbar>",
+      "\t<span>${FirstRow}</span>",
+      "\t<md-toolbar-row>",
+      "\t\t<span>${SecondRow}</span>",
+      "\t</md-toolbar-row>",
+      "\t<md-toolbar-row>",
+      "\t\t<span>${ThirdRow}</span>",
+      "\t</md-toolbar-row>",
+      "</md-toolbar>$0"
+    ]
+  },
+  "Depricated Material FA Icon": {
+    "prefix": "md-icon-fontawesome",
+    "description": "Depricated Material Font Awesome Icon",
+    "types": "typescript, html",
+    "body": [
+      "<md-icon md-font-icon=\"fa-${icon}\" class=\"fa\"></md-icon>$0"
+    ]
+  },
+  "Depricated Material Button": {
+    "prefix": "md-button",
+    "description": "Rectangular Material button w/ no elevation.",
+    "types": "typescript, html",
+    "body": [
+      "<button md-button>${text}</button>$0"
+    ]
+  },
+  "Depricated Material Raised Button": {
+    "prefix": "md-button-raised",
+    "description": "Rectangular Material button w/ elevation.",
+    "types": "typescript, html",
+    "body": [
+      "<button md-raised-button>${text}</button>$0"
+    ]
+  },
+  "Depricated Material Icon Button": {
+    "prefix": "md-button-icon",
+    "description": "Circular Material button with a transparent background",
+    "types": "typescript, html",
+    "body": [
+      "<button md-icon-button>%{text}</button>$0"
+    ]
+  },
+  "Depricated Material Round Button": {
+    "prefix": "md-button-fab",
+    "description": "Circular button w/ elevation.",
+    "types": "typescript, html",
+    "body": [
+      "<button md-fab><md-icon>${icon_name}</md-icon></button>$0"
+    ]
+  },
+  "Depricated Material Round Small Button": {
+    "prefix": "md-button-fab-mini",
+    "description": "Small circular button w/ elevation.",
+    "types": "typescript, html",
+    "body": [
+      "<button md-fab-mini><md-icon>${icon_name}</md-icon></button>$0"
+    ]
+  },
+  "Depricated Material Toggle Button": {
+    "prefix": "md-button-toggle",
+    "description": "Depricated Material toggle button",
+    "types": "typescript, html",
+    "body": [
+      "<md-button-toggle>${text}</md-button-toggle>$0"
+    ]
+  },
+  "Depricated Material Basic Card": {
+    "prefix": "md-card",
+    "description": "Depricated Material Basic Card",
+    "types": "typescript, html",
+    "body": [
+      "<md-card>",
+      "\t$1",
+      "</md-card>$0"
+    ]
+  },
+  "Depricated Material Radio Button": {
+    "prefix": "md-radiobutton",
+    "description": "Depricated Material Radio Button",
+    "types": "typescript, html",
+    "body": [
+      "<md-radio-group>",
+      "\t<md-radio-button value=\"${value1}\">${Option1}</md-radio-button>",
+      "\t<md-radio-button value=\"${value2}\">${Option2}</md-radio-button>",
+      "</md-radio-group>$0"
+    ]
+  },
+  "Depricated Material Radio Button Option": {
+    "prefix": "md-radiobutton-option",
+    "description": "Depricated Material Radio Button Option",
+    "types": "typescript, html",
+    "body": [
+      "<md-radio-button value=\"${value}\">${Option}</md-radio-button>$0"
+    ]
+  },
+  "Depricated Material Checkbox": {
+    "prefix": "md-checkbox",
+    "description": "Depricated Material Checkbox",
+    "types": "typescript, html",
+    "body": [
+      "<md-checkbox>${text}</md-checkbox>$0"
+    ]
+  },
+  "Depricated Material Datepicker": {
+    "prefix": "md-datepicker",
+    "description": "Depricated Material Datepicker",
+    "types": "typescript, html",
+    "body": [
+      "<md-input-container>",
+      "\t<input mdInput [mdDatepicker]=\"${picker}\" placeholder=\"${title}\">",
+      "\t\t<button mdSuffix [mdDatepickerToggle]=\"${picker}\"></button>",
+      "\t</md-input-container>",
+      "<md-datepicker #${picker}></md-datepicker>$0"
+    ]
+  },
+  "Depricated Material Input Text": {
+    "prefix": "md-input",
+    "description": "Depricated Material Input Textbox",
+    "types": "typescript, html",
+    "body": [
+      "<md-input-container>",
+      "\t<input mdInput placeholder=\"${label}\" value=\"${value}\">",
+      "</md-input-container>$0"
+    ]
+  },
+  "Depricated Material Chip List": {
+    "prefix": "md-chip-list",
+    "description": "Depricated Material Chip List",
+    "types": "typescript, html",
+    "body": [
+      "<md-chip-list>",
+      "\t<md-chip>${text}<md-chip>",
+      "</md-chip-list>$0"
+    ]
+  },
+  "Depricated Material Chip Stacked List": {
+    "prefix": "md-chip-list-stacked",
+    "description": "Depricated Material Chip Stacked List",
+    "types": "typescript, html",
+    "body": [
+      "<md-chip-list class=\"mat-chip-list-stacked\">",
+      "\t<md-chip>${text}<md-chip>",
+      "</md-chip-list>$0"
+    ]
+  },
+  "Depricated Material Chip": {
+    "prefix": "md-chip",
+    "description": "Depricated Material Chip",
+    "types": "typescript, html",
+    "body": [
+      "<md-chip>${text}<md-chip>$0"
+    ]
+  },
+  "Depricated Material Select": {
+    "prefix": "md-select",
+    "description": "Depricated Material Select",
+    "types": "typescript, html",
+    "body": [
+      "<md-select placeholder=\"${Placeholder}\" [(ngModel)]=\"selectedValue\" name=\"${item}\">",
+      "\t<md-option *ngFor=\"let ${item} of ${items}\" [value]=\"${item}.value\">",
+      "\t\t{{${item}.viewValue}}",
+      "\t</md-option>",
+      "</md-select>$0"
+    ]
+  },
+  "Depricated Material SVG Icon": {
+    "prefix": "md-icon-svg",
+    "description": "Depricated Material SVG Icon",
+    "types": "typescript, html",
+    "body": [
+      "<md-icon svgIcon=\"${src}\"></md-icon>$0"
+    ]
+  },
+  "Depricated Material Slide Toggle": {
+    "prefix": "md-slide-toggle",
+    "description": "Depricated Material Slide toggle",
+    "types": "typescript, html",
+    "body": [
+      "<md-slide-toggle>${text}</md-slide-toggle>$0"
+    ]
+  },
+  "Depricated Material Slider": {
+    "prefix": "md-slider",
+    "description": "Depricated Material Slider",
+    "types": "typescript, html",
+    "body": [
+      "<md-slider min=\"${min}\" max=\"${max}\" step=\"${step}\" value=\"${value}\"></md-slider>$0"
+    ]
+  },
+  "Depricated Material Vertical Slider": {
+    "prefix": "md-slider-vertical",
+    "description": "Depricated Material Vertical Slider",
+    "types": "typescript, html",
+    "body": [
+      "<md-slider vertical min=\"${min}\" max=\"${max}\" step=\"${step}\" value=\"${value}\"></md-slider>$0"
+    ]
+  },
+  "Depricated Material Slider Thumblabel": {
+    "prefix": "md-slider-thumbLabel",
+    "description": "Depricated Material Slider thumbLabel",
+    "types": "typescript, html",
+    "body": [
+      "<md-slider thumbLabel tickInterval=\"${interval}\"></md-slider>$0"
+    ]
+  },
+  "Depricated Material Slider TickInterval": {
+    "prefix": "md-slider-tickInterval",
+    "description": "Depricated Material Slider tickInterval",
+    "types": "typescript, html",
+    "body": [
+      "<md-slider step=\"${step}\" tickInterval=\"${interval}\"></md-slider>$0"
+    ]
+  },
+  "Depricated Material Slider TickInterval Auto": {
+    "prefix": "md-slider-tickInterval-auto",
+    "description": "Depricated Material Slider tickInterval Auto",
+    "types": "typescript, html",
+    "body": [
+      "<md-slider tickInterval=\"auto\"></md-slider>$0"
+    ]
+  },
+  "Depricated Material List": {
+    "prefix": "md-list",
+    "description": "Depricated Material List",
+    "types": "typescript, html",
+    "body": [
+      "<md-list>",
+      "\t<md-list-item>${item}</md-list-item>$1",
+      "</md-list>$0"
+    ]
+  },
+  "Depricated Material List ngFor": {
+    "prefix": "md-list-ngfor",
+    "description": "Depricated Material List ngFor",
+    "types": "typescript, html",
+    "body": [
+      "<md-list>",
+      "\t<md-list-item *ngFor=\"let ${item} of ${items}\">{{ ${item} }}</md-list-item>$1",
+      "</md-list>$0"
+    ]
+  },
+  "Depricated Material List Item": {
+    "prefix": "md-list-item",
+    "description": "Depricated Material List Item",
+    "types": "typescript, html",
+    "body": [
+      "<md-list-item>${item}</md-list-item>$0"
+    ]
+  },
+  "Depricated Material Tab Group": {
+    "prefix": "md-tab-group",
+    "description": "Depricated Material Tab Group",
+    "types": "typescript, html",
+    "body": [
+      "<md-tab-group>",
+      "\t<md-tab label=\"${TabHeader1}\">$1</md-tab>",
+      "\t<md-tab label=\"${TabTabHeader2}\">$2</md-tab>",
+      "</md-tab-group>$0"
+    ]
+  },
+  "Depricated Material Tab": {
+    "prefix": "md-tab",
+    "description": "Depricated Material Tab",
+    "types": "typescript, html",
+    "body": [
+      "<md-tab label=\"${TabHeader}\">$1</md-tab>$0"
+    ]
+  },
+  "Depricated Material Tooltip": {
+    "prefix": "md-tooltip",
+    "description": "Depricated Material Tooltip",
+    "types": "typescript, html",
+    "body": [
+      "mdTooltip=\"${text}\"$0"
+    ]
+  },
+  "Depricated Material Tooltip Position": {
+    "prefix": "md-tooltip-position",
+    "description": "Depricated Material Tooltip position",
+    "types": "typescript, html",
+    "body": [
+      "[mdTooltipPosition]=\"${above|below|left|right|before|after}\"$0"
+    ]
+  },
+  "Depricated Material Tooltip With Position": {
+    "prefix": "md-tooltip-with-position",
+    "description": "Depricated Material Tooltip with position",
+    "types": "typescript, html",
+    "body": [
+      "mdTooltip=\"${text}\" [mdTooltipPosition]=\"${above|below|left|right|before|after}\"$0"
+    ]
+  },
+  "Depricated Material Table": {
+    "prefix": "md-table",
+    "description": "Depricated Material Table",
+    "types": "typescript, html",
+    "body": [
+      "<md-table #table [dataSource]=\"${dataSource}\">",
+      "\t<ng-container cdkColumnDef=\"${column}\">",
+      "\t\t<md-header-cell *cdkHeaderCellDef> ${header} </md-header-cell>",
+      "\t\t<md-cell *cdkCellDef=\"let row\"> {{row.${column}}} </md-cell>",
+      "\t</ng-container>",
+      "</md-table>$0"
+    ]
+  },
+  "Depricated Material Table Column": {
+    "prefix": "md-table-column",
+    "description": "Depricated Material Table Column",
+    "types": "typescript, html",
+    "body": [
+      "<ng-container cdkColumnDef=\"${column}\">",
+      "\t<md-header-cell *cdkHeaderCellDef> ${header} </md-header-cell>",
+      "\t<md-cell *cdkCellDef=\"let row\"> {{row.${column}}} </md-cell>",
+      "</ng-container>$0"
+    ]
+  },
+  "Depricated Material Grid List": {
+    "prefix": "md-grid-list",
+    "description": "Depricated Material Grid List",
     "types": "typescript, html",
     "body": [
       "<md-grid-list cols=\"${cols}\" rowHeight=\"${height}px\">",
@@ -1777,9 +2198,9 @@
       "</md-grid-list>$0"
     ]
   },
-  "Material Paginator": {
-    "prefix": "m-paginator",
-    "description": "Material Paginator",
+  "Depricated Material Paginator": {
+    "prefix": "md-paginator",
+    "description": "Depricated Material Paginator",
     "types": "typescript, html",
     "body": [
       "<md-paginator [length]=\"${length}\"",
@@ -1789,9 +2210,9 @@
       "</md-paginator>$0"
     ]
   },
-  "Material Determinate Spinner": {
-    "prefix": "m-spinner",
-    "description": "Material Determinate Spinner",
+  "Depricated Material Determinate Spinner": {
+    "prefix": "md-spinner",
+    "description": "Depricated Material Determinate Spinner",
     "types": "typescript, html",
     "body": [
       "<md-spinner",
@@ -1799,9 +2220,9 @@
       "</md-spinner>$0"
     ]
   },
-  "Material Expansion Panel ": {
-    "prefix": "m-expansion-panel",
-    "description": "Material Expansion Panel",
+  "Depricated Material Expansion Panel ": {
+    "prefix": "md-expansion-panel",
+    "description": "Depricated Material Expansion Panel",
     "types": "typescript, html",
     "body": [
       "<md-expansion-panel>",
@@ -1812,9 +2233,9 @@
       "</md-expansion-panel>$0"
     ]
   },
-  "Material Vertical Stepper": {
-    "prefix": "m-stepper-vertical",
-    "description": "Material Vertical Stepper",
+  "Depricated Material Vertical Stepper": {
+    "prefix": "md-stepper-vertical",
+    "description": "Depricated Material Vertical Stepper",
     "types": "typescript, html",
     "body": [
       "<md-vertical-stepper>",
@@ -1827,9 +2248,9 @@
       "</md-vertical-stepper>$0"
     ]
   },
-  "Material Indeterminate Spinner": {
-    "prefix": "m-spinner-indeterminate",
-    "description": "Material Indeterminate Spinner",
+  "Depricated Material Indeterminate Spinner": {
+    "prefix": "md-spinner-indeterminate",
+    "description": "Depricated Material Indeterminate Spinner",
     "types": "typescript, html",
     "body": [
       "<md-spinner",
@@ -1837,6 +2258,8 @@
       "</md-spinner>$0"
     ]
   },
+
+
   "RxJS Import All": {
     "prefix": "rx-import-all",
     "description": "RxJS import the entire core set of functionality",

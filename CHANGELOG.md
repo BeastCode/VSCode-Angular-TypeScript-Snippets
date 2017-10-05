@@ -1,10 +1,15 @@
 # Angular BeastCode Changelog
 
 ## 5.0.x
- * rx-import-all
- * rx-import-observable
- * rx-add-operator
- * rx-add-observable
+ * Mateial Design
+    43 Material Snippets been updated to use mat- instead of md- for Materal 2.0.0-beta.11 .
+    All new material snippets starts with m- and the old once have md- but will eventually be deleted.
+
+ * RxJS
+    * rx-import-all
+    * rx-import-observable
+    * rx-add-operator
+    * rx-add-observable
 
 ## 4.4.x
  * Angular
