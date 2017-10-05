@@ -4,13 +4,16 @@
 # VSCode Angular TypeScript & Html Snippets
 Visual Studio Code TypeScript and Html snippets and code examples for Angular 2+
 
-# Snippet prefixes
- ng- Angular Snippets
- ng-fx- Angular Flexbox Snippets
- ng-rx- Angular NgRx Snippets
- m- Angular Material Design Snippets
- md- Angular Material Design Snippets for all versions before 2.0.0-beta.11
- rx- RxJS Snippets for both TypeScript and JavaScript
+# Snippet Prefixes
+
+| Prefix | Description |
+| ------- | ----------|
+| ng- | Angular Snippets |
+| ng-fx- | Angular Flexbox Snippets |
+| ng-rx- | Angular NgRx Snippets |
+| m- | Angular Material Design Snippets |
+| md- | Angular Material Design Snippets for all versions before 2.0.0-beta.11 |
+| rx- | RxJS Snippets for both TypeScript and JavaScript |
 
 # Important
 This extension is optimized for devlopers that use Angular 2+ and are no longer using Angular 1.
