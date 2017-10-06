@@ -1231,7 +1231,7 @@
     "description": "import module or component from path;",
     "types": "typescript, html",
     "body": [
-      "import ${module or component} from '${path}';",
+      "import { ${2:moduleOrComponent} } from '${1:path}';",
       "$0"
     ]
   },
