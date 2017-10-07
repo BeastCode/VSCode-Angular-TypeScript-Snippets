@@ -9,7 +9,7 @@ Visual Studio Code TypeScript and Html snippets and code examples for Angular 2+
 | Prefix | Description |
 | ------- | ----------|
 | ng- | Angular Snippets |
-| ng-fx- | Angular Flexbox Snippets |
+| ng-fx- | Angular Flex Layout Snippets |
 | ng-rx- | Angular NgRx Snippets |
 | m- | Angular Material Design Snippets |
 | md- | Angular Material Design Snippets for all versions before 2.0.0-beta.11 |

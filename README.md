@@ -9,7 +9,7 @@ Visual Studio Code TypeScript and Html snippets and code examples for Angular 2+
 | Prefix | Description |
 | ------- | ----------|
 | ng- | Angular Snippets |
-| ng-fx- | Angular Flexbox Snippets |
+| ng-fx- | Angular Flex Layout Snippets |
 | ng-rx- | Angular NgRx Snippets |
 | m- | Angular Material Design Snippets |
 | md- | Angular Material Design Snippets for all versions before 2.0.0-beta.11 |
@@ -93,6 +93,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-slider-vertical | Material Vertical Slider |
 | m-spinner | Material Determinate Spinner |
 | m-spinner-indeterminate | Material Indeterminate Spinner |
+| m-step | Material Vertical Stepper |
 | m-stepper-vertical | Material Vertical Stepper |
 | m-tab | Material Tab |
 | m-tab-group | Material Tab Group |

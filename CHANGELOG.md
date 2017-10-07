@@ -4,6 +4,8 @@
  * Mateial Design
     43 Material Snippets been updated to use mat- instead of md- for Materal 2.0.0-beta.11 .
     All new material snippets starts with m- and the old once have md- but will eventually be deleted.
+ * New Material Snippets:
+   * m-step
 
  * RxJS
     * rx-import-all

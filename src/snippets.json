@@ -1829,6 +1829,17 @@
       "</mat-vertical-stepper>$0"
     ]
   },
+  "Material Stepper Step": {
+    "prefix": "m-step",
+    "description": "Material Vertical Stepper",
+    "types": "typescript, html",
+    "body": [
+      "<mat-step label=\"${label}\">",
+      "\t$1",
+      "</mat-step>",
+      "$0"
+    ]
+  },
   "Material Indeterminate Spinner": {
     "prefix": "m-spinner-indeterminate",
     "description": "Material Indeterminate Spinner",
