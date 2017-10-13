@@ -1829,6 +1829,21 @@
       "</mat-vertical-stepper>$0"
     ]
   },
+  "Material Horizontal Stepper": {
+    "prefix": "m-stepper-horizontal",
+    "description": "Material Horizontal Stepper",
+    "types": "typescript, html",
+    "body": [
+      "<mat-horizontal-stepper>",
+      "\t<mat-step label=\"${label1}\">",
+      "\t\t$1",
+      "\t</mat-step>",
+      "\t<mat-step label=\"${label2}\">",
+      "\t\t$2",
+      "\t</mat-step>",
+      "</mat-horizontal-stepper>$0"
+    ]
+  },
   "Material Stepper Step": {
     "prefix": "m-step",
     "description": "Material Vertical Stepper",

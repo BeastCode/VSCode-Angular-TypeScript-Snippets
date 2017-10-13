@@ -6,6 +6,7 @@
     All new material snippets starts with m- and the old once have md- but will eventually be deleted.
  * New Material Snippets:
    * m-step
+   * m-stepper-horizontal
 
  * RxJS
     * rx-import-all
