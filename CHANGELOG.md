@@ -7,6 +7,7 @@
  * New Material Snippets:
    * m-step
    * m-stepper-horizontal
+   * md-input-container -> md-form-field
 
  * RxJS
     * rx-import-all

@@ -1556,10 +1556,10 @@
     "description": "Material Datepicker",
     "types": "typescript, html",
     "body": [
-      "<mat-input-container>",
+      "<mat-form-field>",
       "\t<input mdInput [mdDatepicker]=\"${picker}\" placeholder=\"${title}\">",
       "\t\t<button mdSuffix [mdDatepickerToggle]=\"${picker}\"></button>",
-      "\t</mat-input-container>",
+      "\t</mat-form-field>",
       "<mat-datepicker #${picker}></mat-datepicker>$0"
     ]
   },
@@ -1568,9 +1568,9 @@
     "description": "Material Input Textbox",
     "types": "typescript, html",
     "body": [
-      "<mat-input-container>",
+      "<mat-form-field>",
       "\t<input mdInput placeholder=\"${label}\" value=\"${value}\">",
-      "</mat-input-container>$0"
+      "</mat-form-field>$0"
     ]
   },
   "Material Chip List": {
@@ -2001,10 +2001,10 @@
     "description": "Depricated Material Datepicker",
     "types": "typescript, html",
     "body": [
-      "<md-input-container>",
+      "<md-form-field>",
       "\t<input mdInput [mdDatepicker]=\"${picker}\" placeholder=\"${title}\">",
       "\t\t<button mdSuffix [mdDatepickerToggle]=\"${picker}\"></button>",
-      "\t</md-input-container>",
+      "\t</md-form-field>",
       "<md-datepicker #${picker}></md-datepicker>$0"
     ]
   },
@@ -2013,9 +2013,9 @@
     "description": "Depricated Material Input Textbox",
     "types": "typescript, html",
     "body": [
-      "<md-input-container>",
+      "<md-form-field>",
       "\t<input mdInput placeholder=\"${label}\" value=\"${value}\">",
-      "</md-input-container>$0"
+      "</md-form-field>$0"
     ]
   },
   "Depricated Material Chip List": {
