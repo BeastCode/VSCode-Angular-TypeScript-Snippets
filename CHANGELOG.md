@@ -15,6 +15,9 @@
     * rx-add-operator
     * rx-add-observable
 
+ * Flex Layout
+   * ng-fx-col-div
+
 ## 4.4.x
  * Angular
     * ng-component-value-accessor

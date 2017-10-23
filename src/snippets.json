@@ -1355,6 +1355,14 @@
     "description": "Flex Layout Column",
     "types": "typescript, html",
     "body": [
+      "fxLayout=\"column\" fxLayoutAlign=\"${start|center|end|space-around|space-between} ${start|center|end|stretch}\" fxLayoutGap=\"${gap}px\">$0"
+    ]
+  },
+  "Angular Flex Column with Div Element": {
+    "prefix": "ng-fx-col-div",
+    "description": "Flex Layout Column with Div Element",
+    "types": "typescript, html",
+    "body": [
       "<div fxLayout=\"column\" fxLayoutAlign=\"${start|center|end|space-around|space-between} ${start|center|end|stretch}\" fxLayoutGap=\"${gap}px\">",
       "\t$0",
       "</div>"
@@ -2007,6 +2015,7 @@
       "\t</md-form-field>",
       "<md-datepicker #${picker}></md-datepicker>$0"
     ]
+    
   },
   "Depricated Material Input Text": {
     "prefix": "md-input",
