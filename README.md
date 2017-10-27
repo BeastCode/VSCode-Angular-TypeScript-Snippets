@@ -178,7 +178,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-for-li | For-loop directive with li element |
 | ng-for-trackBy | For-loop directive with trackBy |
 | ng-fx-col | Flex Layout Column |
-| ng-fx-col-div | Flex Layout Column with Div Element |
+| ng-fx-col-element | Flex Layout Column with Element |
 | ng-fx-col-reverse | Flex Layout Reverse Column |
 | ng-fx-import | Flex Layout Import |
 | ng-fx-item | Flex Layout Item |

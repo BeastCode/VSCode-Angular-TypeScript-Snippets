@@ -1358,14 +1358,14 @@
       "fxLayout=\"column\" fxLayoutAlign=\"${start|center|end|space-around|space-between} ${start|center|end|stretch}\" fxLayoutGap=\"${gap}px\">$0"
     ]
   },
-  "Angular Flex Column with Div Element": {
-    "prefix": "ng-fx-col-div",
-    "description": "Flex Layout Column with Div Element",
+  "Angular Flex Column with Element": {
+    "prefix": "ng-fx-col-element",
+    "description": "Flex Layout Column with Element",
     "types": "typescript, html",
     "body": [
-      "<div fxLayout=\"column\" fxLayoutAlign=\"${start|center|end|space-around|space-between} ${start|center|end|stretch}\" fxLayoutGap=\"${gap}px\">",
+      "<${1:div} fxLayout=\"column\" fxLayoutAlign=\"${2:|start,center,end,space-around,space-between|} ${4:|start,center,end,stretch|}\" fxLayoutGap=\"${gap}px\">",
       "\t$0",
-      "</div>"
+      "</${1:div}>"
     ]
   },
   "Angular Flex Reverse Column": {
