@@ -1298,7 +1298,7 @@
     ]
   },
   "Angular Flex Layout Import": {
-    "prefix": "ng-fx-import",
+    "prefix": "fx-import",
     "description": "Flex Layout Import",
     "types": "typescript, html",
     "body": [
@@ -1307,7 +1307,7 @@
     ]
   },
   "Angular Flex Row": {
-    "prefix": "ng-fx-row",
+    "prefix": "fx-row",
     "description": "Flex Layout Row",
     "types": "typescript, html",
     "body": [
@@ -1317,7 +1317,7 @@
     ]
   },
   "Angular Flex Layout": {
-    "prefix": "ng-fx-layout",
+    "prefix": "fx-layout",
     "description": "Flex Layout Property",
     "types": "typescript, html",
     "body": [
@@ -1325,7 +1325,7 @@
     ]
   },
   "Angular Flex Layout Align": {
-    "prefix": "ng-fx-layout-align",
+    "prefix": "fx-layout-align",
     "description": "Flex Layout Align Property",
     "types": "typescript, html",
     "body": [
@@ -1333,7 +1333,7 @@
     ]
   },
   "Angular Flex Layout Gap": {
-    "prefix": "ng-fx-layout-gap",
+    "prefix": "fx-layout-gap",
     "description": "Flex Layout Gap Property",
     "types": "typescript, html",
     "body": [
@@ -1341,7 +1341,7 @@
     ]
   },
   "Angular Flex Reverse Row": {
-    "prefix": "ng-fx-row-reverse",
+    "prefix": "fx-row-reverse",
     "description": "Flex Layout Reverse Row",
     "types": "typescript, html",
     "body": [
@@ -1351,7 +1351,7 @@
     ]
   },
   "Angular Flex Column": {
-    "prefix": "ng-fx-col",
+    "prefix": "fx-col",
     "description": "Flex Layout Column",
     "types": "typescript, html",
     "body": [
@@ -1359,7 +1359,7 @@
     ]
   },
   "Angular Flex Column with Element": {
-    "prefix": "ng-fx-col-element",
+    "prefix": "fx-col-element",
     "description": "Flex Layout Column with Element",
     "types": "typescript, html",
     "body": [
@@ -1369,7 +1369,7 @@
     ]
   },
   "Angular Flex Reverse Column": {
-    "prefix": "ng-fx-col-reverse",
+    "prefix": "fx-col-reverse",
     "description": "Flex Layout Reverse Column",
     "types": "typescript, html",
     "body": [
@@ -1379,7 +1379,7 @@
     ]
   },
   "Angular Flex Item": {
-    "prefix": "ng-fx-item",
+    "prefix": "fx-item",
     "description": "Flex Layout Item",
     "types": "typescript, html",
     "body": [
@@ -1389,7 +1389,7 @@
     ]
   },
   "Angular Flex Item Offset": {
-    "prefix": "ng-fx-item-offset",
+    "prefix": "fx-item-offset",
     "description": "Flex Layout Item with fxFlexOffset",
     "types": "typescript, html",
     "body": [
@@ -1399,7 +1399,7 @@
     ]
   },
   "Angular Flex Item Order": {
-    "prefix": "ng-fx-item-order",
+    "prefix": "fx-item-order",
     "description": "Flex Layout Item with fxFlexOrder",
     "types": "typescript, html",
     "body": [
@@ -1409,7 +1409,7 @@
     ]
   },
   "Angular Flex Item Align": {
-    "prefix": "ng-fx-item-align",
+    "prefix": "fx-item-align",
     "description": "Flex Layout Item with fxFlexAlign",
     "types": "typescript, html",
     "body": [
@@ -1419,7 +1419,7 @@
     ]
   },
   "Angular Flex Item Fill": {
-    "prefix": "ng-fx-item-fill",
+    "prefix": "fx-item-fill",
     "description": "Flex Layout Item with fxFlexFill",
     "types": "typescript, html",
     "body": [

@@ -61,6 +61,20 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 
 | Snippet | Description |
 | ------- | ----------|
+| fx-col | Flex Layout Column |
+| fx-col-element | Flex Layout Column with Element |
+| fx-col-reverse | Flex Layout Reverse Column |
+| fx-import | Flex Layout Import |
+| fx-item | Flex Layout Item |
+| fx-item-align | Flex Layout Item with fxFlexAlign |
+| fx-item-fill | Flex Layout Item with fxFlexFill |
+| fx-item-offset | Flex Layout Item with fxFlexOffset |
+| fx-item-order | Flex Layout Item with fxFlexOrder |
+| fx-layout | Flex Layout Property |
+| fx-layout-align | Flex Layout Align Property |
+| fx-layout-gap | Flex Layout Gap Property |
+| fx-row | Flex Layout Row |
+| fx-row-reverse | Flex Layout Reverse Row |
 | m-button | Rectangular Material button w/ no elevation. |
 | m-button-fab | Circular button w/ elevation. |
 | m-button-fab-mini | Small circular button w/ elevation. |
@@ -177,20 +191,6 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-for-index | For-loop directive with index |
 | ng-for-li | For-loop directive with li element |
 | ng-for-trackBy | For-loop directive with trackBy |
-| ng-fx-col | Flex Layout Column |
-| ng-fx-col-element | Flex Layout Column with Element |
-| ng-fx-col-reverse | Flex Layout Reverse Column |
-| ng-fx-import | Flex Layout Import |
-| ng-fx-item | Flex Layout Item |
-| ng-fx-item-align | Flex Layout Item with fxFlexAlign |
-| ng-fx-item-fill | Flex Layout Item with fxFlexFill |
-| ng-fx-item-offset | Flex Layout Item with fxFlexOffset |
-| ng-fx-item-order | Flex Layout Item with fxFlexOrder |
-| ng-fx-layout | Flex Layout Property |
-| ng-fx-layout-align | Flex Layout Align Property |
-| ng-fx-layout-gap | Flex Layout Gap Property |
-| ng-fx-row | Flex Layout Row |
-| ng-fx-row-reverse | Flex Layout Reverse Row |
 | ng-hide | Usage: Bind to the hidden property. |
 | ng-href | Usage: Bind to the href property. |
 | ng-http-get | Http observable get request |
