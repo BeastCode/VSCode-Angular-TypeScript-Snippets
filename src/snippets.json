@@ -768,7 +768,7 @@
     ]
   },
   "Angular ngRx Util": {
-    "prefix": "ng-rx-util",
+    "prefix": "ngrx-util",
     "description": "ngRx Util",
     "types": "typescript",
     "body": [
@@ -795,7 +795,7 @@
     ]
   },
   "Angular ngRx Reducer": {
-    "prefix": "ng-rx-reducer",
+    "prefix": "ngrx-reducer",
     "description": "ngRx Reducer",
     "types": "typescript",
     "body": [
@@ -825,7 +825,7 @@
     ]
   },
   "Angular ngRx Actions": {
-    "prefix": "ng-rx-actions",
+    "prefix": "ngrx-actions",
     "description": "ngRx Actions class",
     "types": "typescript",
     "body": [
@@ -866,7 +866,7 @@
     ]
   },
   "Angular ngRx Root Module": {
-    "prefix": "ng-rx-module",
+    "prefix": "ngrx-module",
     "description": "ngRx Root Module",
     "types": "typescript",
     "body": [
@@ -897,7 +897,7 @@
     ]
   },
   "Angular ngRx Action": {
-    "prefix": "ng-rx-action",
+    "prefix": "ngrx-action",
     "description": "ngRx Single action",
     "types": "typescript",
     "body": [
@@ -1565,8 +1565,8 @@
     "types": "typescript, html",
     "body": [
       "<mat-form-field>",
-      "\t<input mdInput [mdDatepicker]=\"${picker}\" placeholder=\"${title}\">",
-      "\t\t<button mdSuffix [mdDatepickerToggle]=\"${picker}\"></button>",
+      "\t<input matInput [matDatepicker]=\"${picker}\" placeholder=\"${title}\">",
+      "\t\t<button matSuffix [matDatepickerToggle]=\"${picker}\"></button>",
       "\t</mat-form-field>",
       "<mat-datepicker #${picker}></mat-datepicker>$0"
     ]
@@ -1577,7 +1577,7 @@
     "types": "typescript, html",
     "body": [
       "<mat-form-field>",
-      "\t<input mdInput placeholder=\"${label}\" value=\"${value}\">",
+      "\t<input matInput placeholder=\"${label}\" value=\"${value}\">",
       "</mat-form-field>$0"
     ]
   },
@@ -1729,7 +1729,7 @@
     "description": "Material Tooltip",
     "types": "typescript, html",
     "body": [
-      "mdTooltip=\"${text}\"$0"
+      "matTooltip=\"${text}\"$0"
     ]
   },
   "Material Tooltip Position": {
@@ -1737,7 +1737,7 @@
     "description": "Material Tooltip position",
     "types": "typescript, html",
     "body": [
-      "[mdTooltipPosition]=\"${above|below|left|right|before|after}\"$0"
+      "[matTooltipPosition]=\"${above|below|left|right|before|after}\"$0"
     ]
   },
   "Material Tooltip With Position": {
@@ -1745,7 +1745,7 @@
     "description": "Material Tooltip with position",
     "types": "typescript, html",
     "body": [
-      "mdTooltip=\"${text}\" [mdTooltipPosition]=\"${above|below|left|right|before|after}\"$0"
+      "matTooltip=\"${text}\" [matTooltipPosition]=\"${above|below|left|right|before|after}\"$0"
     ]
   },
   "Material Table": {

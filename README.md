@@ -9,8 +9,8 @@ Visual Studio Code TypeScript and Html snippets and code examples for Angular 2+
 | Prefix | Description |
 | ------- | ----------|
 | ng- | Angular Snippets |
-| ng-fx- | Angular Flex Layout Snippets |
-| ng-rx- | Angular NgRx Snippets |
+| fx- | Angular Flex Layout Snippets |
+| ngrx- | Angular NgRx Snippets |
 | m- | Angular Material Design Snippets |
 | md- | Angular Material Design Snippets for all versions before 2.0.0-beta.11 |
 | rx- | RxJS Snippets for both TypeScript and JavaScript |
@@ -239,11 +239,6 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-router-linkActive | Router active link |
 | ng-router-outlet | Router outlet element |
 | ng-router-outlet-name | Router outlet element with name |
-| ng-rx-action | ngRx Single action |
-| ng-rx-actions | ngRx Actions class |
-| ng-rx-module | ngRx Root Module |
-| ng-rx-reducer | ngRx Reducer |
-| ng-rx-util | ngRx Util |
 | ng-service | Basic service |
 | ng-show | Usage: Bind to the hidden property. |
 | ng-src | Usage: Bind to the src property. |
@@ -255,6 +250,11 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-test-pipe | Test a pipe |
 | ng-test-service | TODO |
 | ng-validator | Angular validator snippet |
+| ngrx-action | ngRx Single action |
+| ngrx-actions | ngRx Actions class |
+| ngrx-module | ngRx Root Module |
+| ngrx-reducer | ngRx Reducer |
+| ngrx-util | ngRx Util |
 | rx-import-add-observable | RxJS Import Observable |
 | rx-import-add-operator | RxJS Import Add Operator |
 | rx-import-all | RxJS import the entire core set of functionality |

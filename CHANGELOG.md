@@ -4,19 +4,21 @@
  * Mateial Design
     43 Material Snippets been updated to use mat- instead of md- for Materal 2.0.0-beta.11 .
     All new material snippets starts with m- and the old once have md- but will eventually be deleted.
+
  * New Material Snippets:
    * m-step
    * m-stepper-horizontal
-   * md-input-container -> md-form-field
+   * mat-input-container -> mat-form-field
 
- * RxJS
+ * New RxJS Snippets:
     * rx-import-all
     * rx-import-observable
     * rx-add-operator
     * rx-add-observable
 
- * Flex Layout
-   * ng-fx-col-div
+ * Flex Layout:
+   * All ng-fx snippets been renamed to fx-
+   * Added fx-col-div snippets
 
 ## 4.4.x
  * Angular
