@@ -120,11 +120,11 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-tooltip | Material Tooltip |
 | m-tooltip-position | Material Tooltip position |
 | m-tooltip-with-position | Material Tooltip with position |
-| md-button | Rectangular Material button w/ no elevation. |
-| md-button-fab | Circular button w/ elevation. |
+| md-button | Depricated Rectangular Material button w/ no elevation. |
+| md-button-fab | Depricated Circular button w/ elevation. |
 | md-button-fab-mini | Small circular button w/ elevation. |
-| md-button-icon | Circular Material button with a transparent background |
-| md-button-raised | Rectangular Material button w/ elevation. |
+| md-button-icon | Depricated Circular Material button with a transparent background |
+| md-button-raised | Depricated Rectangular Material button w/ elevation. |
 | md-button-toggle | Depricated Material toggle button |
 | md-card | Depricated Material Basic Card |
 | md-checkbox | Depricated Material Checkbox |

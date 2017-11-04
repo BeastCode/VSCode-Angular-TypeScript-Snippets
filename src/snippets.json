@@ -1921,7 +1921,7 @@
   },
   "Depricated Material Button": {
     "prefix": "md-button",
-    "description": "Rectangular Material button w/ no elevation.",
+    "description": "Depricated Rectangular Material button w/ no elevation.",
     "types": "typescript, html",
     "body": [
       "<button md-button>${text}</button>$0"
@@ -1929,7 +1929,7 @@
   },
   "Depricated Material Raised Button": {
     "prefix": "md-button-raised",
-    "description": "Rectangular Material button w/ elevation.",
+    "description": "Depricated Rectangular Material button w/ elevation.",
     "types": "typescript, html",
     "body": [
       "<button md-raised-button>${text}</button>$0"
@@ -1937,7 +1937,7 @@
   },
   "Depricated Material Icon Button": {
     "prefix": "md-button-icon",
-    "description": "Circular Material button with a transparent background",
+    "description": "Depricated Circular Material button with a transparent background",
     "types": "typescript, html",
     "body": [
       "<button md-icon-button>%{text}</button>$0"
@@ -1945,7 +1945,7 @@
   },
   "Depricated Material Round Button": {
     "prefix": "md-button-fab",
-    "description": "Circular button w/ elevation.",
+    "description": "Depricated Circular button w/ elevation.",
     "types": "typescript, html",
     "body": [
       "<button md-fab><md-icon>${icon_name}</md-icon></button>$0"
