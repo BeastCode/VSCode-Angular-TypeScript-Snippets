@@ -9,6 +9,7 @@
    * m-step
    * m-stepper-horizontal
    * mat-input-container -> mat-form-field
+   * Updated mat-button-fab-mini
 
  * New RxJS Snippets:
     * rx-import-all

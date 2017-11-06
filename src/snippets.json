@@ -1511,7 +1511,7 @@
     "description": "Small circular button w/ elevation.",
     "types": "typescript, html",
     "body": [
-      "<button mat-fab-mini><mat-icon>${icon_name}</mat-icon></button>$0"
+      "<button mat-mini-fab><mat-icon>${icon_name}</mat-icon></button>$0"
     ]
   },
   "Material Toggle Button": {
@@ -1956,7 +1956,7 @@
     "description": "Small circular button w/ elevation.",
     "types": "typescript, html",
     "body": [
-      "<button md-fab-mini><md-icon>${icon_name}</md-icon></button>$0"
+      "<button md-mini-fab><md-icon>${icon_name}</md-icon></button>$0"
     ]
   },
   "Depricated Material Toggle Button": {
