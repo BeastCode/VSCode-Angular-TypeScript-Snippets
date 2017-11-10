@@ -82,6 +82,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-button-raised | Rectangular Material button w/ elevation. |
 | m-button-toggle | Material toggle button |
 | m-card | Material Basic Card |
+| m-card-full | Material Card |
 | m-checkbox | Material Checkbox |
 | m-chip | Material Chip |
 | m-chip-list | Material Chip List |
