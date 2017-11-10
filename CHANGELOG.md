@@ -10,6 +10,7 @@
    * m-stepper-horizontal
    * mat-input-container -> mat-form-field
    * Updated mat-button-fab-mini
+   * m-card-full
 
  * New RxJS Snippets:
     * rx-import-all
