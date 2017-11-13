@@ -22,6 +22,9 @@
    * All ng-fx snippets been renamed to fx-
    * Added fx-col-div snippets
 
+* NgRX
+   * ngrx-effect
+
 ## 4.4.x
  * Angular
     * ng-component-value-accessor

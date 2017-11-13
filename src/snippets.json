@@ -904,6 +904,26 @@
       "export const ${ACTION} = '${ACTION}';"
     ]
   },
+  "Angular ngRx Effect": {
+    "prefix": "ngrx-effect",
+    "description": "ngRx Effect",
+    "types": "typescript",
+    "body": [
+      "import { Injectable } from '@angular/core';",
+      "import { Observable } from 'rxjs/Observable';",
+      "import { Action } from '@ngrx/store';",
+      "import { Actions, Effect } from '@ngrx/effects';",
+      "",
+      "@Injectable()",
+      "export class ${Name}Effects {",
+      "\t@Effect() ${name}$: Observable<Action> = this.actions$.ofType('${ACTIONTYPE}')$1;",
+      "",
+      "\tconstructor(",
+      "\t\tprivate ${actions}$: Actions",
+      "\t) {}",
+      "}"
+    ]
+  },
   "Angular Test Synchronous Component": {
     "prefix": "ng-test-component-synchronous",
     "description": "TODO",
