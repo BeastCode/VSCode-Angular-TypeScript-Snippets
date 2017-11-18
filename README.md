@@ -203,6 +203,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-import | import module or component from path; |
 | ng-input | Class Input Property |
 | ng-interpolation | Interpolation: {{ interpolation }} |
+| ng-material-module | App Material Module |
 | ng-module | Feature Module |
 | ng-module-root | App root module |
 | ng-ngOnChanges | Lifecycle hook: Called before any other lifecycle hook |
