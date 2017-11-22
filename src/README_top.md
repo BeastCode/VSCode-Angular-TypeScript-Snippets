@@ -2,7 +2,7 @@
 [![Installs](https://vsmarketplacebadge.apphb.com/installs-short/Mikael.Angular-BeastCode.svg)](https://marketplace.visualstudio.com/items?itemName=Mikael.Angular-BeastCode)
 
 # VSCode Angular TypeScript & Html Snippets
-Visual Studio Code TypeScript and Html snippets and code examples for Angular 2+
+Visual Studio Code TypeScript and Html snippets and code examples for Angular 2,4 & 5.
 
 # Snippet Prefixes
 
