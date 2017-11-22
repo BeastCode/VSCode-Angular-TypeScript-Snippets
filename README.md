@@ -2,7 +2,7 @@
 [![Installs](https://vsmarketplacebadge.apphb.com/installs-short/Mikael.Angular-BeastCode.svg)](https://marketplace.visualstudio.com/items?itemName=Mikael.Angular-BeastCode)
 
 # VSCode Angular TypeScript & Html Snippets
-Visual Studio Code TypeScript and Html snippets and code examples for Angular 2+
+Visual Studio Code TypeScript and Html snippets and code examples for Angular 2,4 & 5.
 
 # Snippet Prefixes
 
@@ -253,6 +253,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-test-service | TODO |
 | ng-validator | Angular validator snippet |
 | ngrx-action | ngRx Single action |
+| ngrx-action-enum | ngRx enum action |
 | ngrx-actions | ngRx Actions class |
 | ngrx-effect | ngRx Effect |
 | ngrx-module | ngRx Root Module |
