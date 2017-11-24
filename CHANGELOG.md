@@ -1,5 +1,12 @@
 # Angular BeastCode Changelog
 
+## 5.1.x
+ * NgRX
+   * ngrx-effect
+   * ngrx-actions
+   * ngrx-action-const
+   * ngrx-action-enum
+
 ## 5.0.x
  * Mateial Design
     43 Material Snippets been updated to use mat- instead of md- for Materal 2.0.0-beta.11 .
@@ -11,6 +18,7 @@
    * mat-input-container -> mat-form-field
    * Updated mat-button-fab-mini
    * m-card-full
+   * ng-material-module
 
  * New RxJS Snippets:
     * rx-import-all
@@ -21,9 +29,6 @@
  * Flex Layout:
    * All ng-fx snippets been renamed to fx-
    * Added fx-col-div snippets
-
-* NgRX
-   * ngrx-effect
 
 ## 4.4.x
  * Angular
