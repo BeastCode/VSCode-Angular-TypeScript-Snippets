@@ -253,8 +253,9 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-test-service | TODO |
 | ng-validator | Angular validator snippet |
 | ngrx-action-const | ngRx Single action |
-| ngrx-action-enum | ngRx enum action |
 | ngrx-actions | ngRx Actions class |
+| ngrx-actiontype-enum | ngRx enum action type |
+| ngrx-actiontypes-enum | ngRx enum action types |
 | ngrx-effect | ngRx Effect |
 | ngrx-module | ngRx Root Module |
 | ngrx-reducer | ngRx Reducer |

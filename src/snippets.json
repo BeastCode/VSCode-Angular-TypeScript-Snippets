@@ -1004,15 +1004,23 @@
       "export const ${ACTION} = '${ACTION}';"
     ]
   },
-  "Angular ngRx Enum Action": {
-    "prefix": "ngrx-action-enum",
-    "description": "ngRx enum action",
+  "Angular ngRx Enum ActionTypes": {
+    "prefix": "ngrx-actiontypes-enum",
+    "description": "ngRx enum action types",
     "types": "typescript",
     "body": [
-      "export enum ${Class}Action {",
-      "\t${Text1} = '[${Class}] ${Text1}',",
-      "\t${Text2} = '[${Class}] ${Text2}'",
-      "}"
+      "export enum ${Class}ActionTypes {",
+      "\t${Verb1} = '[${Class}] ${Verb1}',",
+      "\t${Verb2} = '[${Class}] ${Verb2}'",
+      "}"        
+    ]
+  },
+  "Angular ngRx Enum ActionType": {
+    "prefix": "ngrx-actiontype-enum",
+    "description": "ngRx enum action type",
+    "types": "typescript",
+    "body": [
+      "${Verb} = '[${Class}] ${Verb}',"       
     ]
   },
   "Angular ngRx Effect": {
