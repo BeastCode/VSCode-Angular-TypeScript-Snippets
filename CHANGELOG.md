@@ -5,7 +5,8 @@
    * ngrx-effect
    * ngrx-actions
    * ngrx-action-const
-   * ngrx-action-enum
+   * ngrx-actiontypes-enum
+   * ngrx-actiontype-enum
 
 ## 5.0.x
  * Mateial Design
