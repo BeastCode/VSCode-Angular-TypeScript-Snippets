@@ -1020,7 +1020,7 @@
     "description": "ngRx enum action type",
     "types": "typescript",
     "body": [
-      "${Verb} = '[${Class}] ${Verb}',"       
+      "${Verb} = '[${Class}] ${Verb}'$0"       
     ]
   },
   "Angular ngRx Effect": {
