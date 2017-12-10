@@ -7,6 +7,10 @@
    * ngrx-action-const
    * ngrx-actiontypes-enum
    * ngrx-actiontype-enum
+* Mateial Design 5.0 Released
+   * Removed all depricated md snippets
+   * New
+        * m-progress-bar
 
 ## 5.0.x
  * Mateial Design

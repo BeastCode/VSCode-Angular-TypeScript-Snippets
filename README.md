@@ -97,6 +97,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-list-item | Material List Item |
 | m-list-ngfor | Material List ngFor |
 | m-paginator | Material Paginator |
+| m-progress-bar | Material Progress Bar |
 | m-radiobutton | Material Radio Button |
 | m-radiobutton-option | Material Radio Button Option |
 | m-select | Material Select |
@@ -121,49 +122,6 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-tooltip | Material Tooltip |
 | m-tooltip-position | Material Tooltip position |
 | m-tooltip-with-position | Material Tooltip with position |
-| md-button | Depricated Rectangular Material button w/ no elevation. |
-| md-button-fab | Depricated Circular button w/ elevation. |
-| md-button-fab-mini | Small circular button w/ elevation. |
-| md-button-icon | Depricated Circular Material button with a transparent background |
-| md-button-raised | Depricated Rectangular Material button w/ elevation. |
-| md-button-toggle | Depricated Material toggle button |
-| md-card | Depricated Material Basic Card |
-| md-checkbox | Depricated Material Checkbox |
-| md-chip | Depricated Material Chip |
-| md-chip-list | Depricated Material Chip List |
-| md-chip-list-stacked | Depricated Material Chip Stacked List |
-| md-datepicker | Depricated Material Datepicker |
-| md-expansion-panel | Depricated Material Expansion Panel |
-| md-grid-list | Depricated Material Grid List |
-| md-icon-fontawesome | Depricated Material Font Awesome Icon |
-| md-icon-svg | Depricated Material SVG Icon |
-| md-input | Depricated Material Input Textbox |
-| md-list | Depricated Material List |
-| md-list-item | Depricated Material List Item |
-| md-list-ngfor | Depricated Material List ngFor |
-| md-paginator | Depricated Material Paginator |
-| md-radiobutton | Depricated Material Radio Button |
-| md-radiobutton-option | Depricated Material Radio Button Option |
-| md-select | Depricated Material Select |
-| md-slide-toggle | Depricated Material Slide toggle |
-| md-slider | Depricated Material Slider |
-| md-slider-thumbLabel | Depricated Material Slider thumbLabel |
-| md-slider-tickInterval | Depricated Material Slider tickInterval |
-| md-slider-tickInterval-auto | Depricated Material Slider tickInterval Auto |
-| md-slider-vertical | Depricated Material Vertical Slider |
-| md-spinner | Depricated Material Determinate Spinner |
-| md-spinner-indeterminate | Depricated Material Indeterminate Spinner |
-| md-stepper-vertical | Depricated Material Vertical Stepper |
-| md-tab | Depricated Material Tab |
-| md-tab-group | Depricated Material Tab Group |
-| md-table | Depricated Material Table |
-| md-table-column | Depricated Material Table Column |
-| md-toolbar | Depricated Material toolbar |
-| md-toolbar-multiRow | Depricated Material Toolbar with multiple rows |
-| md-toolbar-row | Depricated Material toolbar row |
-| md-tooltip | Depricated Material Tooltip |
-| md-tooltip-position | Depricated Material Tooltip position |
-| md-tooltip-with-position | Depricated Material Tooltip with position |
 | ng-afterContentChecked | Lifecycle hook: Called after every check of the component's or directive's content |
 | ng-afterContentInit | Lifecycle hook: Called after ngOnInit when the component's or directive's content has been initialized |
 | ng-afterViewChecked | Lifecycle hook: Called after every check of the component's view. Applies to components only |
