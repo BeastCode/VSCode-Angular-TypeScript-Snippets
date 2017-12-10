@@ -1967,9 +1967,19 @@
       "</mat-spinner>$0"
     ]
   },
-  "Material Progress Bar": {
+  "Material indeterminate Progress Bar": {
+    "prefix": "m-progress-bar-indeterminate",
+    "description": "Material indeterminate Progress Bar",
+    "types": "typescript, html",
+    "body": [
+      "<mat-progress-bar",
+      "\tmode=\"indeterminate\"",
+      "</mat-progress-bar>$0"
+    ]
+  },
+  "Material Determinate Progress Bar": {
     "prefix": "m-progress-bar",
-    "description": "Material Progress Bar",
+    "description": "Material Determinate Progress Bar",
     "types": "typescript, html",
     "body": [
       "<mat-progress-bar",

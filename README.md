@@ -97,7 +97,8 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-list-item | Material List Item |
 | m-list-ngfor | Material List ngFor |
 | m-paginator | Material Paginator |
-| m-progress-bar | Material Progress Bar |
+| m-progress-bar | Material Determinate Progress Bar |
+| m-progress-bar-indeterminate | Material indeterminate Progress Bar |
 | m-radiobutton | Material Radio Button |
 | m-radiobutton-option | Material Radio Button Option |
 | m-select | Material Select |
