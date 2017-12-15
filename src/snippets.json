@@ -1979,11 +1979,21 @@
   },
   "Material Query Progress Bar": {
     "prefix": "m-progress-bar-query",
-    "description": "Material indeterminate Progress Bar",
+    "description": "Material Query Progress Bar",
     "types": "typescript, html",
     "body": [
       "<mat-progress-bar",
       "\tmode=\"query\"",
+      "</mat-progress-bar>$0"
+    ]
+  },
+  "Material Buffer Progress Bar": {
+    "prefix": "m-progress-bar-buffer",
+    "description": "Material Buffer Progress Bar",
+    "types": "typescript, html",
+    "body": [
+      "<mat-progress-bar",
+      "\tmode=\"buffer\"",
       "</mat-progress-bar>$0"
     ]
   },
