@@ -10,9 +10,10 @@
 * Mateial Design 5.0 Released
    * Removed all depricated md snippets
    * New
-        * m-progress-bar
-        * m-progress-bar-indeterminate
-        * m-progress-bar-query
+      * m-progress-bar
+      * m-progress-bar-indeterminate
+      * m-progress-bar-query
+      * m-progress-bar-buffer
 
 ## 5.0.x
  * Mateial Design

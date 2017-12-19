@@ -1994,6 +1994,9 @@
     "body": [
       "<mat-progress-bar",
       "\tmode=\"buffer\"",
+      "\t[color]=\"${color}\"",
+      "\t[value]=\"${value}\"",
+      "\t[bufferValue]=\"${bufferValue}\"",
       "</mat-progress-bar>$0"
     ]
   },
