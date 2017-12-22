@@ -2103,12 +2103,12 @@
       "$0"
     ]
   },
-  "RxJS Import Add Operator": {
-    "prefix": "rx-import-add-operator",
+  "RxJS Import an Operator": {
+    "prefix": "rx-import-operator",
     "description": "RxJS Import Add Operator",
     "types": "typescript, javascript",
     "body": [
-      "import 'rxjs/add/operator/${1:switchMap}';",
+      "import { ${1:switchMap} } from 'rxjs/operators';",
       "$0"
     ]
   }
