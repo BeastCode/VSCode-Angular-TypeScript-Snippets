@@ -1,5 +1,8 @@
 # Angular BeastCode Changelog
 
+## 5.2.x
+ * nx-cheatsheet
+ 
 ## 5.1.x
  * NgRX
    * ngrx-effect
