@@ -14,6 +14,10 @@ Visual Studio Code TypeScript and Html snippets and code examples for Angular 2,
 | m- | Angular Material Design Snippets |
 | rx- | RxJS Snippets for both TypeScript and JavaScript |
 
+| Postfix | Description |
+| ------- | ----------|
+| -cheatsheet | Cheat Sheet |
+
 # Important
 This extension is optimized for devlopers that use Angular 2+ and are no longer using Angular 1.
 If you type in Angular 1 keywords, it will suggest an Angular 2 solutions. 
