@@ -2,7 +2,8 @@
 
 ## 5.2.x
  * nx-cheatsheet
- 
+ * nx-ngrx-cheatsheet
+
 ## 5.1.x
  * NgRX
    * ngrx-effect

@@ -2122,7 +2122,7 @@
       "  npm install -g @nrwl/schematics",
       "  or",
       "  yarn global add @nrwl/schematics",
-      "",
+      "*/",
       "  Generate a Project",
       "  create-nx-workspace ${<appname>}",
       "",
@@ -2163,7 +2163,7 @@
       "",
       "  For more info: https://nrwl.io/nx/",
       "",
-      " */"
+      " "
     ]
   }
 }
