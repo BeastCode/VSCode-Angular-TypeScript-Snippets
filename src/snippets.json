@@ -2112,7 +2112,7 @@
       "$0"
     ]
   },
-  "NX Cheat Sheet": {
+  "Nx Cheat Sheet": {
     "prefix": "nx-cheatsheet",
     "description": "Nx Cheat Sheet",
     "types": "typescript",
@@ -2146,7 +2146,7 @@
       "  —-directory <dirname>",
       "",
       "  Serve an Nx Application",
-      "  ng serve --app=${1:<appname>/upcase}",
+      "  ng serve --app=${1:<appname>}",
       "",
       "",
       "  Examples",
@@ -2162,6 +2162,49 @@
       "        You can always add --help to learn more about the commands.",
       "",
       "  For more info: https://nrwl.io/nx/",
+      "",
+      " */"
+    ]
+  },
+  "Nx NgRx Cheat Sheet": {
+    "prefix": "nx-ngrx-cheatsheet",
+    "description": "Nx Cheat Sheet",
+    "types": "typescript",
+    "body": [
+      "/*",
+      "\tRoot",
+      "",
+      "\tGenerate a new root level store",
+      "\tng generate ngrx app --module=apps/${1:appname}/src/app/app.module.ts  --root",
+      "",
+      "\tGenerate all the configuration in app.module.ts, without creating a store",
+      "\tng generate ngrx app --module=apps/${1:appname}/src/app/app.module.ts  --onlyEmptyRoot",
+      "",
+      "\tFeature",
+      "",
+      "\tGenerate a new feature level store in an existing library",
+      "\tng generate ngrx ${1:featurename} --module=libs/${2:<libname>}/src/${3:<modulename>}.module.ts",
+      "",
+      "\tNgRx Help",
+      "\tng generate ngrx [name] <options...>",
+      "\t\t--dry-run Run through without making any changes.",
+      "\t\taliases:  -d -dryRun",
+      "\t\t--force Forces overwriting of files.",
+      "\t\taliases:  -f -force",
+      "\t\t--app Specifies app name to use.",
+      "\t\taliases:  -a -app",
+      "\t\t--collection Schematics collection to use.",
+      "\t\taliases:  -c -collection",
+      "\t\t--lint-fix Use lint to fix files after generation.",
+      "\t\taliases:  -lf -lintFix",
+      "\t\t--module (string) Path to an Angular module (e.g., src/app/app.module.ts).",
+      "\t\t--only-add-files (boolean) Only add new NgRx files, without changing the module file (e.g., --onlyAddFiles).",
+      "\t\t--root (boolean) Add StoreModule.forRoot and EffectsModule.forRoot instead of forFeature (e.g., --root).",
+      "\t\t--only-empty-root (boolean) Do not generate any files. Only generate StoreModule.forRoot and EffectsModule.forRoot (e.g., --onlyEmptyRoot).",
+      "\t\t--skip-package-json (boolean) Do not add ngrx dependencies to package.json (e.g., --skipPackageJson)",
+      "\t\t--directory (string) (Default: +state) The store directory name (e.g., +state)",
+      "",
+      "\tFor more info: https://nrwl.io/nx/guide-setting-up-ngrx",
       "",
       " */"
     ]

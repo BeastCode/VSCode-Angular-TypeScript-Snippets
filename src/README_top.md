@@ -28,7 +28,7 @@ See example below for ng-repeat and ng-click:
 ![ngRepeatSnippet](https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets/raw/master/images/ngRepeatSnippet.gif)
 
 
-All code snippets are based on and follow the Angular style guide https://angular.io/docs/ts/latest/guide/style-guide.html and can be 
+All code snippets are based on and follow the Angular style guide https://angular.io/docs/ts/latest/guide/style-guide.html
 
 # Usage
 

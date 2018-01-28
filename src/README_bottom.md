@@ -31,8 +31,7 @@ This is an open source project and if you want to contribute I've added issues o
 
 Important: This extension due to the nature of it's purpose will create
 files on your hard drive and if necessary create the respective folder structure.
-While it should not override any files during this process, I'm not giving any guarantees
-or take any responsibility in case of lost data.
+While it should not override any files during this process, I'm not giving any guarantees or take any responsibility in case of lost data.
 
 
 ## License
