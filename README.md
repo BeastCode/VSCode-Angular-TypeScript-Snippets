@@ -14,6 +14,8 @@ Visual Studio Code TypeScript and Html snippets and code examples for Angular 2,
 | m- | Angular Material Design Snippets |
 | rx- | RxJS Snippets for both TypeScript and JavaScript |
 
+# Snippet Postfix
+
 | Postfix | Description |
 | ------- | ----------|
 | -cheatsheet | Cheat Sheet |
@@ -53,7 +55,7 @@ ng-for currently has even more variations, so make sure you pick the one you wan
 ![ngForSnippet](https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets/raw/master/images/ngForSnippet.gif)
 
 ### Angular Material
-All Material snippets starts with "m-" and there are now over 30 Material snippets in this package.
+All Material snippets starts with "m-" and there are now over 50 Material snippets in this package.
 
 # Pro Tip
 
