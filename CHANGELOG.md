@@ -3,6 +3,7 @@
 ## 5.2.x
  * nx-cheatsheet
  * nx-ngrx-cheatsheet
+ * ng-http-interceptor
 
 ## 5.1.x
  * NgRX
