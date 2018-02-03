@@ -865,6 +865,24 @@
       ""
     ]
   },
+  "Angular Http Interceptor": {
+		"prefix": "ng-http-interceptor",
+		"description": "Intercept an outgoing HttpRequest and optionally transform it or the response.",
+		"types": "typescript",
+		"body": [
+      "import { Injectable } from '@angular/core';",
+      "import {",
+        "\tHttpEvent, HttpInterceptor, HttpHandler, HttpRequest",
+      "} from '@angular/common/http';",
+			"",
+			"@Injectable()",
+      "export class ${1:Name}Interceptor implements HttpInterceptor {",
+        "\tintercept(req: HttpRequest<any>, next: HttpHandler) {",
+          "\t\treturn next.handle(req);",
+        "\t}",
+      "}"
+		]
+  },
   "Angular ngRx Util": {
     "prefix": "ngrx-util",
     "description": "ngRx Util",
