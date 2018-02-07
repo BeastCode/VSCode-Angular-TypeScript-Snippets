@@ -872,14 +872,14 @@
 		"body": [
       "import { Injectable } from '@angular/core';",
       "import {",
-        "\tHttpEvent, HttpInterceptor, HttpHandler, HttpRequest",
+      "\tHttpEvent, HttpInterceptor, HttpHandler, HttpRequest",
       "} from '@angular/common/http';",
 			"",
 			"@Injectable()",
       "export class ${1:Name}Interceptor implements HttpInterceptor {",
-        "\tintercept(req: HttpRequest<any>, next: HttpHandler) {",
-          "\t\treturn next.handle(req);",
-        "\t}",
+      "\tintercept(req: HttpRequest<any>, next: HttpHandler) {",
+      "\t\treturn next.handle(req);",
+      "\t}",
       "}"
 		]
   },
