@@ -1727,6 +1727,14 @@
       "<mat-radio-button value=\"${value}\">${Option}</mat-radio-button>$0"
     ]
   },
+  "Material Checkbox ngmodel": {
+    "prefix": "m-checkbox-ngmodel",
+    "description": "Material Checkbox ngmodel",
+    "types": "typescript, html",
+    "body": [
+      "<mat-checkbox [(ngModel)]=\"${property.checkedOrUnchecked}\">${text}</mat-checkbox>$0"
+    ]
+  },
   "Material Checkbox": {
     "prefix": "m-checkbox",
     "description": "Material Checkbox",
@@ -2239,7 +2247,7 @@
       "\tUsage",
       "\tng help",
       "",
-      "\tGenerating and serving an Angular project via a development server",
+      "\tGenerate and serve an Angular project via a development server",
       "\tng new PROJECT-NAME",
       "\tcd PROJECT-NAME",
       "\tng serve",

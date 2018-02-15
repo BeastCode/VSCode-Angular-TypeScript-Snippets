@@ -5,6 +5,7 @@
  * nx-ngrx-cheatsheet
  * ng-http-interceptor
  * cli-cheatsheet
+ * m-checkbox-ngmodel
 
 ## 5.1.x
  * NgRX

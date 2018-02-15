@@ -91,6 +91,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-card | Material Basic Card |
 | m-card-full | Material Card |
 | m-checkbox | Material Checkbox |
+| m-checkbox-ngmodel | Material Checkbox ngmodel |
 | m-chip | Material Chip |
 | m-chip-list | Material Chip List |
 | m-chip-list-stacked | Material Chip Stacked List |
