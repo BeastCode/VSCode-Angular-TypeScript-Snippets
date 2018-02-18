@@ -98,6 +98,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-datepicker | Material Datepicker |
 | m-expansion-panel | Material Expansion Panel |
 | m-grid-list | Material Grid List |
+| m-icon | Material Icon |
 | m-icon-fontawesome | Material Font Awesome Icon |
 | m-icon-svg | Material SVG Icon |
 | m-input | Material Input Textbox |

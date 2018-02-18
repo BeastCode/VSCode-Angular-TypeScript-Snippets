@@ -1813,6 +1813,14 @@
       "<mat-icon svgIcon=\"${src}\"></mat-icon>$0"
     ]
   },
+  "Material Icon": {
+    "prefix": "m-icon",
+    "description": "Material Icon",
+    "types": "typescript, html",
+    "body": [
+      "<mat-icon>${icon}</mat-icon>$0"
+    ]
+  },
   "Material Slide Toggle": {
     "prefix": "m-slide-toggle",
     "description": "Material Slide toggle",

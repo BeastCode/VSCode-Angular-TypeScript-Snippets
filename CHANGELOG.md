@@ -6,6 +6,7 @@
  * ng-http-interceptor
  * cli-cheatsheet
  * m-checkbox-ngmodel
+ * m-icon
 
 ## 5.1.x
  * NgRX
