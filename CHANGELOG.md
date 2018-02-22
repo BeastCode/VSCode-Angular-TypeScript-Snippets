@@ -7,6 +7,7 @@
  * cli-cheatsheet
  * m-checkbox-ngmodel
  * m-icon
+ * m-icon-badge
 
 ## 5.1.x
  * NgRX

@@ -1821,6 +1821,20 @@
       "<mat-icon>${icon}</mat-icon>$0"
     ]
   },
+  "Material Icon with Badge": {
+    "prefix": "m-icon-badge",
+    "description": "Material Icon with a Badge",
+    "types": "typescript, html",
+    "body": [
+      "<mat-icon",
+      "\tcolor=\"primary\"" ,
+      "\tmatBadge=\"${number}\"",
+      "\tmatBadgePosition=\"${above|below} ${after|before}\"",
+      "\tmatBadgeColor=\"accent\">",
+      "\t\t${icon}",
+      "</mat-icon>$0"
+    ]
+  },
   "Material Slide Toggle": {
     "prefix": "m-slide-toggle",
     "description": "Material Slide toggle",
