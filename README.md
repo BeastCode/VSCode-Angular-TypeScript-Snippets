@@ -11,6 +11,7 @@ Visual Studio Code TypeScript and Html snippets and code examples for Angular 2,
 | ng- | Angular Snippets |
 | fx- | Angular Flex Layout Snippets |
 | ngrx- | Angular NgRx Snippets |
+| ngxs- | Angular Ngxs Snippets |
 | m- | Angular Material Design Snippets |
 | rx- | RxJS Snippets for both TypeScript and JavaScript |
 
@@ -230,6 +231,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ngrx-effect | ngRx Effect |
 | ngrx-module | ngRx Root Module |
 | ngrx-reducer | ngRx Reducer |
+| ngrx-store | Ngxs Store |
 | ngrx-util | ngRx Util |
 | nx-cheatsheet | Nx Cheat Sheet |
 | nx-ngrx-cheatsheet | Nx Cheat Sheet |

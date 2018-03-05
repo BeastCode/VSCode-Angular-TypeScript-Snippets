@@ -8,6 +8,7 @@
  * m-checkbox-ngmodel
  * m-icon
  * m-icon-badge
+ * ngxs-
 
 ## 5.1.x
  * NgRX

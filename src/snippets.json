@@ -1061,6 +1061,20 @@
       "}"
     ]
   },
+  "Angular Ngxs Store": {
+    "prefix": "ngrx-store",
+    "description": "Ngxs Store",
+    "types": "typescript",
+    "body": [
+      "import { Store } from 'ngxs';",
+      "",
+      "@Store({",
+      "\tdefaults: {",
+      "\t}",
+      "})",
+      "export class ${Name}Store {}"
+    ]
+  },
   "Angular Test Synchronous Component": {
     "prefix": "ng-test-component-synchronous",
     "description": "TODO",
