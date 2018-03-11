@@ -9,6 +9,9 @@
  * m-icon
  * m-icon-badge
  * ngxs-
+ * m-divider
+ * m-divider-inset
+ * m-divider-vertical
 
 ## 5.1.x
  * NgRX

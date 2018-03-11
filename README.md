@@ -97,6 +97,9 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-chip-list | Material Chip List |
 | m-chip-list-stacked | Material Chip Stacked List |
 | m-datepicker | Material Datepicker |
+| m-divider | Material Divider |
+| m-divider-inset | Material Inset Divider |
+| m-divider-vertical | Material Vertical Divider |
 | m-expansion-panel | Material Expansion Panel |
 | m-grid-list | Material Grid List |
 | m-icon | Material Icon |
