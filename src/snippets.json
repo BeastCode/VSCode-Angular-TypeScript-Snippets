@@ -1482,7 +1482,7 @@
     "description": "Flex Layout Row",
     "types": "typescript, html",
     "body": [
-      "<div fxLayout=\"row\" fxLayoutAlign=\"${start|center|end|space-around|space-between} ${start|center|end|stretch}\" fxLayoutGap=\"${gap}px\">",
+      "<div fxLayout=\"row\" fxLayoutAlign=\"${1|start,center,end,space-around,space-between|} ${2|start,center,end,stretch|}\" fxLayoutGap=\"${gap}px\">",
       "\t$0",
       "</div>"
     ]
@@ -1500,7 +1500,7 @@
     "description": "Flex Layout Align Property",
     "types": "typescript, html",
     "body": [
-      "fxLayoutAlign=\"${start|center|end|space-around|space-between} ${start|center|end|stretch}\"$0"
+      "fxLayoutAlign=\"${1|start,center,end,space-around,space-between|} ${2|start,center,end,stretch|}\"$0"
     ]
   },
   "Angular Flex Layout Gap": {
@@ -1516,7 +1516,7 @@
     "description": "Flex Layout Reverse Row",
     "types": "typescript, html",
     "body": [
-      "<div fxLayout=\"row-reverse\" fxLayoutAlign=\"${start|center|end|space-around|space-between} ${start|center|end|stretch}\" fxLayoutGap=\"${gap}px\">",
+      "<div fxLayout=\"row-reverse\" fxLayoutAlign=\"${1|start,center,end,space-around,space-between|} ${2|start,center,end,stretch|}\" fxLayoutGap=\"${gap}px\">",
       "\t$0",
       "</div>"
     ]
@@ -1526,7 +1526,7 @@
     "description": "Flex Layout Column",
     "types": "typescript, html",
     "body": [
-      "fxLayout=\"column\" fxLayoutAlign=\"${start|center|end|space-around|space-between} ${start|center|end|stretch}\" fxLayoutGap=\"${gap}px\">$0"
+      "fxLayout=\"column\" fxLayoutAlign=\"${1|start,center,end,space-around,space-between|} ${2|start,center,end,stretch|}\" fxLayoutGap=\"${gap}px\">$0"
     ]
   },
   "Angular Flex Column with Element": {
@@ -1544,7 +1544,7 @@
     "description": "Flex Layout Reverse Column",
     "types": "typescript, html",
     "body": [
-      "<div fxLayout=\"column-reverse\" fxLayoutAlign=\"${start|center|end|space-around|space-between} ${start|center|end|stretch}\" fxLayoutGap=\"${gap}px\">",
+      "<div fxLayout=\"column-reverse\" fxLayoutAlign=\"${1|start,center,end,space-around,space-between|} ${2|start,center,end,stretch|}\" fxLayoutGap=\"${gap}px\">",
       "\t$0",
       "</div>"
     ]
@@ -1584,7 +1584,7 @@
     "description": "Flex Layout Item with fxFlexAlign",
     "types": "typescript, html",
     "body": [
-      "<div fxFlex=\"${value}%\" fxFlexAlign=\"${start|baseline|center|end}\">",
+      "<div fxFlex=\"${value}%\" fxFlexAlign=\"${1|start,baseline,center,end|}\">",
       "\t$0",
       "</div>"
     ]
@@ -1843,7 +1843,7 @@
       "<mat-icon",
       "\tcolor=\"primary\"" ,
       "\tmatBadge=\"${number}\"",
-      "\tmatBadgePosition=\"${above|below} ${after|before}\"",
+      "\tmatBadgePosition=\"${2|above,below|} ${3|after,before|}\"",
       "\tmatBadgeColor=\"accent\">",
       "\t\t${icon}",
       "</mat-icon>$0"
@@ -1957,7 +1957,7 @@
     "description": "Material Tooltip position",
     "types": "typescript, html",
     "body": [
-      "[matTooltipPosition]=\"${above|below|left|right|before|after}\"$0"
+      "[matTooltipPosition]=\"${1|above,below,left,right,before,after|}\"$0"
     ]
   },
   "Material Tooltip With Position": {
@@ -1965,7 +1965,7 @@
     "description": "Material Tooltip with position",
     "types": "typescript, html",
     "body": [
-      "matTooltip=\"${text}\" [matTooltipPosition]=\"${above|below|left|right|before|after}\"$0"
+      "matTooltip=\"${text}\" [matTooltipPosition]=\"${1|above,below,left,right,before,after|}\"$0"
     ]
   },
   "Material Table": {
@@ -2135,6 +2135,35 @@
       "<mat-spinner",
       "\t[mode]=\"indeterminate\">",
       "</mat-spinner>$0"
+    ]
+  },
+  "Material Divider": {
+    "prefix": "m-divider",
+    "description": "Material Divider",
+    "types": "typescript, html",
+    "body": [
+      "<mat-divider>",
+      "</mat-divider>$0"
+    ]
+  },
+  "Material Inset Divider": {
+    "prefix": "m-divider-inset",
+    "description": "Material Inset Divider",
+    "types": "typescript, html",
+    "body": [
+      "<mat-divider",
+      "\t[inset]=\"true\">",
+      "</mat-divider>$0"
+    ]
+  },
+  "Material Vertical Divider": {
+    "prefix": "m-divider-vertical",
+    "description": "Material Vertical Divider",
+    "types": "typescript, html",
+    "body": [
+      "<mat-divider",
+      "\t[vertical]=\"true\">",
+      "</mat-divider>$0"
     ]
   },
 
