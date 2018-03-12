@@ -14,6 +14,7 @@ Visual Studio Code TypeScript and Html snippets and code examples for Angular 2,
 | ngxs- | Angular Ngxs Snippets |
 | m- | Angular Material Design Snippets |
 | rx- | RxJS Snippets for both TypeScript and JavaScript |
+| sw- | Service Workers Snippets |
 
 # Snippet Postfix
 
@@ -242,6 +243,8 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | rx-import-all | RxJS import the entire core set of functionality |
 | rx-import-observable | RxJS Import Observable |
 | rx-import-operator | RxJS Import Add Operator |
+| sw-register | Register Service Worker |
+| sw-register-and-check | Register Service Worker and Check |
 | wat | A lightning talk by Gary Bernhardt from CodeMash 2012. ng-wat talk by Shai Reznik in 2015 |
 
 

@@ -2203,6 +2203,35 @@
       "$0"
     ]
   },
+  "Register Service Worker": {
+    "prefix": "sw-register",
+    "description": "Register Service Worker",
+    "types": "typescript, javascript",
+    "body": [
+      "if ('serviceWorker' in navigator) {",
+      "\twindow.addEventListener('load', () => {",
+      "\tnavigator.serviceWorker.register('/sw.js');",
+      "});",
+      "}$0"
+    ]
+  },
+  "Register Service Worker and Check": {
+    "prefix": "sw-register-and-check",
+    "description": "Register Service Worker and Check",
+    "types": "typescript, javascript",
+    "body": [
+      "if ('serviceWorker' in navigator) {",
+      "if('serviceWorker' in window.navigator) {",
+      "\twindow.addEventListener('load', () => {",
+      "\t\twindow.navigator.serviceWorker.register('/sw.js', { scope: '/' }).then((registration) => {",
+      "\t\t\tconsole.log('ServiceWorker registration successful with scope: ', registration.scope);",
+      "\t\t}).catch((error) => {",
+      "\t\t\tconsole.error('ServiceWorker registration failed: ', error);",
+      "\t\t});",
+      "\t});",
+      "}$0"
+    ]
+  },
   "Nx Cheat Sheet": {
     "prefix": "nx-cheatsheet",
     "description": "Nx Cheat Sheet",

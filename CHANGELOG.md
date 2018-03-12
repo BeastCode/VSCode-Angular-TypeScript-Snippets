@@ -12,6 +12,8 @@
  * m-divider
  * m-divider-inset
  * m-divider-vertical
+ * sw-register
+ * sw-register-and-check
 
 ## 5.1.x
  * NgRX
