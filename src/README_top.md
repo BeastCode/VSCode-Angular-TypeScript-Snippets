@@ -15,6 +15,7 @@ Visual Studio Code TypeScript and Html snippets and code examples for Angular 2,
 | m- | Angular Material Design Snippets |
 | rx- | RxJS Snippets for both TypeScript and JavaScript |
 | sw- | Service Workers Snippets |
+| pwa- | Progressive Web Applications Snippets |
 
 # Snippet Postfix
 

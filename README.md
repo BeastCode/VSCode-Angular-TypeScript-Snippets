@@ -15,6 +15,7 @@ Visual Studio Code TypeScript and Html snippets and code examples for Angular 2,
 | m- | Angular Material Design Snippets |
 | rx- | RxJS Snippets for both TypeScript and JavaScript |
 | sw- | Service Workers Snippets |
+| pwa- | Progressive Web Applications Snippets |
 
 # Snippet Postfix
 
@@ -69,7 +70,11 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | Snippet | Description |
 | ------- | ----------|
 | 		"": "ng-http-interceptor | 		"": "Intercept an outgoing HttpRequest and optionally transform it or the response. |
-| cli-cheatsheet | Cli Cheat Sheet |
+|       "\"\": \"\", | pwa-link-manifest |
+| Nx Cheat Sheet | cli-cheatsheet |
+| Nx Cheat Sheet | nx-ngrx-cheatsheet |
+| PWA Link Json Manifest | sw-register-and-check |
+| Register Service Worker and Check | nx-cheatsheet |
 | fx-col | Flex Layout Column |
 | fx-col-element | Flex Layout Column with Element |
 | fx-col-reverse | Flex Layout Reverse Column |
@@ -237,14 +242,12 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ngrx-reducer | ngRx Reducer |
 | ngrx-store | Ngxs Store |
 | ngrx-util | ngRx Util |
-| nx-cheatsheet | Nx Cheat Sheet |
-| nx-ngrx-cheatsheet | Nx Cheat Sheet |
+| pwa-manifest | PWA Json Manifest |
 | rx-import-add-observable | RxJS Import Observable |
 | rx-import-all | RxJS import the entire core set of functionality |
 | rx-import-observable | RxJS Import Observable |
 | rx-import-operator | RxJS Import Add Operator |
 | sw-register | Register Service Worker |
-| sw-register-and-check | Register Service Worker and Check |
 | wat | A lightning talk by Gary Bernhardt from CodeMash 2012. ng-wat talk by Shai Reznik in 2015 |
 
 

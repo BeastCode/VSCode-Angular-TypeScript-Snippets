@@ -14,6 +14,8 @@
  * m-divider-vertical
  * sw-register
  * sw-register-and-check
+ * pwa-manifest
+ * pwa-link-manifest
 
 ## 5.1.x
  * NgRX
