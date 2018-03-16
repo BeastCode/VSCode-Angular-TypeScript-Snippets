@@ -1,10 +1,7 @@
 # Angular BeastCode Changelog
 
 ## 5.2.x
- * nx-cheatsheet
- * nx-ngrx-cheatsheet
  * ng-http-interceptor
- * cli-cheatsheet
  * m-checkbox-ngmodel
  * m-icon
  * m-icon-badge
@@ -14,8 +11,13 @@
  * m-divider-vertical
  * sw-register
  * sw-register-and-check
- * pwa-manifest
  * pwa-link-manifest
+
+Temporary removed
+ * pwa-manifest
+ * nx-cheatsheet
+ * ng-http-interceptor
+ * cli-cheatsheet
 
 ## 5.1.x
  * NgRX

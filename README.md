@@ -69,8 +69,6 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 
 | Snippet | Description |
 | ------- | ----------|
-| 		"": "ng-http-interceptor | 		"": "Intercept an outgoing HttpRequest and optionally transform it or the response. |
-| cli-cheatsheet | Cli Cheat Sheet |
 | fx-col | Flex Layout Column |
 | fx-col-element | Flex Layout Column with Element |
 | fx-col-reverse | Flex Layout Reverse Column |
@@ -173,6 +171,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-href | Usage: Bind to the href property. |
 | ng-http-get | Http observable get request |
 | ng-http-get-post | Http observable get & post request |
+| ng-http-interceptor | Intercept an outgoing HttpRequest and optionally transform it or the response. |
 | ng-httpClient-get | HttpClient observable get request |
 | ng-if | If directive: *ngIf=\"expression\" |
 | ng-if-else | v4: If else directive: *ngIf=\"expression; else\" |
@@ -238,9 +237,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ngrx-reducer | ngRx Reducer |
 | ngrx-store | Ngxs Store |
 | ngrx-util | ngRx Util |
-| nx-cheatsheet | Nx Cheat Sheet |
-| nx-ngrx-cheatsheet | Nx Cheat Sheet |
-| pwa-link-manifest | PWA Link Json Manifest |
+| pwa-link-manifest | PWA Link Manifest |
 | rx-import-add-observable | RxJS Import Observable |
 | rx-import-all | RxJS import the entire core set of functionality |
 | rx-import-observable | RxJS Import Observable |

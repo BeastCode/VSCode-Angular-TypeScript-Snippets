@@ -38,8 +38,8 @@
         "path": "./snippets/typescript.json"
       },
       {
-        "language": "javascript",
-        "path": "./snippets/javascript.json"
+        "language": "json",
+        "path": "./snippets/json.json"
       }
     ]
   },
