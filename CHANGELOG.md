@@ -16,7 +16,6 @@
 Temporary removed
  * pwa-manifest
  * nx-cheatsheet
- * ng-http-interceptor
  * cli-cheatsheet
 
 ## 5.1.x
