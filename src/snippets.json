@@ -2243,14 +2243,5 @@
       "\t});",
       "}$0"
     ]
-  },
-  
-    "Cli Cheat Sheet": {
-      "prefix": "pwa-manifest2",
-      "description": "PWA Json Manifest",
-      "types": "html",
-      "body": [
-        "<link rel=\"manifest\" href=\"./manifest.json\">$0"
-      ]
-    }
+  }
 }
