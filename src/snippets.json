@@ -14,8 +14,9 @@
       "export class ${4:Name}Component implements OnInit {",
       "\tconstructor($5) { }",
       "",
-      "\tngOnInit() {${6: }}",
-      "}${0}"
+      "\tngOnInit(): void {${6: }}",
+      "}",
+      "$0"
     ]
   },
   "Angular Component Inline": {
@@ -33,8 +34,9 @@
       "export class ${5:Name}Component implements OnInit {",
       "\tconstructor($6) { }",
       "",
-      "\tngOnInit() {${7: }}",
-      "}${0}"
+      "\t: void {${7: }}",
+      "}",
+      "$0"
     ]
   },
   "Angular Component With NG_VALUE_ACCESSOR": {
@@ -81,7 +83,7 @@
       "\t\t}",
       "\t}",
       "",
-      "\tngOnInit() {",
+      "\tngOnInit(): void {",
       "\t\t",
       "\t}",
       "",
@@ -505,7 +507,7 @@
     "description": "Lifecycle hook: Called after the constructor",
     "types": "typescript",
     "body": [
-      "ngOnInit() {",
+      "ngOnInit(): void {",
       "\t//Called after the constructor, initializing input properties, and the first call to ngOnChanges.",
       "\t//Add 'implements OnInit' to the class.",
       "\t$0",
@@ -1307,10 +1309,11 @@
       "\tstyleUrls: ['./${name}.component.css']",
       "})",
       "export class ${Name}Component implements OnInit {",
-      "\tconstructor() { $0}",
+      "\tconstructor() { $1}",
       "",
-      "\tngOnInit() { }",
-      "}"
+      "\tngOnInit(): void { $2}",
+      "}",
+      "$0"
     ]
   },
   "Angular 1 Show Directive": {
@@ -2240,5 +2243,14 @@
       "\t});",
       "}$0"
     ]
-  }
+  },
+  
+    "Cli Cheat Sheet": {
+      "prefix": "pwa-manifest2",
+      "description": "PWA Json Manifest",
+      "types": "html",
+      "body": [
+        "<link rel=\"manifest\" href=\"./manifest.json\">$0"
+      ]
+    }
 }

@@ -1,5 +1,8 @@
 # Angular BeastCode Changelog
 
+## 6.0.0
+ * pwa-manifest
+
 ## 5.2.x
  * ng-http-interceptor
  * m-checkbox-ngmodel
@@ -14,7 +17,6 @@
  * pwa-link-manifest
 
 Temporary removed
- * pwa-manifest
  * nx-cheatsheet
  * cli-cheatsheet
 
