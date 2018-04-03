@@ -495,7 +495,7 @@
     "description": "Lifecycle hook: Called before any other lifecycle hook",
     "types": "typescript",
     "body": [
-      "ngOnChanges(changes: SimpleChanges) {",
+      "ngOnChanges(changes: SimpleChanges): void {",
       "\t//Called before any other lifecycle hook. Use it to inject dependencies, but avoid any serious work here.",
       "\t//Add '${implements OnChanges}' to the class.",
       "\t$0",
@@ -579,7 +579,7 @@
     "description": "Lifecycle hook: Called before the instance is destroyed",
     "types": "typescript",
     "body": [
-      "ngOnDestroy() {",
+      "ngOnDestroy(): void {",
       "\t//Called once, before the instance is destroyed.",
       "\t//Add 'implements OnDestroy' to the class.",
       "\t$0",
