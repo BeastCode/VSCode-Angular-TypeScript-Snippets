@@ -642,10 +642,10 @@
     ]
   },
   "Angular Girls": {
-  "prefix": "ng-girls",
-  "description": "Angular Girls",
-  "types": "typescript",
-  "body": [                                                                         
+    "prefix": "ng-girls",
+    "description": "Angular Girls",
+    "types": "typescript",
+    "body": [                                                                         
   "                         *********",
   "                   .*******************.",                            
   "              ,*****************************,",                       

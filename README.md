@@ -69,7 +69,6 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 
 | Snippet | Description |
 | ------- | ----------|
-|   "": "ng-girls |   "": "Angular Girls |
 | fx-col | Flex Layout Column |
 | fx-col-element | Flex Layout Column with Element |
 | fx-col-reverse | Flex Layout Reverse Column |
@@ -168,6 +167,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-for-index | For-loop directive with index |
 | ng-for-li | For-loop directive with li element |
 | ng-for-trackBy | For-loop directive with trackBy |
+| ng-girls | Angular Girls |
 | ng-hide | Usage: Bind to the hidden property. |
 | ng-href | Usage: Bind to the href property. |
 | ng-http-get | Http observable get request |
