@@ -2,6 +2,11 @@
 
 ## 6.0.0
  * pwa-manifest
+ * ng-girls
+ * ngxs-store
+ * cli-cheatsheet
+ * nx-cheatsheet
+ * nx-ngrx-cheatsheet
 
 ## 5.2.x
  * ng-http-interceptor

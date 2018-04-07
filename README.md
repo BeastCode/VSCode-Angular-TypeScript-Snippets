@@ -69,6 +69,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 
 | Snippet | Description |
 | ------- | ----------|
+| cli-cheatsheet | Cli Cheat Sheet |
 | fx-col | Flex Layout Column |
 | fx-col-element | Flex Layout Column with Element |
 | fx-col-reverse | Flex Layout Reverse Column |
@@ -229,6 +230,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-test-pipe | Test a pipe |
 | ng-test-service | TODO |
 | ng-validator | Angular validator snippet |
+| ngrs-store | Ngrs Store |
 | ngrx-action-const | ngRx Single action |
 | ngrx-actions | ngRx Actions class |
 | ngrx-actiontype-enum | ngRx enum action type |
@@ -236,8 +238,10 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ngrx-effect | ngRx Effect |
 | ngrx-module | ngRx Root Module |
 | ngrx-reducer | ngRx Reducer |
-| ngrx-store | Ngxs Store |
 | ngrx-util | ngRx Util |
+| ngxs-store | Ngxs Store |
+| nx-cheatsheet | Nx Cheat Sheet |
+| nx-ngrx-cheatsheet | Nx Cheat Sheet |
 | pwa-link-manifest | PWA Link Manifest |
 | rx-import-add-observable | RxJS Import Observable |
 | rx-import-all | RxJS import the entire core set of functionality |
