@@ -230,7 +230,6 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-test-pipe | Test a pipe |
 | ng-test-service | TODO |
 | ng-validator | Angular validator snippet |
-| ngrs-store | Ngrs Store |
 | ngrx-action-const | ngRx Single action |
 | ngrx-actions | ngRx Actions class |
 | ngrx-actiontype-enum | ngRx enum action type |
@@ -239,7 +238,13 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ngrx-module | ngRx Root Module |
 | ngrx-reducer | ngRx Reducer |
 | ngrx-util | ngRx Util |
+| ngxs-action | Ngxs Action |
+| ngxs-action-payload | Ngxs Action with Payload |
+| ngxs-select | Ngxs Select |
+| ngxs-state | Ngxs State |
+| ngxs-state-model | Ngxs State Model |
 | ngxs-store | Ngxs Store |
+| ngxs-store-import | Ngxs Import Store |
 | nx-cheatsheet | Nx Cheat Sheet |
 | nx-ngrx-cheatsheet | Nx Cheat Sheet |
 | pwa-link-manifest | PWA Link Manifest |

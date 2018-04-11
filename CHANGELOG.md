@@ -4,6 +4,12 @@
  * pwa-manifest
  * ng-girls
  * ngxs-store
+ * ngxs-store-import
+ * ngxs-state
+ * ngxs-state-model
+ * ngxs-select
+ * ngxs-action
+ * ngxs-action-payload
  * cli-cheatsheet
  * nx-cheatsheet
  * nx-ngrx-cheatsheet

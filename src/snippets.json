@@ -1087,18 +1087,53 @@
       "}"
     ]
   },
-  "Angular Ngrs Store": {
-    "prefix": "ngrs-store",
-    "description": "Ngrs Store",
+  "Angular Ngxs State": {
+    "prefix": "ngxs-state",
+    "description": "Ngxs State",
     "types": "typescript",
     "body": [
-      "import { Store } from 'ngxs';",
+      "import { State } from '@ngxs/store';",
+      "import { ${Name}StateModel } from './${name}.model';",
       "",
-      "@Store({",
+      "@State<${Name}StateModel>({",
       "\tdefaults: {",
       "\t}",
       "})",
-      "export class ${Name}Store {}"
+      "export class ${Name}State {}",
+      "%0"
+    ]
+  },
+  "Angular Ngxs Action": {
+    "prefix": "ngxs-action",
+    "description": "Ngxs Action",
+    "types": "typescript",
+    "body": [
+      "export class ${Action} {",
+      "\tstatic readonly type = '[${FileName}] ${Action}]';",
+      "}",
+      "$0"
+    ]
+  },
+  "Angular Ngxs Action With Payload": {
+    "prefix": "ngxs-action-payload",
+    "description": "Ngxs Action with Payload",
+    "types": "typescript",
+    "body": [
+      "export class ${Action} {",
+      "\tstatic readonly type = '[${FileName}] ${Action}]';",
+      "\tconstructor(public readonly payload?: any) {}",
+      "}",
+      "$0"
+    ]
+  },
+  "Angular Ngxs State Model": {
+    "prefix": "ngxs-state-model",
+    "description": "Ngxs State Model",
+    "types": "typescript",
+    "body": [
+      "export interface ${Name}StateModel {$1",
+      "}",
+      "$0"
     ]
   },
   "Angular Ngxs Store": {
@@ -1106,13 +1141,41 @@
     "description": "Ngxs Store",
     "types": "typescript",
     "body": [
-      "import { Store } from 'ngxs';",
+      "NgxsModule.forRoot([",
+      "\t${Name}State",
+      "])",
+      "NgxsReduxDevtoolsPluginModule.forRoot(),",
+      "NgxsLoggerPluginModule.forRoot()$0"
+    ]
+  },
+  "Angular Ngxs Import Store": {
+    "prefix": "ngxs-store-import",
+    "description": "Ngxs Import Store",
+    "types": "typescript",
+    "body": [
+      "import { NgxsModule } from '@ngxs/store';",
+      "import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';",
+      "import { NgxsLoggerPluginModule } from '@ngxs/logger-plugin';",
+      "import { ${Name}State } from './${path}/${name}.state';",
+      "$0"
+    ]
+  },
+  "Angular Ngxs Select": {
+    "prefix": "ngxs-select",
+    "description": "Ngxs Select",
+    "types": "typescript",
+    "body": [
+      "import { Select } from '@ngxs/store';",
       "",
-      "@Store({",
-      "\tdefaults: {",
-      "\t}",
-      "})",
-      "export class ${Name}Store {}"
+      "import { <%= classify(name) %>State } from './<%= dasherize(name) %>.state';",
+      "import { animal } from './animal.actions';",
+      "",
+      "@Component({ ... })",
+      "export class <%= classify(name) %>Component {",
+      " // Reads the name of the store from the store class",
+      " @Select(<%= classify(name) %>State) animals$: Observable<string[]>;",
+      "}",
+      "$0"
     ]
   },
   "Angular Test Synchronous Component": {
