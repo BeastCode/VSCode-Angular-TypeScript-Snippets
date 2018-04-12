@@ -1100,7 +1100,7 @@
       "\t}",
       "})",
       "export class ${Name}State {}",
-      "%0"
+      "$0"
     ]
   },
   "Angular Ngxs Action": {
@@ -1121,7 +1121,7 @@
     "body": [
       "export class ${Action} {",
       "\tstatic readonly type = '[${FileName}] ${Action}]';",
-      "\tconstructor(public readonly payload?: any) {}",
+      "\tconstructor(public readonly payload?: ${type:any}) {}",
       "}",
       "$0"
     ]
@@ -1167,13 +1167,13 @@
     "body": [
       "import { Select } from '@ngxs/store';",
       "",
-      "import { <%= classify(name) %>State } from './<%= dasherize(name) %>.state';",
-      "import { animal } from './animal.actions';",
+      "import { ${Name} State } from './${name}.state';",
+      "import { ${action} } from './${action}.actions';",
       "",
       "@Component({ ... })",
-      "export class <%= classify(name) %>Component {",
+      "export class ${Name}Component {",
       " // Reads the name of the store from the store class",
-      " @Select(<%= classify(name) %>State) animals$: Observable<string[]>;",
+      " @Select(${Name}State) ${action}$: Observable<${type}>;",
       "}",
       "$0"
     ]
