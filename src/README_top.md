@@ -2,7 +2,9 @@
 [![Installs](https://vsmarketplacebadge.apphb.com/installs-short/Mikael.Angular-BeastCode.svg)](https://marketplace.visualstudio.com/items?itemName=Mikael.Angular-BeastCode)
 
 # VSCode Angular TypeScript & Html Snippets
-Visual Studio Code TypeScript and Html snippets and code examples for Angular 2,4 & 5.
+Visual Studio Code TypeScript and Html snippets and code examples for Angular 2,4,5 & 6. 
+
+All code snippets are based on and follow the Angular style guide https://angular.io/docs/ts/latest/guide/style-guide.html
 
 # Snippet Prefixes
 
@@ -32,8 +34,6 @@ See example below for ng-repeat and ng-click:
 
 ![ngRepeatSnippet](https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets/raw/master/images/ngRepeatSnippet.gif)
 
-
-All code snippets are based on and follow the Angular style guide https://angular.io/docs/ts/latest/guide/style-guide.html
 
 # Usage
 
