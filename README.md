@@ -26,7 +26,7 @@ All code snippets are based on and follow the Angular style guide https://angula
 | -cheatsheet | Cheat Sheet |
 
 # Important
-This extension is optimized for developers that use Angular 2+ and are no longer using Angular 1.
+This extension is optimized for devlopers that use Angular 2+ and are no longer using Angular 1.
 If you type in Angular 1 keywords, it will suggest an Angular 2 solutions. 
 This is by design and ment to help developers learn how Angular 1 concepts and techniques map to Angular 2+
 
@@ -281,12 +281,12 @@ Please send any feedback or suggestions to @Mike_BeastCode (Twitter) or create a
 
 ## Open Source
 
-This is an open source project and if you want to contribute I've added issues on GitHub that are easy to start with. [![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-blue.svg)](https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets/labels/first-timers-only)
+This is an open source project and if you want to contribute I've added issues on github that are easy to start with. [![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-blue.svg)](https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets/labels/first-timers-only)
 
 
 ## Disclaimer
 
-Important: This extension due to the nature of its purpose will create
+Important: This extension due to the nature of it's purpose will create
 files on your hard drive and if necessary create the respective folder structure.
 While it should not override any files during this process, I'm not giving any guarantees or take any responsibility in case of lost data.
 

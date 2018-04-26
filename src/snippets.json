@@ -34,7 +34,7 @@
       "export class ${5:Name}Component implements OnInit {",
       "\tconstructor($6) { }",
       "",
-      "\t: void {${7: }}",
+      "\tngOnInit(): void {${7: }}",
       "}",
       "$0"
     ]
@@ -678,7 +678,7 @@
   "",
   "                      Upcoming Events:",
   "",
-  "April 17th, Salt Lake City, Utah May 11th, Mountain View, California",
+  "             May 11th, Mountain View, California",
   ""
     ]
   },
@@ -1867,9 +1867,11 @@
     "body": [
       "<mat-form-field>",
       "\t<input matInput [matDatepicker]=\"${picker}\" placeholder=\"${title}\">",
-      "\t\t<button matSuffix [matDatepickerToggle]=\"${picker}\"></button>",
-      "\t</mat-form-field>",
-      "<mat-datepicker #${picker}></mat-datepicker>$0"
+      "\t<mat-datepicker-toggle matSuffix [for]=\"${picker}\"></mat-datepicker-toggle>",
+      "\t<button matSuffix [matDatepickerToggle]=\"${picker}\"></button>",
+      "\t<mat-datepicker #${picker}></mat-datepicker>",
+      "</mat-form-field>",
+      "$0"
     ]
   },
   "Material Input Text": {
