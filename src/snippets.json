@@ -916,7 +916,7 @@
       "/**",
       "\t* This function coerces a string into a string literal type.",
       " * Using tagged union types in TypeScript 2.0, this enables",
-      " * powerful typechecking of our reducers.",
+      " * powerful type checking of our reducers.",
       " * ",
       " * Since every action label passes through this function it",
       " * is a good place to ensure all of our action labels",
@@ -1044,7 +1044,35 @@
     "description": "ngRx Single action",
     "types": "typescript",
     "body": [
-      "export const ${ACTION} = '${ACTION}';"
+      "export const ${ACTION} = '[${NameSpace}] ${ACTION}';",
+      "$0"
+    ]
+  },
+  "Angular ngRx Action Creator": {
+    "prefix": "ngrx-action-creator",
+    "description": "ngRx Single action with const",
+    "types": "typescript",
+    "body": [
+      "export const ${ACTION} = '[${NameSpace}] ${ACTION}';",
+      "$0",
+      "export class ${Class} implements Action {",
+      "\treadonly type = ${ACTION};",
+      "",
+      "\tconstructor(public payload: ${payloadType}) { }",
+      "}",
+      ""
+    ]
+  },
+  "Angular ngRx Action Creator Enum": {
+    "prefix": "ngrx-action-creator-enum",
+    "description": "ngRx Single action creator for enum",
+    "types": "typescript",
+    "body": [
+      "export class ${Verb} implements Action {",
+      "\treadonly type = ${Class}ActionTypes.${Verb};",
+      "",
+      "\tconstructor(public payload: ${payloadType}) { }",
+      "}"
     ]
   },
   "Angular ngRx Enum ActionTypes": {

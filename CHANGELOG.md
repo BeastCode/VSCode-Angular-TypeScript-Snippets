@@ -13,6 +13,8 @@
  * cli-cheatsheet
  * nx-cheatsheet
  * nx-ngrx-cheatsheet
+ * ngrx-action-creator
+ * ngrx-action-creator-enum
 
 ## 5.2.x
  * ng-http-interceptor
