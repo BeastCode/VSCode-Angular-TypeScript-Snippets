@@ -26,9 +26,9 @@ All code snippets are based on and follow the Angular style guide https://angula
 | -cheatsheet | Cheat Sheet |
 
 # Important
-This extension is optimized for devlopers that use Angular 2+ and are no longer using Angular 1.
-If you type in Angular 1 keywords, it will suggest an Angular 2 solutions. 
-This is by design and ment to help developers learn how Angular 1 concepts and techniques map to Angular 2+
+This extension is optimized for developers that use Angular and are no longer using AngularJS (Angular 1).
+If you type in AngularJS keywords, it will suggest an Angular solutions. 
+This is by design and meant to help developers learn how AngularJS concepts and techniques map to Angular.
 
 See example below for ng-repeat and ng-click:
 
