@@ -1,5 +1,8 @@
 # Angular BeastCode Changelog
 
+## 6.1.0
+ * rxjs
+ 
 ## 6.0.0
  * pwa-manifest
  * ng-girls

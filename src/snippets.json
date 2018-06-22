@@ -810,7 +810,7 @@
     "body": [
       "import { Injectable } from '@angular/core';",
       "import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';",
-      "import { Observable } from 'rxjs/Observable';",
+      "import { Observable } from 'rxjs';",
       "",
       "@Injectable()",
       "export class ${CanActivate}Guard implements CanActivate {",
@@ -831,7 +831,7 @@
     "body": [
       "import { Injectable } from '@angular/core';",
       "import { CanActivateChild, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';",
-      "import { Observable } from 'rxjs/Observable';",
+      "import { Observable } from 'rxjs';",
       "",
       "@Injectable()",
       "export class ${CanActivateChild}Guard implements CanActivateChild {",
@@ -852,7 +852,7 @@
     "body": [
       "import { Injectable } from '@angular/core';",
       "import { Resolve, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';",
-      "import { Observable } from 'rxjs/Observable';",
+      "import { Observable } from 'rxjs';",
       "",
       "@Injectable()",
       "export class ${Resolve}Guard implements Resolve<${T}> {",
@@ -873,7 +873,7 @@
     "body": [
       "import { Injectable } from '@angular/core';",
       "import { CanLoad, Route } from '@angular/router';",
-      "import { Observable } from 'rxjs/Observable';",
+      "import { Observable } from 'rxjs';",
       "",
       "@Injectable()",
       "export class ${CanLoad}Guard implements CanLoad {",
@@ -893,7 +893,7 @@
     "body": [
       "import { Injectable } from '@angular/core';",
       "import { CanDeactivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';",
-      "import { Observable } from 'rxjs/Observable';",
+      "import { Observable } from 'rxjs';",
       "",
       "@Injectable()",
       "export class ${CanDeactivate}Guard implements CanDeactivate<${T}> {",
@@ -1100,7 +1100,7 @@
     "types": "typescript",
     "body": [
       "import { Injectable } from '@angular/core';",
-      "import { Observable } from 'rxjs/Observable';",
+      "import { Observable } from 'rxjs';",
       "import { Action } from '@ngrx/store';",
       "import { Actions, Effect } from '@ngrx/effects';",
       "",
@@ -2299,31 +2299,21 @@
       "</mat-divider>$0"
     ]
   },
-
-  "RxJS Import All": {
-    "prefix": "rx-import-all",
-    "description": "RxJS import the entire core set of functionality",
-    "types": "typescript, javascript",
-    "body": [
-      "import Rx from 'rxjs/Rx';",
-      "$0"
-    ]
-  },
   "RxJS Import Observable": {
     "prefix": "rx-import-observable",
     "description": "RxJS Import Observable",
     "types": "typescript, javascript",
     "body": [
-      "import { Observable } from 'rxjs/Observable';",
+      "import { Observable } from 'rxjs';",
       "$0"
     ]
   },
-  "RxJS Import Add Observable": {
-    "prefix": "rx-import-add-observable",
-    "description": "RxJS Import Observable",
+  "RxJS Import Subject": {
+    "prefix": "rx-import-observable",
+    "description": "RxJS Import Subject",
     "types": "typescript, javascript",
     "body": [
-      "import 'rxjs/add/observable/${1:of}';",
+      "import { Subject } from 'rxjs';",
       "$0"
     ]
   },
