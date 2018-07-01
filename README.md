@@ -253,6 +253,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | rx-import-observable | RxJS Import Observable |
 | rx-import-observable | RxJS Import Subject |
 | rx-import-operator | RxJS Import Add Operator |
+| rx-mergeMap | RxJS MergeMap Example |
 | sw-register | Register Service Worker |
 | sw-register-and-check | Register Service Worker and Check |
 | wat | A lightning talk by Gary Bernhardt from CodeMash 2012. ng-wat talk by Shai Reznik in 2015 |

@@ -1,8 +1,9 @@
 # Angular BeastCode Changelog
 
 ## 6.1.0
- * rxjs
- 
+ * rxjs updates
+ * rxjs mergeMap example
+
 ## 6.0.0
  * pwa-manifest
  * ng-girls
