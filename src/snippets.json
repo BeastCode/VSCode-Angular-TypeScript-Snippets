@@ -2339,6 +2339,19 @@
       "$0"
     ]
   },
+  "Test Describe, It & Expect Example": {
+    "prefix": "t-describe-it",
+    "description": "Describe, It & Expect Example",
+    "types": "typescript",
+    "body": [
+      "describe('${1:Description}', () => {",
+      "\tit('${2:Test}', () => {",
+      "\t\texpect($3).toBe($4);",
+      "\t});",
+      "});",
+      "$0"
+    ]
+  },
   "Angular Http Interceptor": {
     "prefix": "ng-http-interceptor",
     "description": "Intercept an outgoing HttpRequest and optionally transform it or the response.",

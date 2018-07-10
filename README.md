@@ -17,6 +17,7 @@ All code snippets are based on and follow the Angular style guide https://angula
 | m- | Angular Material Design Snippets |
 | rx- | RxJS Snippets for both TypeScript and JavaScript |
 | sw- | Service Workers Snippets |
+| t- | Test Snippets |
 | pwa- | Progressive Web Applications Snippets |
 
 # Snippet Postfix
@@ -256,6 +257,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | rx-mergeMap | RxJS MergeMap Example |
 | sw-register | Register Service Worker |
 | sw-register-and-check | Register Service Worker and Check |
+| t-describe-it | Describe, It & Expect Example |
 | wat | A lightning talk by Gary Bernhardt from CodeMash 2012. ng-wat talk by Shai Reznik in 2015 |
 
 

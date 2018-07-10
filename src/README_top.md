@@ -17,6 +17,7 @@ All code snippets are based on and follow the Angular style guide https://angula
 | m- | Angular Material Design Snippets |
 | rx- | RxJS Snippets for both TypeScript and JavaScript |
 | sw- | Service Workers Snippets |
+| t- | Test Snippets |
 | pwa- | Progressive Web Applications Snippets |
 
 # Snippet Postfix

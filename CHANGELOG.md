@@ -1,8 +1,11 @@
 # Angular BeastCode Changelog
 
 ## 6.1.0
- * rxjs updates
- * rxjs mergeMap example
+ * rxjs 
+    * Multiple updates
+    * rxjs mergeMap example
+ * Testing snippets
+    * t-describe-it
 
 ## 6.0.0
  * pwa-manifest
