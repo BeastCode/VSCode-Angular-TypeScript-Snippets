@@ -225,10 +225,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-src | Usage: Bind to the src property. |
 | ng-style | CSS style |
 | ng-switch | Switch template |
-| ng-test-component-async | TODO |
-| ng-test-component-synchronous | TODO |
 | ng-test-directive | TODO |
-| ng-test-pipe | Test a pipe |
 | ng-test-service | TODO |
 | ng-validator | Angular validator snippet |
 | ngrx-action-const | ngRx Single action |
@@ -257,7 +254,11 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | rx-mergeMap | RxJS MergeMap Example |
 | sw-register | Register Service Worker |
 | sw-register-and-check | Register Service Worker and Check |
+| t-component-async | TODO |
+| t-component-synchronous | TODO |
 | t-describe-it | Describe, It & Expect Example |
+| t-it | It & Expect Example |
+| t-pipe | Test a pipe |
 | wat | A lightning talk by Gary Bernhardt from CodeMash 2012. ng-wat talk by Shai Reznik in 2015 |
 
 

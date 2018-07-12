@@ -1206,7 +1206,7 @@
     ]
   },
   "Angular Test Synchronous Component": {
-    "prefix": "ng-test-component-synchronous",
+    "prefix": "t-component-synchronous",
     "description": "TODO",
     "types": "typescript",
     "body": [
@@ -1220,11 +1220,12 @@
       "\texpected${ClassName} = new ${ClassName}($1);",
       "\tcomp.${className} = expected${ClassName};",
       "\tfixture.detectChanges(); // trigger initial data binding",
-      "});$0"
+      "});",
+      "$0"
     ]
   },
   "Angular Test Async Component": {
-    "prefix": "ng-test-component-async",
+    "prefix": "t-component-async",
     "description": "TODO",
     "types": "typescript",
     "body": [
@@ -1234,7 +1235,8 @@
       "\t\tdeclarations: [ ${Name}Component ],",
       "\t})",
       "\t.compileComponents(); // compile template and css",
-      "}));$0"
+      "}));",
+      "$0"
     ]
   },
   "Angular Test Directive": {
@@ -1254,7 +1256,7 @@
     ]
   },
   "Angular Test Pipe": {
-    "prefix": "ng-test-pipe",
+    "prefix": "t-pipe",
     "description": "Test a pipe",
     "types": "typescript",
     "body": [
@@ -1264,7 +1266,8 @@
       "\tit('transforms \"${input}\" to \"${output}\"', () => {",
       "\t\texpect(pipe.transform('${input}')).toBe('${output}');",
       "\t});",
-      "});"
+      "});",
+      "$0"
     ]
   },
   "Angular If Directive": {
@@ -2348,6 +2351,17 @@
       "\tit('${2:Test}', () => {",
       "\t\texpect($3).toBe($4);",
       "\t});",
+      "});",
+      "$0"
+    ]
+  },
+  "Test It & Expect Example": {
+    "prefix": "t-it",
+    "description": "It & Expect Example",
+    "types": "typescript",
+    "body": [
+      "it('${1:Test}', () => {",
+      "\texpect($2).toBe($3);",
       "});",
       "$0"
     ]

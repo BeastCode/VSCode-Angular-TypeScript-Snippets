@@ -6,6 +6,10 @@
     * rxjs mergeMap example
  * Testing snippets
     * t-describe-it
+    * t-it
+    * t-component-synchronous
+    * t-component-async
+    * t-pipe
 
 ## 6.0.0
  * pwa-manifest
