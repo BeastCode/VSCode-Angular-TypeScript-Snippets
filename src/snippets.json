@@ -2366,6 +2366,15 @@
       "$0"
     ]
   },
+  "Test Expect ToBe Example": {
+    "prefix": "t-etb",
+    "description": "Expect ToBe Example",
+    "types": "typescript",
+    "body": [
+      "expect($2).toBe($3);",
+      "$0"
+    ]
+  },
   "Angular Http Interceptor": {
     "prefix": "ng-http-interceptor",
     "description": "Intercept an outgoing HttpRequest and optionally transform it or the response.",

@@ -257,6 +257,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | t-component-async | TODO |
 | t-component-synchronous | TODO |
 | t-describe-it | Describe, It & Expect Example |
+| t-etb | Expect ToBe Example |
 | t-it | It & Expect Example |
 | t-pipe | Test a pipe |
 | wat | A lightning talk by Gary Bernhardt from CodeMash 2012. ng-wat talk by Shai Reznik in 2015 |
@@ -280,9 +281,18 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 5. Reload VS Code 
 
 
+## If you want intellesense to show emmets before the snippets, you can force the emmets suggestions to show up at the top, by add the following to your editor user settings:
+
+{
+"emmet.showSuggestionsAsSnippets": true,
+"editor.snippetSuggestions": "top"
+}
+
+
 ## Feedback
 
 Please send any feedback or suggestions to @Mike_BeastCode (Twitter) or create an issue on GitHub.
+
 
 ## Open Source
 

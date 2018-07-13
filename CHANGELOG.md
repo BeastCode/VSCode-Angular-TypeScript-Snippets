@@ -10,6 +10,7 @@
     * t-component-synchronous
     * t-component-async
     * t-pipe
+    * t-etb (expect toBe)
 
 ## 6.0.0
  * pwa-manifest
