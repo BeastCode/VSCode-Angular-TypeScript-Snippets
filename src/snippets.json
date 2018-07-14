@@ -2366,12 +2366,21 @@
       "$0"
     ]
   },
-  "Test Expect ToBe Example": {
+  "Test Expect toBe Example": {
     "prefix": "t-etb",
-    "description": "Expect ToBe Example",
+    "description": "Expect toBe Example",
     "types": "typescript",
     "body": [
       "expect($2).toBe($3);",
+      "$0"
+    ]
+  },
+  "Test Expect Not toBe Example": {
+    "prefix": "t-entb",
+    "description": "Expect Not toBe Example",
+    "types": "typescript",
+    "body": [
+      "expect($2).not.toBe($3);",
       "$0"
     ]
   },

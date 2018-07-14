@@ -18,12 +18,15 @@
 5. Reload VS Code 
 
 
-## If you want intellesense to show emmets before the snippets, you can force the emmets suggestions to show up at the top, by add the following to your editor user settings:
+## Emmets
+If you want intellisense to show emmets before the snippets, you can force the emmets suggestions to show up at the top, by add the following to your editor user settings:
 
+```javascript
 {
-"emmet.showSuggestionsAsSnippets": true,
-"editor.snippetSuggestions": "top"
+  "emmet.showSuggestionsAsSnippets": true,
+  "editor.snippetSuggestions": "top"
 }
+```
 
 
 ## Feedback
