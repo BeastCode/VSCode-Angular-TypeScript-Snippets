@@ -2366,6 +2366,28 @@
       "$0"
     ]
   },
+  "Test beforeEach Example": {
+    "prefix": "t-be",
+    "description": "beforeEach Example",
+    "types": "typescript",
+    "body": [
+      "beforeEach(function() {",
+      "\t$1",
+      "});",
+      "$0"
+    ]
+  },
+  "Test afterEach Example": {
+    "prefix": "t-ae",
+    "description": "afterEach Example",
+    "types": "typescript",
+    "body": [
+      "afterEach(function() {",
+      "\t$1",
+      "});",
+      "$0"
+    ]
+  },
   "Test Expect toBe Example": {
     "prefix": "t-etb",
     "description": "Expect toBe Example",

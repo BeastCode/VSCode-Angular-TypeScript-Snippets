@@ -254,6 +254,8 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | rx-mergeMap | RxJS MergeMap Example |
 | sw-register | Register Service Worker |
 | sw-register-and-check | Register Service Worker and Check |
+| t-ae | afterEach Example |
+| t-be | beforeEach Example |
 | t-component-async | TODO |
 | t-component-synchronous | TODO |
 | t-describe-it | Describe, It & Expect Example |

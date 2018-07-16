@@ -11,6 +11,9 @@
     * t-component-async
     * t-pipe
     * t-etb (expect toBe)
+    * t-entb (expect not toBe)
+    * t-be (beforeEach)
+    * t-ae (afterEach)
 
 ## 6.0.0
  * pwa-manifest
