@@ -2388,6 +2388,28 @@
       "$0"
     ]
   },
+  "Test beforeAll Example": {
+    "prefix": "t-ba",
+    "description": "beforeAll Example",
+    "types": "typescript",
+    "body": [
+      "beforeAll(function() {",
+      "\t$1",
+      "});",
+      "$0"
+    ]
+  },
+  "Test afterAll Example": {
+    "prefix": "t-aa",
+    "description": "afterAll Example",
+    "types": "typescript",
+    "body": [
+      "afterAll(function() {",
+      "\t$1",
+      "});",
+      "$0"
+    ]
+  },
   "Test Expect toBe Example": {
     "prefix": "t-etb",
     "description": "Expect toBe Example",

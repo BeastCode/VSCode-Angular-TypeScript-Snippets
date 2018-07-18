@@ -14,6 +14,8 @@
     * t-entb (expect not toBe)
     * t-be (beforeEach)
     * t-ae (afterEach)
+    * t-ba (beforeAll)
+    * t-aa (afterAll)
 
 ## 6.0.0
  * pwa-manifest
