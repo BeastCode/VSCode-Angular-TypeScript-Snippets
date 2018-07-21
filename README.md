@@ -257,13 +257,15 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | t-aa | afterAll Example |
 | t-ae | afterEach Example |
 | t-ba | beforeAll Example |
-| t-be | beforeEach Example |
+| t-be | beforeEach |
 | t-component-async | TODO |
 | t-component-synchronous | TODO |
-| t-describe-it | Describe, It & Expect Example |
-| t-entb | Expect Not toBe Example |
+| t-describe-it | Describe, It & Expect |
+| t-entb | Expect Not toBe |
 | t-etb | Expect toBe Example |
-| t-it | It & Expect Example |
+| t-etbf | Expect toBe Falsy |
+| t-it | It |
+| t-ite | It and Expect |
 | t-pipe | Test a pipe |
 | wat | A lightning talk by Gary Bernhardt from CodeMash 2012. ng-wat talk by Shai Reznik in 2015 |
 

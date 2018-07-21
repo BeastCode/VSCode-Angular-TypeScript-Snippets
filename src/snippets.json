@@ -2342,9 +2342,9 @@
       "$0"
     ]
   },
-  "Test Describe, It & Expect Example": {
+  "Test Describe, It & Expect": {
     "prefix": "t-describe-it",
-    "description": "Describe, It & Expect Example",
+    "description": "Describe, It & Expect",
     "types": "typescript",
     "body": [
       "describe('${1:Description}', () => {",
@@ -2355,20 +2355,31 @@
       "$0"
     ]
   },
-  "Test It & Expect Example": {
-    "prefix": "t-it",
-    "description": "It & Expect Example",
+  "Test It and Expect": {
+    "prefix": "t-ite",
+    "description": "It and Expect",
     "types": "typescript",
     "body": [
       "it('${1:Test}', () => {",
-      "\texpect($2).toBe($3);",
+      "\texpect($2).toBe$3($4);",
       "});",
       "$0"
     ]
   },
-  "Test beforeEach Example": {
+  "Test It": {
+    "prefix": "t-it",
+    "description": "It",
+    "types": "typescript",
+    "body": [
+      "it('${1:Test}', () => {",
+      "\t$2",
+      "});",
+      "$0"
+    ]
+  },
+  "Test beforeEach": {
     "prefix": "t-be",
-    "description": "beforeEach Example",
+    "description": "beforeEach",
     "types": "typescript",
     "body": [
       "beforeEach(function() {",
@@ -2421,10 +2432,19 @@
   },
   "Test Expect Not toBe Example": {
     "prefix": "t-entb",
-    "description": "Expect Not toBe Example",
+    "description": "Expect Not toBe",
     "types": "typescript",
     "body": [
       "expect($2).not.toBe($3);",
+      "$0"
+    ]
+  },
+  "Test Expect toBeFalsy Example": {
+    "prefix": "t-etbf",
+    "description": "Expect toBe Falsy",
+    "types": "typescript",
+    "body": [
+      "expect($2).toBeFalsy();",
       "$0"
     ]
   },

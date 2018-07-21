@@ -7,11 +7,13 @@
  * Testing snippets
     * t-describe-it
     * t-it
+    * t-ite
     * t-component-synchronous
     * t-component-async
     * t-pipe
     * t-etb (expect toBe)
     * t-entb (expect not toBe)
+    * t-etbf (expect toBeFalsy)
     * t-be (beforeEach)
     * t-ae (afterEach)
     * t-ba (beforeAll)
