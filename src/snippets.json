@@ -2378,7 +2378,7 @@
     ]
   },
   "Test beforeEach": {
-    "prefix": "t-be",
+    "prefix": "t-beforeEach",
     "description": "beforeEach",
     "types": "typescript",
     "body": [
@@ -2389,7 +2389,7 @@
     ]
   },
   "Test afterEach Example": {
-    "prefix": "t-ae",
+    "prefix": "t-afterEach",
     "description": "afterEach Example",
     "types": "typescript",
     "body": [
@@ -2400,7 +2400,7 @@
     ]
   },
   "Test beforeAll Example": {
-    "prefix": "t-ba",
+    "prefix": "t-beforeAll",
     "description": "beforeAll Example",
     "types": "typescript",
     "body": [
@@ -2411,7 +2411,7 @@
     ]
   },
   "Test afterAll Example": {
-    "prefix": "t-aa",
+    "prefix": "t-afterAll",
     "description": "afterAll Example",
     "types": "typescript",
     "body": [
@@ -2422,7 +2422,7 @@
     ]
   },
   "Test Expect toBe Example": {
-    "prefix": "t-etb",
+    "prefix": "e-tb",
     "description": "Expect toBe Example",
     "types": "typescript",
     "body": [
@@ -2431,7 +2431,7 @@
     ]
   },
   "Test Expect Not toBe Example": {
-    "prefix": "t-entb",
+    "prefix": "e-ntb",
     "description": "Expect Not toBe",
     "types": "typescript",
     "body": [
@@ -2440,11 +2440,29 @@
     ]
   },
   "Test Expect toBeFalsy Example": {
-    "prefix": "t-etbf",
+    "prefix": "e-tbf",
     "description": "Expect toBe Falsy",
     "types": "typescript",
     "body": [
       "expect($2).toBeFalsy();",
+      "$0"
+    ]
+  },
+  "Test Expect Not toMatch Example": {
+    "prefix": "e-ntm",
+    "description": "Expect Not toMatch",
+    "types": "typescript",
+    "body": [
+      "expect($2).not.toMatch(\"$3\");",
+      "$0"
+    ]
+  },
+  "Test Expect toMatch Example": {
+    "prefix": "e-tm",
+    "description": "Expect Not toMatch",
+    "types": "typescript",
+    "body": [
+      "expect($2).not.toMatch(\"$3\");",
       "$0"
     ]
   },

@@ -18,6 +18,7 @@ All code snippets are based on and follow the Angular style guide https://angula
 | rx- | RxJS Snippets for both TypeScript and JavaScript |
 | sw- | Service Workers Snippets |
 | t- | Test Snippets |
+| e- | Test Expect Snippets |
 | pwa- | Progressive Web Applications Snippets |
 
 # Snippet Postfix

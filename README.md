@@ -18,6 +18,7 @@ All code snippets are based on and follow the Angular style guide https://angula
 | rx- | RxJS Snippets for both TypeScript and JavaScript |
 | sw- | Service Workers Snippets |
 | t- | Test Snippets |
+| e- | Test Expect Snippets |
 | pwa- | Progressive Web Applications Snippets |
 
 # Snippet Postfix
@@ -71,6 +72,11 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | Snippet | Description |
 | ------- | ----------|
 | cli-cheatsheet | Cli Cheat Sheet |
+| e-ntb | Expect Not toBe |
+| e-ntm | Expect Not toMatch |
+| e-tb | Expect toBe Example |
+| e-tbf | Expect toBe Falsy |
+| e-tm | Expect Not toMatch |
 | fx-col | Flex Layout Column |
 | fx-col-element | Flex Layout Column with Element |
 | fx-col-reverse | Flex Layout Reverse Column |
@@ -254,16 +260,13 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | rx-mergeMap | RxJS MergeMap Example |
 | sw-register | Register Service Worker |
 | sw-register-and-check | Register Service Worker and Check |
-| t-aa | afterAll Example |
-| t-ae | afterEach Example |
-| t-ba | beforeAll Example |
-| t-be | beforeEach |
+| t-afterAll | afterAll Example |
+| t-afterEach | afterEach Example |
+| t-beforeAll | beforeAll Example |
+| t-beforeEach | beforeEach |
 | t-component-async | TODO |
 | t-component-synchronous | TODO |
 | t-describe-it | Describe, It & Expect |
-| t-entb | Expect Not toBe |
-| t-etb | Expect toBe Example |
-| t-etbf | Expect toBe Falsy |
 | t-it | It |
 | t-ite | It and Expect |
 | t-pipe | Test a pipe |

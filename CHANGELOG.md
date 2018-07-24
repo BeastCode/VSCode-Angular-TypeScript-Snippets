@@ -1,5 +1,19 @@
 # Angular BeastCode Changelog
 
+## 6.2.0
+ * Testing snippets
+    * t-beforeEach
+    * t-afterEach
+    * t-beforeAll
+    * t-afterAll
+
+ * Testing Expect To
+    * e-tb (expect toBe)
+    * e-ntb (expect not toBe)
+    * e-tbf (expect toBeFalsy)
+    * e-tm (expect toMatch)
+    * e-ntm (expect not toMatch)
+
 ## 6.1.0
  * rxjs 
     * Multiple updates
@@ -11,13 +25,6 @@
     * t-component-synchronous
     * t-component-async
     * t-pipe
-    * t-etb (expect toBe)
-    * t-entb (expect not toBe)
-    * t-etbf (expect toBeFalsy)
-    * t-be (beforeEach)
-    * t-ae (afterEach)
-    * t-ba (beforeAll)
-    * t-aa (afterAll)
 
 ## 6.0.0
  * pwa-manifest
