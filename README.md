@@ -74,9 +74,11 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | cli-cheatsheet | Cli Cheat Sheet |
 | e-ntb | Expect Not toBe |
 | e-ntm | Expect Not toMatch |
-| e-tb | Expect toBe Example |
+| e-ntmr | Expect Not toMatch regex |
+| e-tb | Expect toBe |
 | e-tbf | Expect toBe Falsy |
-| e-tm | Expect Not toMatch |
+| e-tm | Expect toMatch |
+| e-tmr | Expect toMatch regex |
 | fx-col | Flex Layout Column |
 | fx-col-element | Flex Layout Column with Element |
 | fx-col-reverse | Flex Layout Reverse Column |
@@ -260,9 +262,9 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | rx-mergeMap | RxJS MergeMap Example |
 | sw-register | Register Service Worker |
 | sw-register-and-check | Register Service Worker and Check |
-| t-afterAll | afterAll Example |
-| t-afterEach | afterEach Example |
-| t-beforeAll | beforeAll Example |
+| t-afterAll | afterAll |
+| t-afterEach | afterEach |
+| t-beforeAll | beforeAll |
 | t-beforeEach | beforeEach |
 | t-component-async | TODO |
 | t-component-synchronous | TODO |

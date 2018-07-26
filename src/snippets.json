@@ -2390,7 +2390,7 @@
   },
   "Test afterEach Example": {
     "prefix": "t-afterEach",
-    "description": "afterEach Example",
+    "description": "afterEach",
     "types": "typescript",
     "body": [
       "afterEach(function() {",
@@ -2399,9 +2399,9 @@
       "$0"
     ]
   },
-  "Test beforeAll Example": {
+  "Test beforeAll": {
     "prefix": "t-beforeAll",
-    "description": "beforeAll Example",
+    "description": "beforeAll",
     "types": "typescript",
     "body": [
       "beforeAll(function() {",
@@ -2410,9 +2410,9 @@
       "$0"
     ]
   },
-  "Test afterAll Example": {
+  "Test afterAll": {
     "prefix": "t-afterAll",
-    "description": "afterAll Example",
+    "description": "afterAll",
     "types": "typescript",
     "body": [
       "afterAll(function() {",
@@ -2421,16 +2421,16 @@
       "$0"
     ]
   },
-  "Test Expect toBe Example": {
+  "Test Expect toBe": {
     "prefix": "e-tb",
-    "description": "Expect toBe Example",
+    "description": "Expect toBe",
     "types": "typescript",
     "body": [
       "expect($2).toBe($3);",
       "$0"
     ]
   },
-  "Test Expect Not toBe Example": {
+  "Test Expect Not toBe": {
     "prefix": "e-ntb",
     "description": "Expect Not toBe",
     "types": "typescript",
@@ -2439,7 +2439,7 @@
       "$0"
     ]
   },
-  "Test Expect toBeFalsy Example": {
+  "Test Expect toBeFalsy": {
     "prefix": "e-tbf",
     "description": "Expect toBe Falsy",
     "types": "typescript",
@@ -2448,7 +2448,16 @@
       "$0"
     ]
   },
-  "Test Expect Not toMatch Example": {
+  "Test Expect toMatch": {
+    "prefix": "e-tm",
+    "description": "Expect toMatch",
+    "types": "typescript",
+    "body": [
+      "expect($2).toMatch(\"$3\");",
+      "$0"
+    ]
+  },
+  "Test Expect Not toMatch": {
     "prefix": "e-ntm",
     "description": "Expect Not toMatch",
     "types": "typescript",
@@ -2457,12 +2466,21 @@
       "$0"
     ]
   },
-  "Test Expect toMatch Example": {
-    "prefix": "e-tm",
-    "description": "Expect Not toMatch",
+  "Test Expect toMatch regex": {
+    "prefix": "e-tmr",
+    "description": "Expect toMatch regex",
     "types": "typescript",
     "body": [
-      "expect($2).not.toMatch(\"$3\");",
+      "expect($2).toMatch(\\$3\\);",
+      "$0"
+    ]
+  },
+  "Test Expect Not toMatch regex": {
+    "prefix": "e-ntmr",
+    "description": "Expect Not toMatch regex",
+    "types": "typescript",
+    "body": [
+      "expect($2).not.toMatch(\\$3\\);",
       "$0"
     ]
   },
