@@ -2484,6 +2484,24 @@
       "$0"
     ]
   },
+  "Test Expect toBeNull": {
+    "prefix": "e-tbn",
+    "description": "Expect toBeNull",
+    "types": "typescript",
+    "body": [
+      "expect($2).toBeNull();",
+      "$0"
+    ]
+  },
+  "Test Expect Not toBeNull": {
+    "prefix": "e-ntbn",
+    "description": "Expect Not toBeNull",
+    "types": "typescript",
+    "body": [
+      "expect($2).not.toBeNull();",
+      "$0"
+    ]
+  },
   "Angular Http Interceptor": {
     "prefix": "ng-http-interceptor",
     "description": "Intercept an outgoing HttpRequest and optionally transform it or the response.",

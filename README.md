@@ -73,10 +73,12 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ------- | ----------|
 | cli-cheatsheet | Cli Cheat Sheet |
 | e-ntb | Expect Not toBe |
+| e-ntbn | Expect Not toBeNull |
 | e-ntm | Expect Not toMatch |
 | e-ntmr | Expect Not toMatch regex |
 | e-tb | Expect toBe |
 | e-tbf | Expect toBe Falsy |
+| e-tbn | Expect toBeNull |
 | e-tm | Expect toMatch |
 | e-tmr | Expect toMatch regex |
 | fx-col | Flex Layout Column |

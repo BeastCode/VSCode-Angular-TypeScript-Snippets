@@ -13,6 +13,10 @@
     * e-tbf (expect toBeFalsy)
     * e-tm (expect toMatch)
     * e-ntm (expect not toMatch)
+    * e-tmr (expect toMatch regex)
+    * e-ntmr (expect not toMatch regex)
+    * e-tbn (expect toBeNull)
+    * e-ntbn (expect not toBeNull)
 
 ## 6.1.0
  * rxjs 
