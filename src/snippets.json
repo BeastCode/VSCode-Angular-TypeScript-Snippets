@@ -2448,6 +2448,15 @@
       "$0"
     ]
   },
+  "Test Expect not toBeFalsy": {
+    "prefix": "e-ntbf",
+    "description": "Expect not toBe Falsy",
+    "types": "typescript",
+    "body": [
+      "expect($2).toBeFalsy();",
+      "$0"
+    ]
+  },
   "Test Expect toMatch": {
     "prefix": "e-tm",
     "description": "Expect toMatch",

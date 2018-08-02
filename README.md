@@ -73,6 +73,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ------- | ----------|
 | cli-cheatsheet | Cli Cheat Sheet |
 | e-ntb | Expect Not toBe |
+| e-ntbf | Expect not toBe Falsy |
 | e-ntbn | Expect Not toBeNull |
 | e-ntm | Expect Not toMatch |
 | e-ntmr | Expect Not toMatch regex |

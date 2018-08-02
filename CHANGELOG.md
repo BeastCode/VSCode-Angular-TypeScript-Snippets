@@ -11,6 +11,7 @@
     * e-tb (expect toBe)
     * e-ntb (expect not toBe)
     * e-tbf (expect toBeFalsy)
+    * e-ntbf  (expect not toBeFalsy)
     * e-tm (expect toMatch)
     * e-ntm (expect not toMatch)
     * e-tmr (expect toMatch regex)
