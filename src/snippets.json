@@ -2449,11 +2449,47 @@
     ]
   },
   "Test Expect not toBeFalsy": {
-    "prefix": "e-ntbf",
+    "prefix": "e-tnbf",
     "description": "Expect not toBe Falsy",
     "types": "typescript",
     "body": [
-      "expect($2).toBeFalsy();",
+      "expect($2).not.toBeFalsy();",
+      "$0"
+    ]
+  },
+  "Test Expect toBeTruthy": {
+    "prefix": "e-tbt",
+    "description": "Expect toBe Truthy",
+    "types": "typescript",
+    "body": [
+      "expect($2).toBeTruthy();",
+      "$0"
+    ]
+  },
+  "Test Expect not toBeTruthy": {
+    "prefix": "e-ntbt",
+    "description": "Expect not toBe Truthy",
+    "types": "typescript",
+    "body": [
+      "expect($2).not.toBeTruthy();",
+      "$0"
+    ]
+  },
+  "Test Expect toBeDefined": {
+    "prefix": "e-tbd",
+    "description": "Expect toBe Defined",
+    "types": "typescript",
+    "body": [
+      "expect($2).toBeDefined();",
+      "$0"
+    ]
+  },
+  "Test Expect not toBeDefined": {
+    "prefix": "e-ntbd",
+    "description": "Expect not toBe Defined",
+    "types": "typescript",
+    "body": [
+      "expect($2).not.toBeDefined();",
       "$0"
     ]
   },

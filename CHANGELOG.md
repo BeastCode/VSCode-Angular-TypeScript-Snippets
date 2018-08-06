@@ -10,14 +10,18 @@
  * Testing Expect To
     * e-tb (expect toBe)
     * e-ntb (expect not toBe)
-    * e-tbf (expect toBeFalsy)
-    * e-ntbf  (expect not toBeFalsy)
     * e-tm (expect toMatch)
     * e-ntm (expect not toMatch)
     * e-tmr (expect toMatch regex)
     * e-ntmr (expect not toMatch regex)
     * e-tbn (expect toBeNull)
     * e-ntbn (expect not toBeNull)
+    * e-tbf (expect toBeFalsy)
+    * e-ntbf (expect not toBeFalsy)
+    * e-tbt (expect toBeTruthy)
+    * e-tnbt (expect not toBeTruthy)
+    * e-tbd (expect toBeDefined)
+    * e-ntbd (expect not toBeDefined)
 
 ## 6.1.0
  * rxjs 
