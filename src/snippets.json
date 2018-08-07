@@ -2493,6 +2493,24 @@
       "$0"
     ]
   },
+  "Test Expect toBeUndefined": {
+    "prefix": "e-tbu",
+    "description": "Expect toBe Undefined",
+    "types": "typescript",
+    "body": [
+      "expect($2).toBeUndefined();",
+      "$0"
+    ]
+  },
+  "Test Expect not toBeUndefined": {
+    "prefix": "e-ntbu",
+    "description": "Expect not toBe Undefined",
+    "types": "typescript",
+    "body": [
+      "expect($2).not.toBeUndefined();",
+      "$0"
+    ]
+  },
   "Test Expect toMatch": {
     "prefix": "e-tm",
     "description": "Expect toMatch",

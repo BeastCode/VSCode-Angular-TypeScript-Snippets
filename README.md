@@ -76,6 +76,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | e-ntbd | Expect not toBe Defined |
 | e-ntbn | Expect Not toBeNull |
 | e-ntbt | Expect not toBe Truthy |
+| e-ntbu | Expect not toBe Undefined |
 | e-ntm | Expect Not toMatch |
 | e-ntmr | Expect Not toMatch regex |
 | e-tb | Expect toBe |
@@ -83,6 +84,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | e-tbf | Expect toBe Falsy |
 | e-tbn | Expect toBeNull |
 | e-tbt | Expect toBe Truthy |
+| e-tbu | Expect toBe Undefined |
 | e-tm | Expect toMatch |
 | e-tmr | Expect toMatch regex |
 | e-tnbf | Expect not toBe Falsy |

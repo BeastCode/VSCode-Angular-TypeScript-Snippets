@@ -22,6 +22,8 @@
     * e-tnbt (expect not toBeTruthy)
     * e-tbd (expect toBeDefined)
     * e-ntbd (expect not toBeDefined)
+    * e-tbu (expect toBeUndefined)
+    * e-ntbu (expect not toBeUndefined)
 
 ## 6.1.0
  * rxjs 
