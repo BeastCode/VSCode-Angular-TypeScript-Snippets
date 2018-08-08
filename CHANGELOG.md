@@ -188,11 +188,11 @@ Temporary removed
     * ng-if-then-else
     * ng-pipe-titlecase
 * Added BeastCode Logo
-* Added Router snippets
+* Added Router Snippets
     * ng-router-attribute
     * ng-router-appmodule
     * ng-router-featuremodule
-* Improved module snippets
+* Improved Module Snippets
   * Updated ng-router-appmodule
 * Eastereggs for ng-conf
 
