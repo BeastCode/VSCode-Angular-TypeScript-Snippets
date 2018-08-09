@@ -2449,7 +2449,7 @@
     ]
   },
   "Test Expect not toBeFalsy": {
-    "prefix": "e-tnbf",
+    "prefix": "e-ntbf",
     "description": "Expect not toBe Falsy",
     "types": "typescript",
     "body": [

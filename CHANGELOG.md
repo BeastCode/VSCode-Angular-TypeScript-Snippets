@@ -1,13 +1,13 @@
 # Angular BeastCode Changelog
 
 ## 6.2.0
- * Testing snippets
+ * Testing Snippets
     * t-beforeEach
     * t-afterEach
     * t-beforeAll
     * t-afterAll
 
- * Testing Expect To
+ * Testing Expect To Snippets
     * e-tb (expect toBe)
     * e-ntb (expect not toBe)
     * e-tm (expect toMatch)
@@ -19,17 +19,17 @@
     * e-tbf (expect toBeFalsy)
     * e-ntbf (expect not toBeFalsy)
     * e-tbt (expect toBeTruthy)
-    * e-tnbt (expect not toBeTruthy)
+    * e-ntbt (expect not toBeTruthy)
     * e-tbd (expect toBeDefined)
     * e-ntbd (expect not toBeDefined)
     * e-tbu (expect toBeUndefined)
     * e-ntbu (expect not toBeUndefined)
 
 ## 6.1.0
- * rxjs 
+ * RxJS 
     * Multiple updates
-    * rxjs mergeMap example
- * Testing snippets
+    * RxJS mergeMap example
+ * Testing Snippets
     * t-describe-it
     * t-it
     * t-ite

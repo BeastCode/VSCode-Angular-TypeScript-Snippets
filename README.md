@@ -74,6 +74,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | cli-cheatsheet | Cli Cheat Sheet |
 | e-ntb | Expect Not toBe |
 | e-ntbd | Expect not toBe Defined |
+| e-ntbf | Expect not toBe Falsy |
 | e-ntbn | Expect Not toBeNull |
 | e-ntbt | Expect not toBe Truthy |
 | e-ntbu | Expect not toBe Undefined |
@@ -87,7 +88,6 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | e-tbu | Expect toBe Undefined |
 | e-tm | Expect toMatch |
 | e-tmr | Expect toMatch regex |
-| e-tnbf | Expect not toBe Falsy |
 | fx-col | Flex Layout Column |
 | fx-col-element | Flex Layout Column with Element |
 | fx-col-reverse | Flex Layout Reverse Column |
