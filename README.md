@@ -265,6 +265,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | nx-cheatsheet | Nx Cheat Sheet |
 | nx-ngrx-cheatsheet | Nx Cheat Sheet |
 | pwa-link-manifest | PWA Link Manifest |
+| pwa-manifest | PWA Json Manifest |
 | rx-import-observable | RxJS Import Observable |
 | rx-import-observable | RxJS Import Subject |
 | rx-import-operator | RxJS Import Add Operator |
