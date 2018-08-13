@@ -24,6 +24,9 @@
     * e-ntbd (expect not toBeDefined)
     * e-tbu (expect toBeUndefined)
     * e-ntbu (expect not toBeUndefined)
+    
+* Jest Testing
+    * e-tms (expect toMatchSnapshot)
 
 ## 6.1.0
  * RxJS 
