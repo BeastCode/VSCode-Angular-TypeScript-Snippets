@@ -201,6 +201,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-input | Class Input Property |
 | ng-interpolation | Interpolation: {{ interpolation }} |
 | ng-material-module | App Material Module |
+| ng-model | ngModel directive: [(ngModel)]=\"name\" |
 | ng-module | Feature Module |
 | ng-module-root | App root module |
 | ng-ngOnChanges | Lifecycle hook: Called before any other lifecycle hook |

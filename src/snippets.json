@@ -1270,6 +1270,14 @@
       "$0"
     ]
   },
+  "Angular ngModel Directive": {
+    "prefix": "ng-model",
+    "description": "ngModel directive: [(ngModel)]=\"name\"",
+    "types": "typescript, html",
+    "body": [
+      "[(ngModel)]=\"${name}\"$0"
+    ]
+  },
   "Angular If Directive": {
     "prefix": "ng-if",
     "description": "If directive: *ngIf=\"expression\"",
