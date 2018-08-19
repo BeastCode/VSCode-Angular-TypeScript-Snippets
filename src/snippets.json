@@ -2573,6 +2573,15 @@
       "$0"
     ]
   },
+  "Test Expect toBeGreaterThan": {
+    "prefix": "e-tbgt",
+    "description": "Expect Not toBeGreaterThan",
+    "types": "typescript",
+    "body": [
+      "expect($1).toBeGreaterThan();",
+      "$0"
+    ]
+  },
   "Jest Test Expect toMatchSnapshot": {
     "prefix": "e-tms",
     "description": "Jest Expect toMatchSnapshot",
