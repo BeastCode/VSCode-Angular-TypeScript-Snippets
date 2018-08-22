@@ -2578,7 +2578,16 @@
     "description": "Expect Not toBeGreaterThan",
     "types": "typescript",
     "body": [
-      "expect($1).toBeGreaterThan();",
+      "expect($1).toBeGreaterThan($2);",
+      "$0"
+    ]
+  },
+  "Test Expect toBeLessThan": {
+    "prefix": "e-tblt",
+    "description": "Expect Not toBeLessThan",
+    "types": "typescript",
+    "body": [
+      "expect($1).toBeLessThan($2);",
       "$0"
     ]
   },
