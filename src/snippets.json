@@ -2582,6 +2582,15 @@
       "$0"
     ]
   },
+  "Test Expect toBeGreaterThanOrEqual": {
+    "prefix": "e-tbgtoe",
+    "description": "Expect Not toBeGreaterThanOrEqual",
+    "types": "typescript",
+    "body": [
+      "expect($1).toBeGreaterThanOrEqual($2);",
+      "$0"
+    ]
+  },
   "Test Expect toBeLessThan": {
     "prefix": "e-tblt",
     "description": "Expect Not toBeLessThan",

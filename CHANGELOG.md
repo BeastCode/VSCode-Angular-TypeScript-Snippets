@@ -26,6 +26,7 @@
     * e-ntbu (expect not toBeUndefined)
     * e-tbgt (expect toBeGreaterThan)
     * e-tblt (expect toBeLessThan)
+    * e-tbgtoe (expect toBeGreaterThanOrEqual)
 
 * Jest Testing
     * e-tms (expect toMatchSnapshot)
