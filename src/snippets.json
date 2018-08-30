@@ -2320,7 +2320,7 @@
     ]
   },
   "RxJS Import Subject": {
-    "prefix": "rx-import-observable",
+    "prefix": "rx-import-subject",
     "description": "RxJS Import Subject",
     "types": "typescript, javascript",
     "body": [
