@@ -2575,7 +2575,7 @@
   },
   "Test Expect toBeGreaterThan": {
     "prefix": "e-tbgt",
-    "description": "Expect Not toBeGreaterThan",
+    "description": "Expect toBeGreaterThan",
     "types": "typescript",
     "body": [
       "expect($1).toBeGreaterThan($2);",
@@ -2584,7 +2584,7 @@
   },
   "Test Expect toBeGreaterThanOrEqual": {
     "prefix": "e-tbgtoe",
-    "description": "Expect Not toBeGreaterThanOrEqual",
+    "description": "Expect toBeGreaterThanOrEqual",
     "types": "typescript",
     "body": [
       "expect($1).toBeGreaterThanOrEqual($2);",
@@ -2593,7 +2593,7 @@
   },
   "Test Expect toBeLessThanOrEqual": {
     "prefix": "e-tbltoe",
-    "description": "Expect Not toBeLessThanOrEqual",
+    "description": "Expect toBeLessThanOrEqual",
     "types": "typescript",
     "body": [
       "expect($1).toBeLessThanOrEqual($2);",
@@ -2602,10 +2602,19 @@
   },
   "Test Expect toBeLessThan": {
     "prefix": "e-tblt",
-    "description": "Expect Not toBeLessThan",
+    "description": "Expect toBeLessThan",
     "types": "typescript",
     "body": [
       "expect($1).toBeLessThan($2);",
+      "$0"
+    ]
+  },
+  "Test Expect toBeCloseTo": {
+    "prefix": "e-tbct",
+    "description": "Expect Not toBeCloseTo",
+    "types": "typescript",
+    "body": [
+      "expect($1).toBeCloseTo($2,$3);",
       "$0"
     ]
   },
