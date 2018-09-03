@@ -78,10 +78,11 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | e-ntbn | Expect Not toBeNull |
 | e-ntbt | Expect not toBe Truthy |
 | e-ntbu | Expect not toBe Undefined |
+| e-nthbc | Expect Not toHaveBeenCalled |
 | e-ntm | Expect Not toMatch |
 | e-ntmr | Expect Not toMatch regex |
 | e-tb | Expect toBe |
-| e-tbct | Expect Not toBeCloseTo |
+| e-tbct | Expect toBeCloseTo |
 | e-tbd | Expect toBe Defined |
 | e-tbf | Expect toBe Falsy |
 | e-tbgt | Expect toBeGreaterThan |
@@ -91,6 +92,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | e-tbn | Expect toBeNull |
 | e-tbt | Expect toBe Truthy |
 | e-tbu | Expect toBe Undefined |
+| e-thbc | Expect toHaveBeenCalled |
 | e-tm | Expect toMatch |
 | e-tmr | Expect toMatch regex |
 | e-tms | Jest Expect toMatchSnapshot |

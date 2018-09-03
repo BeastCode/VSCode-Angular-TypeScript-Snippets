@@ -2611,10 +2611,28 @@
   },
   "Test Expect toBeCloseTo": {
     "prefix": "e-tbct",
-    "description": "Expect Not toBeCloseTo",
+    "description": "Expect toBeCloseTo",
     "types": "typescript",
     "body": [
       "expect($1).toBeCloseTo($2,$3);",
+      "$0"
+    ]
+  },
+  "Test Expect toHaveBeenCalled": {
+    "prefix": "e-thbc",
+    "description": "Expect toHaveBeenCalled",
+    "types": "typescript",
+    "body": [
+      "expect($1).toHaveBeenCalled();",
+      "$0"
+    ]
+  },
+  "Test Expect Not toHaveBeenCalled": {
+    "prefix": "e-nthbc",
+    "description": "Expect Not toHaveBeenCalled",
+    "types": "typescript",
+    "body": [
+      "expect($1).not.toHaveBeenCalled();",
       "$0"
     ]
   },

@@ -29,6 +29,7 @@
     * e-tbgtoe (expect toBeGreaterThanOrEqual)
     * e-tbltoe (expect toBeLessThanOrEqual)
     * e-tbct (expect toBeCloseTo)
+    * e-thbc (expetoHaveBeenCalled)
 
 * Jest Testing
     * e-tms (expect toMatchSnapshot)
