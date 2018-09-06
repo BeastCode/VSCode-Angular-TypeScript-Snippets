@@ -31,6 +31,7 @@
     * e-tbct (expect toBeCloseTo)
     * e-thbc (expect toHaveBeenCalled)
     * e-nthbc (expect not toHaveBeenCalled)
+    * e-thbcw (expect toHaveBeenCalledWith)
 
 * Jest Testing
     * e-tms (expect toMatchSnapshot)

@@ -2636,6 +2636,15 @@
       "$0"
     ]
   },
+  "Test Expect toHaveBeenCalledWith": {
+    "prefix": "e-thbcw",
+    "description": "Expect toHaveBeenCalledWith",
+    "types": "typescript",
+    "body": [
+      "expect($1).toHaveBeenCalledWith($2);",
+      "$0"
+    ]
+  },
   "Jest Test Expect toMatchSnapshot": {
     "prefix": "e-tms",
     "description": "Jest Expect toMatchSnapshot",
