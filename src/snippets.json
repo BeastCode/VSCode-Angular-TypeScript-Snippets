@@ -2645,6 +2645,15 @@
       "$0"
     ]
   },
+  "Test ExpectAsync toBeResolved": {
+    "prefix": "e-atbr",
+    "description": "ExpectAsync toBeResolved",
+    "types": "typescript",
+    "body": [
+      "expectAsync($1).toBeResolved();",
+      "$0"
+    ]
+  },
   "Jest Test Expect toMatchSnapshot": {
     "prefix": "e-tms",
     "description": "Jest Expect toMatchSnapshot",
