@@ -68,7 +68,7 @@
       "\t\tthis.notifyValueChange();",
       "\t}",
       "",
-      "\tget value() {",
+      "\tget value(): any {",
       "\t\treturn this._value;",
       "\t}",
       "",
@@ -77,7 +77,7 @@
       "",
       "\tconstructor() { }",
       "",
-      "\tnotifyValueChange() {",
+      "\tnotifyValueChange(): void {",
       "\t\tif (this.onChange) {",
       "\t\t\tthis.onChange(this.value);",
       "\t\t}",
@@ -519,7 +519,7 @@
     "description": "Lifecycle hook: Called every time that the input properties of a component or a directive are checked",
     "types": "typescript",
     "body": [
-      "ngDoCheck() {",
+      "ngDoCheck(): void {",
       "\t//Called every time that the input properties of a component or a directive are checked. Use it to extend change detection by performing a custom check.",
       "\t//Add 'implements DoCheck' to the class.",
       "\t$0",
@@ -531,7 +531,7 @@
     "description": "Lifecycle hook: Called after ngOnInit when the component's or directive's content has been initialized",
     "types": "typescript",
     "body": [
-      "ngAfterContentInit() {",
+      "ngAfterContentInit(): void {",
       "\t//Called after ngOnInit when the component's or directive's content has been initialized.",
       "\t//Add 'implements AfterContentInit' to the class.",
       "\t$0",
@@ -543,7 +543,7 @@
     "description": "Lifecycle hook: Called after every check of the component's or directive's content",
     "types": "typescript",
     "body": [
-      "ngAfterContentChecked() {",
+      "ngAfterContentChecked(): void {",
       "\t//Called after every check of the component's or directive's content.",
       "\t//Add 'implements AfterContentChecked' to the class.",
       "\t$0",
@@ -555,7 +555,7 @@
     "description": "Lifecycle hook: Called after ngAfterContentInit when the component's view has been initialized",
     "types": "typescript",
     "body": [
-      "ngAfterViewInit() {",
+      "ngAfterViewInit(): void {",
       "\t//Called after ngAfterContentInit when the component's view has been initialized. Applies to components only.",
       "\t//Add 'implements AfterViewInit' to the class.",
       "\t$0",
@@ -567,7 +567,7 @@
     "description": "Lifecycle hook: Called after every check of the component's view. Applies to components only",
     "types": "typescript",
     "body": [
-      "ngAfterViewChecked() {",
+      "ngAfterViewChecked(): void {",
       "\t//Called after every check of the component's view. Applies to components only.",
       "\t//Add 'implements AfterViewChecked' to the class.",
       "\t$0",
@@ -678,8 +678,10 @@
   "",
   "                      Upcoming Events:",
   "",
-  "             May 11th, Mountain View, California",
-  ""
+  "                      Oct 2018, Seattle",
+  "                    Oct 20th 2018, Krakow",
+  "                    Nov 5th 2018, London",
+  "                      Nov 17th, Warsaw"
     ]
   },
   "Angular Routing": {
