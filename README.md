@@ -95,6 +95,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | e-tbu | Expect toBe Undefined |
 | e-thbc | Expect toHaveBeenCalled |
 | e-thbcw | Expect toHaveBeenCalledWith |
+| e-thrt | Expect toHaveReturnedTimes(2) |
 | e-tm | Expect toMatch |
 | e-tmr | Expect toMatch regex |
 | e-tms | Jest Expect toMatchSnapshot |

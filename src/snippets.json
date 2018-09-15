@@ -2638,6 +2638,15 @@
       "$0"
     ]
   },
+  "Test Expect toHaveReturnedTimes()": {
+    "prefix": "e-thrt",
+    "description": "Expect toHaveReturnedTimes(2)",
+    "types": "typescript",
+    "body": [
+      "expect($1).toHaveReturnedTimes($2);",
+      "$0"
+    ]
+  },
   "Test Expect toHaveBeenCalledWith": {
     "prefix": "e-thbcw",
     "description": "Expect toHaveBeenCalledWith",
