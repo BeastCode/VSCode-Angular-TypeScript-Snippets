@@ -1810,7 +1810,7 @@
     "description": "Circular Material button with a transparent background",
     "types": "typescript, html",
     "body": [
-      "<button mat-icon-button>%{text}</button>$0"
+      "<button mat-icon-button><mat-icon>${icon_name}</mat-icon></button>$0"
     ]
   },
   "Material Round Button": {
