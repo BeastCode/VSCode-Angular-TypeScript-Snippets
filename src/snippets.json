@@ -88,7 +88,7 @@
       "\t}",
       "",
       "\twriteValue(obj: any): void {",
-      "\t\tthis.value = obj;",
+      "\t\tthis._value = obj;",
       "\t}",
       "",
       "\tregisterOnChange(fn: any): void {",
