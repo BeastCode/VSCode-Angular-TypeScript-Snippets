@@ -32,8 +32,9 @@
     * e-thbc (expect toHaveBeenCalled)
     * e-nthbc (expect not toHaveBeenCalled)
     * e-thbcw (expect toHaveBeenCalledWith)
-    * e-atbr (expectAsync (toBeResolved)
-    * e-thtr (expect toHaveReturnedTimes(2))
+    * e-atbr (expectAsync toBeResolved)
+    * e-thtr (expect toHaveReturnedTimes)
+    * e-thrw (expect toHaveReturnedWith)
 
 * Jest Testing
     * e-tms (expect toMatchSnapshot)

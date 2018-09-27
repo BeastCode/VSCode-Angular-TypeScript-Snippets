@@ -2647,6 +2647,15 @@
       "$0"
     ]
   },
+  "Test Expect toHaveLastReturnedWith()": {
+    "prefix": "e-thrw",
+    "description": "Expect toHaveLastReturnedWith(value)",
+    "types": "typescript",
+    "body": [
+      "expect($1).toHaveLastReturnedWith($2);",
+      "$0"
+    ]
+  },
   "Test Expect toHaveBeenCalledWith": {
     "prefix": "e-thbcw",
     "description": "Expect toHaveBeenCalledWith",
