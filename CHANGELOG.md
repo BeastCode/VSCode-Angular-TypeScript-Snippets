@@ -35,6 +35,7 @@
     * e-atbr (expectAsync toBeResolved)
     * e-thtr (expect toHaveReturnedTimes)
     * e-thrw (expect toHaveReturnedWith)
+    * e-thnrw (expect toHaveNthReturnedWith)
 
 * Jest Testing
     * e-tms (expect toMatchSnapshot)

@@ -2656,6 +2656,15 @@
       "$0"
     ]
   },
+  "Test Expect .toHaveNthReturnedWith()": {
+    "prefix": "e-thnrw",
+    "description": "Expect toHaveNthReturnedWith(nthCall, value)",
+    "types": "typescript",
+    "body": [
+      "expect($1).toHaveNthReturnedWith($2, $3);",
+      "$0"
+    ]
+  },
   "Test Expect toHaveBeenCalledWith": {
     "prefix": "e-thbcw",
     "description": "Expect toHaveBeenCalledWith",
