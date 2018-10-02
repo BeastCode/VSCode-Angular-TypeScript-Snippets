@@ -2656,12 +2656,21 @@
       "$0"
     ]
   },
-  "Test Expect .toHaveNthReturnedWith()": {
+  "Test Expect toHaveNthReturnedWith()": {
     "prefix": "e-thnrw",
     "description": "Expect toHaveNthReturnedWith(nthCall, value)",
     "types": "typescript",
     "body": [
       "expect($1).toHaveNthReturnedWith($2, $3);",
+      "$0"
+    ]
+  },
+  "Test Expect toHaveLastReturnedWith()": {
+    "prefix": "e-thlrw",
+    "description": "Expect toHaveLastReturnedWith(value)",
+    "types": "typescript",
+    "body": [
+      "expect($1).toHaveLastReturnedWith($2);",
       "$0"
     ]
   },

@@ -36,6 +36,7 @@
     * e-thtr (expect toHaveReturnedTimes)
     * e-thrw (expect toHaveReturnedWith)
     * e-thnrw (expect toHaveNthReturnedWith)
+    * e-thlrw (expect toHaveLastReturnedWith
 
 * Jest Testing
     * e-tms (expect toMatchSnapshot)
