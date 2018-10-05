@@ -2611,6 +2611,15 @@
       "$0"
     ]
   },
+  "Test Expect toBeInstanceOf": {
+    "prefix": "e-tbio",
+    "description": "Expect toBeInstanceOf",
+    "types": "typescript",
+    "body": [
+      "expect($1).toBeInstanceOf($2);",
+      "$0"
+    ]
+  },
   "Test Expect toBeCloseTo": {
     "prefix": "e-tbct",
     "description": "Expect toBeCloseTo",
