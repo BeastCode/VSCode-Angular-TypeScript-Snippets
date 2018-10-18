@@ -38,6 +38,7 @@
     * e-thnrw (expect toHaveNthReturnedWith)
     * e-thlrw (expect toHaveLastReturnedWith)
     * e-tbio (expect toBeInstanceOf)
+    * e-tmo (expect toMatchObject)
 
 * Jest Testing
     * e-tms (expect toMatchSnapshot)

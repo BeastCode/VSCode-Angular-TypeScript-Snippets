@@ -2557,6 +2557,15 @@
       "$0"
     ]
   },
+  "Test Expect toMatchObject": {
+    "prefix": "e-tm",
+    "description": "Expect toMatchObject",
+    "types": "typescript",
+    "body": [
+      "expect($1).toMatchObject($2);",
+      "$0"
+    ]
+  },
   "Test Expect toBeNull": {
     "prefix": "e-tbn",
     "description": "Expect toBeNull",
