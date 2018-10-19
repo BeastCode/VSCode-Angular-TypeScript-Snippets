@@ -1,5 +1,9 @@
 # Angular BeastCode Changelog
 
+## 7.0.0
+ * Material
+   * m-drag-drop-box
+   
 ## 6.2.0
  * Testing Snippets
     * t-beforeEach

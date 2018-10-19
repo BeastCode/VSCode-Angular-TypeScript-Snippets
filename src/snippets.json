@@ -1743,8 +1743,15 @@
       "</div>"
     ]
   },
-
-
+  "Material drag drop box": {
+    "prefix": "m-drag-drop-box",
+    "description": "Material drag drop box",
+    "types": "typescript, html",
+    "body": [
+      "<div class=\"$1{drag-drop-box}\" cdkDrag>",
+      "</div>$0"
+    ]
+  },
   "Material toolbar": {
     "prefix": "m-toolbar",
     "description": "Material toolbar",

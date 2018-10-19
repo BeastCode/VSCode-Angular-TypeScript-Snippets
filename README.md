@@ -135,6 +135,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-divider | Material Divider |
 | m-divider-inset | Material Inset Divider |
 | m-divider-vertical | Material Vertical Divider |
+| m-drag-drop-box | Material drag drop box |
 | m-expansion-panel | Material Expansion Panel |
 | m-grid-list | Material Grid List |
 | m-icon | Material Icon |
