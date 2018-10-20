@@ -2698,7 +2698,7 @@
       "$0"
     ]
   },
-  "Test Expect toHaveLastReturnedWith()": {
+  "Test Expect toHaveReturnedWith()": {
     "prefix": "e-thrw",
     "description": "Expect toHaveLastReturnedWith(value)",
     "types": "typescript",
