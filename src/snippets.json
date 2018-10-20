@@ -2590,6 +2590,15 @@
       "$0"
     ]
   },
+  "Test Expect toContain": {
+    "prefix": "e-tc",
+    "description": "Expect toContain",
+    "types": "typescript",
+    "body": [
+      "expect($1).toContain($2);",
+      "$0"
+    ]
+  },
   "Test Expect toBeNull": {
     "prefix": "e-tbn",
     "description": "Expect toBeNull",

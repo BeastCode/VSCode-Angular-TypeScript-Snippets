@@ -95,6 +95,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | e-tbn | Expect toBeNull |
 | e-tbt | Expect toBe Truthy |
 | e-tbu | Expect toBe Undefined |
+| e-tc | Expect toContain |
 | e-thbc | Expect toHaveBeenCalled |
 | e-thbcw | Expect toHaveBeenCalledWith |
 | e-thlrw | Expect toHaveLastReturnedWith(value) |

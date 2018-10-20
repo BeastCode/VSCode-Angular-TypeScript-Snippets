@@ -3,7 +3,7 @@
 ## 7.0.0
  * Material
    * m-drag-drop-box
-   
+
 ## 6.2.0
  * Testing Snippets
     * t-beforeEach
@@ -43,6 +43,7 @@
     * e-thlrw (expect toHaveLastReturnedWith)
     * e-tbio (expect toBeInstanceOf)
     * e-tmo (expect toMatchObject)
+    * e-tc (expect toContain)
 
 * Jest Testing
     * e-tms (expect toMatchSnapshot)
