@@ -1955,7 +1955,7 @@
     "types": "typescript, html",
     "body": [
       "<mat-chip-list>",
-      "\t<mat-chip>${text}<mat-chip>",
+      "\t<mat-chip>${text}</mat-chip>",
       "</mat-chip-list>$0"
     ]
   },
@@ -1965,7 +1965,7 @@
     "types": "typescript, html",
     "body": [
       "<mat-chip-list class=\"mat-chip-list-stacked\">",
-      "\t<mat-chip>${text}<mat-chip>",
+      "\t<mat-chip>${text}</mat-chip>",
       "</mat-chip-list>$0"
     ]
   },
@@ -1974,7 +1974,7 @@
     "description": "Material Chip",
     "types": "typescript, html",
     "body": [
-      "<mat-chip>${text}<mat-chip>$0"
+      "<mat-chip>${text}</mat-chip>$0"
     ]
   },
   "Material Select": {
