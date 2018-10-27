@@ -6,6 +6,15 @@ Visual Studio Code TypeScript and Html snippets and code examples for Angular 2,
 
 All code snippets are based on and follow the Angular style guide https://angular.io/docs/ts/latest/guide/style-guide.html
 
+The source for the snippets come from:
+  https://angular.io/
+  https://material.angular.io/
+  https://github.com/angular/flex-layout
+  https://github.com/ngrx/platform
+  https://github.com/ngxs
+  https://jestjs.io
+and most of all, none of this would exist without the help of all the contributers for fixing, enhancing, testing and making suggestions.
+
 # Snippet Prefixes
 
 | Prefix | Description |
@@ -71,7 +80,6 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 
 | Snippet | Description |
 | ------- | ----------|
-| 		"": "ng-material-module | 		"": "App Material Module |
 | cli-cheatsheet | Cli Cheat Sheet |
 | e-atbr | ExpectAsync toBeResolved |
 | e-ntb | Expect Not toBe |
@@ -120,6 +128,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | fx-layout-gap | Flex Layout Gap Property |
 | fx-row | Flex Layout Row |
 | fx-row-reverse | Flex Layout Reverse Row |
+| m-accordion> | Material Accordion |
 | m-button | Rectangular Material button w/ no elevation. |
 | m-button-fab | Circular button w/ elevation. |
 | m-button-fab-mini | Small circular button w/ elevation. |
@@ -218,6 +227,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-import | import module or component from path; |
 | ng-input | Class Input Property |
 | ng-interpolation | Interpolation: {{ interpolation }} |
+| ng-material-module | Material Module |
 | ng-model | ngModel directive: [(ngModel)]=\"name\" |
 | ng-module | Feature Module |
 | ng-module-root | App root module |

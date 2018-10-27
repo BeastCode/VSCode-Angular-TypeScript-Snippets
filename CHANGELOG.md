@@ -3,6 +3,7 @@
 ## 7.0.0
  * Material
    * m-drag-drop-box
+   * m-accordion
 
 ## 6.2.0
  * Testing Snippets
