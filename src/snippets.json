@@ -1955,7 +1955,7 @@
     "types": "typescript, html",
     "body": [
       "<mat-chip-list>",
-      "\t<mat-chip>${text}<mat-chip>",
+      "\t<mat-chip>${text}</mat-chip>",
       "</mat-chip-list>$0"
     ]
   },
@@ -1965,7 +1965,7 @@
     "types": "typescript, html",
     "body": [
       "<mat-chip-list class=\"mat-chip-list-stacked\">",
-      "\t<mat-chip>${text}<mat-chip>",
+      "\t<mat-chip>${text}</mat-chip>",
       "</mat-chip-list>$0"
     ]
   },
@@ -1974,7 +1974,7 @@
     "description": "Material Chip",
     "types": "typescript, html",
     "body": [
-      "<mat-chip>${text}<mat-chip>$0"
+      "<mat-chip>${text}</mat-chip>$0"
     ]
   },
   "Material Select": {
@@ -2254,6 +2254,27 @@
       "\t</mat-expansion-panel-header>",
       "\t${content}",   
       "</mat-expansion-panel>$0"
+    ]
+  },
+  "Material Accordion Panel ": {
+    "prefix": "m-accordion>",
+    "description": "Material Accordion",
+    "types": "typescript, html",
+    "body": [
+      "<mat-accordion>",
+      "\t<mat-expansion-panel>",
+      "\t\t<mat-expansion-panel-header>",
+      "\t\t\t${title}",
+      "\t\t</mat-expansion-panel-header>",
+      "\t\t${content}",   
+      "\t</mat-expansion-panel>",
+      "\t<mat-expansion-panel>",
+      "\t\t<mat-expansion-panel-header>",
+      "\t\t\t${title2}",
+      "\t\t</mat-expansion-panel-header>",
+      "\t\t${content2}",   
+      "\t</mat-expansion-panel>",
+      "</mat-accordion>$0"
     ]
   },
   "Material Vertical Stepper": {
