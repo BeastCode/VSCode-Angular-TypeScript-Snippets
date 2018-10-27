@@ -7,12 +7,12 @@ Visual Studio Code TypeScript and Html snippets and code examples for Angular 2,
 All code snippets are based on and follow the Angular style guide https://angular.io/docs/ts/latest/guide/style-guide.html
 
 The source for the snippets come from:
-  https://angular.io/
-  https://material.angular.io/
-  https://github.com/angular/flex-layout
-  https://github.com/ngrx/platform
-  https://github.com/ngxs
-  https://jestjs.io
+* https://angular.io/
+* https://material.angular.io/
+* https://github.com/angular/flex-layout
+* https://github.com/ngrx/platform
+* https://github.com/ngxs
+* https://jestjs.io
 and most of all, none of this would exist without the help of all the contributers for fixing, enhancing, testing and making suggestions.
 
 # Snippet Prefixes
