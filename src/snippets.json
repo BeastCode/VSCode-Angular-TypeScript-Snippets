@@ -251,7 +251,7 @@
   },
   "Angular Material Module": {
     "prefix": "ng-material-module",
-    "description": "Material Module",
+    "description": "App Material Module",
     "types": "typescript",
 		"body": [  
 		  "import {NgModule} from '@angular/core';",
