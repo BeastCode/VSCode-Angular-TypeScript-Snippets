@@ -1271,15 +1271,13 @@
     "description": "Test a service",
     "types": "typescript",
     "body": [
-      "import { TestBed, inject } from '@angular/core/testing';",
-      "import { '${Name}' } from './${fileName}.service';",
-      "describe('${Name}', () => {",
+      "describe('${Name}Service', () => {",
       "\tbeforeEach(() => {",
       "\t\tTestBed.configureTestingModule({",
-      "\t\t\tproviders: [${Name}]",
+      "\t\t\tproviders: [${Name}Service]",
       "\t\t});",
       "\t});",
-      "it('should be created', inject([${Name}], (service: ${Name}) => {",
+      "it('should be created', inject([${Name}Service], (service: ${Name}Service) => {",
       "\texpect(service).toBeTruthy();",
       "\t}));",
       "});"
