@@ -13,6 +13,7 @@ The source for the snippets come from:
 * https://github.com/ngrx/platform
 * https://github.com/ngxs
 * https://jestjs.io
+
 and most of all, none of this would exist without the help of all the contributers for fixing, enhancing, testing and making suggestions.
 
 # Snippet Prefixes

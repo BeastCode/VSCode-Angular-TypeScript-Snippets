@@ -2755,6 +2755,15 @@
       "$0"
     ]
   },
+  "Test Expect toHaveProperty": {
+    "prefix": "e-thp",
+    "description": "Expect toHaveProperty",
+    "types": "typescript",
+    "body": [
+      "expect($1).toHaveProperty($2);",
+      "$0"
+    ]
+  },
   "Test ExpectAsync toBeResolved": {
     "prefix": "e-atbr",
     "description": "ExpectAsync toBeResolved",

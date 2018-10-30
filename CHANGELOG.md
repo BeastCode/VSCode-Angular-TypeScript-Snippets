@@ -5,6 +5,9 @@
    * m-drag-drop-box
    * m-accordion
 
+* Testing Expect To Snippets
+   * e-thp (expect toHaveProperty)
+
 ## 6.2.0
  * Testing Snippets
     * t-beforeEach

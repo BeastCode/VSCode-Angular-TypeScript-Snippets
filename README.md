@@ -13,6 +13,7 @@ The source for the snippets come from:
 * https://github.com/ngrx/platform
 * https://github.com/ngxs
 * https://jestjs.io
+
 and most of all, none of this would exist without the help of all the contributers for fixing, enhancing, testing and making suggestions.
 
 # Snippet Prefixes
@@ -108,6 +109,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | e-thbcw | Expect toHaveBeenCalledWith |
 | e-thlrw | Expect toHaveLastReturnedWith(value) |
 | e-thnrw | Expect toHaveNthReturnedWith(nthCall, value) |
+| e-thp | Expect toHaveProperty |
 | e-thrt | Expect toHaveReturnedTimes(2) |
 | e-thrw | Expect toHaveLastReturnedWith(value) |
 | e-tm | Expect toMatch |
