@@ -7,6 +7,7 @@
 
 * Testing Expect To Snippets
    * e-thp (expect toHaveProperty)
+   * e-tse (expect toStrictEqual)
 
 ## 6.2.0
  * Testing Snippets

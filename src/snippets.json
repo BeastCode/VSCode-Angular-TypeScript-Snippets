@@ -2764,6 +2764,15 @@
       "$0"
     ]
   },
+  "Test Expect toStrictEqual": {
+    "prefix": "e-tse",
+    "description": "Expect toStrictEqual",
+    "types": "typescript",
+    "body": [
+      "expect($1).toStrictEqual($2);",
+      "$0"
+    ]
+  },
   "Test ExpectAsync toBeResolved": {
     "prefix": "e-atbr",
     "description": "ExpectAsync toBeResolved",
