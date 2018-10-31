@@ -1226,7 +1226,7 @@
   },
   "Angular Test Synchronous Component": {
     "prefix": "t-component-synchronous",
-    "description": "TODO",
+    "description": "Test Synchronous Component",
     "types": "typescript",
     "body": [
       "// synchronous beforeEach",
@@ -1245,7 +1245,7 @@
   },
   "Angular Test Async Component": {
     "prefix": "t-component-async",
-    "description": "TODO",
+    "description": "Test Async Component",
     "types": "typescript",
     "body": [
       "// async beforeEach",
@@ -1259,7 +1259,7 @@
     ]
   },
   "Angular Test Directive": {
-    "prefix": "ng-test-directive",
+    "prefix": "t-directive",
     "description": "Test a directive",
     "types": "typescript",
     "body": [
@@ -1272,7 +1272,7 @@
     ]
   },
   "Angular Test Service": {
-    "prefix": "ng-test-service",
+    "prefix": "t-service",
     "description": "Test a service",
     "types": "typescript",
     "body": [
