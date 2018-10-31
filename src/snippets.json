@@ -253,8 +253,8 @@
     "prefix": "ng-material-module",
     "description": "App Material Module",
     "types": "typescript",
-		"body": [  
-		  "import {NgModule} from '@angular/core';",
+    "body": [
+      "import {NgModule} from '@angular/core';",
       "import {",
       "\tMatAutocompleteModule,",
       "\tMatBadgeModule,",
@@ -292,7 +292,7 @@
       "\tMatToolbarModule,",
       "\tMatTooltipModule,",
       "\tMatTreeModule,",
-		  "} from '@angular/material';",
+      "} from '@angular/material';",
       "import {A11yModule} from '@angular/cdk/a11y';",
       "import {BidiModule} from '@angular/cdk/bidi';",
       "import {ObserversModule} from '@angular/cdk/observers';",
@@ -304,11 +304,11 @@
       "import {CdkTableModule} from '@angular/cdk/table';",
       "import {CdkTreeModule} from '@angular/cdk/tree';",
       "import {DragDropModule} from '@angular/cdk/drag-drop';",
-		  "",
-		  "/**",
-		  " * NgModule that includes all Material modules.",
-		  "*/",
-		  "@NgModule({",
+      "",
+      "/**",
+      " * NgModule that includes all Material modules.",
+      "*/",
+      "@NgModule({",
       "\texports: [",
       "\t\t// CDK",
       "\t\tA11yModule,",
@@ -359,10 +359,10 @@
       "\t\tMatToolbarModule,",
       "\t\tMatTooltipModule,",
       "\t\tMatTreeModule,",
-		  "\t]",
-		  "})",
-		  "export class MaterialModule {}"
-		]
+      "\t]",
+      "})",
+      "export class MaterialModule {}"
+    ]
   },
   "Angular Pipe": {
     "prefix": "ng-pipe",
@@ -661,44 +661,44 @@
     "prefix": "ng-girls",
     "description": "Angular Girls",
     "types": "typescript",
-    "body": [                                                                         
-  "                         *********",
-  "                   .*******************.",                            
-  "              ,*****************************,",                       
-  "          *****************************************",                 
-  "   ,***************************************************,",           
-  "  *******************************************************",           
-  "  *************@@@@@@@@@@&*******&@@@@@@@@@@*************",           
-  "  ,*********@@@@@@@@@@@@@@@@***@@@@@@@@@@@@@@@@**********",           
-  "   ******(((@@@@@@@@@@@@@@@@(((@@@@@@@@@@@@@@@@(((******",            
-  "   ******&@@@@@@@&*******&@@@@@@@&*******&@@@@@@@&******",            
-  "   ******&@@@@@*************@@@*************@@@@@&******",            
-  "   ******&@@@@@*****************************@@@@@&*****,",            
-  "    *****&@@@@@*****************************@@@@@&*****",             
-  "    *****&@@@@@*****************************@@@@@&*****",             
-  "    ********@@@@@&***********************&@@@@@********",             
-  "    ********@@@@@&***********************&@@@@@*******,",             
-  "    ,**********@@@@@*******************@@@@@**********",              
-  "     **********@@@@@(((*************(((@@@@@**********",              
-  "     ************&@@@@@*************@@@@@&************",              
-  "     ***************@@@@@&*******&@@@@@***************",              
-  "     ******************@@@@@***@@@@@*****************",               
-  "     ******************&&@@@&&&@@@&&*****************",               
-  "      *******************&@@@@@@@&*******************",               
-  "       *********************@@@*********************",                
-  "           *************************************",                    
-  "               *****************************",                        
-  "                   *********************",                            
-  "                      ***************",
-  "                         *********",
-  "",
-  "",
-  "                      Upcoming Events:",
-  "",
-  "                    Oct 20th 2018, Seattle",
-  "                    Oct 20th 2018, Krakow",
-  "                    Nov 5th 2018, London",
-  "                      Nov 17th, Warsaw"
+    "body": [
+      "                         *********",
+      "                   .*******************.",
+      "              ,*****************************,",
+      "          *****************************************",
+      "   ,***************************************************,",
+      "  *******************************************************",
+      "  *************@@@@@@@@@@&*******&@@@@@@@@@@*************",
+      "  ,*********@@@@@@@@@@@@@@@@***@@@@@@@@@@@@@@@@**********",
+      "   ******(((@@@@@@@@@@@@@@@@(((@@@@@@@@@@@@@@@@(((******",
+      "   ******&@@@@@@@&*******&@@@@@@@&*******&@@@@@@@&******",
+      "   ******&@@@@@*************@@@*************@@@@@&******",
+      "   ******&@@@@@*****************************@@@@@&*****,",
+      "    *****&@@@@@*****************************@@@@@&*****",
+      "    *****&@@@@@*****************************@@@@@&*****",
+      "    ********@@@@@&***********************&@@@@@********",
+      "    ********@@@@@&***********************&@@@@@*******,",
+      "    ,**********@@@@@*******************@@@@@**********",
+      "     **********@@@@@(((*************(((@@@@@**********",
+      "     ************&@@@@@*************@@@@@&************",
+      "     ***************@@@@@&*******&@@@@@***************",
+      "     ******************@@@@@***@@@@@*****************",
+      "     ******************&&@@@&&&@@@&&*****************",
+      "      *******************&@@@@@@@&*******************",
+      "       *********************@@@*********************",
+      "           *************************************",
+      "               *****************************",
+      "                   *********************",
+      "                      ***************",
+      "                         *********",
+      "",
+      "",
+      "                      Upcoming Events:",
+      "",
+      "                    Oct 20th 2018, Seattle",
+      "                    Oct 20th 2018, Krakow",
+      "                    Nov 5th 2018, London",
+      "                      Nov 17th, Warsaw"
     ]
   },
   "Angular Routing": {
@@ -1102,7 +1102,7 @@
       "export enum ${Class}ActionTypes {",
       "\t${Verb1} = '[${Class}] ${Verb1}',",
       "\t${Verb2} = '[${Class}] ${Verb2}'",
-      "}"        
+      "}"
     ]
   },
   "Angular ngRx Enum ActionType": {
@@ -1110,7 +1110,7 @@
     "description": "ngRx enum action type",
     "types": "typescript",
     "body": [
-      "${Verb} = '[${Class}] ${Verb}'$0"       
+      "${Verb} = '[${Class}] ${Verb}'$0"
     ]
   },
   "Angular ngRx Effect": {
@@ -1260,18 +1260,32 @@
   },
   "Angular Test Directive": {
     "prefix": "ng-test-directive",
-    "description": "TODO",
+    "description": "Test a directive",
     "types": "typescript",
     "body": [
-      ""
+      "describe('${Name}Directive', () => {",
+      "\tit('should create an instance', () => {",
+      "\t\tconst directive = new ${Name}Directive();",
+      "\t\texpect(directive).toBeTruthy();",
+      "\t});",
+      "});"
     ]
   },
   "Angular Test Service": {
     "prefix": "ng-test-service",
-    "description": "TODO",
+    "description": "Test a service",
     "types": "typescript",
     "body": [
-      ""
+      "describe('${Name}Service', () => {",
+      "\tbeforeEach(() => {",
+      "\t\tTestBed.configureTestingModule({",
+      "\t\t\tproviders: [${Name}Service]",
+      "\t\t});",
+      "\t});",
+      "it('should be created', inject([${Name}Service], (service: ${Name}Service) => {",
+      "\texpect(service).toBeTruthy();",
+      "\t}));",
+      "});"
     ]
   },
   "Angular Test Pipe": {
@@ -1281,7 +1295,6 @@
     "body": [
       "describe('${Name}Pipe', () => {",
       "\tlet pipe = new ${Name}Pipe();",
-      "",
       "\tit('transforms \"${input}\" to \"${output}\"', () => {",
       "\t\texpect(pipe.transform('${input}')).toBe('${output}');",
       "\t});",
@@ -2011,7 +2024,7 @@
     "types": "typescript, html",
     "body": [
       "<mat-icon",
-      "\tcolor=\"primary\"" ,
+      "\tcolor=\"primary\"",
       "\tmatBadge=\"${number}\"",
       "\tmatBadgePosition=\"${2|above,below|} ${3|after,before|}\"",
       "\tmatBadgeColor=\"accent\">",
@@ -2252,7 +2265,7 @@
       "\t<mat-expansion-panel-header>",
       "\t\t${title}",
       "\t</mat-expansion-panel-header>",
-      "\t${content}",   
+      "\t${content}",
       "</mat-expansion-panel>$0"
     ]
   },
@@ -2266,13 +2279,13 @@
       "\t\t<mat-expansion-panel-header>",
       "\t\t\t${title}",
       "\t\t</mat-expansion-panel-header>",
-      "\t\t${content}",   
+      "\t\t${content}",
       "\t</mat-expansion-panel>",
       "\t<mat-expansion-panel>",
       "\t\t<mat-expansion-panel-header>",
       "\t\t\t${title2}",
       "\t\t</mat-expansion-panel-header>",
-      "\t\t${content2}",   
+      "\t\t${content2}",
       "\t</mat-expansion-panel>",
       "</mat-accordion>$0"
     ]
@@ -2791,7 +2804,7 @@
       "$0"
     ]
   },
-  
+
   "Angular Http Interceptor": {
     "prefix": "ng-http-interceptor",
     "description": "Intercept an outgoing HttpRequest and optionally transform it or the response.",
@@ -2830,7 +2843,7 @@
       "<link rel=\"manifest\" href=\"./manifest.json\">$0"
     ]
   },
-  
+
   "Register Service Worker and Check": {
     "prefix": "sw-register-and-check",
     "description": "Register Service Worker and Check",
@@ -2987,7 +3000,7 @@
       "\tRun tests with coverage. The report will be in the coverage/ directory",
       "\tng test --code-coverage",
       "",
-      "\tTests will execute after a build is executed via Karma, and it will automatically watch your files for changes.", 
+      "\tTests will execute after a build is executed via Karma, and it will automatically watch your files for changes.",
       "\tYou can run tests a single time via --watch=false or --single-run.",
       "",
       "\tRun end-to-end tests",
