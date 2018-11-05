@@ -9,6 +9,10 @@
    * e-thp (expect toHaveProperty)
    * e-tse (expect toStrictEqual)
 
+ * Testing Snippets
+   * t-directive
+   * t-service
+   
 ## 6.2.0
  * Testing Snippets
     * t-beforeEach
