@@ -2185,7 +2185,7 @@
       "\t\t*ngFor=\"let ${tile} of ${tiles}\"",
       "\t\t[colspan]=\"${tile}.cols\"",
       "\t\t[rowspan]=\"${tile}.rows\"",
-      "\t\t{{${tile}.text}}",
+      "\t\t{{${tile}.text}}>",
       "\t</mat-grid-tile>",
       "</mat-grid-list>$0"
     ]
