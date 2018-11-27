@@ -143,7 +143,7 @@
       "import { Directive } from '@angular/core';",
       "",
       "@Directive({",
-      "\tselector: '[${1:app}-${2:Name}',",
+      "\tselector: '${1:app}-${2:Name}',",
       "})",
       "export class ${2:Name}Directive {${3: }}$0"
     ]
@@ -156,7 +156,7 @@
       "import { Directive, ElementRef, Input } from '@angular/core';",
       "",
       "@Directive({",
-      "\tselector: '[[${1:app}-${2:Name}]',",
+      "\tselector: '[${1:app}-${2:Name}]',",
       "})",
       "export class ${2:Name}Directive {",
       "\tconstructor(private elementRef: ElementRef) {}",
