@@ -143,7 +143,7 @@
       "import { Directive } from '@angular/core';",
       "",
       "@Directive({",
-      "\tselector: '${1:selector}',",
+      "\tselector: '[${1:app}-${2:Name}',",
       "})",
       "export class ${2:Name}Directive {${3: }}$0"
     ]
@@ -156,7 +156,7 @@
       "import { Directive, ElementRef, Input } from '@angular/core';",
       "",
       "@Directive({",
-      "\tselector: '[${1:selector}]',",
+      "\tselector: '[[${1:app}-${2:Name}]',",
       "})",
       "export class ${2:Name}Directive {",
       "\tconstructor(private elementRef: ElementRef) {}",
@@ -175,7 +175,7 @@
       "import { Directive } from '@angular/core';",
       "",
       "@Directive({",
-      "\tselector: '[${1:app}${2:Name}]',",
+      "\tselector: '[${1:app}-${2:Name}]',",
       "})",
       "export class ${2:Name}Directive {${4: }}$0"
     ]
@@ -2390,7 +2390,7 @@
   },
   "RxJS Import an Operator": {
     "prefix": "rx-import-operator",
-    "description": "RxJS Import Add Operator",
+    "description": "RxJS Import an Operator",
     "types": "typescript, javascript",
     "body": [
       "import { ${1:switchMap} } from 'rxjs/operators';",
