@@ -1268,7 +1268,8 @@
       "\t\tconst directive = new ${Name}Directive();",
       "\t\texpect(directive).toBeTruthy();",
       "\t});",
-      "});"
+      "});",
+      "$0"
     ]
   },
   "Angular Test Service": {
@@ -1276,6 +1277,9 @@
     "description": "Test a service",
     "types": "typescript",
     "body": [
+      "import { TestBed, inject } from '@angular/core/testing';",
+      "import { ${Name}Service } from './${name}.service';",
+      "",
       "describe('${Name}Service', () => {",
       "\tbeforeEach(() => {",
       "\t\tTestBed.configureTestingModule({",
@@ -1285,7 +1289,8 @@
       "it('should be created', inject([${Name}Service], (service: ${Name}Service) => {",
       "\texpect(service).toBeTruthy();",
       "\t}));",
-      "});"
+      "});",
+      "$0"
     ]
   },
   "Angular Test Pipe": {
@@ -1315,7 +1320,7 @@
     "description": "If directive: *ngIf=\"expression\"",
     "types": "typescript, html",
     "body": [
-      "*ngIf=\"${expression}\""
+      "*ngIf=\"${expression}\"$0"
     ]
   },
   "Angular If Else Directive": {
