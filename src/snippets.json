@@ -2223,7 +2223,7 @@
     "types": "typescript, html",
     "body": [
       "<mat-progress-bar",
-      "\tmode=\"indeterminate\"",
+      "\tmode=\"indeterminate\">",
       "</mat-progress-bar>$0"
     ]
   },
@@ -2233,7 +2233,7 @@
     "types": "typescript, html",
     "body": [
       "<mat-progress-bar",
-      "\tmode=\"query\"",
+      "\tmode=\"query\">",
       "</mat-progress-bar>$0"
     ]
   },
@@ -2246,7 +2246,7 @@
       "\tmode=\"buffer\"",
       "\t[color]=\"${color}\"",
       "\t[value]=\"${value}\"",
-      "\t[bufferValue]=\"${bufferValue}\"",
+      "\t[bufferValue]=\"${bufferValue}\">",
       "</mat-progress-bar>$0"
     ]
   },
