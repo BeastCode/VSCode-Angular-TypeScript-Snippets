@@ -2161,12 +2161,14 @@
     "description": "Material Table",
     "types": "typescript, html",
     "body": [
-      "<mat-table #table [dataSource]=\"${dataSource}\">",
+      "<table mat-table #table [dataSource]=\"${dataSource}\">",
       "\t<ng-container cdkColumnDef=\"${column}\">",
-      "\t\t<mat-header-cell *cdkHeaderCellDef> ${header} </mat-header-cell>",
-      "\t\t<mat-cell *cdkCellDef=\"let row\"> {{row.${column}}} </mat-cell>",
+      "\t\t<th mat-header-cell *cdkHeaderCellDef> ${header} </th>",
+      "\t\t<td mat-cell *cdkCellDef=\"let row\"> {{row.${column}}} </td>",
       "\t</ng-container>",
-      "</mat-table>$0"
+      "\t<tr mat-header-row *matHeaderRowDef=\"['${column}']\"></tr>",
+      "\t<tr mat-row *matRowDef=\"let row; columns: ['${column}'];\"></tr>,
+      "</table>$0"
     ]
   },
   "Material Table Column": {
@@ -2175,8 +2177,8 @@
     "types": "typescript, html",
     "body": [
       "<ng-container cdkColumnDef=\"${column}\">",
-      "\t<mat-header-cell *cdkHeaderCellDef> ${header} </mat-header-cell>",
-      "\t<mat-cell *cdkCellDef=\"let row\"> {{row.${column}}} </mat-cell>",
+      "\t<th mat-header-cell *cdkHeaderCellDef> ${header} </th>",
+      "\t<td mat-cell *cdkCellDef=\"let row\"> {{row.${column}}} </td>",
       "</ng-container>$0"
     ]
   },
