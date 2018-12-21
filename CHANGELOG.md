@@ -12,6 +12,7 @@
  * Testing Snippets
    * t-directive
    * t-service
+   * t-describe
    
 ## 6.2.0
  * Testing Snippets

@@ -308,6 +308,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | t-beforeEach | beforeEach |
 | t-component-async | Test Async Component |
 | t-component-synchronous | Test Synchronous Component |
+| t-describe | Describe |
 | t-describe-it | Describe, It & Expect |
 | t-directive | Test a directive |
 | t-it | It |

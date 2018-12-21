@@ -2417,6 +2417,16 @@
       "$0"
     ]
   },
+  "Test Describe": {
+    "prefix": "t-describe",
+    "description": "Describe",
+    "types": "typescript",
+    "body": [
+      "describe('${1:Description}', () => {",
+      "\t$0",
+      "});"
+    ]
+  },
   "Test Describe, It & Expect": {
     "prefix": "t-describe-it",
     "description": "Describe, It & Expect",
