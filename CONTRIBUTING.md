@@ -8,3 +8,7 @@ Please submit any new snippets you find helpful or suggest enhances/fixes to exi
 2) Submit Pull request with your updates
 
 Once your Pull Request been reviewed and approved, it will automatically be built. All necessary files will be generate and published.
+
+# Rules
+
+"Be Excellent To Each Other" ~ Bill and Ted's Excellent Adventure
