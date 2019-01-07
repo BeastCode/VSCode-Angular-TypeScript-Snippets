@@ -416,7 +416,7 @@
     "description": "Lowercase pipe",
     "types": "typescript, html",
     "body": [
-      "{{ ${variable} | lowercase }$0"
+      "{{ ${variable} | lowercase }}$0"
     ]
   },
   "Angular TitleCase Pipe": {
@@ -424,7 +424,7 @@
     "description": "v4: Titlecase pipe",
     "types": "typescript, html",
     "body": [
-      "{{ ${variable} | titlecase }$0"
+      "{{ ${variable} | titlecase }}$0"
     ]
   },
   "Angular Date Pipe": {
