@@ -1,5 +1,9 @@
 # Angular BeastCode Changelog
 
+## 7.2.0
+ * Enhanced
+   * t-pipe
+   
 ## 7.0.0
  * Material
    * m-drag-drop-box
