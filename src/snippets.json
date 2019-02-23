@@ -926,6 +926,35 @@
       "}"
     ]
   },
+	"Angular Container": {
+		"scope": "html",
+		"prefix": "ng-container",
+		"body": "<ng-container>${1}</ng-container>"
+	},
+	"Angular Container with *ngFor": {
+		"scope": "html",
+		"prefix": "ng-container-ngfor",
+		"body": [
+			"<ng-container *ngFor=\"let ${1:item} of ${2:items}\">",
+			"  ${3:content}",
+			"</ng-container>"
+		]
+	},
+	"Angular Container with *ngTemplateOutlet": {
+		"scope": "html",
+		"prefix": "ng-container-template",
+		"body": "<ng-container *ngTemplateOutlet=\"${1}\"></ng-container>"
+	},
+	"Angular Container with *ngContainerOutlet": {
+		"scope": "html",
+		"prefix": "ng-container-component",
+		"body": "<ng-container *ngComponentOutlet=\"${1}\"></ng-container>"
+	},
+	"Angular template": {
+		"scope": "html",
+		"prefix": "ng-template",
+		"body": "<ng-template #${1:name}></ng-template>"
+	}
 
   "Angular ngRx Util": {
     "prefix": "ngrx-util",
