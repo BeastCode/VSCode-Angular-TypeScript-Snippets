@@ -1,6 +1,12 @@
 # Angular BeastCode Changelog
 
 ## 7.2.0
+ * Testing Snippets
+   * ng-template
+   * ng-container
+   * ng-container-ngfor
+   * ng-container-template
+   * ng-container-component
  * Enhanced
    * t-pipe
    

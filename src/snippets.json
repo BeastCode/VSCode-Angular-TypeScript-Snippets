@@ -927,35 +927,52 @@
     ]
   },
 	"Angular Container": {
-		"scope": "html",
-		"prefix": "ng-container",
-		"body": "<ng-container>${1}</ng-container>"
+		"types": "typescript, html",
+    "prefix": "ng-container",
+    "description": "Angular Container",
+    "body": [
+      "<ng-container>${1}</ng-container>",
+      "$0"
+    ]
 	},
 	"Angular Container with *ngFor": {
-		"scope": "html",
-		"prefix": "ng-container-ngfor",
+		"types": "typescript, html",
+    "prefix": "ng-container-ngfor",
+    "description": "Angular Container with *ngFor",
 		"body": [
 			"<ng-container *ngFor=\"let ${1:item} of ${2:items}\">",
 			"  ${3:content}",
-			"</ng-container>"
-		]
+			"</ng-container>",
+      "$0"
+    ]
 	},
 	"Angular Container with *ngTemplateOutlet": {
-		"scope": "html",
-		"prefix": "ng-container-template",
-		"body": "<ng-container *ngTemplateOutlet=\"${1}\"></ng-container>"
+		"types": "typescript, html",
+    "prefix": "ng-container-template",
+    "description": "Angular Container with *ngTemplateOutlet",
+		"body": [
+      "<ng-container *ngTemplateOutlet=\"${1}\"></ng-container>",
+      "$0"
+    ]
 	},
 	"Angular Container with *ngContainerOutlet": {
-		"scope": "html",
-		"prefix": "ng-container-component",
-		"body": "<ng-container *ngComponentOutlet=\"${1}\"></ng-container>"
+		"types": "typescript, html",
+    "prefix": "ng-container-component",
+    "description": "Angular Container with *ngContainerOutlet",
+		"body": [
+      "<ng-container *ngComponentOutlet=\"${1}\"></ng-container>",
+      "$0"
+      ]
 	},
 	"Angular template": {
-		"scope": "html",
-		"prefix": "ng-template",
-		"body": "<ng-template #${1:name}></ng-template>"
-	}
-
+		"types": "typescript, html",
+    "prefix": "ng-template",
+    "description": "Angular template",
+		"body": [
+      "<ng-template #${1:name}></ng-template>",
+      "$0"
+    ]
+	},
   "Angular ngRx Util": {
     "prefix": "ngrx-util",
     "description": "ngRx Util",

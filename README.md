@@ -204,6 +204,10 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-component-inline | Component with inline Template and Styles |
 | ng-component-value-accessor | Angular Component With NG_VALUE_ACCESSOR |
 | ng-conf | The World's Original Angular Conference |
+| ng-container | Angular Container |
+| ng-container-component | Angular Container with *ngContainerOutlet |
+| ng-container-ngfor | Angular Container with *ngFor |
+| ng-container-template | Angular Container with *ngTemplateOutlet |
 | ng-controller | Use component instead. |
 | ng-debug | pre obj pipe json |
 | ng-debug-async | pre obj pipe async pipe json |
@@ -274,6 +278,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-src | Usage: Bind to the src property. |
 | ng-style | CSS style |
 | ng-switch | Switch template |
+| ng-template | Angular template |
 | ng-validator | Angular validator snippet |
 | ngrx-action-const | ngRx Single action |
 | ngrx-action-creator | ngRx Single action with const |
