@@ -321,7 +321,7 @@
       "\t\tCdkStepperModule,",
       "\t\tCdkTableModule,",
       "\t\tCdkTreeModule,",
-      "\t\tDragDropModule",
+      "\t\tDragDropModule,",
       "\t\t// Material",
       "\t\tMatAutocompleteModule,",
       "\t\tMatBadgeModule,",
