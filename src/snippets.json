@@ -778,6 +778,30 @@
       "$0"
     ]
   },
+  "Angular Route Feature": {
+    "prefix": "ng-route-feature",
+    "description": "Angular Route Feature",
+    "types": "typescript",
+    "body": [
+      "{ path: '${path}', component: ${Feature}Component },$0"
+    ]
+  },
+  "Angular Route Lazy": {
+    "prefix": "ng-route-lazy",
+    "description": "Router link",
+    "types": "typescript",
+    "body": [
+      "{ path: '${path}', loadChildren: '${lazyPath}.module#${lazyModule}Module' },$0"
+    ]
+  },
+  "Angular Route Lazy Ivy": {
+    "prefix": "ng-route-lazy",
+    "description": "Router link",
+    "types": "typescript",
+    "body": [
+      "{ path: '${path}', loadChildren: () => import('${lazyPath}.module').then(m => m.${lazyModule}Module) },$0"
+    ]
+  },
   "Angular Router Link": {
     "prefix": "ng-router-link",
     "description": "Router link",

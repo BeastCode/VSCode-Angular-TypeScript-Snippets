@@ -1,5 +1,12 @@
 # Angular BeastCode Changelog
 
+## 8.0.0-beta
+ * Routing
+  * ng-route
+  * ng-route-lazy
+  * ng-route-lazy-ivy
+  
+
 ## 7.2.0
  * Testing Snippets
    * ng-template
