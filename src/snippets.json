@@ -3144,5 +3144,14 @@
       "}",
       "$0"
     ]
-  }
+  },
+	"Angular content": {
+		"types": "typescript, html",
+    "prefix": "ng-content",
+    "description": "Angular content",
+		"body": [
+      "<ng-content #${1:name}></ng-content>",
+      "$0"
+    ]
+	}
 }
