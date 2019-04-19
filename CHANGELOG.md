@@ -2,9 +2,11 @@
 
 ## 8.0.0-beta
  * Routing
-  * ng-route
-  * ng-route-lazy
-  * ng-route-lazy-ivy
+   * ng-route
+   * ng-route-lazy
+   * ng-route-lazy-ivy
+ * Snippets
+   * ng-content 
   
 
 ## 7.2.0
