@@ -316,12 +316,14 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | t-beforeAll | beforeAll |
 | t-beforeEach | beforeEach |
 | t-component-async | Test Async Component |
-| t-component-synchronous | Test Synchronous Component |
+| t-component-sync | Test Synchronous Component |
+| t-component-sync-old | Test Synchronous Component |
 | t-describe | Describe |
 | t-describe-it | Describe, It & Expect |
 | t-directive | Test a directive |
 | t-it | It |
 | t-ite | It and Expect |
+| t-module | Test Module |
 | t-pipe | Test a pipe |
 | t-service | Test a service |
 | wat | A lightning talk by Gary Bernhardt from CodeMash 2012. ng-wat talk by Shai Reznik in 2015 |

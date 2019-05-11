@@ -1295,12 +1295,11 @@
       "$0"
     ]
   },
-  "Angular Test Synchronous Component": {
-    "prefix": "t-component-synchronous",
+  "Angular Test Synchronous Component Old": {
+    "prefix": "t-component-sync-old",
     "description": "Test Synchronous Component",
     "types": "typescript",
     "body": [
-      "// synchronous beforeEach",
       "beforeEach(() => {",
       "\tfixture = TestBed.createComponent(${Name}Component);",
       "\tcomp    = fixture.componentInstance;",
@@ -1310,6 +1309,69 @@
       "\texpected${ClassName} = new ${ClassName}($1);",
       "\tcomp.${className} = expected${ClassName};",
       "\tfixture.detectChanges(); // trigger initial data binding",
+      "});",
+      "$0"
+    ]
+  },
+  "Angular Test Synchronous Component": {
+    "prefix": "t-component-sync",
+    "description": "Test Synchronous Component",
+    "types": "typescript",
+    "body": [
+      "import { ComponentFixture, TestBed } from '@angular/core/testing';",
+      "import { ${Name}Component } from './${file}.component';",
+      "import { Store } from '@ngrx/store';",
+      "import { NO_ERRORS_SCHEMA } from '@angular/core';",
+      "",
+      "describe('${Name}Component', () => {",
+      "\tlet component: ${Name}Component;",
+      "\tlet fixture: ComponentFixture<${Name}Component>;",
+      "",
+      "\tbeforeEach(() => {",
+      "\t\tTestBed.configureTestingModule({",
+      "\t\t\tdeclarations: [${Name}Component],",
+      "\t\t\tproviders: [",
+      "\t\t\t],",
+      "\t\t\tproviders: [",
+      "\t\t\t],",
+      "\t\t\tschemas: [NO_ERRORS_SCHEMA]",
+      "\t\t});",
+      "",
+       "\t\tfixture = TestBed.createComponent(${Name}Component);",
+      "\t\tcomponent = fixture.componentInstance;",
+      "\t});",
+      "",
+      "\tdescribe('constructor, () => {",
+      "\t\tit('should create instance', () => {",
+      "\t\t\texpect(component).toBeDefined();",
+      "\t\t});",
+      "\t});",
+      "});",
+      "$0"
+    ]
+  },
+  "Angular Test Module": {
+    "prefix": "t-module",
+    "description": "Test Module",
+    "types": "typescript",
+    "body": [
+      "import { TestBed } from '@angular/core/testing';",
+      "import { ${Name}Module } from './${name}.module';",
+      "",
+      "describe('${Name}Module', () => {",
+      "\tlet module: ${Name}Module;",
+      "",
+      "\tbeforeEach(() => {",
+      "\t\tTestBed.configureTestingModule({",
+      "\t\t\tproviders: [${Name}Module]",
+      "\t\t});",
+      "\t\t",
+      "\t\tmodule = TestBed.get(${Name}Module);",
+      "\t});",
+      "",
+      "\tit('should load module', () => {",
+      "\t\texpect(module).toBeDefined();",
+      "\t});",
       "});",
       "$0"
     ]

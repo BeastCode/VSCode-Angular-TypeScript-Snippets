@@ -6,7 +6,10 @@
    * ng-route-lazy
    * ng-route-lazy-ivy
  * Snippets
-   * ng-content 
+   * ng-content
+ * Tests
+   * t-module
+   * t-component-sync
   
 
 ## 7.2.0
