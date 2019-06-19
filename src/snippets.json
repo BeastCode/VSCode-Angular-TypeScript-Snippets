@@ -790,11 +790,11 @@
     ]
   },
   "Angular Route Lazy": {
-    "prefix": "ng-route-lazy",
+    "prefix": "ng-8-route-lazy",
     "description": "Router link",
     "types": "typescript",
     "body": [
-      "{ path: '${path}', loadChildren: '${lazyPath}.module#${lazyModule}Module' },$0"
+      "{ path: '${1:path}', loadChildren: () => import('./${1:lazy}/${1:lazy}.module').then(m => m.${2:Lazy}Module) },"
     ]
   },
   "Angular Route Lazy Ivy": {
