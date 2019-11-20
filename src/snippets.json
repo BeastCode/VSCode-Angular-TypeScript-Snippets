@@ -1711,7 +1711,7 @@
     "description": "A button element with a click event",
     "types": "typescript, html",
     "body": [
-      "<button (click)=\"${onClick()}\">${name}</button>",
+      "<button (click)=\"${1:onClick()}\">${2:name}</button>",
       "$0"
     ]
   },
