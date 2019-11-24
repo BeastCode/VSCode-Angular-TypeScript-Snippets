@@ -23,7 +23,7 @@
       "// import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';",
       "const options = new DocumentBuilder()",
       "\t.setTitle('${Title}')",
-      "\t.setDescription('${description}')",
+      "\t.setDescription('${desc}')",
       "\t.setVersion('${Version:1.0}')",
       "\t.build();",
       "const document = SwaggerModule.createDocument(app, options);",
