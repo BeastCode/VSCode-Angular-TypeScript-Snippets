@@ -1,6 +1,9 @@
 # Angular BeastCode Changelog
 
-## 8.0.0-beta
+## 8.1.0
+ * Updates to support VS Code 1.40
+
+## 8.0.0
  * Routing
    * ng-route
    * ng-route-lazy

@@ -81,8 +81,6 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 
 | Snippet | Description |
 | ------- | ----------|
-|       "\"\": \"\", | ng-content |
-| cli-cheatsheet | Cli Cheat Sheet |
 | e-atbr | ExpectAsync toBeResolved |
 | e-ntb | Expect Not toBe |
 | e-ntbd | Expect not toBe Defined |
@@ -114,7 +112,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | e-thrt | Expect toHaveReturnedTimes(2) |
 | e-thrw | Expect toHaveLastReturnedWith(value) |
 | e-tm | Expect toMatch |
-| e-tm | Expect toMatchObject |
+| e-tmo | Expect toMatchObject |
 | e-tmr | Expect toMatch regex |
 | e-tms | Jest Expect toMatchSnapshot |
 | e-tse | Expect toStrictEqual |
@@ -190,6 +188,10 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-tooltip | Material Tooltip |
 | m-tooltip-position | Material Tooltip position |
 | m-tooltip-with-position | Material Tooltip with position |
+| nest-controller | Nest Controller |
+| nest-dto | Nest Data Transfer Object with Swagger |
+| nest-service | Nest Service |
+| nest-swagger-main | Nest Add Swagger to main.ts |
 | ng-afterContentChecked | Lifecycle hook: Called after every check of the component's or directive's content |
 | ng-afterContentInit | Lifecycle hook: Called after ngOnInit when the component's or directive's content has been initialized |
 | ng-afterViewChecked | Lifecycle hook: Called after every check of the component's view. Applies to components only |
@@ -268,7 +270,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-route-guard-canload | CanLoad Guard Route |
 | ng-route-guard-resolve | Resolve Guard Route |
 | ng-route-lazy | Router link |
-| ng-route-lazy | Router link |
+| ng-route-lazy-ivy | Router link |
 | ng-router | Router template |
 | ng-router-appmodule | Routes to include in root module |
 | ng-router-attribute | Router link |
