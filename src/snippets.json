@@ -2126,6 +2126,22 @@
       "<button mat-raised-button>${text}</button>$0"
     ]
   },
+  "Material Flat Button": {
+    "prefix": "m-button-flat",
+    "description": "Rectangular Material flat button.",
+    "types": "typescript, html",
+    "body": [
+      "<button mat-flat-button>${text}</button>$0"
+    ]
+  },
+  "Material Stroked Button": {
+    "prefix": "m-button-stroked",
+    "description": "Rectangular Material button with a transparent background and a stroke.",
+    "types": "typescript, html",
+    "body": [
+      "<button mat-stroked-button>${text}</button>$0"
+    ]
+  },
   "Material Icon Button": {
     "prefix": "m-button-icon",
     "description": "Circular Material button with a transparent background",
