@@ -1168,6 +1168,7 @@
     "description": "ngRx Reducer",
     "types": "typescript",
     "body": [
+      "import { createReducer } from '@ngrx/store';",
       "import * as ${class} from '../actions/${class}';",
       "",
       "export interface State {",
@@ -1178,19 +1179,13 @@
       "\t\t$2",
       "};",
       "",
-      "export function reducer(state = initialState, action: ${class}.Actions ): State {",
-      "\tswitch (action.type) {",
-      "\t\tcase ${class}.ActionTypes.${TYPE}: {",
-      "\t\t\treturn {",
-      "\t\t\t\t// return new ${class} state",
-      "\t\t\t};",
-      "\t\t}",
-      "",
-      "\t\tdefault: {",
-      "\t\t\treturn state;",
-      "\t\t}",
-      "\t}",
-      "}"
+      "export const reducer = createReducer(",
+      "\tinitialState,",
+      "\ton(",
+      "\t\t${class}.${action},",
+      "\t\t(state) => ({...state}),",
+      "\t),",
+      ");"
     ]
   },
   "Angular ngRx Actions": {
