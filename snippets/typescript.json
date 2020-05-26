@@ -2746,7 +2746,7 @@
     "description": "beforeEach",
     "types": "typescript",
     "body": [
-      "beforeEach(function() {",
+      "beforeEach(() => {",
       "\t$1",
       "});",
       "$0"
@@ -2757,7 +2757,7 @@
     "description": "afterEach",
     "types": "typescript",
     "body": [
-      "afterEach(function() {",
+      "afterEach(() => {",
       "\t$1",
       "});",
       "$0"
@@ -2768,7 +2768,7 @@
     "description": "beforeAll",
     "types": "typescript",
     "body": [
-      "beforeAll(function() {",
+      "beforeAll(() => {",
       "\t$1",
       "});",
       "$0"
@@ -2779,7 +2779,7 @@
     "description": "afterAll",
     "types": "typescript",
     "body": [
-      "afterAll(function() {",
+      "afterAll(() => {",
       "\t$1",
       "});",
       "$0"
