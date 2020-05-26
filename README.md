@@ -286,14 +286,11 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-switch | Switch template |
 | ng-template | Angular template |
 | ng-validator | Angular validator snippet |
-| ngrx-action-const | ngRx Single action |
-| ngrx-action-creator | ngRx Single action with const |
-| ngrx-action-creator-enum | ngRx Single action creator for enum |
-| ngrx-actions | ngRx Actions class |
-| ngrx-actiontype-enum | ngRx enum action type |
-| ngrx-actiontypes-enum | ngRx enum action types |
+| ngrx-action | ngRx Single action (with out payload) |
+| ngrx-action-payload | ngRx Single action (with payload) |
+| ngrx-action-set | ngRx Single action set |
+| ngrx-action-creator | ngRx Action creator |
 | ngrx-effect | ngRx Effect |
-| ngrx-module | ngRx Root Module |
 | ngrx-reducer | ngRx Reducer |
 | ngrx-util | ngRx Util |
 | ngxs-action | Ngxs Action |

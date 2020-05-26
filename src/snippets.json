@@ -1188,125 +1188,70 @@
       ");"
     ]
   },
-  "Angular ngRx Actions": {
-    "prefix": "ngrx-actions",
-    "description": "ngRx Actions class",
-    "types": "typescript",
-    "body": [
-      "import { Action } from '@ngrx/store';",
-      "",
-      "/**",
-      " * For each action type in an action group, make a simple",
-      " * enum object for all of this group's action types.",
-      " */",
-      "export enum ${Class}ActionTypes {",
-      "\t${Verb1} = '[${Class}] ${Verb1}',",
-      "\t${Verb2} = '[${Class}] ${Verb2}'",
-      "};",
-      "",
-      "/**",
-      " * Every action is comprised of at least a type and an optional",
-      " * payload. Expressing actions as classes enables powerful ",
-      " * type checking in reducer functions.",
-      " */",
-      "export class ${Verb1} implements Action {",
-      "\treadonly type = ${Class}ActionTypes.${Verb1};",
-      "",
-      "\tconstructor(public payload: ${payloadType}) { }",
-      "}",
-      "",
-      "export class ${Verb2} implements Action {",
-      "\treadonly type = ${Class}ActionTypes.${Verb2};",
-      "",
-      "\tconstructor(public payload: ${payloadType2}) { }",
-      "}",
-      "",
-      "/**",
-      " * Export a type alias of all actions in this action group",
-      " * so that reducers can easily compose action types",
-      " */",
-      "export type ${Class}Actions",
-      "\t\t\t\t\t\t= ${Verb1}",
-      "\t\t\t\t\t\t| ${Verb2};",
-      ""
-    ]
-  },
-  "Angular ngRx Root Module": {
-    "prefix": "ngrx-module",
-    "description": "ngRx Root Module",
-    "types": "typescript",
-    "body": [
-      "import { NgModule } from '@angular/core';",
-      "import { BrowserModule } from '@angular/platform-browser';",
-      "import { RouterModule } from '@angular/router';",
-      "import { StoreModule } from '@ngrx/store';",
-      "import { RouterStoreModule } from '@ngrx/router-store';",
-      "import { StoreDevtoolsModule } from '@ngrx/store-devtools';",
-      "import { ${App}Component }  from './${app}.component';",
-      "",
-      "import { routes } from './routes';",
-      "import { reducer } from './reducers';",
-      "",
-      "@NgModule({",
-      "\tdeclarations: [ ${App}Component ],",
-      "\timports: [",
-      "\t\tBrowserModule,",
-      "\t\tRouterModule.forRoot(routes, { useHash: true }),",
-      "\t\tStoreModule.provideStore(reducer),",
-      "\t\tRouterStoreModule.connectRouter(),",
-      "\t\tStoreDevtoolsModule.instrumentOnlyWithExtension(),",
-      "\t],",
-      "\tproviders: [],",
-      "\tbootstrap: [ ${App}Component ]",
-      "})",
-      "export class ${App}Module {}"
-    ]
-  },
   "Angular ngRx Action": {
-    "prefix": "ngrx-action-const",
-    "description": "ngRx Single action",
+    "prefix": "ngrx-action",
+    "description": "ngRx Action",
     "types": "typescript",
     "body": [
-      "export const ${ACTION} = '[${NameSpace}] ${ACTION}';",
-      "$0"
+      "export const ${ACTION} = createAction(",
+      "\t'[${NameSpace}] ${ACTION}'",
+      ");"
+    ]
+  },  
+  "Angular ngRx Action With Payload": {
+    "prefix": "ngrx-action-payload",
+    "description": "ngRx Action with Payload",
+    "types": "typescript",
+    "body": [
+      "export const ${ACTION} = createAction(",
+      "\t'[${NameSpace}] ${ACTION}',",
+      "\tprops<{${payloadType}}>()",
+      ");"
+    ]
+  },
+  "Angular ngRx Action Set": {
+    "prefix": "ngrx-action-set",
+    "description": "ngRx Action with Success and Failure actions",
+    "types": "typescript",
+    "body": [
+      "export const ${action} = createAction(",
+      "\t'[${NameSpace}] ${actionDescription}',",
+      ");",
+      "",
+      "export const ${action2}Success = createAction(",
+      "\t'[${NameSpace}] ${action2Description} Success',",
+      "\tprops<{${payload2Type}}>()",
+      ");",
+      "",
+      "export const ${action3}Failure = createAction(",
+      "\t'[${NameSpace}] ${action3Description} Failure',",
+      "\tprops<{${payload3Type}}>()",
+      ");",
+      ""
     ]
   },
   "Angular ngRx Action Creator": {
     "prefix": "ngrx-action-creator",
-    "description": "ngRx Single action with const",
+    "description": "ngRx Actions",
     "types": "typescript",
     "body": [
-      "export const ${ACTION} = '[${NameSpace}] ${ACTION}';",
-      "$0",
-      "export class ${Class} implements Action {",
-      "\treadonly type = ${ACTION};",
+      "import { createAction } from '@ngrx/store';",
       "",
-      "\tconstructor(public payload: ${payloadType}) { }",
-      "}",
+      "export const ${action} = createAction(",
+      "\t'[${nameSpace}] ${actionDescription}',",
+      "\tprops<{${payloadType}}>()",
+      ");",
+      "",
+      "export const ${action2}Success = createAction(",
+      "\t'[${nameSpace}] ${action2Description} Success',",
+      "\tprops<{${payload2Type}}>()",
+      ");",
+      "",
+      "export const ${action3}Failure = createAction(",
+      "\t'[${nameSpace}] ${action3Description} Failure',",
+      "\tprops<{${payload3Type}}>()",
+      ");",
       ""
-    ]
-  },
-  "Angular ngRx Action Creator Enum": {
-    "prefix": "ngrx-action-creator-enum",
-    "description": "ngRx Single action creator for enum",
-    "types": "typescript",
-    "body": [
-      "export class ${Verb} implements Action {",
-      "\treadonly type = ${Class}ActionTypes.${Verb};",
-      "",
-      "\tconstructor(public payload: ${payloadType}) { }",
-      "}"
-    ]
-  },
-  "Angular ngRx Enum ActionTypes": {
-    "prefix": "ngrx-actiontypes-enum",
-    "description": "ngRx enum action types",
-    "types": "typescript",
-    "body": [
-      "export enum ${Class}ActionTypes {",
-      "\t${Verb1} = '[${Class}] ${Verb1}',",
-      "\t${Verb2} = '[${Class}] ${Verb2}'",
-      "}"
     ]
   },
   "Angular ngRx Enum ActionType": {
