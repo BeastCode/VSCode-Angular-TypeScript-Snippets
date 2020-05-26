@@ -291,6 +291,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ngrx-action-set | ngRx Single action set |
 | ngrx-action-creator | ngRx Action creator |
 | ngrx-effect | ngRx Effect |
+| ngrx-effect-creator | ngRx Effect creator |
 | ngrx-reducer | ngRx Reducer |
 | ngrx-util | ngRx Util |
 | ngxs-action | Ngxs Action |

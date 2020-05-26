@@ -1254,33 +1254,31 @@
       ""
     ]
   },
-  "Angular ngRx Enum ActionType": {
-    "prefix": "ngrx-actiontype-enum",
-    "description": "ngRx enum action type",
-    "types": "typescript",
-    "body": [
-      "${Verb} = '[${Class}] ${Verb}'$0"
-    ]
-  },
   "Angular ngRx Effect": {
     "prefix": "ngrx-effect",
     "description": "ngRx Effect",
     "types": "typescript",
     "body": [
+      "${2:name}$ = this.actions$.pipe(ofType(${1:actionNamespace}.${2:name}));"
+    ]
+  },
+  "Angular ngRx Effect Creator": {
+    "prefix": "ngrx-effect-create",
+    "description": "ngRx Effects Creator",
+    "types": "typescript",
+    "body": [
       "import { Injectable } from '@angular/core';",
-      "import { Observable } from 'rxjs';",
-      "import { Action } from '@ngrx/store';",
-      "import { Actions, Effect, ofType } from '@ngrx/effects';",
+      "import { Actions, createEffect, ofType } from '@ngrx/effects';",
+      "import * as ${class} from '../actions/${class}';",
       "",
       "@Injectable({",
       "\tprovidedIn: 'root'",
       "})",
       "export class ${Name}Effects {",
-      "\t@Effect() ${name}$: Observable<Action> = this.actions$.pipe(ofType('${ACTIONTYPE}'))$1;",
+      "\tconstructor(private actions$: Actions) {}",
       "",
-      "\tconstructor(",
-      "\t\tprivate ${actions}$: Actions",
-      "\t) {}",
+      "\t${actionName}$ = this.actions$.pipe(ofType(${class}.${actionName}));",
+      "",
       "}"
     ]
   },
