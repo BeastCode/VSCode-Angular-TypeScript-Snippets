@@ -154,7 +154,9 @@
       "import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';",
       "import { Observable } from 'rxjs';",
       "",
-      "@Injectable()",
+      "@Injectable({",
+      "\tprovidedIn: 'root'",
+      "})",
       "export class ${CanActivate}Guard implements CanActivate {",
       "\tcanActivate(",
       "\t\troute: ActivatedRouteSnapshot,",
@@ -175,7 +177,9 @@
       "import { CanActivateChild, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';",
       "import { Observable } from 'rxjs';",
       "",
-      "@Injectable()",
+      "@Injectable({",
+      "\tprovidedIn: 'root'",
+      "})",
       "export class ${CanActivateChild}Guard implements CanActivateChild {",
       "\tcanActivateChild(",
       "\t\troute: ActivatedRouteSnapshot,",
@@ -196,7 +200,9 @@
       "import { Resolve, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';",
       "import { Observable } from 'rxjs';",
       "",
-      "@Injectable()",
+      "@Injectable({",
+      "\tprovidedIn: 'root'",
+      "})",
       "export class ${Resolve}Guard implements Resolve<${T}> {",
       "\tresolve(",
       "\t\troute: ActivatedRouteSnapshot,",
@@ -217,7 +223,9 @@
       "import { CanLoad, Route } from '@angular/router';",
       "import { Observable } from 'rxjs';",
       "",
-      "@Injectable()",
+      "@Injectable({",
+      "\tprovidedIn: 'root'",
+      "})",
       "export class ${CanLoad}Guard implements CanLoad {",
       "\tcanLoad(",
       "\t\t${route}: Route",
@@ -237,7 +245,9 @@
       "import { CanDeactivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';",
       "import { Observable } from 'rxjs';",
       "",
-      "@Injectable()",
+      "@Injectable({",
+      "\tprovidedIn: 'root'",
+      "})",
       "export class ${CanDeactivate}Guard implements CanDeactivate<${T}> {",
       "\tcanDeactivate(",
       "\t\tcomponent: ${T},",
@@ -249,53 +259,53 @@
       "}"
     ]
   },
-	"Angular Container": {
-		"types": "typescript, html",
+  "Angular Container": {
+    "types": "typescript, html",
     "prefix": "ng-container",
     "description": "Angular Container",
     "body": [
       "<ng-container>${1}</ng-container>",
       "$0"
     ]
-	},
-	"Angular Container with *ngFor": {
-		"types": "typescript, html",
+  },
+  "Angular Container with *ngFor": {
+    "types": "typescript, html",
     "prefix": "ng-container-ngfor",
     "description": "Angular Container with *ngFor",
-		"body": [
-			"<ng-container *ngFor=\"let ${1:item} of ${2:items}\">",
-			"  ${3:content}",
-			"</ng-container>",
+    "body": [
+      "<ng-container *ngFor=\"let ${1:item} of ${2:items}\">",
+      "  ${3:content}",
+      "</ng-container>",
       "$0"
     ]
-	},
-	"Angular Container with *ngTemplateOutlet": {
-		"types": "typescript, html",
+  },
+  "Angular Container with *ngTemplateOutlet": {
+    "types": "typescript, html",
     "prefix": "ng-container-template",
     "description": "Angular Container with *ngTemplateOutlet",
-		"body": [
+    "body": [
       "<ng-container *ngTemplateOutlet=\"${1}\"></ng-container>",
       "$0"
     ]
-	},
-	"Angular Container with *ngContainerOutlet": {
-		"types": "typescript, html",
+  },
+  "Angular Container with *ngContainerOutlet": {
+    "types": "typescript, html",
     "prefix": "ng-container-component",
     "description": "Angular Container with *ngContainerOutlet",
-		"body": [
+    "body": [
       "<ng-container *ngComponentOutlet=\"${1}\"></ng-container>",
       "$0"
-      ]
-	},
-	"Angular template": {
-		"types": "typescript, html",
+    ]
+  },
+  "Angular template": {
+    "types": "typescript, html",
     "prefix": "ng-template",
     "description": "Angular template",
-		"body": [
+    "body": [
       "<ng-template #${1:name}></ng-template>",
       "$0"
     ]
-	},
+  },
   "Angular ngModel Directive": {
     "prefix": "ng-model",
     "description": "ngModel directive: [(ngModel)]=\"name\"",
@@ -1135,6 +1145,32 @@
       "</ng-container>$0"
     ]
   },
+  "Material Table Flex": {
+    "prefix": "m-table-flex",
+    "description": "Material Table Flex",
+    "types": "typescript, html",
+    "body": [
+      "<mat-table #table [dataSource]=\"${dataSource}\">",
+      "\t<ng-container matColumnDef=\"${column}\">",
+      "\t\t<mat-header-cell *matHeaderCellDef> ${header} </mat-header-cell>",
+      "\t\t<mat-cell *matCellDef=\"let row\"> {{row.${column}}} </mat-cell>",
+      "\t</ng-container>",
+      "\t<mat-header-row *matHeaderRowDef=\"['${column}']\"></mat-header-row>",
+      "\t<mat-row *matRowDef=\"let row; columns: ['${column}'];\"></mat-row>",
+      "</mat-table>$0"
+    ]
+  },
+  "Material Table Column Flex": {
+    "prefix": "m-table-column-flex",
+    "description": "Material Table Column Flex",
+    "types": "typescript, html",
+    "body": [
+      "<ng-container matColumnDef=\"${column}\">",
+      "\t<mat-header-cell *matHeaderCellDef> ${header} </mat-header-cell>",
+      "\t<mat-cell *matCellDef=\"let row\"> {{row.${column}}} </mat-cell>",
+      "</ng-container>$0"
+    ]
+  },
   "Material Grid List": {
     "prefix": "m-grid-list",
     "description": "Material Grid List",
@@ -1338,11 +1374,11 @@
       "<link rel=\"manifest\" href=\"./manifest.json\">$0"
     ]
   },
-	"Angular content": {
-		"types": "typescript, html",
+  "Angular content": {
+    "types": "typescript, html",
     "prefix": "ng-content",
     "description": "Angular content",
-		"body": [
+    "body": [
       "<ng-content #${1:name}></ng-content>",
       "$0"
     ]

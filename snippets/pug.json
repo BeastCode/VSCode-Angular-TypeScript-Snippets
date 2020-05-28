@@ -1,0 +1,1128 @@
+[
+    {
+        "prefix": "ng-pipe-uppercase",
+        "description": "Uppercase pipe",
+        "types": "pug",
+        "body": [
+            "{{ ${variable} | uppercase }}$0"
+        ]
+    },
+    {
+        "prefix": "ng-pipe-lowercase",
+        "description": "Lowercase pipe",
+        "types": "pug",
+        "body": [
+            "{{ ${variable} | lowercase }}$0"
+        ]
+    },
+    {
+        "prefix": "ng-pipe-titlecase",
+        "description": "v4: Titlecase pipe",
+        "types": "pug",
+        "body": [
+            "{{ ${variable} | titlecase }}$0"
+        ]
+    },
+    {
+        "prefix": "ng-pipe-date",
+        "description": "Date pipe - Default format: 09/15/1971",
+        "types": "pug",
+        "body": [
+            "{{ ${variable} | date }}$0"
+        ]
+    },
+    {
+        "prefix": "ng-pipe-date-custom",
+        "description": "Date pipe - Format: \"MM/dd/yy\" = 09/15/71",
+        "types": "pug",
+        "body": [
+            "{{ ${variable} | date:\"MM/dd/yy\" }}$0"
+        ]
+    },
+    {
+        "prefix": "ng-pipe-date-short",
+        "description": "Short date pipe - Format: 09/15/1971",
+        "types": "pug",
+        "body": [
+            "{{ ${variable} | date:shortDate }}$0"
+        ]
+    },
+    {
+        "prefix": "ng-pipe-date-full",
+        "description": "Full date pipe - Format: Wednesday, September 15, 1971",
+        "types": "pug",
+        "body": [
+            "{{ ${variable} | date:fullDate }}$0"
+        ]
+    },
+    {
+        "prefix": "ng-pipe-percent",
+        "description": "Percent pipe - Usage: number_expression &#x7c; percent[:digitInfo]",
+        "types": "pug",
+        "body": [
+            "{{ ${variable} | percent:${digitInfo} }}$0"
+        ]
+    },
+    {
+        "prefix": "ng-pipe-decimal",
+        "description": "Decimal pipe - Usage: number_expression &#x7c; decimal[:digitInfo]",
+        "types": "pug",
+        "body": [
+            "{{ ${variable} | decimal:${digitInfo} }}$0"
+        ]
+    },
+    {
+        "prefix": "ng-pipe-slice",
+        "description": "Slice pipe - Usage: array_or_string_expression &#x7c; slice:start[:end]",
+        "types": "pug",
+        "body": [
+            "{{ ${variable} | slice:${start}:${end} }}$0"
+        ]
+    },
+    {
+        "prefix": "ng-pipe-currency",
+        "description": "Currency pipe - Usage: money &#x7c; currency:'EUR'",
+        "types": "pug",
+        "body": [
+            "{{ ${variable} | currency:'${CURRENCY}' }}$0"
+        ]
+    },
+    {
+        "prefix": "ng-pipe-json",
+        "description": "Json pipe - Usage: object &#x7c; json",
+        "types": "pug",
+        "body": [
+            "{{ ${object} | json }}$0"
+        ]
+    },
+    {
+        "prefix": "ng-pipe-async",
+        "description": "Async pipe - Usage: observable_or_promise_expression &#x7c; async",
+        "types": "pug",
+        "body": [
+            "{{ ${observable} | async }}$0"
+        ]
+    },
+    {
+        "prefix": "ng-router-link",
+        "description": "Router link",
+        "types": "pug",
+        "body": [
+            "a([routerLink]=\"[ '/${path}', ${routeParam} ]\")${name}$0"
+        ]
+    },
+    {
+        "prefix": "ng-router-attribute",
+        "description": "Router link",
+        "types": "pug",
+        "body": [
+            "[routerLink]=\"[ '/${path}', ${routeParam} ]\"$0"
+        ]
+    },
+    {
+        "prefix": "ng-router-linkActive",
+        "description": "Router active link",
+        "types": "pug",
+        "body": [
+            "a([routerLink]=\"[ '/${path}' ]\" routerLinkActive=\"active\")${name}$0"
+        ]
+    },
+    {
+        "prefix": "ng-router-outlet",
+        "description": "Router outlet element",
+        "types": "pug",
+        "body": [
+            "router-outlet",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "ng-router-outlet-name",
+        "description": "Router outlet element with name",
+        "types": "pug",
+        "body": [
+            "router-outlet(name=\"${name}\")",
+            "$0"
+        ]
+    },
+    {
+        "types": "pug",
+        "prefix": "ng-container",
+        "description": "Angular Container",
+        "body": [
+            "ng-container",
+            "  ${1}",
+            "$0"
+        ]
+    },
+    {
+        "types": "pug",
+        "prefix": "ng-container-ngfor",
+        "description": "Angular Container with *ngFor",
+        "body": [
+            "ng-container(*ngFor=\"let ${1:item} of ${2:items}\")",
+            "  ${3:content}",
+            "$0"
+        ]
+    },
+    {
+        "types": "pug",
+        "prefix": "ng-container-template",
+        "description": "Angular Container with *ngTemplateOutlet",
+        "body": [
+            "ng-container(*ngTemplateOutlet=\"${1}\")",
+            "$0"
+        ]
+    },
+    {
+        "types": "pug",
+        "prefix": "ng-container-component",
+        "description": "Angular Container with *ngContainerOutlet",
+        "body": [
+            "ng-container(*ngComponentOutlet=\"${1}\")",
+            "$0"
+        ]
+    },
+    {
+        "types": "pug",
+        "prefix": "ng-template",
+        "description": "Angular template",
+        "body": [
+            "ng-template(#${1:name})",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "ng-model",
+        "description": "ngModel directive: [(ngModel)]=\"name\"",
+        "types": "pug",
+        "body": [
+            "[(ngModel)]=\"${name}\"$0"
+        ]
+    },
+    {
+        "prefix": "ng-if",
+        "description": "If directive: *ngIf=\"expression\"",
+        "types": "pug",
+        "body": [
+            "*ngIf=\"${expression}\"$0"
+        ]
+    },
+    {
+        "prefix": "ng-if-else",
+        "description": "v4: If else directive: *ngIf=\"expression; else\"",
+        "types": "pug",
+        "body": [
+            "ng-container(*ngIf=\"${expression}; else ${elseTemplate}\")",
+            "\t$1",
+            "ng-template(#${elseTemplate})",
+            "\t$2",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "ng-if-then-else",
+        "description": "v4: If then else directive: *ngIf=\"expression; then; else\"",
+        "types": "pug",
+        "body": [
+            "ng-container(*ngIf=\"${expression}; then ${thenTemplate}; else ${elseTemplate}\")",
+            "ng-template(#${thenTemplate})",
+            "\t$1",
+            "ng-template(#${elseTemplate})",
+            "\t$2",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "ng-for",
+        "description": "For-loop directive",
+        "types": "pug",
+        "body": [
+            "*ngFor=\"let ${item} of ${items}\"$0"
+        ]
+    },
+    {
+        "prefix": "ng-for-li",
+        "description": "For-loop directive with li element",
+        "types": "pug",
+        "body": [
+            "li(*ngFor=\"let ${item} of ${items}\")$0"
+        ]
+    },
+    {
+        "prefix": "ng-for-index",
+        "description": "For-loop directive with index",
+        "types": "pug",
+        "body": [
+            "*ngFor=\"let ${item} of ${items}; let i=index\"$0"
+        ]
+    },
+    {
+        "prefix": "ng-for-trackBy",
+        "description": "For-loop directive with trackBy",
+        "types": "pug",
+        "body": [
+            "*ngFor=\"let ${item} of ${items}; trackBy:${item}.id\"$0"
+        ]
+    },
+    {
+        "prefix": "ng-class",
+        "description": "CSS class",
+        "types": "pug",
+        "body": [
+            "[ngClass]=\"{'${class}': ${true}}\"$0"
+        ]
+    },
+    {
+        "prefix": "ng-style",
+        "description": "CSS style",
+        "types": "pug",
+        "body": [
+            "[ngStyle]=\"{'${property}': ${expression}}\"$0"
+        ]
+    },
+    {
+        "prefix": "ng-switch",
+        "description": "Switch template",
+        "types": "pug",
+        "body": [
+            "span([ngSwitch]=\"\")",
+            "  p(*ngSwitchCase=\"true\")",
+            "  p(*ngSwitchCase=\"false\")",
+            "  p(*ngSwitchDefault)"
+        ]
+    },
+    {
+        "prefix": "ng-property",
+        "description": "Property: [property]=\"expression\"",
+        "types": "pug",
+        "body": [
+            "[${property}]=\"${expression}\"$0"
+        ]
+    },
+    {
+        "prefix": "ng-event",
+        "description": "Event: (event) = \"onEvent()\"",
+        "types": "pug",
+        "body": [
+            "(${event}) = \"on${Event}()\"$0"
+        ]
+    },
+    {
+        "prefix": "ng-binding-oneway",
+        "description": "Property: [property]=\"expression\"",
+        "types": "pug",
+        "body": [
+            "[${property}]=\"${expression}\"$0"
+        ]
+    },
+    {
+        "prefix": "ng-binding-twoway",
+        "description": "Two-way data binding with the NgModel",
+        "types": "pug",
+        "body": [
+            "[(ngModel)]=\"${Name}\"$0"
+        ]
+    },
+    {
+        "prefix": "ng-interpolation",
+        "description": "Interpolation: {{ interpolation }}",
+        "types": "pug",
+        "body": [
+            "{{ ${interpolation} }}$0"
+        ]
+    },
+    {
+        "prefix": "ng-repeat",
+        "description": "Use ngFor instead.",
+        "types": "pug",
+        "body": [
+            "*ngFor=\"let ${item} of ${items}\"$0"
+        ]
+    },
+    {
+        "prefix": "ng-click",
+        "description": "Click event",
+        "types": "pug",
+        "body": [
+            "(click)=\"${expression}\"$0"
+        ]
+    },
+    {
+        "prefix": "ng-show",
+        "description": "Usage: Bind to the hidden property.",
+        "types": "pug",
+        "body": [
+            "[hidden]=\"!${expression}\"$0"
+        ]
+    },
+    {
+        "prefix": "ng-hide",
+        "description": "Usage: Bind to the hidden property.",
+        "types": "pug",
+        "body": [
+            "[hidden]=\"${expression}\"$0"
+        ]
+    },
+    {
+        "prefix": "ng-href",
+        "description": "Usage: Bind to the href property.",
+        "types": "pug",
+        "body": [
+            "[href]=\"${url}\"$0"
+        ]
+    },
+    {
+        "prefix": "ng-src",
+        "description": "Usage: Bind to the src property.",
+        "types": "pug",
+        "body": [
+            "[src]=\"${url}\"$0"
+        ]
+    },
+    {
+        "prefix": "ng-orderBy",
+        "description": "For performance reasons, no comparable pipe exists in Angular 2. Instead, use component code to order or sort results. If you need the same ordering or sorting code in several templates, consider building a custom pipe.",
+        "types": "pug",
+        "body": [
+            "$0"
+        ]
+    },
+    {
+        "prefix": "ng-filter",
+        "description": "For performance reasons, no comparable pipe exists in Angular 2. Do all your filtering in the component. If you need the same filtering code in several templates, consider building a custom pipe.",
+        "types": "pug",
+        "body": [
+            "$0"
+        ]
+    },
+    {
+        "prefix": "ng-button-submit",
+        "description": "A submit button element with a click event",
+        "types": "pug",
+        "body": [
+            "button(type=\"submit\") ${Submit}",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "ng-button",
+        "description": "A button element with a click event",
+        "types": "pug",
+        "body": [
+            "button((click)=\"${onClick()}\") ${name}",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "ng-debug",
+        "description": "pre obj pipe json",
+        "types": "pug",
+        "body": [
+            "pre {{ ${obj} | json }} $0"
+        ]
+    },
+    {
+        "prefix": "ng-debug-async",
+        "description": "pre obj pipe async pipe json",
+        "types": "pug",
+        "body": [
+            "pre {{ ${obj} | async | json }} $0"
+        ]
+    },
+    {
+        "prefix": "fx-row",
+        "description": "Flex Layout Row",
+        "types": "pug",
+        "body": [
+            "div(fxLayout=\"row\", fxLayoutAlign=\"${1|start,center,end,space-around,space-between|}, ${2|start,center,end,stretch|}\", fxLayoutGap=\"${gap}px\")",
+            "\t$0"
+        ]
+    },
+    {
+        "prefix": "fx-layout",
+        "description": "Flex Layout Property",
+        "types": "pug",
+        "body": [
+            "fxLayout=\"row\"$0"
+        ]
+    },
+    {
+        "prefix": "fx-layout-align",
+        "description": "Flex Layout Align Property",
+        "types": "pug",
+        "body": [
+            "fxLayoutAlign=\"${1|start,center,end,space-around,space-between|} ${2|start,center,end,stretch|}\"$0"
+        ]
+    },
+    {
+        "prefix": "fx-layout-gap",
+        "description": "Flex Layout Gap Property",
+        "types": "pug",
+        "body": [
+            "fxLayoutGap=\"${gap}px\"$0"
+        ]
+    },
+    {
+        "prefix": "fx-row-reverse",
+        "description": "Flex Layout Reverse Row",
+        "types": "pug",
+        "body": [
+            "div(fxLayout=\"row-reverse\", fxLayoutAlign=\"${1|start,center,end,space-around,space-between|} ${2|start,center,end,stretch|}\", fxLayoutGap=\"${gap}px\")",
+            "\t$0"
+        ]
+    },
+    {
+        "prefix": "fx-col",
+        "description": "Flex Layout Column",
+        "types": "pug",
+        "body": [
+            "fxLayout=\"column\" fxLayoutAlign=\"${1|start,center,end,space-around,space-between|} ${2|start,center,end,stretch|}\" fxLayoutGap=\"${gap}px\")$0"
+        ]
+    },
+    {
+        "prefix": "fx-col-element",
+        "description": "Flex Layout Column with Element",
+        "types": "pug",
+        "body": [
+            "${1:div}(fxLayout=\"column\", fxLayoutAlign=\"${2:|start,center,end,space-around,space-between|} ${4:|start,center,end,stretch|}\", fxLayoutGap=\"${gap}px\")",
+            "\t$0"
+        ]
+    },
+    {
+        "prefix": "fx-col-reverse",
+        "description": "Flex Layout Reverse Column",
+        "types": "pug",
+        "body": [
+            "div(fxLayout=\"column-reverse\", fxLayoutAlign=\"${1|start,center,end,space-around,space-between|} ${2|start,center,end,stretch|}\", fxLayoutGap=\"${gap}px\")",
+            "\t$0"
+        ]
+    },
+    {
+        "prefix": "fx-item",
+        "description": "Flex Layout Item",
+        "types": "pug",
+        "body": [
+            "div(fxFlex=\"${value}%\")",
+            "\t$0"
+        ]
+    },
+    {
+        "prefix": "fx-item-offset",
+        "description": "Flex Layout Item with fxFlexOffset",
+        "types": "pug",
+        "body": [
+            "div(fxFlex=\"${value}%\", fxFlexOffset=\"${offset}px\")",
+            "\t$0"
+        ]
+    },
+    {
+        "prefix": "fx-item-order",
+        "description": "Flex Layout Item with fxFlexOrder",
+        "types": "pug",
+        "body": [
+            "div(fxFlex=\"${value}%\" fxFlexOrder=\"${order}\")",
+            "\t$0"
+        ]
+    },
+    {
+        "prefix": "fx-item-align",
+        "description": "Flex Layout Item with fxFlexAlign",
+        "types": "pug",
+        "body": [
+            "div(fxFlex=\"${value}%\", fxFlexAlign=\"${1|start,baseline,center,end|}\")",
+            "\t$0"
+        ]
+    },
+    {
+        "prefix": "fx-item-fill",
+        "description": "Flex Layout Item with fxFlexFill",
+        "types": "pug",
+        "body": [
+            "div(fxFlex=\"${value}%\" fxFlexFill)",
+            "\t$0"
+        ]
+    },
+    {
+        "prefix": "m-drag-drop-box",
+        "description": "Material drag drop box",
+        "types": "pug",
+        "body": [
+            "di(class=\"$1{drag-drop-box}\" cdkDrag)",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "m-toolbar",
+        "description": "Material toolbar",
+        "types": "pug",
+        "body": [
+            "mat-toolbar",
+            "\tspan ${FirstRow}",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "m-toolbar-row",
+        "description": "Material toolbar row",
+        "types": "pug",
+        "body": [
+            "mat-toolbar-row",
+            "\tspan ${FirstRow}",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "m-toolbar-multiRow",
+        "description": "Material Toolbar with multiple rows",
+        "types": "pug",
+        "body": [
+            "<mat-toolbar>",
+            "\tspan ${FirstRow}",
+            "\tmat-toolbar-row",
+            "\t\tspan ${SecondRow}",
+            "\tmat-toolbar-row",
+            "\t\tspan ${ThirdRow}"
+        ]
+    },
+    {
+        "prefix": "m-icon-fontawesome",
+        "description": "Material Font Awesome Icon",
+        "types": "pug",
+        "body": [
+            "mat-icon(mat-font-icon=\"fa-${icon}\", class=\"fa\">$0"
+        ]
+    },
+    {
+        "prefix": "m-button",
+        "description": "Rectangular Material button w/ no elevation.",
+        "types": "pug",
+        "body": [
+            "button(mat-button) ${text}$0"
+        ]
+    },
+    {
+        "prefix": "m-button-raised",
+        "description": "Rectangular Material button w/ elevation.",
+        "types": "pug",
+        "body": [
+            "button(mat-raised-button) ${text}$0"
+        ]
+    },
+    {
+        "prefix": "m-button-icon",
+        "description": "Circular Material button with a transparent background",
+        "types": "pug",
+        "body": [
+            "button(mat-icon-button)",
+            "\tmat-icon ${icon_name}$0"
+        ]
+    },
+    {
+        "prefix": "m-button-fab",
+        "description": "Circular button w/ elevation.",
+        "types": "pug",
+        "body": [
+          "button(mat-fab)",
+          "\tmat-icon ${icon_name}$0"
+        ]
+    },
+    {
+        "prefix": "m-button-fab-mini",
+        "description": "Small circular button w/ elevation.",
+        "types": "pug",
+        "body": [
+          "button(mat-mini-fab)",
+          "\tmat-icon ${icon_name}$0"
+        ]
+    },
+    {
+        "prefix": "m-button-toggle",
+        "description": "Material toggle button",
+        "types": "pug",
+        "body": [
+            "mat-button-toggle ${text}$0"
+        ]
+    },
+    {
+        "prefix": "m-card",
+        "description": "Material Basic Card",
+        "types": "pug",
+        "body": [
+            "mat-card",
+            "\t$1",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "m-card-full",
+        "description": "Material Card",
+        "types": "pug",
+        "body": [
+            "mat-card",
+            "\tmat-card-header",
+            "\t\tmat-card-title ${title}",
+            "\t\tmat-card-subtitle ${subtitle}",
+            "\tmat-card-content",
+            "\t$1",
+            "\tmat-card-actions",
+            "\t\tbutton(mat-button) ${Ok}",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "m-radiobutton",
+        "description": "Material Radio Button",
+        "types": "pug",
+        "body": [
+            "mat-radio-group",
+            "\tmat-radio-button(value=\"${value1}\") ${Option1}",
+            "\tmat-radio-button(value=\"${value2}\") ${Option2}",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "m-radiobutton-option",
+        "description": "Material Radio Button Option",
+        "types": "pug",
+        "body": [
+            "mat-radio-button(value=\"${value}\") ${Option}$0"
+        ]
+    },
+    {
+        "prefix": "m-checkbox-ngmodel",
+        "description": "Material Checkbox ngmodel",
+        "types": "pug",
+        "body": [
+            "mat-checkbox([(ngModel)]=\"${property.checkedOrUnchecked}\") ${text} $0"
+        ]
+    },
+    {
+        "prefix": "m-checkbox",
+        "description": "Material Checkbox",
+        "types": "pug",
+        "body": [
+            "mat-checkbox ${text} $0"
+        ]
+    },
+    {
+        "prefix": "m-datepicker",
+        "description": "Material Datepicker",
+        "types": "pug",
+        "body": [
+            "mat-form-field",
+            "\tinput(matInput, [matDatepicker]=\"${picker}\", placeholder=\"${title}\")",
+            "\tmat-datepicker-toggle(matSuffix, [for]=\"${picker}\")",
+            "\tbutton(matSuffix, [matDatepickerToggle]=\"${picker}\")",
+            "\tmat-datepicker(#${picker})",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "m-input",
+        "description": "Material Input Textbox",
+        "types": "pug",
+        "body": [
+            "mat-form-field",
+            "\tinput(matInput, placeholder=\"${label}\", value=\"${value}\")",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "m-chip-list",
+        "description": "Material Chip List",
+        "types": "pug",
+        "body": [
+            "mat-chip-list",
+            "\tmat-chip ${text}",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "m-chip-list-stacked",
+        "description": "Material Chip Stacked List",
+        "types": "pug",
+        "body": [
+            "mat-chip-list(class=\"mat-chip-list-stacked\")",
+            "\tmat-chip ${text}",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "m-chip",
+        "description": "Material Chip",
+        "types": "pug",
+        "body": [
+            "mat-chip ${text}$0"
+        ]
+    },
+    {
+        "prefix": "m-select",
+        "description": "Material Select",
+        "types": "pug",
+        "body": [
+            "mat-select(placeholder=\"${Placeholder}\", [(ngModel)]=\"selectedValue\", name=\"${item}\")",
+            "\tmat-option(*ngFor=\"let ${item} of ${items}\", [value]=\"${item}.value\")",
+            "\t| {{${item}.viewValue}}",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "m-icon-svg",
+        "description": "Material SVG Icon",
+        "types": "pug",
+        "body": [
+            "mat-icon(svgIcon=\"${src}\")$0"
+        ]
+    },
+    {
+        "prefix": "m-icon",
+        "description": "Material Icon",
+        "types": "pug",
+        "body": [
+            "mat-icon ${icon}$0"
+        ]
+    },
+    {
+        "prefix": "m-icon-badge",
+        "description": "Material Icon with a Badge",
+        "types": "pug",
+        "body": [
+            "mat-icon(",
+            "\tcolor=\"primary\",",
+            "\tmatBadge=\"${number}\",",
+            "\tmatBadgePosition=\"${2|above,below|} ${3|after,before|}\",",
+            "\tmatBadgeColor=\"accent\") ${icon}",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "m-slide-toggle",
+        "description": "Material Slide toggle",
+        "types": "pug",
+        "body": [
+            "mat-slide-toggle ${text} $0"
+        ]
+    },
+    {
+        "prefix": "m-slider",
+        "description": "Material Slider",
+        "types": "pug",
+        "body": [
+            "mat-slider(min=\"${min}\", max=\"${max}\", step=\"${step}\", value=\"${value}\") $0"
+        ]
+    },
+    {
+        "prefix": "m-slider-vertical",
+        "description": "Material Vertical Slider",
+        "types": "pug",
+        "body": [
+            "mat-slider(vertical, min=\"${min}\", max=\"${max}\", step=\"${step}\", value=\"${value}\") $0"
+        ]
+    },
+    {
+        "prefix": "m-slider-thumbLabel",
+        "description": "Material Slider thumbLabel",
+        "types": "pug",
+        "body": [
+            "mat-slider(thumbLabel, tickInterval=\"${interval}\") $0"
+        ]
+    },
+    {
+        "prefix": "m-slider-tickInterval",
+        "description": "Material Slider tickInterval",
+        "types": "pug",
+        "body": [
+            "mat-slider(step=\"${step}\", tickInterval=\"${interval}\") $0"
+        ]
+    },
+    {
+        "prefix": "m-slider-tickInterval-auto",
+        "description": "Material Slider tickInterval Auto",
+        "types": "pug",
+        "body": [
+            "mat-slider(tickInterval=\"auto\") $0"
+        ]
+    },
+    {
+        "prefix": "m-list",
+        "description": "Material List",
+        "types": "pug",
+        "body": [
+            "mat-list",
+            "\tmat-list-item ${item} $1",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "m-list-ngfor",
+        "description": "Material List ngFor",
+        "types": "pug",
+        "body": [
+            "mat-list",
+            "\tmat-list-item(*ngFor=\"let ${item} of ${items}\") {{ ${item} }} $1",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "m-list-item",
+        "description": "Material List Item",
+        "types": "pug",
+        "body": [
+            "mat-list-item ${item} $0"
+        ]
+    },
+    {
+        "prefix": "m-tab-group",
+        "description": "Material Tab Group",
+        "types": "pug",
+        "body": [
+            "mat-tab-group",
+            "\tmat-tab(label=\"${TabHeader1}\") $1",
+            "\tmat-tab(label=\"${TabTabHeader2}\") $2",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "m-tab",
+        "description": "Material Tab",
+        "types": "pug",
+        "body": [
+            "mat-tab(label=\"${TabHeader}\" $1 $0"
+        ]
+    },
+    {
+        "prefix": "m-tooltip",
+        "description": "Material Tooltip",
+        "types": "pug",
+        "body": [
+            "matTooltip=\"${text}\"$0"
+        ]
+    },
+    {
+        "prefix": "m-tooltip-position",
+        "description": "Material Tooltip position",
+        "types": "pug",
+        "body": [
+            "[matTooltipPosition]=\"${1|above,below,left,right,before,after|}\"$0"
+        ]
+    },
+    {
+        "prefix": "m-tooltip-with-position",
+        "description": "Material Tooltip with position",
+        "types": "pug",
+        "body": [
+            "matTooltip=\"${text}\", [matTooltipPosition]=\"${1|above,below,left,right,before,after|}\"$0"
+        ]
+    },
+    {
+        "prefix": "m-table",
+        "description": "Material Table",
+        "types": "pug",
+        "body": [
+            "table(mat-table, #table, [dataSource]=\"${dataSource}\")",
+            "\tng-container(matColumnDef=\"${column}\")",
+            "\t\tth(mat-header-cell, *matHeaderCellDef) ${header} ",
+            "\t\ttd(mat-cell, *matCellDef=\"let row\") {{row.${column}}}",
+            "\ttr(mat-header-row, *matHeaderRowDef=\"['${column}']\")",
+            "\ttr(mat-row, *matRowDef=\"let row; columns: ['${column}'];\")",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "m-table-column",
+        "description": "Material Table Column",
+        "types": "pug",
+        "body": [
+            "ng-container(matColumnDef=\"${column}\")",
+            "\tth(mat-header-cell, *matHeaderCellDef) ${header}",
+            "\ttd(mat-cell, *matCellDef=\"let row\") {{row.${column}}}",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "m-grid-list",
+        "description": "Material Grid List",
+        "types": "pug",
+        "body": [
+            "mat-grid-list(cols=\"${cols}\", rowHeight=\"${height}px\")",
+            "\tmat-grid-tile(",
+            "\t\t*ngFor=\"let ${tile} of ${tiles}\",",
+            "\t\t[colspan]=\"${tile}.cols\",",
+            "\t\t[rowspan]=\"${tile}.rows\",",
+            "\t\t{{${tile}.text}})",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "m-paginator",
+        "description": "Material Paginator",
+        "types": "pug",
+        "body": [
+            "mat-paginator([length]=\"${length}\",",
+            "\t[pageSize]=\"${pageSize}\",",
+            "\t[pageSizeOptions]=\"${pageSizeOptions}\",",
+            "\t(page)=\"pageEvent = $${event}\")",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "m-spinner",
+        "description": "Material Determinate Spinner",
+        "types": "pug",
+        "body": [
+            "mat-spinner([value]=\"${value}\")",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "m-progress-bar-indeterminate",
+        "description": "Material indeterminate Progress Bar",
+        "types": "pug",
+        "body": [
+            "mat-progress-bar(mode=\"indeterminate\")",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "m-progress-bar-query",
+        "description": "Material Query Progress Bar",
+        "types": "pug",
+        "body": [
+            "mat-progress-bar(mode=\"query\")",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "m-progress-bar-buffer",
+        "description": "Material Buffer Progress Bar",
+        "types": "pug",
+        "body": [
+            "mat-progress-bar(",
+            "\tmode=\"buffer\",",
+            "\t[color]=\"${color}\",",
+            "\t[value]=\"${value}\",",
+            "\t[bufferValue]=\"${bufferValue}\")",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "m-progress-bar",
+        "description": "Material Determinate Progress Bar",
+        "types": "pug",
+        "body": [
+            "mat-progress-bar(",
+            "\tmode=\"determinate\",",
+            "\t[value]=\"${value}\")",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "m-expansion-panel",
+        "description": "Material Expansion Panel",
+        "types": "pug",
+        "body": [
+            "mat-expansion-panel",
+            "\tmat-expansion-panel-header",
+            "\t\t| ${title}",
+            "\t| ${content}",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "m-accordion>",
+        "description": "Material Accordion",
+        "types": "pug",
+        "body": [
+            "mat-accordion",
+            "\tmat-expansion-panel",
+            "\t\tmat-expansion-panel-header",
+            "\t\t\t| ${title}",
+            "\t\t| ${content}",
+            "\tmat-expansion-panel",
+            "\t\tmat-expansion-panel-header",
+            "\t\t\t| ${title2}",
+            "\t\t| ${content2}",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "m-stepper-vertical",
+        "description": "Material Vertical Stepper",
+        "types": "pug",
+        "body": [
+            "mat-vertical-stepper",
+            "\tmat-step(label=\"${label1}\")",
+            "\t\t| $1",
+            "\tmat-step(label=\"${label2}\")",
+            "\t\t| $2"
+        ]
+    },
+    {
+        "prefix": "m-stepper-horizontal",
+        "description": "Material Horizontal Stepper",
+        "types": "pug",
+        "body": [
+          "mat-horizontal-stepper",
+          "\tmat-step(label=\"${label1}\")",
+          "\t\t| $1",
+          "\tmat-step(label=\"${label2}\")",
+          "\t\t| $2"
+        ]
+    },
+    {
+        "prefix": "m-step",
+        "description": "Material Vertical Stepper",
+        "types": "pug",
+        "body": [
+            "mat-step(label=\"${label}\")",
+            "\t| $1",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "m-spinner-indeterminate",
+        "description": "Material Indeterminate Spinner",
+        "types": "pug",
+        "body": [
+            "mat-spinner([mode]=\"indeterminate\")",
+            "$0"
+        ]
+    },
+
+    {
+        "prefix": "m-divider-inset",
+        "description": "Material Inset Divider",
+        "types": "pug",
+        "body": [
+            "mat-divider([inset]=\"true\")",
+            "$0"
+        ]
+    },
+    {
+        "prefix": "m-divider-vertical",
+        "description": "Material Vertical Divider",
+        "types": "pug",
+        "body": [
+          "mat-divider([vertical]=\"true\")",
+          "$0"
+        ]
+    },
+    {
+        "prefix": "pwa-link-manifest",
+        "description": "PWA Link Manifest",
+        "types": "html",
+        "body": [
+            "link(rel=\"manifest\" href=\"./manifest.json\")$0"
+        ]
+    },
+    {
+        "types": "pug",
+        "prefix": "ng-content",
+        "description": "Angular content",
+        "body": [
+            "ng-content(#${1:name})",
+            "$0"
+        ]
+    }
+]

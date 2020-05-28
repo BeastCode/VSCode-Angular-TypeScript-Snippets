@@ -313,7 +313,9 @@
     "body": [
       "import { Injectable } from '@angular/core';",
       "",
-      "@Injectable()",
+      "@Injectable({",
+      "\tprovidedIn: 'root'",
+      "})",
       "export class ${Name}Service {",
       "$0}"
     ]
@@ -982,7 +984,9 @@
       "import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';",
       "import { Observable } from 'rxjs';",
       "",
-      "@Injectable()",
+      "@Injectable({",
+      "\tprovidedIn: 'root'",
+      "})",
       "export class ${CanActivate}Guard implements CanActivate {",
       "\tcanActivate(",
       "\t\troute: ActivatedRouteSnapshot,",
@@ -1003,7 +1007,9 @@
       "import { CanActivateChild, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';",
       "import { Observable } from 'rxjs';",
       "",
-      "@Injectable()",
+      "@Injectable({",
+      "\tprovidedIn: 'root'",
+      "})",
       "export class ${CanActivateChild}Guard implements CanActivateChild {",
       "\tcanActivateChild(",
       "\t\troute: ActivatedRouteSnapshot,",
@@ -1024,7 +1030,9 @@
       "import { Resolve, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';",
       "import { Observable } from 'rxjs';",
       "",
-      "@Injectable()",
+      "@Injectable({",
+      "\tprovidedIn: 'root'",
+      "})",
       "export class ${Resolve}Guard implements Resolve<${T}> {",
       "\tresolve(",
       "\t\troute: ActivatedRouteSnapshot,",
@@ -1045,7 +1053,9 @@
       "import { CanLoad, Route } from '@angular/router';",
       "import { Observable } from 'rxjs';",
       "",
-      "@Injectable()",
+      "@Injectable({",
+      "\tprovidedIn: 'root'",
+      "})",
       "export class ${CanLoad}Guard implements CanLoad {",
       "\tcanLoad(",
       "\t\t${route}: Route",
@@ -1065,7 +1075,9 @@
       "import { CanDeactivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';",
       "import { Observable } from 'rxjs';",
       "",
-      "@Injectable()",
+      "@Injectable({",
+      "\tprovidedIn: 'root'",
+      "})",
       "export class ${CanDeactivate}Guard implements CanDeactivate<${T}> {",
       "\tcanDeactivate(",
       "\t\tcomponent: ${T},",
@@ -1320,7 +1332,9 @@
       "import { Action } from '@ngrx/store';",
       "import { Actions, Effect, ofType } from '@ngrx/effects';",
       "",
-      "@Injectable()",
+      "@Injectable({",
+      "\tprovidedIn: 'root'",
+      "})",
       "export class ${Name}Effects {",
       "\t@Effect() ${name}$: Observable<Action> = this.actions$.pipe(ofType('${ACTIONTYPE}'))$1;",
       "",
@@ -2112,6 +2126,22 @@
       "<button mat-raised-button>${text}</button>$0"
     ]
   },
+  "Material Flat Button": {
+    "prefix": "m-button-flat",
+    "description": "Rectangular Material flat button.",
+    "types": "typescript, html",
+    "body": [
+      "<button mat-flat-button>${text}</button>$0"
+    ]
+  },
+  "Material Stroked Button": {
+    "prefix": "m-button-stroked",
+    "description": "Rectangular Material button with a transparent background and a stroke.",
+    "types": "typescript, html",
+    "body": [
+      "<button mat-stroked-button>${text}</button>$0"
+    ]
+  },
   "Material Icon Button": {
     "prefix": "m-button-icon",
     "description": "Circular Material button with a transparent background",
@@ -2732,7 +2762,7 @@
     "description": "beforeEach",
     "types": "typescript",
     "body": [
-      "beforeEach(function() {",
+      "beforeEach(() => {",
       "\t$1",
       "});",
       "$0"
@@ -2743,7 +2773,7 @@
     "description": "afterEach",
     "types": "typescript",
     "body": [
-      "afterEach(function() {",
+      "afterEach(() => {",
       "\t$1",
       "});",
       "$0"
@@ -2754,7 +2784,7 @@
     "description": "beforeAll",
     "types": "typescript",
     "body": [
-      "beforeAll(function() {",
+      "beforeAll(() => {",
       "\t$1",
       "});",
       "$0"
@@ -2765,7 +2795,7 @@
     "description": "afterAll",
     "types": "typescript",
     "body": [
-      "afterAll(function() {",
+      "afterAll(() => {",
       "\t$1",
       "});",
       "$0"
@@ -3097,7 +3127,9 @@
       "\tHttpEvent, HttpInterceptor, HttpHandler, HttpRequest",
       "} from '@angular/common/http';",
       "",
-      "@Injectable()",
+      "@Injectable({",
+      "\tprovidedIn: 'root'",
+      "})",
       "export class ${1:Name}Interceptor implements HttpInterceptor {",
       "\tintercept(req: HttpRequest<any>, next: HttpHandler) {",
       "\t\treturn next.handle(req);",
