@@ -595,10 +595,10 @@
   },
   "Angular Decimal Pipe": {
     "prefix": "ng-pipe-decimal",
-    "description": "Decimal pipe - Usage: number_expression &#x7c; decimal[:digitInfo]",
+    "description": "Decimal pipe - Usage: number_expression &#x7c; number[:digitInfo]",
     "types": "typescript, html",
     "body": [
-      "{{ ${variable} | decimal:${digitInfo} }}$0"
+      "{{ ${variable} | number:${digitInfo} }}$0"
     ]
   },
   "Angular Slice Pipe": {

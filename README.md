@@ -81,6 +81,8 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 
 | Snippet | Description |
 | ------- | ----------|
+|       "\"\": \"\", | ng-content |
+| cli-cheatsheet | Cli Cheat Sheet |
 | e-atbr | ExpectAsync toBeResolved |
 | e-ntb | Expect Not toBe |
 | e-ntbd | Expect not toBe Defined |
@@ -134,9 +136,9 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-button | Rectangular Material button w/ no elevation. |
 | m-button-fab | Circular button w/ elevation. |
 | m-button-fab-mini | Small circular button w/ elevation. |
+| m-button-flat | Rectangular Material flat button. |
 | m-button-icon | Circular Material button with a transparent background |
 | m-button-raised | Rectangular Material button w/ elevation. |
-| m-button-flat | Rectangular Material flat button. |
 | m-button-stroked | Rectangular Material button with a transparent background and a stroke. |
 | m-button-toggle | Material toggle button |
 | m-card | Material Basic Card |
