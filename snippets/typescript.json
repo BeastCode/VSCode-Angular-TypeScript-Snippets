@@ -1135,9 +1135,14 @@
       "<ng-template #${1:name}></ng-template>",
       "$0"
     ]
-	},
+  },
+  
+
+
+
+  
   "Angular ngRx Util": {
-    "prefix": "ngrx-util",
+    "prefix": "ngrx-util-old",
     "description": "ngRx Util",
     "types": "typescript",
     "body": [
@@ -1163,8 +1168,8 @@
       "}"
     ]
   },
-  "Angular ngRx Reducer": {
-    "prefix": "ngrx-reducer",
+  "Angular ngRx Reducer Old": {
+    "prefix": "ngrx-reducer-old",
     "description": "ngRx Reducer",
     "types": "typescript",
     "body": [
@@ -1193,8 +1198,8 @@
       "}"
     ]
   },
-  "Angular ngRx Actions": {
-    "prefix": "ngrx-actions",
+  "Angular ngRx Actions Old": {
+    "prefix": "ngrx-actions-old",
     "description": "ngRx Actions class",
     "types": "typescript",
     "body": [
@@ -1236,8 +1241,8 @@
       ""
     ]
   },
-  "Angular ngRx Root Module": {
-    "prefix": "ngrx-module",
+  "Angular ngRx Root Module Old": {
+    "prefix": "ngrx-module-old",
     "description": "ngRx Root Module",
     "types": "typescript",
     "body": [
@@ -1267,8 +1272,8 @@
       "export class ${App}Module {}"
     ]
   },
-  "Angular ngRx Action": {
-    "prefix": "ngrx-action-const",
+  "Angular ngRx Action Old": {
+    "prefix": "ngrx-action-const-old",
     "description": "ngRx Single action",
     "types": "typescript",
     "body": [
@@ -1276,8 +1281,8 @@
       "$0"
     ]
   },
-  "Angular ngRx Action Creator": {
-    "prefix": "ngrx-action-creator",
+  "Angular ngRx Action Creator Old": {
+    "prefix": "ngrx-action-creator-old",
     "description": "ngRx Single action with const",
     "types": "typescript",
     "body": [
@@ -1291,8 +1296,8 @@
       ""
     ]
   },
-  "Angular ngRx Action Creator Enum": {
-    "prefix": "ngrx-action-creator-enum",
+  "Angular ngRx Action Creator Enum Old": {
+    "prefix": "ngrx-action-creator-enum-old",
     "description": "ngRx Single action creator for enum",
     "types": "typescript",
     "body": [
@@ -1303,8 +1308,8 @@
       "}"
     ]
   },
-  "Angular ngRx Enum ActionTypes": {
-    "prefix": "ngrx-actiontypes-enum",
+  "Angular ngRx Enum ActionTypes Old": {
+    "prefix": "ngrx-actiontypes-enum-old",
     "description": "ngRx enum action types",
     "types": "typescript",
     "body": [
@@ -1314,16 +1319,16 @@
       "}"
     ]
   },
-  "Angular ngRx Enum ActionType": {
-    "prefix": "ngrx-actiontype-enum",
+  "Angular ngRx Enum ActionType Old": {
+    "prefix": "ngrx-actiontype-enum-old",
     "description": "ngRx enum action type",
     "types": "typescript",
     "body": [
       "${Verb} = '[${Class}] ${Verb}'$0"
     ]
   },
-  "Angular ngRx Effect": {
-    "prefix": "ngrx-effect",
+  "Angular ngRx Effect Old": {
+    "prefix": "ngrx-effect-old",
     "description": "ngRx Effect",
     "types": "typescript",
     "body": [
