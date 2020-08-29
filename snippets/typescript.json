@@ -1138,10 +1138,127 @@
   },
   
 
+  "Angular ngRx Action": {
+    "prefix": "ngrx-action",
+    "description": "ngRx Action",
+    "types": "typescript",
+    "body": [
+      "export const ${ACTION} = createAction(",
+      "\t'[${NameSpace}] ${ACTION}'",
+      ");"
+    ]
+  },  
+  "Angular ngRx Action With Payload": {
+    "prefix": "ngrx-action-payload",
+    "description": "ngRx Action with Payload",
+    "types": "typescript",
+    "body": [
+      "export const ${ACTION} = createAction(",
+      "\t'[${NameSpace}] ${ACTION}',",
+      "\tprops<{${payloadType}}>()",
+      ");"
+    ]
+  },
+  "Angular ngRx Action Set": {
+    "prefix": "ngrx-action-set",
+    "description": "ngRx Action with Success and Failure actions",
+    "types": "typescript",
+    "body": [
+      "export const ${action} = createAction(",
+      "\t'[${NameSpace}] ${actionDescription}',",
+      ");",
+      "",
+      "export const ${action2}Success = createAction(",
+      "\t'[${NameSpace}] ${action2Description} Success',",
+      "\tprops<{${payload2Type}}>()",
+      ");",
+      "",
+      "export const ${action3}Failure = createAction(",
+      "\t'[${NameSpace}] ${action3Description} Failure',",
+      "\tprops<{${payload3Type}}>()",
+      ");",
+      ""
+    ]
+  },
+  "Angular ngRx Action Creator": {
+    "prefix": "ngrx-action-creator",
+    "description": "ngRx Actions",
+    "types": "typescript",
+    "body": [
+      "import { createAction } from '@ngrx/store';",
+      "",
+      "export const ${action} = createAction(",
+      "\t'[${nameSpace}] ${actionDescription}',",
+      "\tprops<{${payloadType}}>()",
+      ");",
+      "",
+      "export const ${action2}Success = createAction(",
+      "\t'[${nameSpace}] ${action2Description} Success',",
+      "\tprops<{${payload2Type}}>()",
+      ");",
+      "",
+      "export const ${action3}Failure = createAction(",
+      "\t'[${nameSpace}] ${action3Description} Failure',",
+      "\tprops<{${payload3Type}}>()",
+      ");",
+      ""
+    ]
+  },
+  "Angular ngRx Reducer": {
+    "prefix": "ngrx-reducer",
+    "description": "ngRx Reducer",
+    "types": "typescript",
+    "body": [
+      "import { createReducer } from '@ngrx/store';",
+      "import * as ${class} from '../actions/${class}';",
+      "",
+      "export interface State {",
+      " \t\t$1",
+      "};",
+      "",
+      "const initialState: State = {",
+      "\t\t$2",
+      "};",
+      "",
+      "export const reducer = createReducer(",
+      "\tinitialState,",
+      "\ton(",
+      "\t\t${class}.${action},",
+      "\t\t(state) => ({...state}),",
+      "\t),",
+      ");"
+    ]
+  },
+  "Angular ngRx Effect": {
+    "prefix": "ngrx-effect",
+    "description": "ngRx Effect",
+    "types": "typescript",
+    "body": [
+      "${2:name}$ = this.actions$.pipe(ofType(${1:actionNamespace}.${2:name}));"
+    ]
+  },
+  "Angular ngRx Effect Creator": {
+    "prefix": "ngrx-effect-create",
+    "description": "ngRx Effects Creator",
+    "types": "typescript",
+    "body": [
+      "import { Injectable } from '@angular/core';",
+      "import { Actions, createEffect, ofType } from '@ngrx/effects';",
+      "import * as ${class} from '../actions/${class}';",
+      "",
+      "@Injectable({",
+      "\tprovidedIn: 'root'",
+      "})",
+      "export class ${Name}Effects {",
+      "\tconstructor(private actions$: Actions) {}",
+      "",
+      "\t${actionName}$ = this.actions$.pipe(ofType(${class}.${actionName}));",
+      "",
+      "}"
+    ]
+  },
 
-
-  
-  "Angular ngRx Util": {
+  "Angular ngRx Util Old": {
     "prefix": "ngrx-util-old",
     "description": "ngRx Util",
     "types": "typescript",

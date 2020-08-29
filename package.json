@@ -1,8 +1,8 @@
 {
   "name": "Angular-BeastCode",
   "publisher": "Mikael",
-  "displayName": "Angular 8 Snippets - TypeScript, Html, Angular Material, ngRx, RxJS & Flex Layout",
-  "description": "242 Angular Snippets (TypeScript, Html, Angular Material, Flex Layout, ngRx, RxJS, PWA & Testing) Updated for v8 Beta",
+  "displayName": "Angular 10 Snippets - TypeScript, Html, Angular Material, ngRx, RxJS & Flex Layout",
+  "description": "242 Angular Snippets (TypeScript, Html, Angular Material, Flex Layout, ngRx, RxJS, PWA & Testing)",
   "icon": "images/Angular4.png",
   "license": "MIT",
   "repository": {
@@ -13,7 +13,7 @@
     "url": "https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets/issues"
   },
   "homepage": "https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets#readme",
-  "version": "8.1.8",
+  "version": "10.0.0",
   "engines": {
     "vscode": "^1.30.0"
   },
