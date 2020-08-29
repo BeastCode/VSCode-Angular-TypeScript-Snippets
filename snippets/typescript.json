@@ -1805,17 +1805,17 @@
     "description": "Switch template",
     "types": "typescript, html",
     "body": [
-      "<span [ngSwitch]=\"\">",
-      "<p *ngSwitchCase=\"true\">",
+      "<${container} [ngSwitch]=\"\">",
+      "<${element} *ngSwitchCase=\"true\">",
       "",
-      "</p>",
-      "<p *ngSwitchCase=\"false\">",
+      "</${element}>",
+      "<${element} *ngSwitchCase=\"false\">",
       "",
-      "</p>",
-      "<p *ngSwitchDefault>",
+      "</${element}>",
+      "<${element} *ngSwitchDefault>",
       "",
-      "</p>",
-      "</span>"
+      "</${element}>",
+      "</${container}>"
     ]
   },
   "Angular Property": {
@@ -2563,8 +2563,8 @@
     "body": [
       "<table mat-table #table [dataSource]=\"${dataSource}\">",
       "\t<ng-container matColumnDef=\"${column}\">",
-      "\t\t<th mat-header-cell *matHeaderCellDef> ${header} </th>",
-      "\t\t<td mat-cell *matCellDef=\"let row\"> {{row.${column}}} </td>",
+      "\t\t<th mat-header-cell> ${header} </th>",
+      "\t\t<td mat-cell> {{row.${column}}} </td>",
       "\t</ng-container>",
       "\t<tr mat-header-row *matHeaderRowDef=\"['${column}']\"></tr>",
       "\t<tr mat-row *matRowDef=\"let row; columns: ['${column}'];\"></tr>",
@@ -2577,8 +2577,8 @@
     "types": "typescript, html",
     "body": [
       "<ng-container matColumnDef=\"${column}\">",
-      "\t<th mat-header-cell *matHeaderCellDef> ${header} </th>",
-      "\t<td mat-cell *matCellDef=\"let row\"> {{row.${column}}} </td>",
+      "\t<th mat-header-cell> ${header} </th>",
+      "\t<td mat-cell> {{row.${column}}} </td>",
       "</ng-container>$0"
     ]
   },
@@ -2744,7 +2744,7 @@
     "types": "typescript, html",
     "body": [
       "<mat-spinner",
-      "\t[mode]=\"indeterminate\">",
+      "\tmode=\"indeterminate\">",
       "</mat-spinner>$0"
     ]
   },
