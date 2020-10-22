@@ -237,7 +237,7 @@
     "types": "typescript",
     "body": [
       "import { Directive } from '@angular/core';",
-      "import { Validator, NG_VALIDATORS, FormControl } from '@angular/forms';",
+      "import { NG_VALIDATORS, AbstractControl, Validator, ValidationErrors } from '@angular/forms';",
       "",
       "@Directive({",
       "\tselector: '[${validatorName}][ngModel]',",
@@ -247,7 +247,7 @@
       "})",
       "",
       "export class ${className} implements Validator {",
-      "\tvalidate(c: FormControl): { [key: string]: any } {",
+      "\tvalidate(c: AbstractControl): ValidationErrors | null {",
       "\t\tif (valid) {",
       "\t\t\treturn null;",
       "\t\t}",
