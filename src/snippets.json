@@ -261,6 +261,17 @@
       "}"
     ]
   },
+  "Angular Validator Function": {
+    "scope": "typescript",
+    "prefix": "ng-validator-fn",
+    "body": [
+      "export const validator = (parameters: any): ValidatorFn =>",
+      "  (abstractControl: AbstractControl): ValidationErrors | null => {",
+      "   return null;",
+      "};"
+    ],
+    "description": "Angular Validator Function"
+  },
   "Angular Directive": {
     "prefix": "ng-directive",
     "description": "Directive template",
