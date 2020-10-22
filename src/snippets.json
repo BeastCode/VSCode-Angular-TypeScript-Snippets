@@ -272,6 +272,16 @@
     ],
     "description": "Angular Validator Function"
   },
+  "Angular Async Validator Function": {
+    "prefix": "ng-async-validator-fn",
+    "body": [
+      "export const validator = (parameters: any): AsyncValidatorFn =>",
+      "  (abstractControl: AbstractControl): Promise<ValidationErrors | null> | Observable<ValidationErrors | null> => {",
+      "    return Promise.resolve(null);",
+      "  };"
+    ],
+    "description": "Angular Async Validator Function"
+  },
   "Angular Directive": {
     "prefix": "ng-directive",
     "description": "Directive template",
