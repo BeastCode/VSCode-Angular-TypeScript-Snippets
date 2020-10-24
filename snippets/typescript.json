@@ -237,7 +237,7 @@
     "types": "typescript",
     "body": [
       "import { Directive } from '@angular/core';",
-      "import { Validator, NG_VALIDATORS, FormControl } from '@angular/forms';",
+      "import { NG_VALIDATORS, AbstractControl, Validator, ValidationErrors } from '@angular/forms';",
       "",
       "@Directive({",
       "\tselector: '[${validatorName}][ngModel]',",
@@ -247,7 +247,7 @@
       "})",
       "",
       "export class ${className} implements Validator {",
-      "\tvalidate(c: FormControl): { [key: string]: any } {",
+      "\tvalidate(c: AbstractControl): ValidationErrors | null {",
       "\t\tif (valid) {",
       "\t\t\treturn null;",
       "\t\t}",
@@ -260,6 +260,27 @@
       "\t}",
       "}"
     ]
+  },
+  "Angular Validator Function": {
+    "scope": "typescript",
+    "prefix": "ng-validator-fn",
+    "body": [
+      "export const validator = (parameters: any): ValidatorFn =>",
+      "\t(abstractControl: AbstractControl): ValidationErrors | null => {",
+      "\t\treturn null;",
+      "};"
+    ],
+    "description": "Angular Validator Function"
+  },
+  "Angular Async Validator Function": {
+    "prefix": "ng-async-validator-fn",
+    "body": [
+      "export const validator = (parameters: any): AsyncValidatorFn =>",
+      "\t(abstractControl: AbstractControl): Promise<ValidationErrors | null> | Observable<ValidationErrors | null> => {",
+      "\t\treturn Promise.resolve(null);",
+      "\t};"
+    ],
+    "description": "Angular Async Validator Function"
   },
   "Angular Directive": {
     "prefix": "ng-directive",
@@ -1591,7 +1612,7 @@
       "\tbeforeEach(() => {",
       "\t\tTestBed.configureTestingModule({",
       "\t\t\tdeclarations: [${Name}Component],",
-      "\t\t\imports: [",
+      "\t\t\timports: [",
       "\t\t\t],",
       "\t\t\tproviders: [",
       "\t\t\t],",
