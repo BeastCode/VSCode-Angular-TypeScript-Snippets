@@ -2506,6 +2506,22 @@
       "<mat-slider tickInterval=\"auto\"></mat-slider>$0"
     ]
   },
+  "Material Menu": {
+    "prefix": "m-menu",
+    "description": "Material Menu",
+    "types": "typescript, html",
+    "body": [
+      "<button mat-icon-button [matMenuTriggerFor]=\"${menu}\" aria-label=\"Example icon-button with a menu\">",
+      "\t<mat-icon>more_vert</mat-icon>",
+      "</button>",
+      "<mat-menu #${menu}=\"matMenu\">",
+      "\t<button mat-menu-item>",
+      "\t\t<mat-icon>dialpad</mat-icon>",
+      "\t\t<span>Redial</span>",
+      "\t</button>",
+      "</mat-menu>"
+    ]
+  },
   "Material List": {
     "prefix": "m-list",
     "description": "Material List",
