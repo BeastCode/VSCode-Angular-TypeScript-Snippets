@@ -3,91 +3,121 @@
     "prefix": "ng-pipe-uppercase",
     "description": "Uppercase pipe",
     "types": "typescript, html",
-    "body": ["{{ ${variable} | uppercase }}$0"]
+    "body": [
+      "{{ ${variable} | uppercase }}$0"
+    ]
   },
   "Angular LowerCase Pipe": {
     "prefix": "ng-pipe-lowercase",
     "description": "Lowercase pipe",
     "types": "typescript, html",
-    "body": ["{{ ${variable} | lowercase }}$0"]
+    "body": [
+      "{{ ${variable} | lowercase }}$0"
+    ]
   },
   "Angular TitleCase Pipe": {
     "prefix": "ng-pipe-titlecase",
     "description": "v4: Titlecase pipe",
     "types": "typescript, html",
-    "body": ["{{ ${variable} | titlecase }}$0"]
+    "body": [
+      "{{ ${variable} | titlecase }}$0"
+    ]
   },
   "Angular Date Pipe": {
     "prefix": "ng-pipe-date",
     "description": "Date pipe - Default format: 09/15/1971",
     "types": "typescript, html",
-    "body": ["{{ ${variable} | date }}$0"]
+    "body": [
+      "{{ ${variable} | date }}$0"
+    ]
   },
   "Angular Custom Date Pipe": {
     "prefix": "ng-pipe-date-custom",
     "description": "Date pipe - Format: \"MM/dd/yy\" = 09/15/71",
     "types": "typescript, html",
-    "body": ["{{ ${variable} | date:\"MM/dd/yy\" }}$0"]
+    "body": [
+      "{{ ${variable} | date:\"MM/dd/yy\" }}$0"
+    ]
   },
   "Angular Short Date Pipe": {
     "prefix": "ng-pipe-date-short",
     "description": "Short date pipe - Format: 09/15/1971",
     "types": "typescript, html",
-    "body": ["{{ ${variable} | date:shortDate }}$0"]
+    "body": [
+      "{{ ${variable} | date:shortDate }}$0"
+    ]
   },
   "Angular Full Date Pipe": {
     "prefix": "ng-pipe-date-full",
     "description": "Full date pipe - Format: Wednesday, September 15, 1971",
     "types": "typescript, html",
-    "body": ["{{ ${variable} | date:fullDate }}$0"]
+    "body": [
+      "{{ ${variable} | date:fullDate }}$0"
+    ]
   },
   "Angular Percent Pipe": {
     "prefix": "ng-pipe-percent",
     "description": "Percent pipe - Usage: number_expression &#x7c; percent[:digitInfo]",
     "types": "typescript, html",
-    "body": ["{{ ${variable} | percent:${digitInfo} }}$0"]
+    "body": [
+      "{{ ${variable} | percent:${digitInfo} }}$0"
+    ]
   },
   "Angular Decimal Pipe": {
     "prefix": "ng-pipe-decimal",
     "description": "Decimal pipe - Usage: number_expression &#x7c; decimal[:digitInfo]",
     "types": "typescript, html",
-    "body": ["{{ ${variable} | decimal:${digitInfo} }}$0"]
+    "body": [
+      "{{ ${variable} | decimal:${digitInfo} }}$0"
+    ]
   },
   "Angular Slice Pipe": {
     "prefix": "ng-pipe-slice",
     "description": "Slice pipe - Usage: array_or_string_expression &#x7c; slice:start[:end]",
     "types": "typescript, html",
-    "body": ["{{ ${variable} | slice:${start}:${end} }}$0"]
+    "body": [
+      "{{ ${variable} | slice:${start}:${end} }}$0"
+    ]
   },
   "Angular Currency Pipe": {
     "prefix": "ng-pipe-currency",
     "description": "Currency pipe - Usage: money &#x7c; currency:'EUR'",
     "types": "typescript, html",
-    "body": ["{{ ${variable} | currency:'${CURRENCY}' }}$0"]
+    "body": [
+      "{{ ${variable} | currency:'${CURRENCY}' }}$0"
+    ]
   },
   "Angular Json Pipe": {
     "prefix": "ng-pipe-json",
     "description": "Json pipe - Usage: object &#x7c; json",
     "types": "typescript, html",
-    "body": ["{{ ${object} | json }}$0"]
+    "body": [
+      "{{ ${object} | json }}$0"
+    ]
   },
   "Angular Async Pipe": {
     "prefix": "ng-pipe-async",
     "description": "Async pipe - Usage: observable_or_promise_expression &#x7c; async",
     "types": "typescript, html",
-    "body": ["{{ ${observable} | async }}$0"]
+    "body": [
+      "{{ ${observable} | async }}$0"
+    ]
   },
   "Angular Router Link": {
     "prefix": "ng-router-link",
     "description": "Router link",
     "types": "typescript, html",
-    "body": ["<a [routerLink]=\"[ '/${path}', ${routeParam} ]\">${name}</a>$0"]
+    "body": [
+      "<a [routerLink]=\"[ '/${path}', ${routeParam} ]\">${name}</a>$0"
+    ]
   },
   "Angular Router Attribute": {
     "prefix": "ng-router-attribute",
     "description": "Router link",
     "types": "typescript, html",
-    "body": ["[routerLink]=\"[ '/${path}', ${routeParam} ]\"$0"]
+    "body": [
+      "[routerLink]=\"[ '/${path}', ${routeParam} ]\"$0"
+    ]
   },
   "Angular Router Active Link": {
     "prefix": "ng-router-linkActive",
@@ -101,13 +131,19 @@
     "prefix": "ng-router-outlet",
     "description": "Router outlet element",
     "types": "typescript, html",
-    "body": ["<router-outlet></router-outlet>", "$0"]
+    "body": [
+      "<router-outlet></router-outlet>",
+      "$0"
+    ]
   },
   "Angular Router Outlet Name": {
     "prefix": "ng-router-outlet-name",
     "description": "Router outlet element with name",
     "types": "typescript, html",
-    "body": ["<router-outlet name=\"${name}\"></router-outlet>", "$0"]
+    "body": [
+      "<router-outlet name=\"${name}\"></router-outlet>",
+      "$0"
+    ]
   },
   "Angular CanActivate Guard Route": {
     "prefix": "ng-route-guard-canactivate",
@@ -227,7 +263,10 @@
     "types": "typescript, html",
     "prefix": "ng-container",
     "description": "Angular Container",
-    "body": ["<ng-container>${1}</ng-container>", "$0"]
+    "body": [
+      "<ng-container>${1}</ng-container>",
+      "$0"
+    ]
   },
   "Angular Container with *ngFor": {
     "types": "typescript, html",
@@ -244,31 +283,44 @@
     "types": "typescript, html",
     "prefix": "ng-container-template",
     "description": "Angular Container with *ngTemplateOutlet",
-    "body": ["<ng-container *ngTemplateOutlet=\"${1}\"></ng-container>", "$0"]
+    "body": [
+      "<ng-container *ngTemplateOutlet=\"${1}\"></ng-container>",
+      "$0"
+    ]
   },
   "Angular Container with *ngContainerOutlet": {
     "types": "typescript, html",
     "prefix": "ng-container-component",
     "description": "Angular Container with *ngContainerOutlet",
-    "body": ["<ng-container *ngComponentOutlet=\"${1}\"></ng-container>", "$0"]
+    "body": [
+      "<ng-container *ngComponentOutlet=\"${1}\"></ng-container>",
+      "$0"
+    ]
   },
   "Angular template": {
     "types": "typescript, html",
     "prefix": "ng-template",
     "description": "Angular template",
-    "body": ["<ng-template #${1:name}></ng-template>", "$0"]
+    "body": [
+      "<ng-template #${1:name}></ng-template>",
+      "$0"
+    ]
   },
   "Angular ngModel Directive": {
     "prefix": "ng-model",
     "description": "ngModel directive: [(ngModel)]=\"name\"",
     "types": "typescript, html",
-    "body": ["[(ngModel)]=\"${name}\"$0"]
+    "body": [
+      "[(ngModel)]=\"${name}\"$0"
+    ]
   },
   "Angular If Directive": {
     "prefix": "ng-if",
     "description": "If directive: *ngIf=\"expression\"",
     "types": "typescript, html",
-    "body": ["*ngIf=\"${expression}\"$0"]
+    "body": [
+      "*ngIf=\"${expression}\"$0"
+    ]
   },
   "Angular If Else Directive": {
     "prefix": "ng-if-else",
@@ -303,37 +355,49 @@
     "prefix": "ng-for",
     "description": "For-loop directive",
     "types": "typescript, html",
-    "body": ["*ngFor=\"let ${item} of ${items}\"$0"]
+    "body": [
+      "*ngFor=\"let ${item} of ${items}\"$0"
+    ]
   },
   "Angular For-loop Directive with li element": {
     "prefix": "ng-for-li",
     "description": "For-loop directive with li element",
     "types": "typescript, html",
-    "body": ["<li *ngFor=\"let ${item} of ${items}\">$0</li>"]
+    "body": [
+      "<li *ngFor=\"let ${item} of ${items}\">$0</li>"
+    ]
   },
   "Angular For-loop Directive with index": {
     "prefix": "ng-for-index",
     "description": "For-loop directive with index",
     "types": "typescript, html",
-    "body": ["*ngFor=\"let ${item} of ${items}; let i=index\"$0"]
+    "body": [
+      "*ngFor=\"let ${item} of ${items}; let i=index\"$0"
+    ]
   },
   "Angular For-loop Directive with trackBy": {
     "prefix": "ng-for-trackBy",
     "description": "For-loop directive with trackBy",
     "types": "typescript, html",
-    "body": ["*ngFor=\"let ${item} of ${items}; trackBy:${item}.id\"$0"]
+    "body": [
+      "*ngFor=\"let ${item} of ${items}; trackBy:${item}.id\"$0"
+    ]
   },
   "Angular Class": {
     "prefix": "ng-class",
     "description": "CSS class",
     "types": "typescript, html",
-    "body": ["[ngClass]=\"{'${class}': ${true}}\"$0"]
+    "body": [
+      "[ngClass]=\"{'${class}': ${true}}\"$0"
+    ]
   },
   "Angular Style": {
     "prefix": "ng-style",
     "description": "CSS style",
     "types": "typescript, html",
-    "body": ["[ngStyle]=\"{'${property}': ${expression}}\"$0"]
+    "body": [
+      "[ngStyle]=\"{'${property}': ${expression}}\"$0"
+    ]
   },
   "Angular Switch": {
     "prefix": "ng-switch",
@@ -357,97 +421,132 @@
     "prefix": "ng-property",
     "description": "Property: [property]=\"expression\"",
     "types": "typescript, html",
-    "body": ["[${property}]=\"${expression}\"$0"]
+    "body": [
+      "[${property}]=\"${expression}\"$0"
+    ]
   },
   "Angular Event": {
     "prefix": "ng-event",
     "description": "Event: (event) = \"onEvent()\"",
     "types": "typescript, html",
-    "body": ["(${event}) = \"on${Event}()\"$0"]
+    "body": [
+      "(${event}) = \"on${Event}()\"$0"
+    ]
   },
   "Angular Oneway Binding": {
     "prefix": "ng-binding-oneway",
     "description": "Property: [property]=\"expression\"",
     "types": "typescript, html",
-    "body": ["[${property}]=\"${expression}\"$0"]
+    "body": [
+      "[${property}]=\"${expression}\"$0"
+    ]
   },
   "Angular Twoway Binding": {
     "prefix": "ng-binding-twoway",
     "description": "Two-way data binding with the NgModel",
     "types": "typescript, html",
-    "body": ["[(ngModel)]=\"${Name}\"$0"]
+    "body": [
+      "[(ngModel)]=\"${Name}\"$0"
+    ]
   },
   "Angular Interpolation": {
     "prefix": "ng-interpolation",
     "description": "Interpolation: {{ interpolation }}",
     "types": "typescript, html",
-    "body": ["{{ ${interpolation} }}$0"]
+    "body": [
+      "{{ ${interpolation} }}$0"
+    ]
   },
   "Angular 1 Loop Directive": {
     "prefix": "ng-repeat",
     "description": "Use ngFor instead.",
     "types": "typescript, html",
-    "body": ["*ngFor=\"let ${item} of ${items}\"$0"]
+    "body": [
+      "*ngFor=\"let ${item} of ${items}\"$0"
+    ]
   },
   "Angular Click Event": {
     "prefix": "ng-click",
     "description": "Click event",
     "types": "typescript, html",
-    "body": ["(click)=\"${expression}\"$0"]
+    "body": [
+      "(click)=\"${expression}\"$0"
+    ]
   },
   "Angular 1 Show Directive": {
     "prefix": "ng-show",
     "description": "Usage: Bind to the hidden property.",
     "types": "typescript, html",
-    "body": ["[hidden]=\"!${expression}\"$0"]
+    "body": [
+      "[hidden]=\"!${expression}\"$0"
+    ]
   },
   "Angular 1 Hide Directive": {
     "prefix": "ng-hide",
     "description": "Usage: Bind to the hidden property.",
     "types": "typescript, html",
-    "body": ["[hidden]=\"${expression}\"$0"]
+    "body": [
+      "[hidden]=\"${expression}\"$0"
+    ]
   },
   "Angular 1 Href Directive": {
     "prefix": "ng-href",
     "description": "Usage: Bind to the href property.",
     "types": "typescript, html",
-    "body": ["[href]=\"${url}\"$0"]
+    "body": [
+      "[href]=\"${url}\"$0"
+    ]
   },
   "Angular 1 Src Directive": {
     "prefix": "ng-src",
     "description": "Usage: Bind to the src property.",
     "types": "typescript, html",
-    "body": ["[src]=\"${url}\"$0"]
+    "body": [
+      "[src]=\"${url}\"$0"
+    ]
   },
   "Angular 1 OrderBy": {
     "prefix": "ng-orderBy",
     "description": "For performance reasons, no comparable pipe exists in Angular 2. Instead, use component code to order or sort results. If you need the same ordering or sorting code in several templates, consider building a custom pipe.",
     "types": "typescript, html",
-    "body": ["$0"]
+    "body": [
+      "$0"
+    ]
   },
   "Angular 1 Filter": {
     "prefix": "ng-filter",
     "description": "For performance reasons, no comparable pipe exists in Angular 2. Do all your filtering in the component. If you need the same filtering code in several templates, consider building a custom pipe.",
     "types": "typescript, html",
-    "body": ["$0"]
+    "body": [
+      "$0"
+    ]
   },
   "Submit Button": {
     "prefix": "ng-button-submit",
     "description": "A submit button element with a click event",
     "types": "typescript, html",
-    "body": ["<button type=\"submit\">${Submit}</button>", "$0"]
+    "body": [
+      "<button type=\"submit\">${Submit}</button>",
+      "$0"
+    ]
   },
   "Click Button": {
     "prefix": "ng-button",
     "description": "A button element with a click event",
     "types": "typescript, html",
-    "body": ["<button (click)=\"${1:onClick()}\">${2:name}</button>", "$0"]
+    "body": [
+      "<button (click)=\"${1:onClick()}\">${2:name}</button>",
+      "$0"
+    ]
   },
   "ng import": {
     "prefix": "ng-import",
     "description": "import module or component from path;",
     "types": "typescript, html",
-    "body": ["import { ${2:moduleOrComponent} } from '${1:path}';", "$0"]
+    "body": [
+      "import { ${2:moduleOrComponent} } from '${1:path}';",
+      "$0"
+    ]
   },
   "http get": {
     "prefix": "ng-http-get",
@@ -464,7 +563,9 @@
     "prefix": "ng-httpClient-get",
     "description": "HttpClient observable get request",
     "types": "typescript, html",
-    "body": ["this.http.get('${url}')$0"]
+    "body": [
+      "this.http.get('${url}')$0"
+    ]
   },
   "http get post": {
     "prefix": "ng-http-get-post",
@@ -497,13 +598,17 @@
     "prefix": "ng-debug",
     "description": "pre obj pipe json",
     "types": "typescript, html",
-    "body": ["<pre>{{ ${obj} | json }}</pre>$0"]
+    "body": [
+      "<pre>{{ ${obj} | json }}</pre>$0"
+    ]
   },
   "Angular Debug Async": {
     "prefix": "ng-debug-async",
     "description": "pre obj pipe async pipe json",
     "types": "typescript, html",
-    "body": ["<pre>{{ ${obj} | async | json }}</pre>$0"]
+    "body": [
+      "<pre>{{ ${obj} | async | json }}</pre>$0"
+    ]
   },
   "Angular Flex Layout Import": {
     "prefix": "fx-import",
@@ -528,7 +633,9 @@
     "prefix": "fx-layout",
     "description": "Flex Layout Property",
     "types": "typescript, html",
-    "body": ["fxLayout=\"row\"$0"]
+    "body": [
+      "fxLayout=\"row\"$0"
+    ]
   },
   "Angular Flex Layout Align": {
     "prefix": "fx-layout-align",
@@ -542,7 +649,9 @@
     "prefix": "fx-layout-gap",
     "description": "Flex Layout Gap Property",
     "types": "typescript, html",
-    "body": ["fxLayoutGap=\"${gap}px\"$0"]
+    "body": [
+      "fxLayoutGap=\"${gap}px\"$0"
+    ]
   },
   "Angular Flex Reverse Row": {
     "prefix": "fx-row-reverse",
@@ -586,7 +695,11 @@
     "prefix": "fx-item",
     "description": "Flex Layout Item",
     "types": "typescript, html",
-    "body": ["<div fxFlex=\"${value}%\">", "\t$0", "</div>"]
+    "body": [
+      "<div fxFlex=\"${value}%\">",
+      "\t$0",
+      "</div>"
+    ]
   },
   "Angular Flex Item Offset": {
     "prefix": "fx-item-offset",
@@ -622,19 +735,30 @@
     "prefix": "fx-item-fill",
     "description": "Flex Layout Item with fxFlexFill",
     "types": "typescript, html",
-    "body": ["<div fxFlex=\"${value}%\" fxFlexFill>", "\t$0", "</div>"]
+    "body": [
+      "<div fxFlex=\"${value}%\" fxFlexFill>",
+      "\t$0",
+      "</div>"
+    ]
   },
   "Material drag drop box": {
     "prefix": "m-drag-drop-box",
     "description": "Material drag drop box",
     "types": "typescript, html",
-    "body": ["<div class=\"$1{drag-drop-box}\" cdkDrag>", "</div>$0"]
+    "body": [
+      "<div class=\"$1{drag-drop-box}\" cdkDrag>",
+      "</div>$0"
+    ]
   },
   "Material toolbar": {
     "prefix": "m-toolbar",
     "description": "Material toolbar",
     "types": "typescript, html",
-    "body": ["<mat-toolbar>", "\t<span>${FirstRow}</span>", "</mat-toolbar>$0"]
+    "body": [
+      "<mat-toolbar>",
+      "\t<span>${FirstRow}</span>",
+      "</mat-toolbar>$0"
+    ]
   },
   "Material toolbar row": {
     "prefix": "m-toolbar-row",
@@ -674,13 +798,17 @@
     "prefix": "m-button",
     "description": "Rectangular Material button w/ no elevation.",
     "types": "typescript, html",
-    "body": ["<button mat-button>${text}</button>$0"]
+    "body": [
+      "<button mat-button>${text}</button>$0"
+    ]
   },
   "Material Raised Button": {
     "prefix": "m-button-raised",
     "description": "Rectangular Material button w/ elevation.",
     "types": "typescript, html",
-    "body": ["<button mat-raised-button>${text}</button>$0"]
+    "body": [
+      "<button mat-raised-button>${text}</button>$0"
+    ]
   },
   "Material Icon Button": {
     "prefix": "m-button-icon",
@@ -694,7 +822,9 @@
     "prefix": "m-button-fab",
     "description": "Circular button w/ elevation.",
     "types": "typescript, html",
-    "body": ["<button mat-fab><mat-icon>${icon_name}</mat-icon></button>$0"]
+    "body": [
+      "<button mat-fab><mat-icon>${icon_name}</mat-icon></button>$0"
+    ]
   },
   "Material Round Small Button": {
     "prefix": "m-button-fab-mini",
@@ -708,13 +838,19 @@
     "prefix": "m-button-toggle",
     "description": "Material toggle button",
     "types": "typescript, html",
-    "body": ["<mat-button-toggle>${text}</mat-button-toggle>$0"]
+    "body": [
+      "<mat-button-toggle>${text}</mat-button-toggle>$0"
+    ]
   },
   "Material Basic Card": {
     "prefix": "m-card",
     "description": "Material Basic Card",
     "types": "typescript, html",
-    "body": ["<mat-card>", "\t$1", "</mat-card>$0"]
+    "body": [
+      "<mat-card>",
+      "\t$1",
+      "</mat-card>$0"
+    ]
   },
   "Material Card": {
     "prefix": "m-card-full",
@@ -766,7 +902,9 @@
     "prefix": "m-checkbox",
     "description": "Material Checkbox",
     "types": "typescript, html",
-    "body": ["<mat-checkbox>${text}</mat-checkbox>$0"]
+    "body": [
+      "<mat-checkbox>${text}</mat-checkbox>$0"
+    ]
   },
   "Material Datepicker": {
     "prefix": "m-datepicker",
@@ -816,7 +954,9 @@
     "prefix": "m-chip",
     "description": "Material Chip",
     "types": "typescript, html",
-    "body": ["<mat-chip>${text}</mat-chip>$0"]
+    "body": [
+      "<mat-chip>${text}</mat-chip>$0"
+    ]
   },
   "Material Select": {
     "prefix": "m-select",
@@ -834,13 +974,17 @@
     "prefix": "m-icon-svg",
     "description": "Material SVG Icon",
     "types": "typescript, html",
-    "body": ["<mat-icon svgIcon=\"${src}\"></mat-icon>$0"]
+    "body": [
+      "<mat-icon svgIcon=\"${src}\"></mat-icon>$0"
+    ]
   },
   "Material Icon": {
     "prefix": "m-icon",
     "description": "Material Icon",
     "types": "typescript, html",
-    "body": ["<mat-icon>${icon}</mat-icon>$0"]
+    "body": [
+      "<mat-icon>${icon}</mat-icon>$0"
+    ]
   },
   "Material Icon with Badge": {
     "prefix": "m-icon-badge",
@@ -860,7 +1004,9 @@
     "prefix": "m-slide-toggle",
     "description": "Material Slide toggle",
     "types": "typescript, html",
-    "body": ["<mat-slide-toggle>${text}</mat-slide-toggle>$0"]
+    "body": [
+      "<mat-slide-toggle>${text}</mat-slide-toggle>$0"
+    ]
   },
   "Material Slider": {
     "prefix": "m-slider",
@@ -898,7 +1044,9 @@
     "prefix": "m-slider-tickInterval-auto",
     "description": "Material Slider tickInterval Auto",
     "types": "typescript, html",
-    "body": ["<mat-slider tickInterval=\"auto\"></mat-slider>$0"]
+    "body": [
+      "<mat-slider tickInterval=\"auto\"></mat-slider>$0"
+    ]
   },
   "Material Menu": {
     "prefix": "m-menu",
@@ -940,7 +1088,9 @@
     "prefix": "m-list-item",
     "description": "Material List Item",
     "types": "typescript, html",
-    "body": ["<mat-list-item>${item}</mat-list-item>$0"]
+    "body": [
+      "<mat-list-item>${item}</mat-list-item>$0"
+    ]
   },
   "Material Tab Group": {
     "prefix": "m-tab-group",
@@ -957,13 +1107,17 @@
     "prefix": "m-tab",
     "description": "Material Tab",
     "types": "typescript, html",
-    "body": ["<mat-tab label=\"${TabHeader}\">$1</mat-tab>$0"]
+    "body": [
+      "<mat-tab label=\"${TabHeader}\">$1</mat-tab>$0"
+    ]
   },
   "Material Tooltip": {
     "prefix": "m-tooltip",
     "description": "Material Tooltip",
     "types": "typescript, html",
-    "body": ["matTooltip=\"${text}\"$0"]
+    "body": [
+      "matTooltip=\"${text}\"$0"
+    ]
   },
   "Material Tooltip Position": {
     "prefix": "m-tooltip-position",
@@ -1064,7 +1218,11 @@
     "prefix": "m-spinner",
     "description": "Material Determinate Spinner",
     "types": "typescript, html",
-    "body": ["<mat-spinner", "\t[value]=\"${value}\">", "</mat-spinner>$0"]
+    "body": [
+      "<mat-spinner",
+      "\t[value]=\"${value}\">",
+      "</mat-spinner>$0"
+    ]
   },
   "Material Indeterminate Progress Bar": {
     "prefix": "m-progress-bar-indeterminate",
@@ -1080,7 +1238,11 @@
     "prefix": "m-progress-bar-query",
     "description": "Material Query Progress Bar",
     "types": "typescript, html",
-    "body": ["<mat-progress-bar", "\tmode=\"query\">", "</mat-progress-bar>$0"]
+    "body": [
+      "<mat-progress-bar",
+      "\tmode=\"query\">",
+      "</mat-progress-bar>$0"
+    ]
   },
   "Material Buffer Progress Bar": {
     "prefix": "m-progress-bar-buffer",
@@ -1174,42 +1336,67 @@
     "prefix": "m-step",
     "description": "Material Vertical Stepper",
     "types": "typescript, html",
-    "body": ["<mat-step label=\"${label}\">", "\t$1", "</mat-step>", "$0"]
+    "body": [
+      "<mat-step label=\"${label}\">",
+      "\t$1",
+      "</mat-step>",
+      "$0"
+    ]
   },
   "Material Indeterminate Spinner": {
     "prefix": "m-spinner-indeterminate",
     "description": "Material Indeterminate Spinner",
     "types": "typescript, html",
-    "body": ["<mat-spinner", "\t[mode]=\"indeterminate\">", "</mat-spinner>$0"]
+    "body": [
+      "<mat-spinner",
+      "\t[mode]=\"indeterminate\">",
+      "</mat-spinner>$0"
+    ]
   },
   "Material Divider": {
     "prefix": "m-divider",
     "description": "Material Divider",
     "types": "typescript, html",
-    "body": ["<mat-divider>", "</mat-divider>$0"]
+    "body": [
+      "<mat-divider>",
+      "</mat-divider>$0"
+    ]
   },
   "Material Inset Divider": {
     "prefix": "m-divider-inset",
     "description": "Material Inset Divider",
     "types": "typescript, html",
-    "body": ["<mat-divider", "\t[inset]=\"true\">", "</mat-divider>$0"]
+    "body": [
+      "<mat-divider",
+      "\t[inset]=\"true\">",
+      "</mat-divider>$0"
+    ]
   },
   "Material Vertical Divider": {
     "prefix": "m-divider-vertical",
     "description": "Material Vertical Divider",
     "types": "typescript, html",
-    "body": ["<mat-divider", "\t[vertical]=\"true\">", "</mat-divider>$0"]
+    "body": [
+      "<mat-divider",
+      "\t[vertical]=\"true\">",
+      "</mat-divider>$0"
+    ]
   },
   "PWA Link manifest": {
     "prefix": "pwa-link-manifest",
     "description": "PWA Link Manifest",
     "types": "html",
-    "body": ["<link rel=\"manifest\" href=\"./manifest.json\">$0"]
+    "body": [
+      "<link rel=\"manifest\" href=\"./manifest.json\">$0"
+    ]
   },
   "Angular content": {
     "types": "typescript, html",
     "prefix": "ng-content",
     "description": "Angular content",
-    "body": ["<ng-content #${1:name}></ng-content>", "$0"]
-  }
+    "body": [
+      "<ng-content #${1:name}></ng-content>",
+      "$0"
+    ]
+	}
 }
