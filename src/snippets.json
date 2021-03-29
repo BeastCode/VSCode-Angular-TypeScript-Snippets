@@ -398,10 +398,6 @@
       "export class ${App}Module {}"
     ]
   },
-  "Angular Material Module": {
-    "prefix": "ng-material-module",
-    "description": "App Material Module",
-    "types": "typescript",
     "Angular Material Module": {
       "prefix": "ng-material-module",
       "description": "App Material Module",
