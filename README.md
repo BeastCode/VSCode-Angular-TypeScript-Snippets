@@ -160,6 +160,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-icon-fontawesome | Material Font Awesome Icon |
 | m-icon-svg | Material SVG Icon |
 | m-input | Material Input Textbox |
+| m-menu | Material menu |
 | m-list | Material List |
 | m-list-item | Material List Item |
 | m-list-ngfor | Material List ngFor |
