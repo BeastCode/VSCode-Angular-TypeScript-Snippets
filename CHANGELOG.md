@@ -1,5 +1,7 @@
 # Angular BeastCode Changelog
 
+## 13.0.0
+
 ## 8.1.0
  * Updates to support VS Code 1.40
 

@@ -288,7 +288,7 @@
       "\tconstructor(private elementRef: ElementRef) {}",
       "",
       "\tprivate ${3:name}(${4:value}: string) {",
-      "\t\tthis.elementRef.nativeElement.style.${5:proptery} = ${6:value};",
+      "\t\tthis.elementRef.nativeElement.style.${5:property} = ${6:value};",
       "\t}",
       "}$0"
     ]
@@ -1591,7 +1591,7 @@
       "\tbeforeEach(() => {",
       "\t\tTestBed.configureTestingModule({",
       "\t\t\tdeclarations: [${Name}Component],",
-      "\t\t\imports: [",
+      "\t\t\timports: [",
       "\t\t\t],",
       "\t\t\tproviders: [",
       "\t\t\t],",
