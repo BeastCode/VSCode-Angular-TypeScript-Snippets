@@ -272,6 +272,33 @@
     ],
     "description": "Angular Validator Function"
   },
+  "Angular Async Validator": {
+    "prefix": "ng-async-validator",
+    "description": "Angular async validator snippet",
+    "types": "typescript",
+    "body": [
+      "import { Directive } from '@angular/core';",
+      "import { NG_ASYNC_VALIDATORS, AbstractControl, AsyncValidator, ValidationErrors } from '@angular/forms';",
+      "import { Observable, of } from 'rxjs';",
+      "",
+      "@Directive({",
+      "\tselector: '[${validatorName}][ngModel]',",
+      "\tproviders: [",
+      "\t\t{ provide: NG_ASYNC_VALIDATORS, useExisting: ${className}, multi: true }",
+      "\t]",
+      "})",
+      "",
+      "export class ${className} implements AsyncValidator {",
+      "\tvalidate(c: AbstractControl): Promise<ValidationErrors | null> | Observable<ValidationErrors | null> {",
+      "\t\tif (!c.value) return of(null);",
+      "",
+      "\t\treturn of({",
+      "\t\t\t'${validatorName}': true",
+      "\t\t});",
+      "\t}",
+      "}"
+    ]
+  },
   "Angular Async Validator Function": {
     "prefix": "ng-async-validator-fn",
     "body": [
@@ -439,7 +466,7 @@
         "import { MatTabsModule } from '@angular/material/tabs';",
         "import { MatToolbarModule } from '@angular/material/toolbar';",
         "import { MatTreeModule } from '@angular/material/tree';",
-  
+
         "const materialModules = [",
         "\t\tA11yModule",
         "\t\tBidiModule",
@@ -476,7 +503,7 @@
         "\t\tMatButtonToggleModule,",
         "\t\tMatTreeModule,",
         "\t\t];",
-  
+
         "@NgModule({",
         "imports: [...materialModules],",
         "exports: [...materialModules],",
