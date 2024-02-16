@@ -1,6 +1,6 @@
 # VSCode Angular TypeScript & Html Snippets
 
-Visual Studio Code TypeScript and Html snippets and code examples for Angular 2 to 16.
+Visual Studio Code TypeScript and Html snippets and code examples for Angular 2 to 17.
 
 All code snippets are based on and follow the Angular style guide https://angular.io/docs/ts/latest/guide/style-guide.html
 

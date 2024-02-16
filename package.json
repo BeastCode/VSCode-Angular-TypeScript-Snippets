@@ -1,9 +1,9 @@
 {
   "name": "Angular-BeastCode",
   "publisher": "Mikael",
-  "displayName": "Angular 16 Snippets - TypeScript, Html, Angular Material, ngRx, RxJS & Flex Layout",
-  "description": "256 Angular Snippets (TypeScript, Html, Angular Material, Flex Layout, ngRx, RxJS, PWA & Testing)",
-  "icon": "images/Angular4.png",
+  "displayName": "Angular 17 Snippets - TypeScript, Html, Angular Material, ngRx, RxJS & Flex Layout",
+  "description": "255 Angular Snippets (TypeScript, Html, Angular Material, Flex Layout, ngRx, RxJS, PWA & Testing)",
+  "icon": "images/Angular17.png",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -13,7 +13,7 @@
     "url": "https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets/issues"
   },
   "homepage": "https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets#readme",
-  "version": "16.0.3",
+  "version": "17.0.0",
   "engines": {
     "vscode": "^1.30.0"
   },
