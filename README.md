@@ -81,7 +81,6 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 
 | Snippet | Description |
 | ------- | ----------- |
-|       "\"\": \"\", | ng-content |
 |   ng-material-module |   App Material Module |
 | cli-cheatsheet | Cli Cheat Sheet |
 | e-atbr | ExpectAsync toBeResolved |
