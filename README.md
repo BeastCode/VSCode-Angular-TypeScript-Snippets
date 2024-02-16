@@ -2,7 +2,7 @@
 [![Installs](https://vsmarketplacebadge.apphb.com/installs-short/Mikael.Angular-BeastCode.svg)](https://marketplace.visualstudio.com/items?itemName=Mikael.Angular-BeastCode)
 
 # VSCode Angular TypeScript & Html Snippets
-Visual Studio Code TypeScript and Html snippets and code examples for Angular 2,4,5,6,7,8,9 & 10. 
+Visual Studio Code TypeScript and Html snippets and code examples for Angular 2 to 13. 
 
 All code snippets are based on and follow the Angular style guide https://angular.io/docs/ts/latest/guide/style-guide.html
 
@@ -14,7 +14,7 @@ The source for the snippets come from:
 * https://github.com/ngxs
 * https://jestjs.io
 
-and most of all, none of this would exist without the help of all the contributers for fixing, enhancing, testing and making suggestions.
+and most of all, none of this would exist without the help of all the contributors for fixing, enhancing, testing and making suggestions.
 
 # Snippet Prefixes
 
@@ -82,6 +82,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | Snippet | Description |
 | ------- | ----------|
 |       "\"\": \"\", | ng-content |
+|   ng-material-module |   App Material Module |
 | cli-cheatsheet | Cli Cheat Sheet |
 | e-atbr | ExpectAsync toBeResolved |
 | e-ntb | Expect Not toBe |
@@ -160,10 +161,10 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-icon-fontawesome | Material Font Awesome Icon |
 | m-icon-svg | Material SVG Icon |
 | m-input | Material Input Textbox |
-| m-menu | Material menu |
 | m-list | Material List |
 | m-list-item | Material List Item |
 | m-list-ngfor | Material List ngFor |
+| m-menu | Material Menu |
 | m-paginator | Material Paginator |
 | m-progress-bar | Material Determinate Progress Bar |
 | m-progress-bar-buffer | Material Buffer Progress Bar |
@@ -201,6 +202,8 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-afterContentInit | Lifecycle hook: Called after ngOnInit when the component's or directive's content has been initialized |
 | ng-afterViewChecked | Lifecycle hook: Called after every check of the component's view. Applies to components only |
 | ng-afterViewInit | Lifecycle hook: Called after ngAfterContentInit when the component's view has been initialized |
+| ng-async-validator | Angular async validator snippet |
+| ng-async-validator-fn | Angular Async Validator Function" |
 | ng-binding-oneway | Property: [property]=\"expression\" |
 | ng-binding-twoway | Two-way data binding with the NgModel |
 | ng-bootstraping | Bootstraping example |
@@ -242,7 +245,6 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-import | import module or component from path; |
 | ng-input | Class Input Property |
 | ng-interpolation | Interpolation: {{ interpolation }} |
-| ng-material-module | App Material Module |
 | ng-model | ngModel directive: [(ngModel)]=\"name\" |
 | ng-module | Feature Module |
 | ng-module-root | App root module |
@@ -291,6 +293,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-switch | Switch template |
 | ng-template | Angular template |
 | ng-validator | Angular validator snippet |
+| ng-validator-fn | Angular Validator Function" |
 | ngrx-action-const | ngRx Single action |
 | ngrx-action-creator | ngRx Single action with const |
 | ngrx-action-creator-enum | ngRx Single action creator for enum |
