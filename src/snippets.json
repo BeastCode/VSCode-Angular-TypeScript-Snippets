@@ -140,7 +140,7 @@
       "export class ${4:Name}Component implements OnInit {",
       "\tconstructor($5) { }",
       "",
-      "\tngOnInit(): void {${6: }}",
+      "\tngOnInit() {${6: }}",
       "}",
       "$0"
     ]
@@ -160,7 +160,7 @@
       "export class ${5:Name}Component implements OnInit {",
       "\tconstructor($6) { }",
       "",
-      "\tngOnInit(): void {${7: }}",
+      "\tngOnInit() {${7: }}",
       "}",
       "$0"
     ]
@@ -209,7 +209,7 @@
       "\t\t}",
       "\t}",
       "",
-      "\tngOnInit(): void {",
+      "\tngOnInit() {",
       "\t\t",
       "\t}",
       "",
@@ -2609,7 +2609,7 @@
     ]
   },
   "Material Accordion Panel ": {
-    "prefix": "m-accordion>",
+    "prefix": "m-accordion",
     "description": "Material Accordion",
     "types": "typescript, html",
     "body": [

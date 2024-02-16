@@ -2,7 +2,7 @@
   "name": "Angular-BeastCode",
   "publisher": "Mikael",
   "displayName": "Angular 16 Snippets - TypeScript, Html, Angular Material, ngRx, RxJS & Flex Layout",
-  "description": "242 Angular Snippets (TypeScript, Html, Angular Material, Flex Layout, ngRx, RxJS, PWA & Testing)",
+  "description": "256 Angular Snippets (TypeScript, Html, Angular Material, Flex Layout, ngRx, RxJS, PWA & Testing)",
   "icon": "images/Angular4.png",
   "license": "MIT",
   "repository": {
@@ -25,7 +25,7 @@
     "TypeScript",
     "HTML",
     "Angular Material",
-    "Angular 7"
+    "Angular 17"
   ],
   "contributes": {
     "snippets": [
