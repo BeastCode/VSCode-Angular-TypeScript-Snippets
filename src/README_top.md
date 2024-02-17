@@ -1,3 +1,5 @@
+[![Installs](https://vsmarketplacebadges.dev/installs-short/Mikael.Angular-BeastCode.svg)](https://marketplace.visualstudio.com/items?itemName=Mikael.Angular-BeastCode)
+
 # VSCode Angular TypeScript & Html Snippets
 
 Visual Studio Code TypeScript and Html snippets and code examples for Angular 2 to 17.
