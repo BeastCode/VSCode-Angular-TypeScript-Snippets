@@ -2503,6 +2503,28 @@
       "</table>$0"
     ]
   },
+  "Material Table Flex": {
+    "prefix": "m-table-flex",
+    "description": "Material Table Flex",
+    "types": "typescript, html",
+    "body": [
+      "<mat-table [dataSource]=\"${dataSource}\">",
+      "\t<ng-container matColumnDef=\"${column1}\">",
+      "\t\t<mat-header-cell *matHeaderCellDef>${ColumnHeader1}</mat-header-cell>",
+      "\t\t<mat-cell *matCellDef=\"let element\"> {{element.${column1}}} </mat-cell>",
+      "\t</ng-container>",
+      "",
+      "\t<ng-container matColumnDef=\"${column2}\">",
+      "\t\t<mat-header-cell *matHeaderCellDef>${ColumnHeader2}</mat-header-cell>",
+      "\t\t<mat-cell *matCellDef=\"let element\"> {{element.${column2}}} </mat-cell>",
+      "\t</ng-container>",
+      "",
+      "\t<mat-header-row *matHeaderRowDef=\"displayedColumns\"></mat-header-row>",
+      "\t<mat-row *matRowDef=\"let row; columns: displayedColumns;\"></mat-row>",
+      "</mat-table>"
+    ]
+  },
+
   "Material Table Column": {
     "prefix": "m-table-column",
     "description": "Material Table Column",

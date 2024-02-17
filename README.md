@@ -1,4 +1,6 @@
 [![Installs](https://vsmarketplacebadges.dev/installs-short/Mikael.Angular-BeastCode.svg)](https://marketplace.visualstudio.com/items?itemName=Mikael.Angular-BeastCode)
+![Downloads](https://vsmarketplacebadges.dev/downloads-short/Mikael.Angular-BeastCode.svg)
+![Rating](https://vsmarketplacebadges.dev/rating-star/Mikael.Angular-BeastCode.svg)
 
 # VSCode Angular TypeScript & Html Snippets
 
@@ -189,6 +191,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-tab-group | Material Tab Group |
 | m-table | Material Table |
 | m-table-column | Material Table Column |
+| m-table-flex | Material Table Flex |
 | m-toolbar | Material toolbar |
 | m-toolbar-multiRow | Material Toolbar with multiple rows |
 | m-toolbar-row | Material toolbar row |

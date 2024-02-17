@@ -1,4 +1,6 @@
 [![Installs](https://vsmarketplacebadges.dev/installs-short/Mikael.Angular-BeastCode.svg)](https://marketplace.visualstudio.com/items?itemName=Mikael.Angular-BeastCode)
+![Downloads](https://vsmarketplacebadges.dev/downloads-short/Mikael.Angular-BeastCode.svg)
+![Rating](https://vsmarketplacebadges.dev/rating-star/Mikael.Angular-BeastCode.svg)
 
 # VSCode Angular TypeScript & Html Snippets
 
