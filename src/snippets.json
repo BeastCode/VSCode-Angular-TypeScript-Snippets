@@ -549,7 +549,7 @@
     ]
   },
   "Angular Pipe Standalone": {
-    "prefix": "ng-pipe-stanndalone",
+    "prefix": "ng-pipe-standalone",
     "description": "Standalone pipe template",
     "types": "typescript",
     "body": [
